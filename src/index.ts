@@ -12,7 +12,6 @@ export * from './package-manifest';
 export * from './package-manifest-custom';
 export * from './package-search-result';
 export * from './packument';
-export * from './packument-custom';
 export * from './person';
 export * from './registry-metadata';
 export * from './repository';
