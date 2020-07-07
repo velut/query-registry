@@ -57,11 +57,17 @@
         "arrowParens": "always"
     },
     "dependencies": {
-        "debug": "^4.1.1"
+        "debug": "^4.1.1",
+        "got": "^11.4.0",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
     },
     "devDependencies": {
         "@types/debug": "^4.1.5",
+        "@types/proper-url-join": "^2.0.0",
+        "@types/validate-npm-package-name": "^3.0.0",
         "husky": "^4.2.5",
+        "nock": "^13.0.2",
         "tsdx": "^0.13.2",
         "tslib": "^2.0.0",
         "typescript": "^3.9.6"
