@@ -2,10 +2,10 @@ import { PackageLinks } from './package-links';
 import { Person } from './person';
 
 /**
- * PackageSuggestion contains abbreviated package metadata returned
- * by the registry's suggestions API.
+ * PackageSearchResult contains abbreviated package metadata returned
+ * by the searching the registry for packages.
  */
-export interface PackageSuggestion {
+export interface PackageSearchResult {
     /** Package name */
     readonly name: string;
 
