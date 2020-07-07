@@ -6,5 +6,5 @@ export interface DistTags {
     readonly latest: string;
 
     /** Custom distribution tags to version numbers */
-    [key: string]: string;
+    readonly [key: string]: string;
 }

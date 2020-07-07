@@ -121,5 +121,5 @@ export interface PackageJSON {
     readonly readmeFilename?: string;
 
     /** Other fields */
-    [key: string]: unknown;
+    readonly [key: string]: unknown;
 }

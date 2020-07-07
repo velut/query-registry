@@ -10,5 +10,5 @@ export interface TimestampsByVersion {
     readonly modified: string;
 
     /** Version numbers to publishing timestamps */
-    [key: string]: string;
+    readonly [key: string]: string;
 }
