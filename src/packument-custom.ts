@@ -5,6 +5,9 @@ import { DistTags } from './dist-tags';
  * added by this library to packuments.
  */
 export interface PackumentCustom {
+    /** Unique package name (e.g., `foo`, `@foo/bar`) */
+    readonly id: string;
+
     /** Distribution tags */
     readonly distTags: DistTags;
 
