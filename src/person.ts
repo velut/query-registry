@@ -3,6 +3,7 @@
  */
 export interface Person {
     readonly name?: string;
+    readonly username?: string;
     readonly email?: string;
     readonly url?: string;
 }
