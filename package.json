@@ -58,12 +58,16 @@
     },
     "dependencies": {
         "debug": "^4.1.1",
+        "git-url-parse": "^11.1.2",
         "got": "^11.4.0",
+        "hosted-git-info": "^3.0.4",
         "proper-url-join": "^2.1.1",
         "validate-npm-package-name": "^3.0.0"
     },
     "devDependencies": {
         "@types/debug": "^4.1.5",
+        "@types/git-url-parse": "^9.0.0",
+        "@types/hosted-git-info": "^3.0.0",
         "@types/proper-url-join": "^2.0.0",
         "@types/validate-npm-package-name": "^3.0.0",
         "husky": "^4.2.5",

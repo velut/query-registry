@@ -1,6 +1,6 @@
 import { DistTags } from './dist-tags';
 import { PackageJSON } from './package-json';
-import { PackageManifest } from './package-manifest';
+import { PackageManifestRaw } from './package-manifest';
 import { TimestampsByVersion } from './timestamps-by-version';
 
 /**
@@ -15,6 +15,8 @@ export interface Packument extends PackumentRaw, PackumentCustom {}
 
 /**
  * PackumentRaw contains packument metadata as returned by the registry.
+ *
+ * @see {@link PackageJSON}
  */
 export interface PackumentRaw extends PackageJSON {
     /** Unique package name (e.g., `foo`, `@foo/bar`) */
@@ -33,7 +35,7 @@ export interface PackumentRaw extends PackageJSON {
     readonly users?: Record<string, boolean>;
 
     /** Package manifests by version number */
-    readonly versions: Record<string, PackageManifest>;
+    readonly versions: Record<string, PackageManifestRaw>;
 }
 
 /**

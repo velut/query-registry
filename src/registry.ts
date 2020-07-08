@@ -1,7 +1,12 @@
-import urlJoin from 'proper-url-join';
-import { assertValidPackageName } from './assert-valid-package-name';
-import { fetchJSON } from './fetch-json';
+import { getMetadata } from './get-metadata';
+import {
+    getPackageManifest,
+    getRawPackageManifest,
+} from './get-package-manifest';
+import { getPackument, getRawPackument } from './get-packument';
+import { PackageManifest, PackageManifestRaw } from './package-manifest';
 import { Packument, PackumentRaw } from './packument';
+import { queryRegistry } from './query-registry';
 import { RegistryMetadata } from './registry-metadata';
 
 /**
@@ -17,43 +22,71 @@ export class Registry {
      * @internal
      */
     constructor(
-        private readonly registry: string,
-        private readonly mirrors: string[]
+        /** Registry's URL */
+        readonly registry: string,
+
+        /** Registry mirrors' URLs */
+        readonly mirrors: string[]
     ) {}
 
     /**
      * getMetadata returns the {@link RegistryMetadata}.
      */
     async getMetadata(): Promise<RegistryMetadata> {
-        const endpoint = '/';
-        return this.queryRegistry({ endpoint });
+        return getMetadata({ ...this });
     }
 
     /**
-     * getPackument returns the {@link Packument} containing package metadata.
+     * getPackageManifest returns a {@link PackageManifest} containing
+     * metadata associated to a package's version.
+     *
+     * @param name - the package's name
+     * @param version - the package's version (default: `latest`)
+     */
+    async getPackageManifest({
+        name,
+        version = 'latest',
+    }: {
+        name: string;
+        version?: string;
+    }): Promise<PackageManifest> {
+        return getPackageManifest({ ...this, name, version });
+    }
+
+    /**
+     * getRawPackageManifest returns a {@link PackageManifestRaw} containing
+     * raw metadata associated to a package's version.
+     *
+     * @param name - the package's name
+     * @param version - the package's version (default: `latest`)
+     */
+    async getRawPackageManifest({
+        name,
+        version = 'latest',
+    }: {
+        name: string;
+        version?: string;
+    }): Promise<PackageManifestRaw> {
+        return getRawPackageManifest({ ...this, name, version });
+    }
+
+    /**
+     * getPackument returns a {@link Packument} containing package metadata.
      *
      * @param name - the package's name
      */
     async getPackument({ name }: { name: string }): Promise<Packument> {
-        const rawPackument = await this.getRawPackument({ name });
-        const {
-            _id: id,
-            'dist-tags': distTags,
-            time: { created: _, modified: __, ...versionsTimestamps },
-        } = rawPackument;
-        return { ...rawPackument, id, distTags, versionsTimestamps };
+        return getPackument({ ...this, name });
     }
 
     /**
-     * getRawPackument returns the {@link PackumentRaw}
+     * getRawPackument returns a {@link PackumentRaw}
      * containing raw package metadata.
      *
      * @param name - the package's name
      */
     async getRawPackument({ name }: { name: string }): Promise<PackumentRaw> {
-        assertValidPackageName({ name });
-        const endpoint = `/${name}`;
-        return this.queryRegistry({ endpoint });
+        return getRawPackument({ ...this, name });
     }
 
     /**
@@ -62,10 +95,6 @@ export class Registry {
      * @param endpoint - the endpoint to query
      */
     async queryRegistry<T>({ endpoint }: { endpoint: string }): Promise<T> {
-        const { registry, mirrors } = this;
-        const urls = [registry, ...mirrors].map((host) =>
-            urlJoin(host, endpoint)
-        );
-        return fetchJSON({ urls });
+        return queryRegistry({ ...this, endpoint });
     }
 }
