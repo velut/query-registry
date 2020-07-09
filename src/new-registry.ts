@@ -2,7 +2,7 @@ import { log } from './log';
 import { Registry } from './registry';
 
 /**
- * RegistryOptions lists the options to create a registry.
+ * RegistryOptions contains the options available when creating a registry.
  */
 export interface RegistryOptions {
     /** Registry's URL */
@@ -25,13 +25,16 @@ export interface RegistryOptions {
  * @param url - the registry's URL (default: `https://registry.npmjs.org`)
  * @param mirrors - the registry mirrors' URLs (default: `https://registry.npmjs.cf` and `https://registry.yarnpkg.com`)
  * @param api - the registry's API URL (default: `https://api.npmjs.org`)
- * @param suggestionsAPI - the registry's suggestions API URL (default: `https://www.npmjs.com/search/suggestions`)
+ * @param suggestionsAPI - the registry's suggestions API URL (default: `https://www.npmjs.com`)
+ *
+ * @see {@link RegistryOptions}
+ * @see {@link Registry}
  */
 export function newRegistry({
     registry = 'https://registry.npmjs.org',
     mirrors = ['https://registry.npmjs.cf', 'https://registry.yarnpkg.com'],
     api = 'https://api.npmjs.org',
-    suggestionsAPI = 'https://www.npmjs.com/search/suggestions',
+    suggestionsAPI = 'https://www.npmjs.com',
 }: RegistryOptions): Registry {
     log('creating new Registry with options: %O', {
         registry,
@@ -39,5 +42,5 @@ export function newRegistry({
         api,
         suggestionsAPI,
     });
-    return new Registry(registry, mirrors, api);
+    return new Registry(registry, mirrors, api, suggestionsAPI);
 }

@@ -14,12 +14,14 @@ import {
     getPackageManifest,
     getRawPackageManifest,
 } from './get-package-manifest';
+import { getPackageSuggestions } from './get-package-suggestions';
 import { getPackument, getRawPackument } from './get-packument';
 import {
     getDailyRegistryDownloads,
     getRegistryDownloads,
 } from './get-registry-downloads';
 import { PackageManifest, PackageManifestRaw } from './package-manifest';
+import { PackageSearchResult } from './package-search-result';
 import { Packument, PackumentRaw } from './packument';
 import { queryRegistry } from './query-registry';
 import { RegistryMetadata } from './registry-metadata';
@@ -44,7 +46,10 @@ export class Registry {
         readonly mirrors: string[],
 
         /** Registry's API URL */
-        readonly api: string
+        readonly api: string,
+
+        /** Search suggestions API URL */
+        readonly suggestionsAPI: string
     ) {}
 
     /**
@@ -152,6 +157,16 @@ export class Registry {
         period: DownloadPeriod
     ): Promise<DailyDownloads> {
         return getDailyRegistryDownloads({ ...this, period });
+    }
+
+    /**
+     * getPackageSuggestions returns a list of suggestions
+     * of packages that match the given query.
+     *
+     * @param query - the query
+     */
+    async getPackageSuggestions(query: string): Promise<PackageSearchResult[]> {
+        return getPackageSuggestions({ ...this, query });
     }
 
     /**
