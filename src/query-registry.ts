@@ -11,5 +11,5 @@ export function queryRegistry<T>({
     mirrors: string[];
 }): Promise<T> {
     const urls = [registry, ...mirrors].map((host) => urlJoin(host, endpoint));
-    return fetchJSON({ urls });
+    return fetchJSON(...urls);
 }

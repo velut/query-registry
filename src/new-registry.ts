@@ -39,5 +39,5 @@ export function newRegistry({
         api,
         suggestionsAPI,
     });
-    return new Registry(registry, mirrors);
+    return new Registry(registry, mirrors, api);
 }

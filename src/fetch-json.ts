@@ -1,7 +1,7 @@
 import got from 'got';
 import { log } from './log';
 
-export async function fetchJSON<T>({ urls }: { urls: string[] }): Promise<T> {
+export async function fetchJSON<T>(...urls: string[]): Promise<T> {
     let error;
 
     for (const url of urls) {
