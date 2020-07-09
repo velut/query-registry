@@ -111,7 +111,7 @@ function extractPackageManifest({
     packument: Packument;
     version: string;
 }): PackageManifestRaw {
-    const { distTags, versions } = packument;
+    const { name, distTags, versions } = packument;
     const versionNumber = distTags[version] ?? version;
     const manifest = versions[versionNumber] as PackageManifestRaw | undefined;
     if (!manifest) {
