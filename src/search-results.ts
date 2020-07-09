@@ -31,18 +31,7 @@ export interface SearchResult {
     readonly searchScore: number;
 
     /** Flag attributes */
-    readonly flags: PackageFlags;
-}
-
-/**
- * PackageFlags contains flag attributes categorizing the package.
- */
-export interface PackageFlags {
-    /** If true, package version is < 1.0.0 */
-    readonly unstable: boolean;
-
-    /** If true, package is insecure or has vulnerable dependencies */
-    readonly insecure: boolean;
+    readonly flags?: PackageFlags;
 }
 
 /**
@@ -69,4 +58,15 @@ export interface SearchScoreDetail {
 
     /** Maintenance score value */
     readonly maintenance: number;
+}
+
+/**
+ * PackageFlags contains flag attributes categorizing the package.
+ */
+export interface PackageFlags {
+    /** If true, package version is < 1.0.0 */
+    readonly unstable: boolean;
+
+    /** If true, package is insecure or has vulnerable dependencies */
+    readonly insecure: boolean;
 }
