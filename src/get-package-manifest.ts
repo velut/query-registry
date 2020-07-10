@@ -115,7 +115,10 @@ function extractPackageManifest({
     const versionNumber = distTags[version] ?? version;
     const manifest = versions[versionNumber] as PackageManifestRaw | undefined;
     if (!manifest) {
-        log('invalid package version: %O', { name, version });
+        log('extractPackageManifest: invalid package version: %O', {
+            name,
+            version,
+        });
         throw new Error(
             `invalid package version: (name: ${name}, version: ${version})`
         );

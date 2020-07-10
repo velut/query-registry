@@ -20,6 +20,7 @@ import {
     getDailyRegistryDownloads,
     getRegistryDownloads,
 } from './get-registry-downloads';
+import { log } from './log';
 import { PackageManifest, PackageManifestRaw } from './package-manifest';
 import { PackageSearchResult } from './package-search-result';
 import { Packument, PackumentRaw } from './packument';
@@ -29,28 +30,36 @@ import { RegistryMetadata } from './registry-metadata';
 /**
  * Registry represents an npm-like registry that can be queried for data.
  *
- * @remarks
- * To create a new Registry instance, prefer using {@link newRegistry}.
+ * @see {@link https://github.com/npm/registry}
  */
 export class Registry {
     /**
-     * Prefer using {@link newRegistry} instead of constructor.
+     * Create a new {@link Registry} instance.
      *
-     * @internal
+     * @param registry - the registry's URL
+     * (default: `https://registry.npmjs.org`)
+     *
+     * @param mirrors - the registry mirrors' URLs
+     * (default: `https://registry.npmjs.cf` and
+     * `https://registry.yarnpkg.com`)
+     *
+     * @param api - the registry's API URL
+     * (default: `https://api.npmjs.org`)
+     *
+     * @param suggestionsAPI - the registry's suggestions API URL
+     * (default: `https://www.npmjs.com`)
      */
     constructor(
-        /** Registry's URL */
-        readonly registry: string,
-
-        /** Registry mirrors' URLs */
-        readonly mirrors: string[],
-
-        /** Registry's API URL */
-        readonly api: string,
-
-        /** Search suggestions API URL */
-        readonly suggestionsAPI: string
-    ) {}
+        readonly registry = 'https://registry.npmjs.org',
+        readonly mirrors = [
+            'https://registry.npmjs.cf',
+            'https://registry.yarnpkg.com',
+        ],
+        readonly api = 'https://api.npmjs.org',
+        readonly suggestionsAPI = 'https://www.npmjs.com'
+    ) {
+        log('Registry: created new Registry: %O', { ...this });
+    }
 
     /**
      * getMetadata returns the {@link RegistryMetadata}.
@@ -61,7 +70,7 @@ export class Registry {
 
     /**
      * getPackageManifest returns a {@link PackageManifest} containing
-     * metadata associated to a package's version.
+     * the metadata associated to a package's version.
      *
      * @param name - the package's name
      * @param version - the package's version (default: `latest`)
@@ -75,7 +84,7 @@ export class Registry {
 
     /**
      * getRawPackageManifest returns a {@link PackageManifestRaw} containing
-     * raw metadata associated to a package's version.
+     * the raw metadata associated to a package's version.
      *
      * @param name - the package's name
      * @param version - the package's version (default: `latest`)
@@ -88,7 +97,8 @@ export class Registry {
     }
 
     /**
-     * getPackument returns a {@link Packument} containing package metadata.
+     * getPackument returns a {@link Packument} containing
+     * all the metadata for a package.
      *
      * @param name - the package's name
      */
@@ -98,7 +108,7 @@ export class Registry {
 
     /**
      * getRawPackument returns a {@link PackumentRaw}
-     * containing raw package metadata.
+     * containing all the raw metadata for a package.
      *
      * @param name - the package's name
      */
@@ -107,61 +117,62 @@ export class Registry {
     }
 
     /**
-     * getPackageDownloads returns the number of downloads for a package
-     * in a given time period.
+     * getPackageDownloads returns a {@link PackageDownloads} containing
+     * the number of downloads for a package in a given time period.
      *
      * @param name - the package's name
-     * @param period - the time period for which downloads should be counted
+     * @param period - the time period to examine (default: `last-week`)
      */
     async getPackageDownloads(
         name: string,
-        period: DownloadPeriod
+        period: DownloadPeriod = 'last-week'
     ): Promise<PackageDownloads> {
         return getPackageDownloads({ ...this, name, period });
     }
 
     /**
-     * getDailyPackageDownloads returns the number of downloads for a package
+     * getDailyPackageDownloads returns a {@link PackageDailyDownloads}
+     * containing the number of downloads for a package
      * for each day in a given time period.
      *
      * @param name - the package's name
-     * @param period - the time period for which downloads should be counted
+     * @param period - the time period to examine (default: `last-week`)
      */
-    async getDailyPackageDownloads({
-        name,
-        period,
-    }: {
-        name: string;
-        period: DownloadPeriod;
-    }): Promise<PackageDailyDownloads> {
+    async getDailyPackageDownloads(
+        name: string,
+        period: DownloadPeriod = 'last-week'
+    ): Promise<PackageDailyDownloads> {
         return getDailyPackageDownloads({ ...this, name, period });
     }
 
     /**
-     * getRegistryDownloads returns the number of downloads for all packages
-     * in a given time period.
+     * getRegistryDownloads returns a {@link Downloads} containing
+     * the number of downloads for all packages in a given time period.
      *
-     * @param period - the time period for which downloads should be counted
+     * @param period - the time period to examine (default: `last-week`)
      */
-    async getRegistryDownloads(period: DownloadPeriod): Promise<Downloads> {
+    async getRegistryDownloads(
+        period: DownloadPeriod = 'last-week'
+    ): Promise<Downloads> {
         return getRegistryDownloads({ ...this, period });
     }
 
     /**
-     * getDailyRegistryDownloads returns the number of downloads
-     * for all packages for each day in a given time period.
+     * getDailyRegistryDownloads returns a {@link DailyDownloads}
+     * containing the number of downloads for all packages
+     * for each day in a given time period.
      *
-     * @param period - the time period for which downloads should be counted
+     * @param period - the time period to examine (default: `last-week`)
      */
     async getDailyRegistryDownloads(
-        period: DownloadPeriod
+        period: DownloadPeriod = 'last-week'
     ): Promise<DailyDownloads> {
         return getDailyRegistryDownloads({ ...this, period });
     }
 
     /**
-     * getPackageSuggestions returns a list of suggestions
-     * of packages that match the given query.
+     * getPackageSuggestions returns a list of {@link PackageSearchResult}
+     * containing suggested packages that match the given query.
      *
      * @param query - the query
      */
@@ -170,11 +181,12 @@ export class Registry {
     }
 
     /**
-     * queryRegistry queries the registry at the given endpoint.
+     * queryRegistry queries the {@link Registry.registry | registry}
+     * or its {@link Registry.mirrors | mirrors} at the given endpoint.
      *
      * @param endpoint - the endpoint to query
      */
-    async queryRegistry<T>({ endpoint }: { endpoint: string }): Promise<T> {
+    async queryRegistry<T>(endpoint: string): Promise<T> {
         return queryRegistry({ ...this, endpoint });
     }
 }
