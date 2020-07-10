@@ -2,6 +2,8 @@ import { PackageSearchResult } from './package-search-result';
 
 /**
  * SearchResults contains the results returned by the registry for a query.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get-v1search}
  */
 export interface SearchResults {
     /** List of search results */
@@ -50,13 +52,13 @@ export interface SearchScore {
  * quality, popularity and maintenance categories.
  */
 export interface SearchScoreDetail {
-    /** Quality score value */
+    /** Package quality score value */
     readonly quality: number;
 
-    /** Popularity score value */
+    /** Package popularity score value */
     readonly popularity: number;
 
-    /** Maintenance score value */
+    /** Package maintenance score value */
     readonly maintenance: number;
 }
 
@@ -64,7 +66,7 @@ export interface SearchScoreDetail {
  * PackageFlags contains flag attributes categorizing the package.
  */
 export interface PackageFlags {
-    /** If true, package version is < 1.0.0 */
+    /** If true, package version is `<1.0.0` */
     readonly unstable: boolean;
 
     /** If true, package is insecure or has vulnerable dependencies */

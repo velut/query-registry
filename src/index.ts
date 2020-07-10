@@ -13,5 +13,6 @@ export * from './person';
 export * from './registry';
 export * from './registry-metadata';
 export * from './repository';
+export * from './search-options';
 export * from './search-results';
 export * from './timestamps-by-version';
