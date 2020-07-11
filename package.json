@@ -18,9 +18,9 @@
     "scripts": {
         "start": "tsdx watch --target node",
         "build": "tsdx build --target node",
-        "test": "tsdx test",
-        "test:cov": "tsdx test --coverage",
-        "test:watch": "tsdx test --watchAll --coverage",
+        "test": "tsdx test --runInBand",
+        "test:cov": "tsdx test --runInBand --coverage",
+        "test:watch": "tsdx test --runInBand --watchAll --coverage",
         "lint": "tsdx lint src test",
         "prepare": "tsdx build --target node",
         "pre-push": "yarn lint && yarn build && yarn test:cov"
