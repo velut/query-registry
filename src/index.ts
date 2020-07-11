@@ -10,6 +10,7 @@ export * from './package-manifest';
 export * from './package-search-result';
 export * from './packument';
 export * from './person';
+export * from './query-parameters';
 export * from './registry';
 export * from './registry-metadata';
 export * from './repository';

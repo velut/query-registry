@@ -24,8 +24,12 @@ import { log } from './log';
 import { PackageManifest, PackageManifestRaw } from './package-manifest';
 import { PackageSearchResult } from './package-search-result';
 import { Packument, PackumentRaw } from './packument';
+import { QueryParameters } from './query-parameters';
 import { queryRegistry } from './query-registry';
 import { RegistryMetadata } from './registry-metadata';
+import { SearchOptions } from './search-options';
+import { searchPackages } from './search-packages';
+import { SearchResults } from './search-results';
 
 /**
  * Registry represents an npm-like registry that can be queried for data.
@@ -181,12 +185,27 @@ export class Registry {
     }
 
     /**
+     * searchPackages returns the {@link SearchResults}
+     * that describe the packages that match the given {@link SearchOptions}.
+     *
+     * @param searchOptions - the search options
+     */
+    async searchPackages(searchOptions: SearchOptions): Promise<SearchResults> {
+        return searchPackages({ ...this, searchOptions });
+    }
+
+    /**
      * queryRegistry queries the {@link Registry.registry | registry}
-     * or its {@link Registry.mirrors | mirrors} at the given endpoint.
+     * or its {@link Registry.mirrors | mirrors} at the given endpoint
+     * with the given {@link QueryParameters}.
      *
      * @param endpoint - the endpoint to query
+     * @param query - the query parameters (optional)
      */
-    async queryRegistry<T>(endpoint: string): Promise<T> {
-        return queryRegistry({ ...this, endpoint });
+    async queryRegistry<T>(
+        endpoint: string,
+        query?: QueryParameters
+    ): Promise<T> {
+        return queryRegistry({ ...this, endpoint, query });
     }
 }
