@@ -34,6 +34,32 @@ import { searchPackages } from './search-packages';
 import { SearchResults } from './search-results';
 
 /**
+ * RegistryConfig lists the options available to create a {@link Registry}.
+ */
+export interface RegistryConfig {
+    /** Registry's URL */
+    readonly registry?: string;
+
+    /** Registry mirrors' URLs */
+    readonly mirrors?: string[];
+
+    /** Registry's API URL */
+    readonly api?: string;
+
+    /** Registry's Suggestions API URL */
+    readonly suggestionsAPI?: string;
+
+    /** {@link Cache} for network requests */
+    readonly cache?: Cache;
+}
+
+/**
+ * Registry interface merges with the Registry class declaration
+ * to provide the properties from {@link RegistryConfig}.
+ */
+export interface Registry extends Required<RegistryConfig> {}
+
+/**
  * Registry represents an npm-like registry that can be queried for data.
  *
  * @see {@link https://github.com/npm/registry}
@@ -57,17 +83,17 @@ export class Registry {
      *
      * @param cache - the {@link Cache} used for network requests
      * (default: in-memory cache provided by `Map`)
+     *
+     * @see {@link RegistryConfig}
      */
-    constructor(
-        readonly registry = 'https://registry.npmjs.org',
-        readonly mirrors = [
-            'https://registry.npmjs.cf',
-            'https://registry.yarnpkg.com',
-        ],
-        readonly api = 'https://api.npmjs.org',
-        readonly suggestionsAPI = 'https://www.npmjs.com',
-        readonly cache: Cache = new Map()
-    ) {
+    constructor({
+        registry = 'https://registry.npmjs.org',
+        mirrors = ['https://registry.npmjs.cf', 'https://registry.yarnpkg.com'],
+        api = 'https://api.npmjs.org',
+        suggestionsAPI = 'https://www.npmjs.com',
+        cache = new Map(),
+    }: RegistryConfig = {}) {
+        Object.assign(this, { registry, mirrors, api, suggestionsAPI, cache });
         log('Registry: created new Registry: %O', { ...this });
     }
 
