@@ -21,6 +21,7 @@
         "test": "tsdx test --runInBand",
         "test:cov": "tsdx test --runInBand --coverage",
         "test:watch": "tsdx test --runInBand --watchAll --coverage",
+        "test:ci": "tsdx test --ci --coverage --maxWorkers=2",
         "lint": "tsdx lint src test",
         "prepare": "tsdx build --target node",
         "pre-push": "yarn lint && yarn build && yarn test:cov"
