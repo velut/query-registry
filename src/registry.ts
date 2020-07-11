@@ -1,3 +1,4 @@
+import { Cache } from './cache';
 import { DownloadPeriod } from './download-period';
 import {
     DailyDownloads,
@@ -53,6 +54,9 @@ export class Registry {
      *
      * @param suggestionsAPI - the registry's suggestions API URL
      * (default: `https://www.npmjs.com`)
+     *
+     * @param cache - the {@link Cache} used for network requests
+     * (default: in-memory cache provided by `Map`)
      */
     constructor(
         readonly registry = 'https://registry.npmjs.org',
@@ -61,7 +65,8 @@ export class Registry {
             'https://registry.yarnpkg.com',
         ],
         readonly api = 'https://api.npmjs.org',
-        readonly suggestionsAPI = 'https://www.npmjs.com'
+        readonly suggestionsAPI = 'https://www.npmjs.com',
+        readonly cache: Cache = new Map()
     ) {
         log('Registry: created new Registry: %O', { ...this });
     }

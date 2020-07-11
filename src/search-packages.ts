@@ -1,3 +1,4 @@
+import { Cache } from './cache';
 import { QueryParameters } from './query-parameters';
 import { queryRegistry } from './query-registry';
 import { SearchOptions } from './search-options';
@@ -7,14 +8,16 @@ export async function searchPackages({
     searchOptions,
     registry,
     mirrors,
+    cache,
 }: {
     searchOptions: SearchOptions;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<SearchResults> {
     const endpoint = '/-/v1/search';
     const query = getQueryParameters({ searchOptions });
-    return queryRegistry({ endpoint, query, registry, mirrors });
+    return queryRegistry({ endpoint, query, registry, mirrors, cache });
 }
 
 function getQueryParameters({

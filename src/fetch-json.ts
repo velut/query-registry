@@ -1,12 +1,19 @@
 import got from 'got';
+import { Cache } from './cache';
 import { log } from './log';
 
-export async function fetchJSON<T>(...urls: string[]): Promise<T> {
+export async function fetchJSON<T>({
+    urls,
+    cache,
+}: {
+    urls: string[];
+    cache: Cache;
+}): Promise<T> {
     let error;
 
     for (const url of urls) {
         try {
-            const data = (await got(url).json()) as T;
+            const data = (await got(url, { cache }).json()) as T;
             log('fetchJSON: got data: %O', { url, data });
             return data;
         } catch (err) {

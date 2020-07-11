@@ -1,15 +1,18 @@
 import urlJoin from 'proper-url-join';
+import { Cache } from './cache';
 import { fetchJSON } from './fetch-json';
 import { PackageSearchResult } from './package-search-result';
 
 export async function getPackageSuggestions({
     query,
     suggestionsAPI,
+    cache,
 }: {
     query: string;
     suggestionsAPI: string;
+    cache: Cache;
 }): Promise<PackageSearchResult[]> {
     const endpoint = '/search/suggestions';
-    const url = urlJoin(suggestionsAPI, endpoint, { query: { q: query } });
-    return fetchJSON(url);
+    const urls = [urlJoin(suggestionsAPI, endpoint, { query: { q: query } })];
+    return fetchJSON({ urls, cache });
 }

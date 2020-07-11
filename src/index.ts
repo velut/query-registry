@@ -1,4 +1,5 @@
 export * from './bug-tracker';
+export * from './cache';
 export * from './dist-info';
 export * from './dist-tags';
 export * from './download-period';

@@ -1,3 +1,4 @@
+import { Cache } from './cache';
 import {
     fromDefinitelyTypedName,
     toDefinitelyTypedName,
@@ -13,16 +14,19 @@ export async function getPackageManifest({
     version,
     registry,
     mirrors,
+    cache,
 }: {
     name: string;
     version: string;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<PackageManifest> {
     const packument = await getPackument({
         name,
         registry,
         mirrors,
+        cache,
     });
     const rawManifest = extractPackageManifest({ packument, version });
 
@@ -42,6 +46,7 @@ export async function getPackageManifest({
         rawManifest,
         registry,
         mirrors,
+        cache,
     });
     const untypedName = fromDefinitelyTypedName({ name: rawManifest.name });
 
@@ -60,10 +65,12 @@ async function getDefinitelyTypedName({
     rawManifest,
     registry,
     mirrors,
+    cache,
 }: {
     rawManifest: PackageManifestRaw;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<string | undefined> {
     const { name, types, typings } = rawManifest;
     const definitelyTypedName = toDefinitelyTypedName({ name });
@@ -79,6 +86,7 @@ async function getDefinitelyTypedName({
             version: 'latest',
             registry,
             mirrors,
+            cache,
         });
         ok = deprecated === undefined;
     } catch {}
@@ -90,16 +98,19 @@ export async function getRawPackageManifest({
     version,
     registry,
     mirrors,
+    cache,
 }: {
     name: string;
     version: string;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<PackageManifestRaw> {
     const packument = await getPackument({
         name,
         registry,
         mirrors,
+        cache,
     });
     return extractPackageManifest({ packument, version });
 }

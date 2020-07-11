@@ -1,4 +1,5 @@
 import { assertValidPackageName } from './assert-valid-package-name';
+import { Cache } from './cache';
 import { normalizeRepository } from './normalize-repository';
 import { Packument, PackumentRaw } from './packument';
 import { queryRegistry } from './query-registry';
@@ -7,12 +8,19 @@ export async function getPackument({
     name,
     registry,
     mirrors,
+    cache,
 }: {
     name: string;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<Packument> {
-    const rawPackument = await getRawPackument({ name, registry, mirrors });
+    const rawPackument = await getRawPackument({
+        name,
+        registry,
+        mirrors,
+        cache,
+    });
 
     const {
         repository: rawRepository,
@@ -30,13 +38,15 @@ export async function getRawPackument({
     name,
     registry,
     mirrors,
+    cache,
 }: {
     name: string;
     registry: string;
     mirrors: string[];
+    cache: Cache;
 }): Promise<PackumentRaw> {
     assertValidPackageName({ name });
 
     const endpoint = `/${name}`;
-    return queryRegistry({ endpoint, registry, mirrors });
+    return queryRegistry({ endpoint, registry, mirrors, cache });
 }

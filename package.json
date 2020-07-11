@@ -58,6 +58,8 @@
         "arrowParens": "always"
     },
     "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
         "debug": "^4.1.1",
         "git-url-parse": "^11.1.2",
         "got": "^11.4.0",
