@@ -1,8 +1,7 @@
-import urlJoin from 'proper-url-join';
 import { DownloadPeriod } from './download-period';
 import { downloadPeriodToString } from './download-period-to-string';
 import { DailyDownloads, Downloads } from './downloads';
-import { fetchJSON } from './fetch-json';
+import { queryAPI } from './queryAPI';
 
 export async function getRegistryDownloads({
     period,
@@ -13,8 +12,7 @@ export async function getRegistryDownloads({
 }): Promise<Downloads> {
     const periodString = downloadPeriodToString({ period });
     const endpoint = `/downloads/point/${periodString}`;
-    const url = urlJoin(api, endpoint);
-    return fetchJSON(url);
+    return queryAPI({ endpoint, api });
 }
 
 export async function getDailyRegistryDownloads({
@@ -26,6 +24,5 @@ export async function getDailyRegistryDownloads({
 }): Promise<DailyDownloads> {
     const periodString = downloadPeriodToString({ period });
     const endpoint = `/downloads/range/${periodString}`;
-    const url = urlJoin(api, endpoint);
-    return fetchJSON(url);
+    return queryAPI({ endpoint, api });
 }

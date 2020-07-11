@@ -26,6 +26,7 @@ import { PackageSearchResult } from './package-search-result';
 import { Packument, PackumentRaw } from './packument';
 import { QueryParameters } from './query-parameters';
 import { queryRegistry } from './query-registry';
+import { queryAPI } from './queryAPI';
 import { RegistryMetadata } from './registry-metadata';
 import { SearchOptions } from './search-options';
 import { searchPackages } from './search-packages';
@@ -197,7 +198,8 @@ export class Registry {
     /**
      * queryRegistry queries the {@link Registry.registry | registry}
      * or its {@link Registry.mirrors | mirrors} at the given endpoint
-     * with the given {@link QueryParameters}.
+     * with the given {@link QueryParameters} and returns an object
+     * parsed from JSON.
      *
      * @param endpoint - the endpoint to query
      * @param query - the query parameters (optional)
@@ -207,5 +209,17 @@ export class Registry {
         query?: QueryParameters
     ): Promise<T> {
         return queryRegistry({ ...this, endpoint, query });
+    }
+
+    /**
+     * queryAPI queries the {@link Registry.api | registry's API}
+     * at the given endpoint with the given {@link QueryParameters}
+     * and returns an object parsed from JSON.
+     *
+     * @param endpoint - the endpoint to query
+     * @param query - the query parameters (optional)
+     */
+    async queryAPI<T>(endpoint: string, query?: QueryParameters): Promise<T> {
+        return queryAPI({ ...this, endpoint, query });
     }
 }

@@ -1,9 +1,8 @@
-import urlJoin from 'proper-url-join';
 import { assertValidPackageName } from './assert-valid-package-name';
 import { DownloadPeriod } from './download-period';
 import { downloadPeriodToString } from './download-period-to-string';
 import { PackageDailyDownloads, PackageDownloads } from './downloads';
-import { fetchJSON } from './fetch-json';
+import { queryAPI } from './queryAPI';
 
 export async function getPackageDownloads({
     name,
@@ -18,8 +17,7 @@ export async function getPackageDownloads({
 
     const periodString = downloadPeriodToString({ period });
     const endpoint = `/downloads/point/${periodString}/${name}`;
-    const url = urlJoin(api, endpoint);
-    return fetchJSON(url);
+    return queryAPI({ endpoint, api });
 }
 
 export async function getDailyPackageDownloads({
@@ -35,6 +33,5 @@ export async function getDailyPackageDownloads({
 
     const periodString = downloadPeriodToString({ period });
     const endpoint = `/downloads/range/${periodString}/${name}`;
-    const url = urlJoin(api, endpoint);
-    return fetchJSON(url);
+    return queryAPI({ endpoint, api });
 }
