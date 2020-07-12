@@ -40,3 +40,6 @@ jobs:
               run: yarn build
               env:
                   CI: true
+
+            - name: CodeCov
+              uses: codecov/codecov-action@v1
