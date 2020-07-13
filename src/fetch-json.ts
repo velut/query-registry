@@ -2,6 +2,11 @@ import got from 'got';
 import { Cache } from './cache';
 import { log } from './log';
 
+const headers = {
+    'user-agent':
+        'query-registry (https://github.com/velut/node-query-registry)',
+};
+
 export async function fetchJSON<T>({
     urls,
     cache,
@@ -13,7 +18,7 @@ export async function fetchJSON<T>({
 
     for (const url of urls) {
         try {
-            const data = (await got(url, { cache }).json()) as T;
+            const data = (await got(url, { headers, cache }).json()) as T;
             log('fetchJSON: got data: %O', { url, data });
             return data;
         } catch (err) {
