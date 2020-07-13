@@ -46,6 +46,7 @@
     ],
     "husky": {
         "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
             "pre-commit": "yarn lint",
             "pre-push": "yarn pre-push"
         }
@@ -69,6 +70,8 @@
         "validate-npm-package-name": "^3.0.0"
     },
     "devDependencies": {
+        "@commitlint/cli": "9.1.1",
+        "@commitlint/config-conventional": "9.1.1",
         "@pollyjs/adapter-node-http": "5.0.0",
         "@pollyjs/core": "5.0.0",
         "@pollyjs/persister-fs": "5.0.0",
