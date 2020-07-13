@@ -2,7 +2,7 @@ import { Cache } from './cache';
 import { DownloadPeriod } from './download-period';
 import { downloadPeriodToString } from './download-period-to-string';
 import { DailyDownloads, Downloads } from './downloads';
-import { queryAPI } from './queryAPI';
+import { queryAPI } from './query';
 
 export async function getRegistryDownloads({
     period,

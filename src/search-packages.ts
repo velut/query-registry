@@ -1,6 +1,6 @@
 import { Cache } from './cache';
 import { QueryParameters } from './query-parameters';
-import { queryRegistry } from './query-registry';
+import { queryRegistry } from './query';
 import { SearchOptions } from './search-options';
 import { SearchResults } from './search-results';
 
