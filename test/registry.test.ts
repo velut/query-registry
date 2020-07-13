@@ -343,9 +343,14 @@ describe('Registry', () => {
             const registry = new Registry();
             const downloads = await registry.getPackageDownloads(
                 'short-time-ago',
-                new Date()
+                new Date('2020-01-01')
             );
-            expect(downloads).toMatchObject({ package: 'short-time-ago' });
+            expect(downloads).toMatchObject({
+                package: 'short-time-ago',
+                downloads: 0,
+                start: '2020-01-01',
+                end: '2020-01-01',
+            });
         });
 
         it('returns the PackageDownloads in a custom date range', async () => {
@@ -354,9 +359,14 @@ describe('Registry', () => {
             const registry = new Registry();
             const downloads = await registry.getPackageDownloads(
                 'short-time-ago',
-                { start: new Date(), end: new Date() }
+                { start: new Date('2020-01-01'), end: new Date('2020-02-02') }
             );
-            expect(downloads).toMatchObject({ package: 'short-time-ago' });
+            expect(downloads).toMatchObject({
+                package: 'short-time-ago',
+                downloads: 0,
+                start: '2020-01-01',
+                end: '2020-02-02',
+            });
         });
     });
 
