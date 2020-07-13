@@ -1,6 +1,5 @@
 /**
- * QueryParameters represents the query parameters
- * that can be used in URLs.
+ * QueryParameters represents the query parameters usable in URLs.
  */
 export type QueryParameters = Record<
     string,

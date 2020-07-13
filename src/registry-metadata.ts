@@ -2,6 +2,8 @@
  * RegistryMetadata contains information about the registry.
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get}
+ * @see {@link RegistryMetadataOther}
+ * @see {@link RegistryMetadataSizes}
  */
 export interface RegistryMetadata {
     /** Database name, usually `registry` */

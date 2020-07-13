@@ -24,15 +24,27 @@ export interface PackageSearchResult {
     /** Publishing timestamp for the latest version */
     readonly date: string;
 
-    /** Useful links */
+    /**
+     * Useful links
+     * @see {@link PackageLinks}
+     */
     readonly links: PackageLinks;
 
-    /** Package publisher */
+    /**
+     * Package publisher
+     * @see {@link Person}
+     */
     readonly publisher: Person;
 
-    /** Package author */
+    /**
+     * Package author
+     * @see {@link Person}
+     */
     readonly author?: Person;
 
-    /** Package maintainers */
+    /**
+     * Package maintainers
+     * @see {@link Person}
+     */
     readonly maintainers?: Person[];
 }

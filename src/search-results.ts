@@ -6,12 +6,15 @@ import { PackageSearchResult } from './package-search-result';
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get-v1search}
  */
 export interface SearchResults {
-    /** List of search results */
+    /**
+     * List of search results
+     * @see {@link SearchResult}
+     */
     readonly objects: SearchResult[];
 
     /**
-     * Total number of search results corresponding to a query.
-     * May be much higher than the number of objects returned.
+     * Total number of search results corresponding to a query;
+     * may be higher than the number of `objects`
      */
     readonly total: number;
 
@@ -23,16 +26,25 @@ export interface SearchResults {
  * SearchResult contains a single package result and its search score.
  */
 export interface SearchResult {
-    /** Abbreviated package metadata */
+    /**
+     * Abbreviated package metadata
+     * @see {@link PackageSearchResult}
+     */
     readonly package: PackageSearchResult;
 
-    /** Search score final and detailed values */
+    /**
+     * Search score final and detailed values
+     * @see {@link SearchScore}
+     */
     readonly score: SearchScore;
 
     /** Search score value; may be different from `score.final` */
     readonly searchScore: number;
 
-    /** Flag attributes */
+    /**
+     * Flag attributes
+     * @see {@link PackageFlags}
+     */
     readonly flags?: PackageFlags;
 }
 
@@ -43,7 +55,10 @@ export interface SearchScore {
     /** Final search score value, computed from the detailed scores */
     readonly final: number;
 
-    /** Detailed search score values */
+    /**
+     * Detailed search score values
+     * @see {@link SearchScoreDetail}
+     */
     readonly detail: SearchScoreDetail;
 }
 

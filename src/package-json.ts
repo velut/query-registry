@@ -27,19 +27,34 @@ export interface PackageJSON {
     /** Keywords describing the package */
     readonly keywords?: string[];
 
-    /** Package's author */
+    /**
+     * Package's author
+     * @see {@link Person}
+     */
     readonly author?: Person;
 
-    /** Package's maintainers */
+    /**
+     * Package's maintainers
+     * @see {@link Person}
+     */
     readonly maintainers?: Person[];
 
-    /** Package's contributors */
+    /**
+     * Package's contributors
+     * @see {@link Person}
+     */
     readonly contributors?: Person[];
 
-    /** Repository containing the package's source */
+    /**
+     * Repository containing the package's source
+     * @see {@link Repository}
+     */
     readonly repository?: Repository;
 
-    /** Bug tracker */
+    /**
+     * Bug tracker
+     * @see {@link BugTracker}
+     */
     readonly bugs?: BugTracker;
 
     /** Runtime dependencies */

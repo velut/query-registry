@@ -35,6 +35,9 @@ import { SearchResults } from './search-results';
 
 /**
  * RegistryConfig lists the options available to create a {@link Registry}.
+ *
+ * @remarks
+ * The properties of RegistryConfig are also properties of the {@link Registry}.
  */
 export interface RegistryConfig {
     /** Registry's URL */
@@ -55,7 +58,7 @@ export interface RegistryConfig {
 
 /**
  * Registry interface merges with the Registry class declaration
- * to provide the properties from {@link RegistryConfig}.
+ * to provide the properties from {@link RegistryConfig} as required.
  */
 export interface Registry extends Required<RegistryConfig> {}
 
@@ -154,7 +157,8 @@ export class Registry {
 
     /**
      * getPackageDownloads returns a {@link PackageDownloads} containing
-     * the number of downloads for a package in a given time period.
+     * the number of downloads for a package in a given
+     * {@link DownloadPeriod | time period}.
      *
      * @param name - the package's name
      * @param period - the time period to examine (default: `last-week`)
@@ -169,7 +173,7 @@ export class Registry {
     /**
      * getDailyPackageDownloads returns a {@link PackageDailyDownloads}
      * containing the number of downloads for a package
-     * for each day in a given time period.
+     * for each day in a given {@link DownloadPeriod | time period}.
      *
      * @param name - the package's name
      * @param period - the time period to examine (default: `last-week`)
@@ -183,7 +187,8 @@ export class Registry {
 
     /**
      * getRegistryDownloads returns a {@link Downloads} containing
-     * the number of downloads for all packages in a given time period.
+     * the number of downloads for all packages in a given
+     * {@link DownloadPeriod | time period}.
      *
      * @param period - the time period to examine (default: `last-week`)
      */
@@ -196,7 +201,7 @@ export class Registry {
     /**
      * getDailyRegistryDownloads returns a {@link DailyDownloads}
      * containing the number of downloads for all packages
-     * for each day in a given time period.
+     * for each day in a given {@link DownloadPeriod | time period}.
      *
      * @param period - the time period to examine (default: `last-week`)
      */
@@ -210,7 +215,7 @@ export class Registry {
      * getPackageSuggestions returns a list of {@link PackageSearchResult}
      * containing suggested packages that match the given query.
      *
-     * @param query - the query
+     * @param query - the text query
      */
     async getPackageSuggestions(query: string): Promise<PackageSearchResult[]> {
         return getPackageSuggestions({ ...this, query });
@@ -227,8 +232,8 @@ export class Registry {
     }
 
     /**
-     * queryRegistry queries the {@link Registry.registry | registry}
-     * or its {@link Registry.mirrors | mirrors} at the given endpoint
+     * queryRegistry queries the {@link RegistryConfig.registry | registry}
+     * or its {@link RegistryConfig.mirrors | mirrors} at the given endpoint
      * with the given {@link QueryParameters} and returns an object
      * parsed from JSON.
      *
@@ -243,7 +248,7 @@ export class Registry {
     }
 
     /**
-     * queryAPI queries the {@link Registry.api | registry's API}
+     * queryAPI queries the {@link RegistryConfig.api | registry's API}
      * at the given endpoint with the given {@link QueryParameters}
      * and returns an object parsed from JSON.
      *

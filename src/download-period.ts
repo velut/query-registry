@@ -4,8 +4,11 @@
  *
  * @remarks
  * The following time periods are supported:
- * - {@link DefaultDownloadPeriod} (e.g., `last-week`)
- * - a single day date
+ *
+ * - a {@link DefaultDownloadPeriod} (e.g., `last-week`)
+ *
+ * - a single day date (e.g., `new Date('2020-01-01')`)
+ *
  * - a {@link DateRange}
  *
  * @see {@link DefaultDownloadPeriod}
@@ -25,6 +28,14 @@ export type DefaultDownloadPeriod =
 
 /**
  * DateRange represents an inclusive time range.
+ *
+ * @example
+ * ```typescript
+ * {
+ *     start: new Date('2019-01-01'),
+ *     end: new Date('2020-01-01'),
+ * }
+ * ```
  */
 export interface DateRange {
     /** Start day date (inclusive) */

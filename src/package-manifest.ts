@@ -23,13 +23,19 @@ export interface PackageManifestRaw extends PackageJSON {
     /** Package version ID (e.g., `foo@1.0.0`, `@foo/bar@1.0.0`) */
     readonly _id: string;
 
-    /** Registry metadata */
+    /**
+     * Registry metadata
+     * @see {@link DistInfo}
+     */
     readonly dist: DistInfo;
 
     /** Commit hash at publishing time */
     readonly gitHead?: string;
 
-    /** User who published this package version */
+    /**
+     * User who published this package version
+     * @see {@link Person}
+     */
     readonly _npmUser: Person;
 
     /** Node version used when publishing */
@@ -38,7 +44,10 @@ export interface PackageManifestRaw extends PackageJSON {
     /** npm version used when publishing */
     readonly _npmVersion?: string;
 
-    /** Internal npm data */
+    /**
+     * Internal npm data
+     * @see {@link NpmOperationalInternal}
+     */
     readonly _npmOperationalInternal?: NpmOperationalInternal;
 
     /** True if the package has a shrinkwrap file */
@@ -56,7 +65,10 @@ export interface PackageManifestCustom {
     /** Publishing timestamp */
     readonly createdAt: string;
 
-    /** User who published this package version */
+    /**
+     * User who published this package version
+     * @see {@link Person}
+     */
     readonly publisher: Person;
 
     /** Name of the corresponding DefinitelyTyped package */

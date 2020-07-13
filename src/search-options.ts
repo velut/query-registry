@@ -9,16 +9,27 @@ export interface SearchOptions {
      *
      * @remarks
      * The following special attributes can be used to refine results:
+     *
      * - `author:<name>` show packages from the given author
+     *    (e.g., `author:someone`)
+     *
      * - `maintainer:<name>` show packages with the given maintainer
-     * - `keywords:<keyword list>` show packages matching the given keywords
-     *    where the separator `,` means `OR`, `+` means `AND`
-     *    and `,-` means `NOT`
-     * - `not:unstable` exclude unstable (`<1.0.0`) packages
+     *    (e.g., `author:someone`)
+     *
+     * - `keywords:<keyword list>` show packages matching the given keyword(s);
+     *    separators `,`, `+` and `,-` mean respectively `OR`, `AND` and `NOT`
+     *    (e.g., `keywords:foo,bar+baz,-quux`)
+     *
+     * - `not:unstable` exclude unstable (version `<1.0.0`) packages
+     *
      * - `not:insecure` exclude insecure packages
-     * - `is:unstable` include only unstable (`<1.0.0`) packages
+     *
+     * - `is:unstable` include only unstable (version `<1.0.0`) packages
+     *
      * - `is:insecure` include only insecure packages
+     *
      * - `boost-exact:<true/false>` boost packages with exact name match
+     *    (default: `true`)
      */
     readonly text?: string;
 

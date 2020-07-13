@@ -1,5 +1,5 @@
 /**
- * PackageLinks contains a collection of useful links
+ * PackageLinks contains a collection of useful links.
  */
 export interface PackageLinks {
     readonly npm?: string;

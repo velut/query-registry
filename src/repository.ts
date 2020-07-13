@@ -7,9 +7,12 @@ export interface Repository {
     /** Repository type (e.g., `git`) */
     readonly type: string;
 
-    /** Repository URL */
+    /** Repository's URL */
     readonly url: string;
 
-    /** Directory in the repository (e.g., in a monorepo) */
+    /**
+     * Specific directory in the repository
+     * (e.g., a directory in a monorepo)
+     */
     readonly directory?: string;
 }
