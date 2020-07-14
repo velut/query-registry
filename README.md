@@ -14,16 +14,16 @@ This package exports a class, `Registry`, which provides methods to query the [n
 
 -   Provides methods for common use cases:
     -   Registry metadata
-    -   Packuments
+    -   Packuments (package documents)
     -   Package manifests
     -   Download counts
     -   Searching packages
--   All response data is typed
+-   Typed response data
 -   Supports mirrors and custom npm-like registries
 -   Supports caching network requests
 -   Well documented and tested
 
-## Contents
+## Package Contents
 
 View package contents on [unpkg](https://unpkg.com/query-registry/).
 
@@ -66,7 +66,7 @@ const registry = new Registry({
     mirrors: ['https://mirror.example.com'],
     api: 'https://api.example.com',
     suggestionsAPI: 'https://suggestions.example.com',
-    cache: false,
+    cache: new Map(),
 });
 
 // Output: `https://registry.example.com`
@@ -91,11 +91,11 @@ import { Registry } from 'query-registry';
 
 Debug messages are available when the `DEBUG` environment variable is set to `query-registry`:
 
-```
+```bash
 DEBUG="query-registry"
 ```
 
-Test debug messages are also available by setting `DEBUG` to `query-registry-test`.
+Test debug messages are available when the `DEBUG` environment variable is set to `query-registry-test`.
 
 For more information, see the [debug package](https://www.npmjs.com/package/debug).
 
