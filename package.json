@@ -3,7 +3,7 @@
     "description": "Query the npm registry",
     "author": "velut",
     "license": "MIT",
-    "version": "0.2.0",
+    "version": "0.0.0-development",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "module": "dist/query-registry.esm.js",
@@ -24,7 +24,8 @@
         "test:ci": "tsdx test --runInBand --ci --coverage",
         "lint": "tsdx lint src test --fix",
         "prepare": "tsdx build --target node",
-        "pre-push": "yarn lint && yarn build && yarn test:cov"
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "semantic-release": "semantic-release"
     },
     "repository": {
         "type": "git",
@@ -89,7 +90,8 @@
         "setup-polly-jest": "0.9.0",
         "tsdx": "0.13.2",
         "tslib": "2.0.0",
-        "typescript": "3.9.6"
+        "typescript": "3.9.6",
+        "semantic-release": "17.1.1"
     },
     "peerDependencies": {}
 }
