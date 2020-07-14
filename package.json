@@ -22,7 +22,8 @@
         "test:cov": "tsdx test --runInBand --coverage",
         "test:watch": "tsdx test --runInBand --watchAll --coverage",
         "test:ci": "tsdx test --runInBand --ci --coverage",
-        "lint": "tsdx lint src test --fix",
+        "lint": "tsdx lint src test",
+        "lint:fix": "tsdx lint src test --fix",
         "prepare": "tsdx build --target node",
         "pre-push": "yarn lint && yarn build && yarn test:cov",
         "semantic-release": "semantic-release"
