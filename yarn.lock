@@ -8792,10 +8792,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
-setup-polly-jest@0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/setup-polly-jest/-/setup-polly-jest-0.9.0.tgz#c1bfbc926ae7b8187278f17360051f526f0be5f4"
-  integrity sha512-oELF5Ul50kvn3Mu//3iyeejcCeGVwQK0OchO6u/jSmC2vTbZ028NTJJtUc2XMA9NaJpQlBJnYnlwA6utPYDmwg==
+setup-polly-jest@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/setup-polly-jest/-/setup-polly-jest-0.9.1.tgz#2bf0437c4e5201071b9fdee14c61fb67f0b6e886"
+  integrity sha512-BbOxCvMnDHAPG9e3Qw3Ol4/ZWLwnDnhODqrfiIpAtF7Azu0O3PI4svZIfsh+/EV9xNj15LMkvchaWsDvF4A3hQ==
 
 sha@^3.0.0:
   version "3.0.0"
