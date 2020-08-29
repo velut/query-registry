@@ -3,6 +3,7 @@ import {
     fromDefinitelyTypedName,
     toDefinitelyTypedName,
 } from './definitely-typed-name';
+import { InvalidPackageVersionError } from './errors';
 import { getPackument } from './get-packument';
 import { log } from './log';
 import { normalizeRepository } from './normalize-repository';
@@ -130,7 +131,7 @@ function extractPackageManifest({
             name,
             version,
         });
-        throw new Error(
+        throw new InvalidPackageVersionError(
             `invalid package version: (name: ${name}, version: ${version})`
         );
     }

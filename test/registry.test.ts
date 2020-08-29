@@ -3,7 +3,12 @@ import { Polly } from '@pollyjs/core';
 import FSPersister from '@pollyjs/persister-fs';
 import * as path from 'path';
 import { setupPolly } from 'setup-polly-jest';
-import { Registry, RegistryConfig } from '../src';
+import {
+    InvalidPackageNameError,
+    InvalidPackageVersionError,
+    Registry,
+    RegistryConfig,
+} from '../src';
 import { expectRejection } from './test-helpers';
 
 Polly.register(NodeHttpAdapter);
@@ -65,12 +70,15 @@ describe('Registry', () => {
 
     describe('getPackageManifest', () => {
         it('rejects if the package name is invalid', async () => {
-            expect.assertions(1);
+            expect.assertions(2);
 
             const registry = new Registry();
-            await expectRejection(async () => {
+            try {
                 await registry.getPackageManifest('');
-            });
+            } catch (error) {
+                expect(error).toBeDefined();
+                expect(error).toBeInstanceOf(InvalidPackageNameError);
+            }
         });
 
         it('rejects if the package name is not found', async () => {
@@ -83,12 +91,15 @@ describe('Registry', () => {
         });
 
         it('rejects if the package version is invalid', async () => {
-            expect.assertions(1);
+            expect.assertions(2);
 
             const registry = new Registry();
-            await expectRejection(async () => {
+            try {
                 await registry.getPackageManifest('react', 'invalid');
-            });
+            } catch (error) {
+                expect(error).toBeDefined();
+                expect(error).toBeInstanceOf(InvalidPackageVersionError);
+            }
         });
 
         it('returns the PackageManifest (react@16.13.1)', async () => {

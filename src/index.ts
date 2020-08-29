@@ -65,6 +65,7 @@ export * from './dist-info';
 export * from './dist-tags';
 export * from './download-period';
 export * from './downloads';
+export * from './errors';
 export * from './npm-operational-internal';
 export * from './package-json';
 export * from './package-links';
