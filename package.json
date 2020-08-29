@@ -25,7 +25,7 @@
         "lint": "tsdx lint src test",
         "lint:fix": "tsdx lint src test --fix",
         "prepare": "tsdx build --target node",
-        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
         "semantic-release": "semantic-release"
     },
     "repository": {
