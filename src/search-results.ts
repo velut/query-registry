@@ -82,8 +82,8 @@ export interface SearchScoreDetail {
  */
 export interface PackageFlags {
     /** If true, package version is `<1.0.0` */
-    readonly unstable: boolean;
+    readonly unstable?: boolean;
 
     /** If true, package is insecure or has vulnerable dependencies */
-    readonly insecure: boolean;
+    readonly insecure?: boolean;
 }
