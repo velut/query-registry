@@ -28,9 +28,8 @@ export function fromDefinitelyTypedName({
         return undefined;
     }
 
-    const [scopeOrName, scopedName] = name
-        .replace(typesScope, '')
-        .split('__') as [string, string | undefined];
+    // ['foo', undefined] or ['@foo', 'bar']
+    const [scopeOrName, scopedName] = name.replace(typesScope, '').split('__');
 
     return scopedName ? `@${scopeOrName}/${scopedName}` : scopeOrName;
 }
