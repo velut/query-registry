@@ -1794,10 +1794,10 @@
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
 
-"@types/setup-polly-jest@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.0.tgz#0aa46e64df8e440b0ee1e70f9d105f8c3febf426"
-  integrity sha512-adGkOa52Z/zU6gZ6oU7iUyS6BOmueFUjPIXrW0INNZPZqB5p68Q6dukWVk2bqVXwDUy3Cd6B/aADSouClwwmew==
+"@types/setup-polly-jest@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.1.tgz#34548db71561e922b3d748ea89973868fc59b52c"
+  integrity sha512-YNyz4ANZOtmZxQMQOU2q43jjacEGKWywDTL8CkIBSosmRL7HEgoelcI3GyXSrmlennCCmvC/NEenHYFSqYMg+A==
   dependencies:
     "@types/pollyjs__core" "*"
 
