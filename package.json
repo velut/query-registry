@@ -80,7 +80,7 @@
         "@pollyjs/persister-fs": "5.0.0",
         "@types/debug": "4.1.5",
         "@types/git-url-parse": "9.0.0",
-        "@types/hosted-git-info": "3.0.0",
+        "@types/hosted-git-info": "3.0.1",
         "@types/pollyjs__adapter-node-http": "2.0.1",
         "@types/pollyjs__core": "4.3.1",
         "@types/pollyjs__persister-fs": "2.0.1",
