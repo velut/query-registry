@@ -1340,10 +1340,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@pollyjs/adapter-node-http@5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-5.0.2.tgz#98323d149b56e1952c5637a0cd55f2798bc1a98c"
-  integrity sha512-hpS7POhTo18jyeQxsu0OOJt4hCV9VD4FtHXkgb+YMbtqiENiGcEYj21S49xniW1tlxm0dsT08umtNlK/Qv5R8Q==
+"@pollyjs/adapter-node-http@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-5.1.0.tgz#5bad8e21aeae7fc630bc2aa92be1385e4a77b456"
+  integrity sha512-3G2oYzSrHOGkHhDST/s3zj0luR6nQUfuLkZekYpNBNTIDZIreaOlNiwG7DAqB1YboGxFeQWKTMoqYu33cK2qYA==
   dependencies:
     "@pollyjs/adapter" "^5.0.0"
     "@pollyjs/utils" "^5.0.0"
