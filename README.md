@@ -2,6 +2,7 @@
 
 [![Build status](https://img.shields.io/github/workflow/status/velut/node-query-registry/CI)](https://github.com/velut/node-query-registry/actions?query=workflow%3ACI)
 [![Coverage](https://img.shields.io/codecov/c/gh/velut/node-query-registry)](https://codecov.io/gh/velut/node-query-registry)
+[![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/query-registry)
 ![Language](https://img.shields.io/github/languages/top/velut/node-query-registry)
 [![Dependencies](https://img.shields.io/david/velut/node-query-registry)](https://david-dm.org/velut/node-query-registry)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/query-registry)](https://bundlephobia.com/result?p=query-registry)
