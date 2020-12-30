@@ -91,7 +91,7 @@
         "husky": "4.3.6",
         "nock": "13.0.5",
         "prettier": "2.2.1",
-        "semantic-release": "17.3.0",
+        "semantic-release": "17.3.1",
         "setup-polly-jest": "0.9.1",
         "tsdx": "0.14.1",
         "tslib": "2.0.3",
