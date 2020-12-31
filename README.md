@@ -96,7 +96,7 @@ Debug messages are available when the `DEBUG` environment variable is set to `qu
 DEBUG="query-registry"
 ```
 
-Test debug messages are available when the `DEBUG` environment variable is set to `query-registry-test`.
+Test debug messages are available when the `DEBUG` environment variable is set to `query-registry:test`.
 
 For more information, see the [debug package](https://www.npmjs.com/package/debug).
 
