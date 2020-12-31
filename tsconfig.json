@@ -17,6 +17,8 @@
         "moduleResolution": "node",
         "jsx": "react",
         "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
         "downlevelIteration": true
     }
 }
