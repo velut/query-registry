@@ -1,6 +1,6 @@
 import debug from 'debug';
 
-export const log = debug('query-registry-test');
+export const log = debug('query-registry:test');
 
 export async function expectRejection(fn: () => Promise<void>): Promise<void> {
     try {
