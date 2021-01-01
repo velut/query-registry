@@ -1,6 +1,7 @@
 /**
- * DistInfo contains information about the package
- * as distributed through the registry.
+ * `DistInfo` contains data describing the distributed package.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#dist}
  */
 export interface DistInfo {
     /** Tarball URL */
@@ -9,13 +10,13 @@ export interface DistInfo {
     /** SHA1 sum of the tarball */
     readonly shasum: string;
 
-    /** SHA512 sum of the tarball */
+    /** Usually, SHA512 sum of the tarball preceded by `sha512-` */
     readonly integrity?: string;
 
-    /** Number of files in the package */
+    /** Number of files in the tarball */
     readonly fileCount?: number;
 
-    /** Total package size in bytes */
+    /** Total size in bytes of the unpacked files in the tarball */
     readonly unpackedSize?: number;
 
     /** npm PGP signature */

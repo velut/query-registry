@@ -3,16 +3,23 @@ import { Person } from './person';
 import { Repository } from './repository';
 
 /**
- * PackageJSON contains package metadata.
+ * `PackageJSON` contains the package metadata
+ * usually found in `package.json` files.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the fields may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link https://docs.npmjs.com/cli/v6/configuring-npm/package-json}
  */
 export interface PackageJSON {
-    /** Package's name */
+    /** Package name */
     readonly name: string;
 
-    /** Version number */
+    /** Package version number */
     readonly version: string;
 
-    /** Package's description */
+    /** Package description */
     readonly description?: string;
 
     /** Homepage URL */
@@ -21,38 +28,43 @@ export interface PackageJSON {
     /** SPDX license identifier */
     readonly license?: string;
 
-    /** License text */
+    /** Text of the license */
     readonly licenseText?: string;
 
     /** Keywords describing the package */
     readonly keywords?: string[];
 
     /**
-     * Package's author
+     * Author of the package
+     *
      * @see {@link Person}
      */
     readonly author?: Person;
 
     /**
-     * Package's maintainers
+     * Maintainers of the package
+     *
      * @see {@link Person}
      */
     readonly maintainers?: Person[];
 
     /**
-     * Package's contributors
+     * Contributors to the package
+     *
      * @see {@link Person}
      */
     readonly contributors?: Person[];
 
     /**
      * Repository containing the package's source
+     *
      * @see {@link Repository}
      */
-    readonly repository?: Repository;
+    readonly repository?: string | Repository;
 
     /**
      * Bug tracker
+     *
      * @see {@link BugTracker}
      */
     readonly bugs?: BugTracker;
@@ -92,6 +104,13 @@ export interface PackageJSON {
 
     /** Type declarations file (alias) */
     readonly typings?: string;
+
+    /**
+     * Export map
+     *
+     * @see {@link https://nodejs.org/api/packages.html#packages_subpath_exports}
+     */
+    readonly exports?: string | Record<string, unknown>;
 
     /** File patterns included in the package */
     readonly files?: string[];

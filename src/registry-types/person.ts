@@ -1,5 +1,5 @@
 /**
- * Person represents a person associated to a package.
+ * `Person` represents a person associated to a package.
  */
 export interface Person {
     readonly name?: string;
