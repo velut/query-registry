@@ -1,5 +1,5 @@
 /**
- * RegistryMetadata contains information about the registry itself.
+ * `RegistryMetadata` contains information about the registry itself.
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#registry}
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get}
