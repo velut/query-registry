@@ -5,13 +5,13 @@ import { fetch } from './fetch';
 import { log } from './log';
 
 export async function fetchFromRegistry<T>({
+    endpoint,
     registry = npmRegistry,
     mirrors = npmRegistryMirrors,
-    endpoint,
 }: {
+    endpoint: string;
     registry?: string;
     mirrors?: readonly string[];
-    endpoint: string;
 }): Promise<T> {
     let firstError: FetchError | undefined;
     const urls = [registry, ...mirrors].map((host) => urlJoin(host, endpoint));
