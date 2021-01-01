@@ -18,3 +18,11 @@ export const cloudflareRegistry = 'https://registry.npmjs.cf';
  * @see {@link https://registry.yarnpkg.com}
  */
 export const yarnRegistry = 'https://registry.yarnpkg.com';
+
+/**
+ * Mirrors of the npm registry.
+ *
+ * @see {@link cloudflareRegistry}
+ * @see {@link yarnRegistry}
+ */
+export const npmRegistryMirrors = [cloudflareRegistry, yarnRegistry] as const;

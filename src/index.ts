@@ -60,7 +60,9 @@
  */
 
 export * from './cache';
+export * from './data/registries';
 export * from './download-period';
+export * from './endpoints/get-registry-metadata';
 export * from './errors';
 export * from './query-parameters';
 export * from './registry';
@@ -80,3 +82,4 @@ export * from './registry-types/repository';
 export * from './registry-types/search-options';
 export * from './registry-types/search-results';
 export * from './registry-types/timestamps-by-version';
+export * from './utils/errors';
