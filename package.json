@@ -17,6 +17,7 @@
     },
     "scripts": {
         "start": "tsdx watch --target node",
+        "build:check": "tsc --noEmit",
         "build": "tsc --noEmit && tsdx build --target node",
         "test": "tsdx test --runInBand",
         "test:cov": "tsdx test --runInBand --coverage",
