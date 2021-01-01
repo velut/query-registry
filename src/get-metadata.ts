@@ -1,6 +1,6 @@
 import { Cache } from './cache';
 import { queryRegistry } from './query';
-import { RegistryMetadata } from './registry-metadata';
+import { RegistryMetadata } from './registry-types/registry-metadata';
 
 export async function getMetadata({
     registry,

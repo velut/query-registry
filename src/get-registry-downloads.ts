@@ -1,8 +1,8 @@
 import { Cache } from './cache';
 import { DownloadPeriod } from './download-period';
 import { downloadPeriodToString } from './download-period-to-string';
-import { DailyDownloads, Downloads } from './downloads';
 import { queryAPI } from './query';
+import { DailyDownloads, Downloads } from './registry-types/downloads';
 
 export async function getRegistryDownloads({
     period,

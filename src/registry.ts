@@ -1,11 +1,5 @@
 import { Cache } from './cache';
 import { DownloadPeriod } from './download-period';
-import {
-    DailyDownloads,
-    Downloads,
-    PackageDailyDownloads,
-    PackageDownloads,
-} from './downloads';
 import { getMetadata } from './get-metadata';
 import {
     getDailyPackageDownloads,
@@ -22,15 +16,24 @@ import {
     getRegistryDownloads,
 } from './get-registry-downloads';
 import { log } from './log';
-import { PackageManifest, PackageManifestRaw } from './package-manifest';
-import { PackageSearchResult } from './package-search-result';
-import { Packument, PackumentRaw } from './packument';
 import { queryAPI, queryRegistry } from './query';
 import { QueryParameters } from './query-parameters';
-import { RegistryMetadata } from './registry-metadata';
-import { SearchOptions } from './search-options';
+import {
+    DailyDownloads,
+    Downloads,
+    PackageDailyDownloads,
+    PackageDownloads,
+} from './registry-types/downloads';
+import {
+    PackageManifest,
+    PackageManifestRaw,
+} from './registry-types/package-manifest';
+import { PackageSearchResult } from './registry-types/package-search-result';
+import { Packument, PackumentRaw } from './registry-types/packument';
+import { RegistryMetadata } from './registry-types/registry-metadata';
+import { SearchOptions } from './registry-types/search-options';
+import { SearchResults } from './registry-types/search-results';
 import { searchPackages } from './search-packages';
-import { SearchResults } from './search-results';
 
 /**
  * RegistryConfig lists the options available to create a {@link Registry}.

@@ -1,8 +1,8 @@
 import { Cache } from './cache';
-import { QueryParameters } from './query-parameters';
 import { queryRegistry } from './query';
-import { SearchOptions } from './search-options';
-import { SearchResults } from './search-results';
+import { QueryParameters } from './query-parameters';
+import { SearchOptions } from './registry-types/search-options';
+import { SearchResults } from './registry-types/search-results';
 
 export async function searchPackages({
     searchOptions,

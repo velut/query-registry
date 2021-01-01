@@ -2,8 +2,11 @@ import { assertValidPackageName } from './assert-valid-package-name';
 import { Cache } from './cache';
 import { DownloadPeriod } from './download-period';
 import { downloadPeriodToString } from './download-period-to-string';
-import { PackageDailyDownloads, PackageDownloads } from './downloads';
 import { queryAPI } from './query';
+import {
+    PackageDailyDownloads,
+    PackageDownloads,
+} from './registry-types/downloads';
 
 export async function getPackageDownloads({
     name,

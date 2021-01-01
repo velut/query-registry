@@ -7,8 +7,11 @@ import { InvalidPackageVersionError } from './errors';
 import { getPackument } from './get-packument';
 import { log } from './log';
 import { normalizeRepository } from './normalize-repository';
-import { PackageManifest, PackageManifestRaw } from './package-manifest';
-import { Packument } from './packument';
+import {
+    PackageManifest,
+    PackageManifestRaw,
+} from './registry-types/package-manifest';
+import { Packument } from './registry-types/packument';
 
 export async function getPackageManifest({
     name,

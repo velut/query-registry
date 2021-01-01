@@ -1,8 +1,8 @@
 import { assertValidPackageName } from './assert-valid-package-name';
 import { Cache } from './cache';
 import { normalizeRepository } from './normalize-repository';
-import { Packument, PackumentRaw } from './packument';
 import { queryRegistry } from './query';
+import { Packument, PackumentRaw } from './registry-types/packument';
 
 export async function getPackument({
     name,

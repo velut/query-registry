@@ -1,6 +1,6 @@
 import gitUrlParse from 'git-url-parse';
 import HostedGitInfo from 'hosted-git-info';
-import { Repository } from './repository';
+import { Repository } from './registry-types/repository';
 
 export function normalizeRepository({
     rawRepository,
