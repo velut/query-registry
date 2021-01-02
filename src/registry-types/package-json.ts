@@ -8,7 +8,7 @@ import { Repository } from './repository';
  *
  * @remarks
  * For some packages, especially legacy ones,
- * the fields may be mistyped due to incorrect data present on the registry.
+ * the properties may be mistyped due to incorrect data present on the registry.
  *
  * @see {@link https://docs.npmjs.com/cli/v6/configuring-npm/package-json}
  */

@@ -9,7 +9,7 @@ import { VersionsToTimestamps } from './versions-to-timestamps';
  *
  * @remarks
  * For some packages, especially legacy ones,
- * the fields may be mistyped due to incorrect data present on the registry.
+ * the properties may be mistyped due to incorrect data present on the registry.
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#getpackage}
  * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#full-metadata-format}
@@ -57,7 +57,7 @@ export interface RawPackument extends HoistedPackageJSON {
  *
  * @remarks
  * For some packages, especially legacy ones,
- * the fields may be mistyped due to incorrect data present on the registry.
+ * the properties may be mistyped due to incorrect data present on the registry.
  *
  * @see {@link PackageJSON}
  * @see {@link RawPackument}

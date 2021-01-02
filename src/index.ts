@@ -62,6 +62,7 @@
 export * from './cache';
 export * from './data/registries';
 export * from './download-period';
+export * from './endpoints/get-packument';
 export * from './endpoints/get-raw-package-manifest';
 export * from './endpoints/get-raw-packument';
 export * from './endpoints/get-registry-metadata';
@@ -71,6 +72,7 @@ export * from './registry-types/bug-tracker';
 export * from './registry-types/dist-info';
 export * from './registry-types/dist-tags';
 export * from './registry-types/downloads';
+export * from './registry-types/git-repository';
 export * from './registry-types/npm-operational-internal';
 export * from './registry-types/package-json';
 export * from './registry-types/package-links';

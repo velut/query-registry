@@ -9,7 +9,7 @@ import { Person } from './person';
  *
  * @remarks
  * For some packages, especially legacy ones,
- * the fields may be mistyped due to incorrect data present on the registry.
+ * the properties may be mistyped due to incorrect data present on the registry.
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#getpackageversion}
  * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-version-object}

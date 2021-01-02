@@ -1,66 +1,44 @@
 import { DistTags } from './dist-tags';
-import { PackageJSON } from './package-json';
-import { PackageManifestRaw } from './package-manifest';
-import { TimestampsByVersion } from './timestamps-by-version';
+import { GitRepository } from './git-repository';
+import { RawPackument } from './raw-packument';
 
 /**
- * A Packument contains all the metadata associated to a package.
+ * `Packument` represents a packument (package document)
+ * containing all the data about a package.
  *
- * @see {@link PackageJSON}
- * @see {@link PackumentRaw}
- * @see {@link PackumentCustom}
- * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#package | npm registry API}
- */
-export interface Packument extends PackumentRaw, PackumentCustom {}
-
-/**
- * PackumentRaw contains packument metadata as returned by the registry.
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
  *
- * @see {@link PackageJSON}
+ * @see {@link RawPackument}
  */
-export interface PackumentRaw extends PackageJSON {
-    /** Unique package name (e.g., `foo`, `@foo/bar`) */
-    readonly _id: string;
-
-    /** Latest revision ID in CouchDB */
-    readonly _rev: string;
-
+export interface Packument extends RawPackument {
     /**
-     * Distribution tags
-     * @see {@link DistTags}
+     * Unique package name (for example, `foo` or `@bar/baz`;
+     * alias to `_id`)
      */
-    readonly 'dist-tags': DistTags;
-
-    /**
-     * Package publishing timestamps by version number
-     * @see {@link TimestampsByVersion}
-     */
-    readonly time: TimestampsByVersion;
-
-    /** Names of the npm users who starred the package */
-    readonly users?: Record<string, boolean>;
-
-    /**
-     * Package manifests by version number
-     * @see {@link PackageManifestRaw}
-     */
-    readonly versions: Record<string, PackageManifestRaw>;
-}
-
-/**
- * PackumentCustom contains custom attributes
- * added by this library to a packument.
- */
-export interface PackumentCustom {
-    /** Unique package name (e.g., `foo`, `@foo/bar`) */
     readonly id: string;
 
     /**
-     * Distribution tags
+     * Mapping of distribution tags to version numbers
+     * (alias to `dist-tags`)
+     *
      * @see {@link DistTags}
      */
     readonly distTags: DistTags;
 
-    /** Version number to publishing timestamps */
-    readonly versionsTimestamps: Record<string, string>;
+    /**
+     * Mapping of version numbers to publishing timestamps
+     * without the `created` or `modified` properties
+     * present in the `time` property
+     *
+     * @see {@link VersionsToTimestamps}
+     */
+    readonly versionsToTimestamps: Record<string, string>;
+
+    /** Normalized license */
+    readonly license?: string;
+
+    /** Normalized git repository */
+    readonly gitRepository?: GitRepository;
 }
