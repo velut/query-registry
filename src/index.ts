@@ -62,6 +62,7 @@
 export * from './cache';
 export * from './data/registries';
 export * from './download-period';
+export * from './endpoints/get-raw-package-manifest';
 export * from './endpoints/get-raw-packument';
 export * from './endpoints/get-registry-metadata';
 export * from './query-parameters';
