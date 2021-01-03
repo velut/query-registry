@@ -3,11 +3,11 @@ export function normalizeRawLicense({
 }: {
     rawLicense?: any;
 }): string | undefined {
-    if (typeof rawLicense !== 'string') {
+    if (!rawLicense) {
         return undefined;
     }
 
-    if (!rawLicense) {
+    if (typeof rawLicense !== 'string') {
         return undefined;
     }
 

@@ -8,28 +8,17 @@ export function normalizeRawRepository({
 }: {
     rawRepository?: any;
 }): GitRepository | undefined {
-    if (typeof rawRepository === 'string') {
-        return normalizeStringRepository({ rawRepository });
-    }
-
     if (isRepository(rawRepository)) {
         return normalizeRepository({ rawRepository });
     }
 
-    return undefined;
-}
-
-function normalizeStringRepository({
-    rawRepository,
-}: {
-    rawRepository: string;
-}): GitRepository | undefined {
-    const repository = getRepository({ url: rawRepository });
-    if (!repository) {
-        return undefined;
+    if (typeof rawRepository === 'string') {
+        return normalizeRepository({
+            rawRepository: { url: rawRepository },
+        });
     }
 
-    return { ...repository, type: 'git' };
+    return undefined;
 }
 
 function isRepository(rawRepository: any): rawRepository is Repository {
