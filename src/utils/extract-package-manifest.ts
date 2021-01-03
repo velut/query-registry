@@ -1,5 +1,5 @@
-import { RawPackageManifest } from '../registry-types/raw-package-manifest';
-import { RawPackument } from '../registry-types/raw-packument';
+import { RawPackageManifest } from '../types/raw-package-manifest';
+import { RawPackument } from '../types/raw-packument';
 import { InvalidPackageVersionError } from './errors';
 import { log } from './log';
 

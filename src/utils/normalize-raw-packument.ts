@@ -1,5 +1,5 @@
-import { Packument } from '../registry-types/packument';
-import { RawPackument } from '../registry-types/raw-packument';
+import { Packument } from '../types/packument';
+import { RawPackument } from '../types/raw-packument';
 import { normalizeRawLicense } from './normalize-raw-license';
 import { normalizeRawRepository } from './normalize-raw-repository';
 

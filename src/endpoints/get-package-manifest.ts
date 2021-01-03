@@ -1,4 +1,4 @@
-import { PackageManifest } from '../registry-types/package-manifest';
+import { PackageManifest } from '../types/package-manifest';
 import { extractRawPackageManifest } from '../utils/extract-package-manifest';
 import { normalizeRawPackageManifest } from '../utils/normalize-raw-package-manifest';
 import { getRawPackument } from './get-raw-packument';

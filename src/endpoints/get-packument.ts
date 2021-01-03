@@ -1,4 +1,4 @@
-import { Packument } from '../registry-types/packument';
+import { Packument } from '../types/packument';
 import { normalizeRawPackument } from '../utils/normalize-raw-packument';
 import { getRawPackument } from './get-raw-packument';
 

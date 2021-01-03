@@ -1,5 +1,5 @@
 import { getRawPackageManifest } from '../endpoints/get-raw-package-manifest';
-import { RawPackageManifest } from '../registry-types/raw-package-manifest';
+import { RawPackageManifest } from '../types/raw-package-manifest';
 
 export async function getDefinitelyTypedName({
     rawPackageManifest,

@@ -1,4 +1,4 @@
-import { RawPackument } from '../registry-types/raw-packument';
+import { RawPackument } from '../types/raw-packument';
 import { assertValidPackageName } from '../utils/assert-valid-package-name';
 import { fetchFromRegistry } from '../utils/fetch-from-registry';
 

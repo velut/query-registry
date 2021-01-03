@@ -1,6 +1,6 @@
-import { PackageManifest } from '../registry-types/package-manifest';
-import { RawPackageManifest } from '../registry-types/raw-package-manifest';
-import { RawPackument } from '../registry-types/raw-packument';
+import { PackageManifest } from '../types/package-manifest';
+import { RawPackageManifest } from '../types/raw-package-manifest';
+import { RawPackument } from '../types/raw-packument';
 import { getDefinitelyTypedName } from './get-definitely-typed-name';
 import { getUntypedName } from './get-untyped-name';
 import { normalizeRawLicense } from './normalize-raw-license';
