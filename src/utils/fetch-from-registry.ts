@@ -26,9 +26,9 @@ export async function fetchFromRegistry<T>({
     }
 
     log('fetchFromRegistry: cannot retrieve data from registry: %O', {
+        endpoint,
         registry,
         mirrors,
-        endpoint,
     });
     throw firstError;
 }

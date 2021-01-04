@@ -5,7 +5,8 @@
  */
 export const npmRegistry = 'https://registry.npmjs.org';
 
-/** npm registry mirror by Cloudflare
+/**
+ * npm registry mirror by Cloudflare
  *
  * @see {@link https://npmjs.cf}
  * @see {@link https://registry.npmjs.cf}
@@ -26,3 +27,10 @@ export const yarnRegistry = 'https://registry.yarnpkg.com';
  * @see {@link yarnRegistry}
  */
 export const npmRegistryMirrors = [cloudflareRegistry, yarnRegistry] as const;
+
+/**
+ * Downloads API for the npm registry
+ *
+ * @see {@link https://api.npmjs.org}
+ */
+export const npmRegistryDownloadsAPI = 'https://api.npmjs.org';

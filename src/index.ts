@@ -60,6 +60,7 @@
  */
 
 export * from './data/registries';
+export * from './endpoints/get-package-downloads';
 export * from './endpoints/get-package-manifest';
 export * from './endpoints/get-packument';
 export * from './endpoints/get-raw-package-manifest';
@@ -68,6 +69,7 @@ export * from './endpoints/get-registry-metadata';
 export * from './types/bug-tracker';
 export * from './types/dist-info';
 export * from './types/dist-tags';
+export * from './types/download-period';
 export * from './types/downloads';
 export * from './types/git-repository';
 export * from './types/npm-operational-internal';

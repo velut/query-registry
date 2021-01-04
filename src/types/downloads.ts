@@ -1,63 +1,64 @@
 /**
- * PackageDownloads contains the number of downloads for a package
+ * `PackageDownloads` lists the number of downloads for a package
  * in a given time period.
  *
- * @see {@link Downloads}
+ * @see {@link RegistryDownloads}
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
  */
-export interface PackageDownloads extends Downloads {
+export interface PackageDownloads extends RegistryDownloads {
     /** Package name */
     readonly package: string;
 }
 
 /**
- * Downloads contains the number of downloads in a given time period.
+ * `RegistryDownloads` lists the number of downloads for the registry
+ *  in a given time period.
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
  */
-export interface Downloads {
+export interface RegistryDownloads {
     /** Total number of downloads */
     readonly downloads: number;
 
-    /** Start day date (inclusive) */
+    /** Date of the first day (inclusive) */
     readonly start: string;
 
-    /** End day date (inclusive) */
+    /** Date of the last day (inclusive) */
     readonly end: string;
 }
 
 /**
- * PackageDailyDownloads contains the number of downloads for a package
+ * `DailyPackageDownloads` lists the number of downloads for a package
  * for each day in a given time period.
  *
  * @see {@link DailyDownloads}
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
  */
-export interface PackageDailyDownloads extends DailyDownloads {
+export interface DailyPackageDownloads extends DailyRegistryDownloads {
     /** Package name */
     readonly package: string;
 }
 
 /**
- * DailyDownloads contains the number of downloads
+ * `DailyRegistryDownloads` lists the number of downloads for the registry
  * for each day in a given time period.
  *
  * @see {@link DownloadsPerDay}
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
  */
-export interface DailyDownloads {
+export interface DailyRegistryDownloads {
     /** Download counts per day */
     readonly downloads: DownloadsPerDay[];
 
-    /** Start day date (inclusive) */
+    /** Date of the first day (inclusive) */
     readonly start: string;
 
-    /** End day date (inclusive) */
+    /** Date of the last day (inclusive) */
     readonly end: string;
 }
 
 /**
- * DownloadsPerDay contains the number of downloads in a given day.
+ * `DownloadsPerDay` lists the number of downloads in a given day.
  */
 export interface DownloadsPerDay {
     /** Total number of downloads in the day */
