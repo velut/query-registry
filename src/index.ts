@@ -61,6 +61,7 @@
 
 export * from './data/registries';
 export * from './endpoints/get-daily-package-downloads';
+export * from './endpoints/get-daily-registry-downloads';
 export * from './endpoints/get-package-downloads';
 export * from './endpoints/get-package-manifest';
 export * from './endpoints/get-packument';
