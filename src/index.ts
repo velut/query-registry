@@ -66,6 +66,7 @@ export * from './endpoints/get-package-manifest';
 export * from './endpoints/get-packument';
 export * from './endpoints/get-raw-package-manifest';
 export * from './endpoints/get-raw-packument';
+export * from './endpoints/get-registry-downloads';
 export * from './endpoints/get-registry-metadata';
 export * from './types/bug-tracker';
 export * from './types/dist-info';
