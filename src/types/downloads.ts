@@ -31,7 +31,7 @@ export interface RegistryDownloads {
  * `DailyPackageDownloads` lists the number of downloads for a package
  * for each day in a given time period.
  *
- * @see {@link DailyDownloads}
+ * @see {@link DailyRegistryDownloads}
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
  */
 export interface DailyPackageDownloads extends DailyRegistryDownloads {
