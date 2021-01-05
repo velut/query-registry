@@ -44,6 +44,7 @@ import { getRawPackument } from './get-raw-packument';
  * ```
  *
  * @see {@link PackageManifest}
+ * @see {@link RawPackageManifest}
  * @see {@link npmRegistry}
  * @see {@link npmRegistryMirrors}
  */
