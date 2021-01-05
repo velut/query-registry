@@ -8,7 +8,7 @@ export async function getDefinitelyTypedName({
 }: {
     rawPackageManifest: RawPackageManifest;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<string | undefined> {
     const { name, types, typings } = rawPackageManifest;
     const definitelyTypedName = toDefinitelyTypedName({ name });

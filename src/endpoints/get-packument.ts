@@ -36,7 +36,7 @@ export async function getPackument({
 }: {
     name: string;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<Packument> {
     const rawPackument = await getRawPackument({ name, registry, mirrors });
     return normalizeRawPackument({ rawPackument });

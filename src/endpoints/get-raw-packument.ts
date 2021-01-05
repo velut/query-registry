@@ -37,7 +37,7 @@ export async function getRawPackument({
 }: {
     name: string;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<RawPackument> {
     assertValidPackageName({ name });
 

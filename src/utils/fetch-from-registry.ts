@@ -14,7 +14,7 @@ export async function fetchFromRegistry<T>({
     endpoint: string;
     query?: QueryParameters;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<T> {
     let firstError: FetchError | undefined;
     const urls = [registry, ...mirrors].map((host) =>

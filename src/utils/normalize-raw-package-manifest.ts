@@ -15,7 +15,7 @@ export async function normalizeRawPackageManifest({
     rawPackageManifest: RawPackageManifest;
     rawPackument: RawPackument;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<PackageManifest> {
     const {
         _id: id,

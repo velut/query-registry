@@ -26,7 +26,7 @@ export const yarnRegistry = 'https://registry.yarnpkg.com';
  * @see {@link cloudflareRegistry}
  * @see {@link yarnRegistry}
  */
-export const npmRegistryMirrors = [cloudflareRegistry, yarnRegistry] as const;
+export const npmRegistryMirrors = [cloudflareRegistry, yarnRegistry];
 
 /**
  * Downloads API for the npm registry

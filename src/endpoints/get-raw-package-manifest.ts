@@ -57,7 +57,7 @@ export async function getRawPackageManifest({
     name: string;
     version?: string;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<RawPackageManifest> {
     const rawPackument = await getRawPackument({
         name,

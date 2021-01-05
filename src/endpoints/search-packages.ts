@@ -36,7 +36,7 @@ export async function searchPackages({
 }: {
     query: SearchCriteria;
     registry?: string;
-    mirrors?: readonly string[];
+    mirrors?: string[];
 }): Promise<SearchResults> {
     const endpoint = '/-/v1/search';
     const query = normalizeRawSearchCriteria({ rawSearchCriteria });
