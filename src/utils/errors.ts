@@ -1,7 +1,7 @@
 import makeError, { BaseError } from 'make-error';
 
 /**
- * FetchError represents an error that happened when fetching a URL.
+ * `FetchError` represents an error that happened when fetching a URL.
  *
  * The `instanceof` operator can be used to check for this error.
  */
@@ -20,7 +20,7 @@ export class FetchError extends BaseError {
 }
 
 /**
- * InvalidPackageNameError is thrown when the name of a package
+ * `InvalidPackageNameError` is thrown when the name of a package
  * is not valid according to the npm registry naming rules.
  *
  * The `instanceof` operator can be used to check for this error.
@@ -30,7 +30,7 @@ export class FetchError extends BaseError {
 export const InvalidPackageNameError = makeError('InvalidPackageNameError');
 
 /**
- * InvalidPackageVersionError is thrown when a package's version does not exist.
+ * `InvalidPackageVersionError` is thrown when a package's version does not exist.
  *
  * The `instanceof` operator can be used to check for this error.
  */
