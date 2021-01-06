@@ -39,6 +39,24 @@ describe('getRawPackument', () => {
         expect(packument).toHaveProperty('versions');
     });
 
+    it('returns the uncached packument for `short-time-ago`', async () => {
+        expect.assertions(6);
+
+        const packument = await getRawPackument({
+            name: 'short-time-ago',
+            cached: false,
+        });
+        expect(packument).toMatchObject({
+            _id: 'short-time-ago',
+            name: 'short-time-ago',
+        });
+        expect(packument).toHaveProperty('_rev');
+        expect(packument).toHaveProperty('dist-tags');
+        expect(packument).toHaveProperty('dist-tags.latest');
+        expect(packument).toHaveProperty('time');
+        expect(packument).toHaveProperty('versions');
+    });
+
     it('throws on invalid package names', async () => {
         expect.assertions(2);
 

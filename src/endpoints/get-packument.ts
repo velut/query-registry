@@ -9,6 +9,7 @@ import { getRawPackument } from './get-raw-packument';
  * @param name - package name
  * @param registry - URL of the registry (default: npm registry)
  * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: `true`)
  *
  * @example
  * Get the packument for package `query-registry` from the npm registry:
@@ -33,11 +34,18 @@ export async function getPackument({
     name,
     registry,
     mirrors,
+    cached,
 }: {
     name: string;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<Packument> {
-    const rawPackument = await getRawPackument({ name, registry, mirrors });
+    const rawPackument = await getRawPackument({
+        name,
+        registry,
+        mirrors,
+        cached,
+    });
     return normalizeRawPackument({ rawPackument });
 }

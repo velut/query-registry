@@ -9,6 +9,7 @@ import { normalizeRawSearchCriteria } from '../utils/normalize-raw-search-criter
  * @param query - one or more search criteria
  * @param registry - URL of the registry (default: npm registry)
  * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: `true`)
  *
  * @example
  * Get the search results for text query `query-registry` from the npm registry:
@@ -33,12 +34,14 @@ export async function searchPackages({
     query: rawSearchCriteria,
     registry,
     mirrors,
+    cached,
 }: {
     query: SearchCriteria;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<SearchResults> {
     const endpoint = '/-/v1/search';
     const query = normalizeRawSearchCriteria({ rawSearchCriteria });
-    return fetchFromRegistry({ endpoint, query, registry, mirrors });
+    return fetchFromRegistry({ endpoint, query, registry, mirrors, cached });
 }

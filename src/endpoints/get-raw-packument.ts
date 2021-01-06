@@ -11,6 +11,7 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  * @param name - package name
  * @param registry - URL of the registry (default: npm registry)
  * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: `true`)
  *
  * @example
  * Get the packument for package `query-registry` from the npm registry:
@@ -34,13 +35,15 @@ export async function getRawPackument({
     name,
     registry,
     mirrors,
+    cached,
 }: {
     name: string;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<RawPackument> {
     assertValidPackageName({ name });
 
     const endpoint = `/${name}`;
-    return fetchFromRegistry({ endpoint, registry, mirrors });
+    return fetchFromRegistry({ endpoint, registry, mirrors, cached });
 }

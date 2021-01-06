@@ -5,6 +5,7 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  * `getRegistryMetadata` returns the metadata describing the registry itself.
  *
  * @param registry - URL of the registry (default: npm registry)
+ * @param cached - accept cached responses (default: `true`)
  *
  * @example
  * Get the metadata for the npm registry:
@@ -36,9 +37,11 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  */
 export async function getRegistryMetadata({
     registry,
+    cached,
 }: {
     registry?: string;
+    cached?: boolean;
 } = {}): Promise<RegistryMetadata> {
     const endpoint = '/';
-    return fetchFromRegistry({ registry, mirrors: [], endpoint });
+    return fetchFromRegistry({ registry, mirrors: [], endpoint, cached });
 }

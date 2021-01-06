@@ -5,10 +5,12 @@ export async function getDefinitelyTypedName({
     rawPackageManifest,
     registry,
     mirrors,
+    cached,
 }: {
     rawPackageManifest: RawPackageManifest;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<string | undefined> {
     const { name, types, typings } = rawPackageManifest;
     const definitelyTypedName = toDefinitelyTypedName({ name });
@@ -23,6 +25,7 @@ export async function getDefinitelyTypedName({
             name: definitelyTypedName,
             registry,
             mirrors,
+            cached,
         });
         ok = deprecated === undefined;
     } catch {}

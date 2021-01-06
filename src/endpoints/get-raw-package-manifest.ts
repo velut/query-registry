@@ -12,6 +12,7 @@ import { getRawPackument } from './get-raw-packument';
  * @param version - package version (default: `latest`)
  * @param registry - URL of the registry (default: npm registry)
  * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: `true`)
  *
  * @example
  * Get the latest manifest for package `query-registry` from the npm registry:
@@ -53,16 +54,19 @@ export async function getRawPackageManifest({
     version,
     registry,
     mirrors,
+    cached,
 }: {
     name: string;
     version?: string;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<RawPackageManifest> {
     const rawPackument = await getRawPackument({
         name,
         registry,
         mirrors,
+        cached,
     });
 
     return extractRawPackageManifest({ rawPackument, version });

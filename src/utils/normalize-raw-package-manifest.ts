@@ -11,11 +11,13 @@ export async function normalizeRawPackageManifest({
     rawPackument,
     registry,
     mirrors,
+    cached,
 }: {
     rawPackageManifest: RawPackageManifest;
     rawPackument: RawPackument;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<PackageManifest> {
     const {
         _id: id,
@@ -32,6 +34,7 @@ export async function normalizeRawPackageManifest({
         rawPackageManifest,
         registry,
         mirrors,
+        cached,
     });
     const untypedName = getUntypedName({ name });
 

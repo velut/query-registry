@@ -10,11 +10,13 @@ export async function fetchFromRegistry<T>({
     query,
     registry = npmRegistry,
     mirrors = npmRegistryMirrors,
+    cached,
 }: {
     endpoint: string;
     query?: QueryParameters;
     registry?: string;
     mirrors?: string[];
+    cached?: boolean;
 }): Promise<T> {
     let firstError: FetchError | undefined;
     const urls = [registry, ...mirrors].map((host) =>
@@ -23,7 +25,7 @@ export async function fetchFromRegistry<T>({
 
     for (const url of urls) {
         try {
-            const json = await fetch({ url });
+            const json = await fetch({ url, cached });
             return json as T;
         } catch (err) {
             firstError = firstError ?? err;
