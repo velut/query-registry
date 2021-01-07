@@ -33,7 +33,8 @@
         "lint:fix": "tsdx lint src test --fix",
         "prepare": "tsdx build --target node",
         "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release",
+        "release": "np"
     },
     "repository": {
         "type": "git",
@@ -70,6 +71,9 @@
         "trailingComma": "es5",
         "arrowParens": "always"
     },
+    "np": {
+        "branch": "main"
+    },
     "dependencies": {
         "@types/cacheable-request": "^6.0.1",
         "cacheable-request": "^7.0.1",
@@ -101,6 +105,7 @@
         "eslint-plugin-prettier": "3.3.0",
         "husky": "4.3.6",
         "nock": "13.0.5",
+        "np": "7.2.0",
         "prettier": "2.2.1",
         "semantic-release": "17.3.1",
         "setup-polly-jest": "0.9.1",
