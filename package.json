@@ -4,9 +4,15 @@
     "version": "1.2.0",
     "author": "velut",
     "license": "MIT",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts",
-    "module": "dist/index.esm.js",
+    "source": "./src/index.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.esm.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "require": "./dist/index.js",
+        "import": "./dist/index.esm.js",
+        "default": "./dist/index.js"
+    },
     "sideEffects": false,
     "files": [
         "dist",
