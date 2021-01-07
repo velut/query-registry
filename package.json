@@ -99,15 +99,15 @@
         "@types/proper-url-join": "2.0.0",
         "@types/setup-polly-jest": "0.5.1",
         "@types/validate-npm-package-name": "3.0.2",
-        "eslint-plugin-prettier": "3.3.0",
-        "husky": "4.3.6",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.7",
         "nock": "13.0.5",
         "np": "7.2.0",
         "prettier": "2.2.1",
         "semantic-release": "17.3.1",
         "setup-polly-jest": "0.9.1",
         "tsdx": "0.14.1",
-        "tslib": "2.0.3",
+        "tslib": "2.1.0",
         "typescript": "4.1.3"
     },
     "peerDependencies": {}
