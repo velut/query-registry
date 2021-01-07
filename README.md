@@ -9,26 +9,28 @@
 [![npm](https://img.shields.io/npm/v/query-registry)](https://www.npmjs.com/package/query-registry)
 [![License](https://img.shields.io/github/license/velut/node-query-registry)](https://github.com/velut/node-query-registry/blob/master/LICENSE)
 
-This package exports a class, `Registry`, which provides methods to query the [npm registry](https://www.npmjs.com) or a custom npm-like registry.
+This package exports several functions to query the [npm registry](https://www.npmjs.com) (or one of its mirrors) through one of its [endpoints](https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md)
 
 ## Features
 
--   Provides methods for common use cases:
-    -   Registry metadata
-    -   Packuments (package documents)
-    -   Package manifests
-    -   Download counts
-    -   Searching packages
--   Typed response data
--   Supports mirrors and custom npm-like registries
+-   Provides functions to:
+    -   Get registry metadata
+    -   Get packuments (package documents)
+    -   Get package manifests
+    -   Get download counts
+    -   Search packages
+-   Typed responses
+-   Supports mirrors of the npm registry
 -   Supports caching network requests
 -   Well documented and tested
 
-## Package Contents
+## API & Package Contents
 
-View package contents on [unpkg](https://unpkg.com/query-registry/).
+Explore the API on [**jsDocs.io**](https://www.jsdocs.io/package/query-registry).
 
-View repository on [GitHub](https://github.com/velut/node-query-registry).
+View package contents on [**unpkg**](https://unpkg.com/query-registry/).
+
+View repository on [**GitHub**](https://github.com/velut/node-query-registry).
 
 ## Install
 
@@ -46,45 +48,60 @@ yarn add query-registry
 
 ## Usage
 
-Create the default registry backed by npm:
+Get the metadata for the npm registry:
 
 ```typescript
-import { Registry } from 'query-registry';
-
-const registry = new Registry();
-
-// Output: `https://registry.npmjs.org`
-console.log(registry.registry);
-```
-
-Create a custom registry:
-
-```typescript
-import { Registry } from 'query-registry';
-
-const registry = new Registry({
-    registry: 'https://registry.example.com',
-    mirrors: ['https://mirror.example.com'],
-    api: 'https://api.example.com',
-    suggestionsAPI: 'https://suggestions.example.com',
-    cache: new Map(),
-});
-
-// Output: `https://registry.example.com`
-console.log(registry.registry);
-```
-
-Get the package manifest for `query-registry`'s latest version:
-
-```typescript
-import { Registry } from 'query-registry';
+import { getRegistryMetadata } from 'query-registry';
 
 (async () => {
-    const registry = new Registry();
-    const manifest = await registry.getPackageManifest('query-registry');
+    const metadata = await getRegistryMetadata();
 
-    // Output: `query-registry`
+    // Output: 'registry'
+    console.log(metadata.db_name);
+})();
+```
+
+Get the latest manifest for package `query-registry` from the npm registry:
+
+```typescript
+import { getPackageManifest } from 'query-registry';
+
+(async () => {
+    const manifest = await getPackageManifest({ name: 'query-registry' });
+
+    // Output: 'query-registry'
     console.log(manifest.name);
+})();
+```
+
+Get the weekly downloads for package `query-registry` from the npm registry:
+
+```typescript
+import { getPackageDownloads } from 'query-registry';
+
+(async () => {
+    const downloads = await getPackageDownloads({ name: 'query-registry' });
+
+    // Output: 'query-registry'
+    console.log(downloads.package);
+
+    // Output: 'number'
+    console.log(typeof downloads.downloads);
+})();
+```
+
+Get the search results for text query `query-registry` from the npm registry:
+
+```typescript
+import { searchPackages } from 'query-registry';
+
+(async () => {
+    const results = await searchPackages({
+        query: { text: 'query-registry' },
+    });
+
+    // Output: 'query-registry'
+    console.log(results.objects[0].package.name);
 })();
 ```
 
@@ -96,14 +113,12 @@ Debug messages are available when the `DEBUG` environment variable is set to `qu
 DEBUG="query-registry"
 ```
 
-Test debug messages are available when the `DEBUG` environment variable is set to `query-registry:test`.
-
 For more information, see the [debug package](https://www.npmjs.com/package/debug).
 
 ## License
 
 MIT License
 
-Copyright (c) 2020 Edoardo Scibona
+Copyright (c) 2021 Edoardo Scibona
 
 See LICENSE file.
