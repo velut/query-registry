@@ -19,7 +19,7 @@ export function extractRawPackageManifest({
             version,
         });
         throw new InvalidPackageVersionError(
-            `invalid package version: ${name}@${version}`
+            `invalid package version: '${name}@${version}'`
         );
     }
 

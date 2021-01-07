@@ -8,7 +8,7 @@ export function assertValidPackageName({ name }: { name: string }): void {
     );
     const valid = validForOldPackages || validForNewPackages;
     if (!valid) {
-        log('assertValidPackageName: invalid package name: %s', name);
-        throw new InvalidPackageNameError(`invalid package name: ${name}`);
+        log('assertValidPackageName: invalid package name: %O', { name });
+        throw new InvalidPackageNameError(`invalid package name: '${name}'`);
     }
 }

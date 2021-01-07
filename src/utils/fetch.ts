@@ -18,7 +18,11 @@ export async function fetch({
 
     const response = await unfetch(url);
     if (!response.ok) {
-        log('fetch: request failed: %O', { url, response });
+        log('fetch: request failed: %O', {
+            url,
+            status: response.statusText,
+            response,
+        });
         throw new FetchError(url, response);
     }
 
@@ -27,5 +31,6 @@ export async function fetch({
         cache.set(url, json);
     }
 
+    log('fetch: returning fresh response: %O', { url, json });
     return json;
 }
