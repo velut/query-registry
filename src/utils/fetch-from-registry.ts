@@ -28,15 +28,30 @@ export async function fetchFromRegistry<T>({
             const json = await fetch({ url, cached });
             return json as T;
         } catch (err) {
+            // Do not search for a resource on mirrors
+            // if it's not available on the main registry
+            if (err instanceof FetchError && err.response.status === 404) {
+                log('fetchFromRegistry: resource unavailable: %O', {
+                    endpoint,
+                    query,
+                    registry,
+                    mirrors,
+                });
+                throw err;
+            }
+
             firstError = firstError ?? err;
         }
     }
 
-    log('fetchFromRegistry: cannot retrieve data from registry: %O', {
-        endpoint,
-        query,
-        registry,
-        mirrors,
-    });
+    log(
+        'fetchFromRegistry: cannot retrieve data from registry or mirrors: %O',
+        {
+            endpoint,
+            query,
+            registry,
+            mirrors,
+        }
+    );
     throw firstError;
 }
