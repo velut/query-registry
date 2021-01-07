@@ -1,9 +1,9 @@
 {
     "name": "query-registry",
-    "description": "Query the npm registry",
+    "description": "Query the npm registry for packuments, manifests, packages and download counts",
+    "version": "1.2.0",
     "author": "velut",
     "license": "MIT",
-    "version": "0.0.0-development",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "module": "dist/query-registry.esm.js",
@@ -31,7 +31,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/velut/node-query-registry"
+        "url": "https://github.com/velut/node-query-registry.git"
     },
     "bugs": {
         "url": "https://github.com/velut/node-query-registry/issues"
@@ -44,6 +44,8 @@
         "api",
         "packument",
         "package",
+        "downloads",
+        "search",
         "manifest",
         "typescript"
     ],
