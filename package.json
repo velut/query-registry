@@ -104,7 +104,7 @@
         "nock": "13.0.5",
         "np": "7.2.0",
         "prettier": "2.2.1",
-        "semantic-release": "17.3.3",
+        "semantic-release": "17.3.4",
         "setup-polly-jest": "0.9.1",
         "tsdx": "0.14.1",
         "tslib": "2.1.0",
