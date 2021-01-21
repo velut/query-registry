@@ -101,7 +101,7 @@
         "@types/validate-npm-package-name": "3.0.2",
         "eslint-plugin-prettier": "3.3.1",
         "husky": "4.3.8",
-        "nock": "13.0.5",
+        "nock": "13.0.6",
         "np": "7.2.0",
         "prettier": "2.2.1",
         "semantic-release": "17.3.4",
