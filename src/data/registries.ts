@@ -8,6 +8,10 @@ export const npmRegistry = 'https://registry.npmjs.org';
 /**
  * npm registry mirror by Cloudflare
  *
+ * @remarks
+ * This registry has CORS enabled and can be used to retrieve
+ * package manifests and packuments in the browser.
+ *
  * @see {@link https://npmjs.cf}
  * @see {@link https://registry.npmjs.cf}
  */
