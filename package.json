@@ -9,9 +9,12 @@
     "module": "./dist/index.esm.js",
     "types": "./dist/index.d.ts",
     "exports": {
-        "require": "./dist/index.js",
-        "import": "./dist/index.esm.js",
-        "default": "./dist/index.js"
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.esm.js",
+            "default": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
     },
     "sideEffects": false,
     "files": [
