@@ -16,4 +16,46 @@ describe('normalizeRawRepository', () => {
         });
         expect((gitRepository as GitRepository).directory).toEqual('first-dir');
     });
+
+    it('supports npm-style shortcuts', () => {
+        expect(
+            normalizeRawRepository({
+                rawRepository: 'user/repo',
+            })
+        ).toStrictEqual({
+            type: 'git',
+            url: 'https://github.com/user/repo',
+            directory: undefined,
+        });
+
+        expect(
+            normalizeRawRepository({
+                rawRepository: 'github:user/repo',
+            })
+        ).toStrictEqual({
+            type: 'git',
+            url: 'https://github.com/user/repo',
+            directory: undefined,
+        });
+
+        expect(
+            normalizeRawRepository({
+                rawRepository: 'gitlab:user/repo',
+            })
+        ).toStrictEqual({
+            type: 'git',
+            url: 'https://gitlab.com/user/repo',
+            directory: undefined,
+        });
+
+        expect(
+            normalizeRawRepository({
+                rawRepository: 'bitbucket:user/repo',
+            })
+        ).toStrictEqual({
+            type: 'git',
+            url: 'https://bitbucket.org/user/repo',
+            directory: undefined,
+        });
+    });
 });

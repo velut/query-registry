@@ -5,7 +5,7 @@
  * @see {@link Repository}
  */
 export interface GitRepository {
-    /** Repository type, always 'git' */
+    /** Repository type, always `git` */
     readonly type: 'git';
 
     /** Repository URL */
