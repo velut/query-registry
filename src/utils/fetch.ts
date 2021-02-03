@@ -1,7 +1,11 @@
 import unfetch from 'isomorphic-unfetch';
-import { cache } from './cache';
+import lru from 'tiny-lru';
 import { FetchError } from './errors';
 import { log } from './log';
+
+const maxItems = 250;
+const fiveMinutesTTL = 5 * 60 * 1000;
+const cache = lru(maxItems, fiveMinutesTTL);
 
 export async function fetch({
     url,
@@ -10,8 +14,8 @@ export async function fetch({
     url: string;
     cached?: boolean;
 }): Promise<any> {
-    const cachedJSON = cache.get(url);
-    if (cached && cachedJSON) {
+    if (cached && cache.has(url)) {
+        const cachedJSON = cache.get(url);
         log('fetch: returning cached response: %O', { url, cachedJSON });
         return cachedJSON;
     }
