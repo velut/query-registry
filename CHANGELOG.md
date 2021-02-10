@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   Separate functions to query the npm registry
+
     -   getDailyPackageDownloads()
     -   getDailyRegistryDownloads()
     -   getPackageDownloads()
@@ -20,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     -   getRegistryDownloads()
     -   getRegistryMetadata()
     -   searchPackages()
+
+-   Now the package can be used in a browser environment
+
+-   BREAKING CHANGE: Added export map to `package.json`
 
 ### Changed
 
