@@ -14,8 +14,8 @@ export async function fetch({
     url: string;
     cached?: boolean;
 }): Promise<any> {
-    if (cached && cache.has(url)) {
-        const cachedJSON = cache.get(url);
+    const cachedJSON = cache.get(url);
+    if (cached && cachedJSON) {
         log('fetch: returning cached response: %O', { url, cachedJSON });
         return cachedJSON;
     }
