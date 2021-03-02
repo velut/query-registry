@@ -12,7 +12,7 @@ export function extractRawPackageManifest({
 }): RawPackageManifest {
     const { name, 'dist-tags': distTags, versions } = rawPackument;
     const versionNumber = distTags[version] ?? version;
-    const manifest = versions[versionNumber] as RawPackageManifest | undefined;
+    const manifest = versions[versionNumber];
     if (!manifest) {
         log('getPackageManifest: invalid package version: %O', {
             name,
