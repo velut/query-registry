@@ -11,12 +11,17 @@ export function normalizeRawPackument({
     const {
         _id: id,
         'dist-tags': distTags,
-        time: { created: _, modified: __, ...versionsToTimestamps },
+        time,
         license: rawLicense,
         repository: rawRepository,
     } = rawPackument;
     const license = normalizeRawLicense({ rawLicense });
     const gitRepository = normalizeRawRepository({ rawRepository });
+    const versionsToTimestamps = Object.fromEntries(
+        Object.entries(time).filter(([key]) => {
+            return !['created', 'modified'].includes(key);
+        })
+    );
 
     return {
         ...rawPackument,
