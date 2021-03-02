@@ -27,7 +27,7 @@ export async function normalizeRawPackageManifest({
         repository: rawRepository,
         _npmUser: publisher,
     } = rawPackageManifest;
-    const createdAt = rawPackument.time[versionNumber];
+    const createdAt = rawPackument.time[versionNumber]!;
     const license = normalizeRawLicense({ rawLicense });
     const gitRepository = normalizeRawRepository({ rawRepository });
     const definitelyTypedName = await getDefinitelyTypedName({

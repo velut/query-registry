@@ -39,7 +39,7 @@ describe('searchPackages', () => {
             query: { text: 'short-time-ago' },
         });
         expect(results).toHaveProperty('objects');
-        expect(results.objects[0].package.name).toEqual('short-time-ago');
+        expect(results.objects[0]!.package.name).toEqual('short-time-ago');
         expect(results).toHaveProperty('total');
         expect(typeof results.total).toEqual('number');
         expect(results).toHaveProperty('time');

@@ -32,8 +32,8 @@ describe('getDailyPackageDownloads', () => {
         });
         expect(downloads).toHaveProperty('package', 'short-time-ago');
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -49,8 +49,8 @@ describe('getDailyPackageDownloads', () => {
         });
         expect(downloads).toHaveProperty('package', 'short-time-ago');
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -66,8 +66,8 @@ describe('getDailyPackageDownloads', () => {
         });
         expect(downloads).toHaveProperty('package', 'short-time-ago');
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -86,8 +86,8 @@ describe('getDailyPackageDownloads', () => {
         });
         expect(downloads).toHaveProperty('package', 'short-time-ago');
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');

@@ -18,5 +18,5 @@ export function normalizeRawDownloadPeriod({
 }
 
 function getDay(date: Date): string {
-    return date.toISOString().split('T')[0];
+    return date.toISOString().split('T')[0]!;
 }

@@ -25,8 +25,8 @@ describe('getDailyRegistryDownloads', () => {
 
         const downloads = await getDailyRegistryDownloads();
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -40,8 +40,8 @@ describe('getDailyRegistryDownloads', () => {
             period: 'last-month',
         });
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -55,8 +55,8 @@ describe('getDailyRegistryDownloads', () => {
             period: new Date('2021-01-01'),
         });
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
@@ -73,8 +73,8 @@ describe('getDailyRegistryDownloads', () => {
             },
         });
         expect(downloads).toHaveProperty('downloads');
-        expect(typeof downloads.downloads[0].downloads).toEqual('number');
-        expect(typeof downloads.downloads[0].day).toEqual('string');
+        expect(typeof downloads.downloads[0]!.downloads).toEqual('number');
+        expect(typeof downloads.downloads[0]!.day).toEqual('string');
         expect(downloads).toHaveProperty('start');
         expect(downloads).toHaveProperty('end');
         expect(typeof downloads.start).toEqual('string');
