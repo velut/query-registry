@@ -9,7 +9,7 @@
 [![npm](https://img.shields.io/npm/v/query-registry)](https://www.npmjs.com/package/query-registry)
 [![License](https://img.shields.io/github/license/velut/node-query-registry)](https://github.com/velut/node-query-registry/blob/master/LICENSE)
 
-This package exports several functions to query the [npm registry](https://www.npmjs.com) (or one of its mirrors) through one of its [endpoints](https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md)
+This package exports several functions to query the [npm registry](https://www.npmjs.com) (or one of its mirrors) through one of its [endpoints](https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md).
 
 ## Features
 
@@ -17,20 +17,20 @@ This package exports several functions to query the [npm registry](https://www.n
     -   Get registry metadata
     -   Get packuments (package documents)
     -   Get package manifests
-    -   Get download counts
+    -   Get download counts (packages and registry)
     -   Search packages
--   Typed responses
+-   Usable in the browser
+-   Fully typed API and response data
 -   Supports mirrors of the npm registry
 -   Supports caching network requests
 -   Well documented and tested
 
-## API & Package Contents
+## API & Package Info
 
-Explore the API on [**jsDocs.io**](https://www.jsdocs.io/package/query-registry).
-
-View package contents on [**unpkg**](https://unpkg.com/query-registry/).
-
-View repository on [**GitHub**](https://github.com/velut/node-query-registry).
+-   Explore the API on [**jsDocs.io**](https://www.jsdocs.io/package/query-registry)
+-   View package contents on [**unpkg**](https://unpkg.com/query-registry/)
+-   View repository on [**GitHub**](https://github.com/velut/node-query-registry)
+-   Read the changelog on [**GitHub**](https://github.com/velut/node-query-registry/blob/main/CHANGELOG.md)
 
 ## Install
 
@@ -46,7 +46,7 @@ Using `yarn`:
 yarn add query-registry
 ```
 
-## Usage
+## Usage Examples
 
 Get the metadata for the npm registry:
 
