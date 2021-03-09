@@ -7,10 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+-   None
+
+## [2.0.0] - 2021-03-09
+
 ### Added
 
--   Separate functions to query the npm registry
-
+-   Export named functions to query the npm registry
     -   getDailyPackageDownloads()
     -   getDailyRegistryDownloads()
     -   getPackageDownloads()
@@ -21,18 +24,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     -   getRegistryDownloads()
     -   getRegistryMetadata()
     -   searchPackages()
-
--   Now the package can be used in a browser environment
-
+-   This package can now be used in a browser environment
 -   BREAKING CHANGE: Added export map to `package.json`
 
 ### Changed
 
--   Updated response types
--   Updated normalization of custom properties on `Packument` and `PackageManifest`
+-   Updated typing of registry responses
+-   Updated normalization of custom properties on `Packument` and `PackageManifest` interfaces
+-   Updated and reduced number of dependencies
 
 ### Removed
 
--   BREAKING CHANGE: Removed `Registry` class; use exported functions instead
+-   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
-[unreleased]: https://github.com/velut/node-query-registry/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/velut/node-query-registry/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v.2.0.0
