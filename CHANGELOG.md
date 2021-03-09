@@ -38,4 +38,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
 [unreleased]: https://github.com/velut/node-query-registry/compare/v2.0.0...HEAD
-[2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v.2.0.0
+[2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v2.0.0
