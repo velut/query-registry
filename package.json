@@ -34,7 +34,7 @@
         "test:ci": "tsdx test --runInBand --ci --coverage",
         "lint": "tsdx lint src test",
         "lint:fix": "tsdx lint src test --fix",
-        "prepare": "tsdx build --target node",
+        "prepare": "husky install && tsdx build --target node",
         "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
         "release": "np"
     },
@@ -58,13 +58,6 @@
         "manifest",
         "typescript"
     ],
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-commit": "yarn lint",
-            "pre-push": "yarn pre-push"
-        }
-    },
     "prettier": {
         "printWidth": 80,
         "tabWidth": 4,
@@ -98,7 +91,7 @@
         "@types/setup-polly-jest": "0.5.1",
         "@types/validate-npm-package-name": "3.0.2",
         "eslint-plugin-prettier": "3.3.1",
-        "husky": "4.3.8",
+        "husky": "6.0.0",
         "nock": "13.0.11",
         "np": "7.4.0",
         "prettier": "2.2.1",
