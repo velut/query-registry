@@ -7,7 +7,7 @@
 [![Dependencies](https://img.shields.io/david/velut/node-query-registry)](https://david-dm.org/velut/node-query-registry)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/query-registry)](https://bundlephobia.com/result?p=query-registry)
 [![npm](https://img.shields.io/npm/v/query-registry)](https://www.npmjs.com/package/query-registry)
-[![License](https://img.shields.io/github/license/velut/node-query-registry)](https://github.com/velut/node-query-registry/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/velut/node-query-registry)](https://github.com/velut/node-query-registry/blob/main/LICENSE)
 
 This package exports several functions to query the [npm registry](https://www.npmjs.com) (or one of its mirrors) through one of its [endpoints](https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md).
 
