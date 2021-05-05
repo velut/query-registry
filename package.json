@@ -2,12 +2,13 @@
     "name": "query-registry",
     "description": "Query the npm registry for packuments, manifests, packages and download counts",
     "version": "2.0.0",
-    "author": "velut",
+    "author": "Edoardo Scibona (velut)",
     "license": "MIT",
     "source": "./src/index.ts",
     "main": "./dist/index.js",
     "module": "./dist/index.esm.js",
     "types": "./dist/index.d.ts",
+    "sideEffects": false,
     "exports": {
         ".": {
             "require": "./dist/index.js",
@@ -16,10 +17,9 @@
         },
         "./package.json": "./package.json"
     },
-    "sideEffects": false,
     "files": [
-        "dist",
-        "src"
+        "src",
+        "dist"
     ],
     "engines": {
         "node": ">=12"
@@ -91,6 +91,5 @@
         "tsdx": "0.14.1",
         "tslib": "2.2.0",
         "typescript": "4.2.4"
-    },
-    "peerDependencies": {}
+    }
 }
