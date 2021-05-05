@@ -4,48 +4,33 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
+        strategy:
+            matrix:
+                node: ['12.x', '14.x']
+
         steps:
-            - name: Begin CI...
+            - name: Checkout repository
               uses: actions/checkout@v2
 
-            - name: Use Node 12
+            - name: Use Node ${{ matrix.node }}
               uses: actions/setup-node@v2.1.5
               with:
-                  node-version: 12.x
+                  node-version: ${{ matrix.node }}
 
-            - name: Use cached node_modules
-              uses: actions/cache@v2.1.5
-              with:
-                  path: node_modules
-                  key: nodeModules-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      nodeModules-
+            - name: Install dependencies and build (with cache)
+              uses: bahmutov/npm-install@v1
 
             - name: Install dependencies
               run: yarn install --frozen-lockfile
-              env:
-                  CI: true
 
             - name: Lint
               run: yarn lint
-              env:
-                  CI: true
 
             - name: Test
               run: yarn test:ci
-              env:
-                  CI: true
 
             - name: Build
               run: yarn build
-              env:
-                  CI: true
 
             - name: CodeCov
               uses: codecov/codecov-action@v1
-
-            # - name: Release
-            #   run: yarn semantic-release
-            #   env:
-            #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
