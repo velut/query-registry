@@ -58,9 +58,6 @@
         "manifest",
         "typescript"
     ],
-    "np": {
-        "branch": "main"
-    },
     "dependencies": {
         "debug": "^4.1.1",
         "git-url-parse": "^11.4.4",
