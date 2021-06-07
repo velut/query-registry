@@ -1245,12 +1245,12 @@
   dependencies:
     "@pollyjs/utils" "^5.0.0"
 
-"@pollyjs/core@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-5.1.0.tgz#6a4233ffe27dcd789bd6f31265451b35c24e090f"
-  integrity sha512-t29uNtc8Jq9MX3md+QgsfDtmsad9zLfKWiH33JdJjSilETWGPoq90xuMmWSXoXQCfIEVhIQ9rPEIvcmFpyqGCg==
+"@pollyjs/core@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-5.1.1.tgz#f9595083a95f22e37f610bfacaa38299bffae6f3"
+  integrity sha512-MggjU1GT0SP8bPRoqvL2QZ0GhJABwGb1E21+Duv08v8HqGtesN0XEZBZxVsXhspqwAKI6oOrB7767a2TOptT1g==
   dependencies:
-    "@pollyjs/utils" "^5.0.0"
+    "@pollyjs/utils" "^5.1.1"
     "@sindresorhus/fnv1a" "^1.2.0"
     blueimp-md5 "^2.10.0"
     fast-json-stable-stringify "^2.0.0"
@@ -1293,10 +1293,10 @@
     set-cookie-parser "^2.3.5"
     utf8-byte-length "^1.0.4"
 
-"@pollyjs/utils@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-5.0.0.tgz#c001f93865db82780dd17642c54e3919260c0034"
-  integrity sha512-zXoR13NGR1fVoUAcKR9/8AYCXZsMkG5EdvTZbR1nk5hCYJN1AR73HAKXMPsk/2vkLnBr6LWoAr3f9LjwqJOehQ==
+"@pollyjs/utils@^5.0.0", "@pollyjs/utils@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-5.1.1.tgz#3dd3c7df82ef5df3fdb6db7be14f097c44b2001c"
+  integrity sha512-Kzx4NkFJI2p2N82mCtpGZk82ArDCJUnRHPZ1mTEIkRSOwtz30N729+dbI39aS6H5oGcD8x/KAx3ZTAj3EQLxaQ==
   dependencies:
     qs "^6.7.0"
     url-parse "^1.4.7"
