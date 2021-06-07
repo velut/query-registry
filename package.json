@@ -71,7 +71,7 @@
         "@commitlint/config-conventional": "12.1.4",
         "@pollyjs/adapter-node-http": "5.1.0",
         "@pollyjs/core": "5.1.1",
-        "@pollyjs/persister-fs": "5.0.0",
+        "@pollyjs/persister-fs": "5.1.1",
         "@types/debug": "4.1.5",
         "@types/git-url-parse": "9.0.0",
         "@types/pollyjs__adapter-node-http": "2.0.1",
