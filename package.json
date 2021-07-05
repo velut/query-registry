@@ -72,7 +72,7 @@
         "@pollyjs/adapter-node-http": "5.1.1",
         "@pollyjs/core": "5.1.1",
         "@pollyjs/persister-fs": "5.1.1",
-        "@types/debug": "4.1.5",
+        "@types/debug": "4.1.6",
         "@types/git-url-parse": "9.0.0",
         "@types/pollyjs__adapter-node-http": "2.0.1",
         "@types/pollyjs__core": "4.3.2",
