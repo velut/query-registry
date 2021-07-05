@@ -80,7 +80,7 @@
         "@types/setup-polly-jest": "0.5.1",
         "@types/validate-npm-package-name": "3.0.2",
         "eslint-plugin-prettier": "3.4.0",
-        "husky": "6.0.0",
+        "husky": "7.0.0",
         "nock": "13.1.0",
         "np": "7.5.0",
         "prettier": "2.3.2",
