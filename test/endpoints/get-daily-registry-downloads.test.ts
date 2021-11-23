@@ -1,17 +1,16 @@
+/** @jest-environment setup-polly-jest/jest-environment-node */
+// See https://netflix.github.io/pollyjs/#/test-frameworks/jest-jasmine?id=supported-test-runners
+
 import NodeHttpAdapter from '@pollyjs/adapter-node-http';
-import { Polly } from '@pollyjs/core';
 import FSPersister from '@pollyjs/persister-fs';
 import * as path from 'path';
 import { setupPolly } from 'setup-polly-jest';
 import { getDailyRegistryDownloads } from '../../src';
 
-Polly.register(NodeHttpAdapter);
-Polly.register(FSPersister);
-
 describe('getDailyRegistryDownloads', () => {
     setupPolly({
-        adapters: ['node-http'],
-        persister: 'fs',
+        adapters: [NodeHttpAdapter],
+        persister: FSPersister,
         persisterOptions: {
             fs: {
                 recordingsDir: path.resolve(__dirname, '../../__recordings__'),
