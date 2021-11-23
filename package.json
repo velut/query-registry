@@ -67,7 +67,7 @@
         "validate-npm-package-name": "^3.0.0"
     },
     "devDependencies": {
-        "@commitlint/cli": "14.1.0",
+        "@commitlint/cli": "15.0.0",
         "@commitlint/config-conventional": "15.0.0",
         "@pollyjs/adapter-node-http": "5.1.1",
         "@pollyjs/core": "5.1.1",
