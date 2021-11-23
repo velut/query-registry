@@ -4,7 +4,6 @@
 [![Coverage](https://img.shields.io/codecov/c/gh/velut/node-query-registry)](https://codecov.io/gh/velut/node-query-registry)
 [![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/query-registry)
 ![Language](https://img.shields.io/github/languages/top/velut/node-query-registry)
-[![Dependencies](https://img.shields.io/david/velut/node-query-registry)](https://david-dm.org/velut/node-query-registry)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/query-registry)](https://bundlephobia.com/result?p=query-registry)
 [![npm](https://img.shields.io/npm/v/query-registry)](https://www.npmjs.com/package/query-registry)
 [![License](https://img.shields.io/github/license/velut/node-query-registry)](https://github.com/velut/node-query-registry/blob/main/LICENSE)
@@ -27,7 +26,7 @@ This package exports several functions to query the [npm registry](https://www.n
 
 ## API & Package Info
 
--   Explore the API on [**jsDocs.io**](https://www.jsdocs.io/package/query-registry)
+-   [**Explore the API on jsDocs.io**](https://www.jsdocs.io/package/query-registry)
 -   View package contents on [**unpkg**](https://unpkg.com/query-registry/)
 -   View repository on [**GitHub**](https://github.com/velut/node-query-registry)
 -   Read the changelog on [**GitHub**](https://github.com/velut/node-query-registry/blob/main/CHANGELOG.md)
