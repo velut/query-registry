@@ -84,7 +84,7 @@
         "husky": "7.0.4",
         "nock": "13.2.1",
         "np": "7.6.0",
-        "prettier": "2.4.1",
+        "prettier": "2.5.0",
         "setup-polly-jest": "0.10.0",
         "tslib": "2.3.1",
         "typescript": "4.5.2"
