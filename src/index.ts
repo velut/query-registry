@@ -33,6 +33,20 @@
  * ```
  *
  * @example
+ * Get the abbreviated packument for package `query-registry` from the npm registry:
+ *
+ * ```typescript
+ * import { getAbbreviatedPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getAbbreviatedPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ * })();
+ * ```
+ *
+ * @example
  * Get the weekly downloads for package `query-registry` from the npm registry:
  *
  * ```typescript
@@ -65,7 +79,8 @@
  *
  * @example
  * Enable {@link https://www.npmjs.com/package/debug | debug messages}
- * by setting the `DEBUG` environment variable to `query-registry`:
+ * by setting the `DEBUG` environment variable to `query-registry`
+ * (available only in non production environments):
  *
  * ```bash
  * $ DEBUG="query-registry"
@@ -75,16 +90,19 @@
  */
 
 export * from './data/registries';
+export * from './endpoints/get-abbreviated-packument';
 export * from './endpoints/get-daily-package-downloads';
 export * from './endpoints/get-daily-registry-downloads';
 export * from './endpoints/get-package-downloads';
 export * from './endpoints/get-package-manifest';
 export * from './endpoints/get-packument';
+export * from './endpoints/get-raw-abbreviated-packument';
 export * from './endpoints/get-raw-package-manifest';
 export * from './endpoints/get-raw-packument';
 export * from './endpoints/get-registry-downloads';
 export * from './endpoints/get-registry-metadata';
 export * from './endpoints/search-packages';
+export * from './types/abbreviated-packument';
 export * from './types/bug-tracker';
 export * from './types/dist-info';
 export * from './types/dist-tags';
@@ -96,6 +114,7 @@ export * from './types/package-json';
 export * from './types/package-manifest';
 export * from './types/packument';
 export * from './types/person';
+export * from './types/raw-abbreviated-packument';
 export * from './types/raw-package-manifest';
 export * from './types/raw-packument';
 export * from './types/registry-metadata';

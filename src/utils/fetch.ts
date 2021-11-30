@@ -9,9 +9,11 @@ const cache = lru(maxItems, fiveMinutesTTL);
 
 export async function fetch({
     url,
+    headers,
     cached = true,
 }: {
     url: string;
+    headers?: Record<string, string>;
     cached?: boolean;
 }): Promise<any> {
     const cachedJSON = cache.get(url);
@@ -20,10 +22,11 @@ export async function fetch({
         return cachedJSON;
     }
 
-    const response = await unfetch(url);
+    const response = await unfetch(url, { headers });
     if (!response.ok) {
         log('fetch: request failed: %O', {
             url,
+            headers,
             status: response.statusText,
             response,
         });

@@ -5,12 +5,14 @@ import { log } from './log';
 
 export async function fetchFromRegistry<T>({
     endpoint,
+    headers,
     query,
     registry = npmRegistry,
     mirrors = npmRegistryMirrors,
     cached,
 }: {
     endpoint: string;
+    headers?: Record<string, string>;
     query?: string;
     registry?: string;
     mirrors?: string[];
@@ -25,7 +27,7 @@ export async function fetchFromRegistry<T>({
     let lastError: FetchError | undefined;
     for (const url of urls) {
         try {
-            const json = await fetch({ url, cached });
+            const json = await fetch({ url, headers, cached });
             return json as T;
         } catch (err) {
             // Keep last fetch error
@@ -37,6 +39,7 @@ export async function fetchFromRegistry<T>({
         'fetchFromRegistry: cannot retrieve data from registry or mirrors: %O',
         {
             endpoint,
+            headers,
             query,
             registry,
             mirrors,

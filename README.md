@@ -14,7 +14,7 @@ This package exports several functions to query the [npm registry](https://www.n
 
 -   Provides functions to:
     -   Get registry metadata
-    -   Get packuments (package documents)
+    -   Get packuments (package documents) and their abbreviated form
     -   Get package manifests
     -   Get download counts (packages and registry)
     -   Search packages
@@ -73,6 +73,19 @@ import { getPackageManifest } from 'query-registry';
 })();
 ```
 
+Get the abbreviated packument for package `query-registry` from the npm registry:
+
+```typescript
+import { getAbbreviatedPackument } from 'query-registry';
+
+(async () => {
+    const packument = await getAbbreviatedPackument({ name: 'query-registry' });
+
+    // Output: 'query-registry'
+    console.log(packument.name);
+})();
+```
+
 Get the weekly downloads for package `query-registry` from the npm registry:
 
 ```typescript
@@ -106,7 +119,7 @@ import { searchPackages } from 'query-registry';
 
 ## Debug
 
-Debug messages are available when the `DEBUG` environment variable is set to `query-registry`:
+Debug messages are available in non production environments when the `DEBUG` environment variable is set to `query-registry`:
 
 ```bash
 DEBUG="query-registry"
