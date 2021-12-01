@@ -1,3 +1,9 @@
 {
-    "cSpell.ignoreWords": ["packument", "packuments", "pollyjs", "unfetch"]
+    "cSpell.ignoreWords": [
+        "commitlint",
+        "packument",
+        "packuments",
+        "pollyjs",
+        "unfetch"
+    ]
 }
