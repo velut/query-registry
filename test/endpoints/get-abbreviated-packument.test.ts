@@ -8,6 +8,7 @@ import { setupPolly } from 'setup-polly-jest';
 import {
     FetchError,
     getAbbreviatedPackument,
+    getPackument,
     InvalidPackageNameError,
 } from '../../src';
 
@@ -64,5 +65,35 @@ describe('getAbbreviatedPackument', () => {
             expect(err).toBeDefined();
             expect(err instanceof FetchError).toBeTruthy();
         }
+    });
+
+    it('does not conflict with getPackument on cached responses', async () => {
+        expect.assertions(12);
+
+        // Retrieve fresh packuments
+        await getPackument({ name: 'short-time-ago' });
+        await getAbbreviatedPackument({ name: 'short-time-ago' });
+
+        // Retrieve cached packuments
+        const cachedPackument = await getPackument({
+            name: 'short-time-ago',
+        });
+        const cachedAbbreviatedPackument = await getAbbreviatedPackument({
+            name: 'short-time-ago',
+        });
+
+        expect(cachedPackument).toMatchSnapshot();
+        expect(cachedPackument).toHaveProperty('_id');
+        expect(cachedPackument).toHaveProperty('_rev');
+        expect(cachedPackument).toHaveProperty('time');
+        expect(cachedPackument).not.toHaveProperty('modified');
+        expect(cachedPackument).not.toHaveProperty('modifiedAt');
+
+        expect(cachedAbbreviatedPackument).toMatchSnapshot();
+        expect(cachedAbbreviatedPackument).not.toHaveProperty('_id');
+        expect(cachedAbbreviatedPackument).not.toHaveProperty('_rev');
+        expect(cachedAbbreviatedPackument).not.toHaveProperty('time');
+        expect(cachedAbbreviatedPackument).toHaveProperty('modified');
+        expect(cachedAbbreviatedPackument).toHaveProperty('modifiedAt');
     });
 });

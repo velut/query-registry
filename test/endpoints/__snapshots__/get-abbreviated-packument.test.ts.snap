@@ -1,0 +1,1636 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAbbreviatedPackument does not conflict with getPackument on cached responses 1`] = `
+Object {
+  "_id": "short-time-ago",
+  "_rev": "7-10cfa21adf18c7d94641fb0232e3db1c",
+  "author": Object {
+    "name": "velut",
+  },
+  "bugs": Object {
+    "url": "https://github.com/velut/node-short-time-ago/issues",
+  },
+  "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (for example, '1 minute ago')",
+  "dist-tags": Object {
+    "latest": "2.0.0",
+  },
+  "distTags": Object {
+    "latest": "2.0.0",
+  },
+  "gitRepository": Object {
+    "directory": undefined,
+    "type": "git",
+    "url": "https://github.com/velut/node-short-time-ago",
+  },
+  "id": "short-time-ago",
+  "keywords": Array [
+    "time",
+    "ago",
+    "date",
+    "format",
+    "relative",
+    "human",
+    "readable",
+    "typescript",
+  ],
+  "license": "MIT",
+  "maintainers": Array [
+    Object {
+      "email": "velut@jsref.org",
+      "name": "velut",
+    },
+  ],
+  "name": "short-time-ago",
+  "readme": "# short-time-ago
+
+[![Build status](https://img.shields.io/github/workflow/status/velut/node-short-time-ago/CI)](https://github.com/velut/node-short-time-ago/actions?query=workflow%3ACI)
+[![Coverage](https://img.shields.io/codecov/c/gh/velut/node-short-time-ago)](https://codecov.io/gh/velut/node-short-time-ago)
+[![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/short-time-ago)
+![Language](https://img.shields.io/github/languages/top/velut/node-short-time-ago)
+[![Dependencies](https://img.shields.io/david/velut/node-short-time-ago)](https://david-dm.org/velut/node-short-time-ago)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/short-time-ago)](https://bundlephobia.com/result?p=short-time-ago)
+[![npm](https://img.shields.io/npm/v/short-time-ago)](https://www.npmjs.com/package/short-time-ago)
+[![License](https://img.shields.io/github/license/velut/node-short-time-ago)](https://github.com/velut/node-short-time-ago/blob/master/LICENSE)
+
+This package exports a single function, \`timeAgo\`,
+which describes the time elapsed between a given date and the current date
+in a human readable format (for example, _\\"10 minutes ago\\"_, _\\"in 3 seconds\\"_).
+
+## Pros
+
+-   Simple API and usage
+-   Small size (< 1KB)
+-   No dependencies
+-   Works in the browser
+-   Written in Typescript
+-   Well tested and documented
+-   Accepts a custom date for the \`now\` anchor time
+
+## Cons
+
+-   Only \`en_US\` locale support.
+
+## Contents
+
+View on [unpkg](https://unpkg.com/short-time-ago/).
+
+## Install
+
+Using \`npm\`:
+
+\`\`\`
+npm i short-time-ago
+\`\`\`
+
+Using \`yarn\`:
+
+\`\`\`
+yarn add short-time-ago
+\`\`\`
+
+## CDN
+
+UMD build:
+
+\`\`\`html
+<!-- Add UMD script -->
+<script src=\\"https://unpkg.com/short-time-ago\\"></script>
+
+<!-- Usage -->
+<script>
+    const timeAgo = window['short-time-ago'].timeAgo;
+
+    const myDate = new Date();
+    const description = timeAgo(myDate);
+
+    // Output: \`just now\`.
+    console.log(description);
+</script>
+\`\`\`
+
+Module build:
+
+\`\`\`html
+<script type=\\"module\\">
+    import { timeAgo } from 'https://unpkg.com/short-time-ago?module';
+
+    const myDate = new Date();
+    const description = timeAgo(myDate);
+
+    // Output: \`just now\`.
+    console.log(description);
+</script>
+\`\`\`
+
+## Usage
+
+Basic usage:
+
+\`\`\`typescript
+import { timeAgo } from 'short-time-ago';
+
+const myDate = new Date();
+const description = timeAgo(myDate);
+
+// Output: \`just now\`.
+console.log(description);
+\`\`\`
+
+Specifying a custom current date with the \`now\` parameter:
+
+\`\`\`typescript
+import { timeAgo } from 'short-time-ago';
+
+const myDate = new Date('2019-01-01T00:00:00.000Z');
+const now = new Date('2019-01-01T00:01:00.000Z');
+const description = timeAgo(myDate, now);
+
+// Output: \`1 minute ago\`.
+console.log(description);
+\`\`\`
+
+\`\`\`typescript
+import { timeAgo } from 'short-time-ago';
+
+const myDate = new Date('2019-01-02T00:00:00.000Z');
+const now = new Date('2019-01-01T00:00:00.000Z');
+const description = timeAgo(myDate, now);
+
+// Output: \`in 1 day\`.
+console.log(description);
+\`\`\`
+
+## API
+
+\`\`\`typescript
+timeAgo: (date: Date, now?: Date) => string;
+\`\`\`
+
+Explore the API on [jsDocs.io](https://www.jsdocs.io/package/short-time-ago).
+
+## Output
+
+The following table describes \`timeAgo\`'s output.
+
+| Time elapsed          | Past output       | Future output    |
+| --------------------- | ----------------- | ---------------- |
+| < 1 second            | \`just now\`        | \`just now\`       |
+| < 1 minute            | \`N second(s) ago\` | \`in N second(s)\` |
+| < 1 hour              | \`N minute(s) ago\` | \`in N minute(s)\` |
+| < 1 day               | \`N hour(s) ago\`   | \`in N hour(s)\`   |
+| < 1 month (30.5 days) | \`N day(s) ago\`    | \`in N day(s)\`    |
+| < 1 year (365 days)   | \`N month(s) ago\`  | \`in N month(s)\`  |
+| > 1 year              | \`N year(s) ago\`   | \`in N year(s)\`   |
+
+## License
+
+MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+See LICENSE file.
+",
+  "readmeFilename": "README.md",
+  "repository": Object {
+    "type": "git",
+    "url": "https://github.com/velut/node-short-time-ago",
+  },
+  "time": Object {
+    "0.1.0": "2020-06-24T20:56:30.762Z",
+    "0.1.1": "2020-06-24T21:24:02.188Z",
+    "0.2.0": "2020-06-25T17:52:13.129Z",
+    "1.0.0": "2020-06-25T18:31:41.554Z",
+    "1.0.1": "2020-06-27T22:35:44.286Z",
+    "1.1.0": "2020-06-29T17:20:18.834Z",
+    "1.1.1": "2020-07-12T17:03:27.911Z",
+    "2.0.0": "2020-12-30T22:00:15.470Z",
+    "created": "2020-06-24T20:56:30.552Z",
+    "modified": "2020-12-30T22:00:17.852Z",
+  },
+  "versions": Object {
+    "0.1.0": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@0.1.0",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_0.1.0_1593032190553_0.6531229156028178",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "author": Object {
+        "name": "velut",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 16,
+        "integrity": "sha512-MIWljj3xMYo/x0RdoLBX/2NbX+p2mMT/cO0Mde1RrYRMDKeTOaygTRUZ7T1NVF1pllBh97rDX55I9HGX48UDvQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe873/CRA9TVsSAnZWagAA+YMP/ArNQE1IQST5AnEjMBk/
+8r/g0CRtuXuFK7ixZXtk9zle8LxiwIHbjWCkw+UsJdGiFeqWfgkuXmNcXOR5
+1gl06sbAeTZUJgRipkJNpoev+12yJFO6sktWLx+s5rkngzErtcZ+REVxDLUj
+mMKOpzYJXpKorOvz9eZ3oFhi2S6SR4NmTc2pb8MKppmHi1e9nJrEa81R0JK6
+udMWVHqZCFcgqOYrEwfpuD5jtRgcib5+zcfCkn0TUDJc8gbw6v14VqdBcIx/
+Eyd5n+Fiw/P1kqILI+DHbVwgVyxy+eyuYtRD1KfSBEnNi+G0iLKcFYh3UNnK
+dhPK3qpCNAYiMBbDX8jwSDlWM/yfH0+tCm7J0gdomkuneu1UCGm6xhxXO0rq
+hXibVr/RRrhjHJJZf1JDSP5ODdziGDGEeSJdQFhkiLgWx7sHDlr7/nO4c8cQ
+AcuYq97v6QfuTeqd/20iLCGsa9SgFVMddgR6zEz/cx16BorIW7AOIk8c4i7+
+jvGIVgNXVA4681piS3Wpqhjk6Nk09igYEE6KYc/OJvaJVNgMWjP5dLXMUado
+ewqxgB3yyfQwMk3HWk9e8g6OGDeXtm3ij39P6nFuaSUMgbBhupZ5oKQEoI7D
+3EA3ZgTyQFA3avdH1HbkDA0SLqoq5OaNFKI22Yut/EFWUgTp96NSGRF6mDUd
+4uqe
+=W/31
+-----END PGP SIGNATURE-----
+",
+        "shasum": "101f912c5f9de58e1076791e8f6ec37c05fde2f7",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.0.tgz",
+        "unpackedSize": 29625,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/short-time-ago.esm.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "scripts": Object {
+        "build": "tsdx build",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "tsdx build && sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "typings": "dist/index.d.ts",
+      "version": "0.1.0",
+    },
+    "0.1.1": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@0.1.1",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_0.1.1_1593033842081_0.6662526070570363",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "author": Object {
+        "name": "velut",
+      },
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 16,
+        "integrity": "sha512-+0A0gW488pjJLO/PP6CuYPdwR0tIYumhIPIdzEjPjHz7prc7XIQTRj8PWQgO4XgZE6fJXiLOR0m4SjnkV7KwGQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe88RyCRA9TVsSAnZWagAAyJ8P/ApU/orrNlpW/UJFiPGM
+/G70gHJSdPJRB6Gl0UyP0/fHX02IFD+BtwGvn+91c3aA7V8LvxdHiK07yECM
+6/yKefXxPl1pQXtZ3+hVEj+lTe+qvprX0/yGDCGH0FWoTP61ueT7ovPExJQ0
+npaMYtIL/sElbvtsiY2JNofEMt7ELMp5Rq29Atb2SVEQ6ohcKbZ5vTYkFvAC
+kdiHvj/9t3vUi0iqnvZTQoPSLD3Thq1RNdN8KZ6YFZCRt5QNN63C04FlMW3L
+MdVPuxojAu9ZF4OmdSWysPGC6+DsKL+OjRdY7NToC3peY4aLOVMiAL/r5a4S
+B4P+2+DWo5HpNnEsqwwlf+68MPfhoaPUdHVC39V4vgw6rFg6XykVJzXp0Opl
+umjn9D49jWuCt89Vz55DGXADEIjSYOMqpWiD1oZDc8Yz+2GpbOIS709EA8ik
+wDr8/SpG/0J9xl1J5h5beMVJY/xA3ub9lPNMnqGA05m8iP7b8up+wUtU+poz
+TR7uBnpzAET8Tn2qKdo4oe/6A0xc4F33mAGlCTU0oqaR/F5be1fRddYsQc+8
+JLtzQ697jTN830bUHT60rOEEhkly1+4iH7cUDGj8bMIgVPmaP+y4k8ofKbha
+oyLwVooesd0arAxpIwExgAug7IbQFywzbwMymllDLQEUkRxglf2V30uZ95GO
+uXJZ
+=sbmB
+-----END PGP SIGNATURE-----
+",
+        "shasum": "a71de26c06b0078c9308a341c06d0649fadcbde5",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.1.tgz",
+        "unpackedSize": 29827,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/short-time-ago.esm.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "tsdx build",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "tsdx build && sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "typings": "dist/index.d.ts",
+      "version": "0.1.1",
+    },
+    "0.2.0": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@0.2.0",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_0.2.0_1593107532990_0.9941335857684626",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "dist/short-time-ago.umd.production.min.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 18,
+        "integrity": "sha512-ex7/YRbrvQJJkDDq41jLq2EsVmRjNTepih04UQh4KeYZ3t+gi7GfP57yH3ixbvLsjtdOeHK4kDzIh8Rg7jtKbg==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe9ORNCRA9TVsSAnZWagAA06sP/1Tf2GUy50JxL4KF09BZ
+kYSnMziYw9TuLPP+nZ+kF3+ySgjjnm3mWgA1PC8yqQNI+mMo6kfda2pmwJ49
+RwYCLJCn0VPDvKQXRDqszNczBrCmFg9F5AX6DHz9oxoenmH0E1W7KVDDcrHL
+xwOon33mnZzw3XqmIuh3Lyc8otMwM9A4sw1g07pyF0wOYqFuRhG60UWKduyA
+9QsD5XY6B5+CY5E9Ss9TalhIXQRORN4vRv7pf2hqzdXbNcT0j07ti640G0Kd
+dAJj0SpxaWXxHNLAVJPYLGnVYM5Y0vrYiEEw0RPHG1AtKgh8lTXDgtzxwQC7
+rwc2NpDOHPpF5ibJeM4KekbhWgr0s3tXkeCeZTC80aKRHBX6MKx0ZypsQpJh
+oZB7qk5uGoUDqULDvBXAC2gABs+L9mPGfGP3Nigav3rOD1aeh3TtLxH2YWp0
+c6J03XJB4ePOIuhq/8ujRWCCDkitGOL9SWroVxYAKZEGuLw2e6BM3sZM95g+
+raUHjeiYqJUgh7WzxwVNIgvyUQHPYUk1ii+UdEGXUluNUZbCiOzKXyMbZbtF
+75woVPzIZCzroQaL4/u9fqkYiV8QY4gs2LmKxJbO0zI3sbTpfMnzo0L4JqlF
+3sWSY5jViMZRYB9uZOO0jNroxy2tkM29Wn7iM58bnYLSqrxSej+5iHXg9MtN
+E9U0
+=QvWK
+-----END PGP SIGNATURE-----
+",
+        "shasum": "363b36e8b690c497db6f57222e7ab3275023c57f",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.2.0.tgz",
+        "unpackedSize": 35090,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/short-time-ago.esm.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "tsdx build --format cjs,ejs,umd",
+        "fixDeclarationMap": "sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build && yarn fixDeclarationMap",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "typings": "dist/index.d.ts",
+      "unpkg": "dist/short-time-ago.umd.production.min.js",
+      "version": "0.2.0",
+    },
+    "1.0.0": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@1.0.0",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_1.0.0_1593109901440_0.2943562424251429",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "dist/short-time-ago.umd.production.min.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 18,
+        "integrity": "sha512-CzPlGX0r0zY7nJGMwb0rmcV4e8fRsw4vMQDaKzE5NxtXbUxT6Ie4oE1RptWLftYJ9/uBrgpW76oSCySH8QPRkA==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe9O2NCRA9TVsSAnZWagAArfIP/3PFmOkWEoPTsPd4sP9x
+bno/QcKzusjXSFE8XEz+gEoQV5AWHKnVs8ho8ElTVJLIkbs3SESJYuFtuKnC
+6oneIO9ZePu5ZCA68BCWo8YxCmjogayszs81t/V25kdrjCGw7Ap4wjmbY73R
+ik3fu0W6h0izkMfF7/Bfwk2Pkpr4ibWO3YMhlY4j7Tg+okukPunaij/HUWxD
+Ez2xF2WOoDcm71KjEuWM1QhYLVJoplNIm73GpbhTWtlRjTZNmJlxveINVUEh
+g5P8rLl/C8+MYYJLZgX5XphnbQs0OyvKk4NHfvKfTTW3PtO2DWUJWY95LbKw
+4GYJhp//gceYKt5masMJVpONZ8yuFxfTxC96cvnivsoRQL6v4MfJOodghNzu
+Z1H0IMrnC0UnVjau7OGz+BlAESGg7CruUpxuWvLEVYct2a0cG4byjlOGvWFJ
+PjJNyj1KUyA8Vep2uj2oU7fiwOEN04lbQr6QtRLptwOxxLi3j8ec//rckHx8
+2E2w78UicScrrcuRDCy41KQac+ZU7+gHIbHCFykvj9vaYerpHFQPEsh2bANT
+Tbpz9RQ38WlYeZAtaRhrSPynqX3MG2vC3shTqw06Mo4WSbL+eEtbrAsyhmSZ
+wTb07ZwsL5DitFIhbYvp4FkF0or0WKbemFkhSVb6rXHX/tcC9C64CZVU7f89
+HxeZ
+=jKYu
+-----END PGP SIGNATURE-----
+",
+        "shasum": "8f019fc3acaa9c1bcc0278b315a37f5baff9bea6",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.0.tgz",
+        "unpackedSize": 35463,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/short-time-ago.esm.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "tsdx build --format cjs,ejs,umd",
+        "fixDeclarationMap": "sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build && yarn fixDeclarationMap",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "typings": "dist/index.d.ts",
+      "unpkg": "dist/short-time-ago.umd.production.min.js",
+      "version": "1.0.0",
+    },
+    "1.0.1": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@1.0.1",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_1.0.1_1593297344197_0.37129412936967077",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "dist/short-time-ago.umd.production.min.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 20,
+        "integrity": "sha512-0Ao0R46EIZ78w8I8BD/VHb2UK12Knp8Pn/zgg4Z42pI6/a618VoMv+nYWRUvJoANKb6n0jTUShkBeZK4/oflFQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe98nACRA9TVsSAnZWagAAf9IP/2k5K91weuysPam6hL5+
+kti56jaGaBisoYWwB+Mc/wMgE/RyTmudVzkz5cLjewmJmRr/IyLAPeJzMczW
+ZBAzUr9ZdriLm0LHjz8Mr3FaYVqZxgvRIELwWLlzOzk0fcfFgJC0ZsGQYsfv
+5qQTN3Hg5ER+XvKKcr7QkD2Z87wxv122RPFlKow6rZKeiuLYPD7uZiI9EIRI
+Zj1uNXI/l7rQlzUZ46gbzvK6iwy3PS9hekUDLJXQvAkqaDNavq2u4tYFYqHN
+68GiAeZhyxoDINnxt3uZ5gtoqCikuQ5dpnrujlM2lYXbKq7+GwlMSdBVEmxM
+6Pn2M2Iwanq0Masa4z5qy82tdUSS8YJVZsIAV5qXDqCCCwjDdkgyn/+wGReY
+dhdebvpxPHqXMmEtt1nwqtY2gHQJSyKgSAHThafLEm13jB3s+c+iptXYB6tF
+kUGmkHaeedwXcsO/TZwkY/8Db4iox02JA5QVrxX+a5uHJ6KZeTY8F1EPOXm+
++J6AHIDuZlXh6/Icxc7mVZb3rZZUK7zGdB7SKDlcMBTQaUbfeW8e3X2UirKh
+pejLENMOXg7O3cor2m3TT/ltUpNP5rE+OfxgqM+pBD3yrS+aAvKUzTMrYIoB
+gV3nyp7FpLTyHHIVoxuI01cBTD8K4/uSaxWZ5z6wgqihRtSjXo+vq9XqMjta
+sqb2
+=Ia0H
+-----END PGP SIGNATURE-----
+",
+        "shasum": "8c0d5f9b8b5cd8341b00cee1023658c24825698d",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.1.tgz",
+        "unpackedSize": 42911,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/short-time-ago.esm.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "tsdx build --format cjs,esm,umd",
+        "fixDeclarationMap": "sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build && yarn fixDeclarationMap",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "source": "src/index.ts",
+      "typings": "dist/index.d.ts",
+      "unpkg": "dist/short-time-ago.umd.production.min.js",
+      "version": "1.0.1",
+    },
+    "1.1.0": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@1.1.0",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_1.1.0_1593451218635_0.9404354029485447",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "amdName": "short-time-ago",
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "dist/index.umd.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "microbundle": "^0.12.2",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-9kzJsEPgPlXKfekrNsOTAL+rsF6H//TE85wXOh5CR6DnhpGdUkd1wKXO4eZPq/PWlhZZPG+LOGxo1b/BPfFVig==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe+iLTCRA9TVsSAnZWagAAvuAP/jDQ4egaWuZ78N3TOHVy
+8748TE94AY97cL4Vo5u+/f/fYd13RQqy38TgWARWDKVbS/bWmUObMp0v9NQ4
+APOlakmTz4WOJpdRyEXhHxASJF9qMIC3Sb6K4jSlw9kYYE3YeNilUyFoFk3u
+PZkhQsK8L7gC3nGIjSj3H8+l0otqNmAx2+U14cRE+kDmmAH4bdjucMmBU/Jp
+4jGGvWr941eQg7EuqeyDlDeUiJoI3KReXZZmb/wcor1lSfdczn6Apbi8FYM2
+tUznqwYw/lfoGwtRVKM9+3J3xyoGWhUtLaAzvIhWPAhA4dDtfWQgolC5Zkbt
+bF5Jsnt0pAsgy+cJekuwTOjxu1j0HRWkMbzEnG9eomUOnlhtLZ0I1ZYLr+nF
+bmMQTOtlYyQbPIJ4xqpqL26g2tR9OLBlUkjn1nnMKnhPG9x/5ui7CIjXDWld
+g+MIk4dRdnraHL5kqAO2SGhA7BWI/5wVCG6Fd2CoVmhChucznEYNsmMoOUhm
+d8v+HsdYnFBlpzoFn2oheB0tTu8F4hQzPaQ/7vFeUGoadVjt43kB6T5xtBLQ
+bDO38xWwbOJjZbya6xi5IqbtoU4YSiQxhrIagc67glfPcaetewnmIICAt3Ym
+N/OJMVdZR9rDXd0TdJuTScz5aDjh9h8RcQGHPgS5ToHS/NX8fXIEBzZknpAf
+ClLU
+=0eP/
+-----END PGP SIGNATURE-----
+",
+        "shasum": "328990c99d25a9883927b3c8ee55d466706f71fd",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.0.tgz",
+        "unpackedSize": 27886,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "esmodule": "dist/index.modern.js",
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/index.module.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "microbundle --strict",
+        "build:tsdx": "tsdx build --format cjs,esm,umd",
+        "fixDeclarationMap": "sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build",
+        "start": "tsdx watch",
+        "test": "tsdx test",
+        "test:cov": "tsdx test --coverage",
+        "test:watch": "tsdx test --watchAll --coverage",
+      },
+      "source": "src/index.ts",
+      "typings": "dist/index.d.ts",
+      "unpkg": "dist/index.umd.js",
+      "version": "1.1.0",
+    },
+    "1.1.1": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@1.1.1",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_1.1.1_1594573407735_0.2048708175516325",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "amdName": "short-time-ago",
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "dist/index.umd.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (e.g., '1 minute ago')",
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "microbundle": "^0.12.2",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-vM5LgYu2ywFwAQvjGpDIMcJeiXTQhXorO+zZ4ODV0YcI8I2yhhBuOznqq62NKaVuLhrm5jTXFstx0NeouEi0gQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJfC0JgCRA9TVsSAnZWagAAE6IP/AgIq7O1+31t9mYkVbO+
+zXdmf0q2OX3HBMzH5+zQwIKzYYh1l4VU0KGvyGeGYTLX+kCPVdSbHYx5zfXM
+4qKR7HydSvOkrKWDamqb+na9A5iZBkFVPWFyNYe8jU+0mBfEEGYGxZJHrvE3
+wXLSZaXnSqF+a5vbQINvr2Ae8qWrO3DxyyFS6oNQt3NWbyXWBrFd6wybldww
+d5g/oQweuVYr2wRe2rxr9WrklIYqlQXnKkrVpcERi9raPsOHFVJp4AQWZXxo
+TPSZgmW1MkDOV1TWs/mQJ7XSxA3CzrZ4S41TywVjdzHwU9sDcjH8AU2OkC35
+IzDOAYgnk3jAM/eY5/ygzg8ceUJE2Y84BTyu3YoPJAGfKHclk5WEZyL2bx9Z
+fW6hB8BZXrpGafga1ynB4NH6wqhsQzUBucvKJpKQ4u+LxZZ36lg0OZ13h849
+Wg2byUbwjLdIJ4ryeJdUYkUxZGYAr5vcFqCyVORKevDGDBlutJ0QrMOjUZh6
+3773PtZMLlEkCkG5xdVnHvQrlSfrVIn8kdUTp2VnBk06htyDqoMIN3NJpJe9
+ON6jjxXnlVtTGBi0v7V4NZVmlY7wAbRiaK0nL2uo1Yka6puO7nYmr50uOS7r
+lF3HL4U86p0s4CsaCcAZNxfsloNL6MQVavjOL8JuvbFQFt0mJaNLyivsA7Mr
+4jQP
+=JDss
+-----END PGP SIGNATURE-----
+",
+        "shasum": "23d4305c9721fd9078b58227f356828c311e0f27",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.1.tgz",
+        "unpackedSize": 28882,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "esmodule": "dist/index.modern.js",
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "dist/index.module.js",
+      "name": "short-time-ago",
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "microbundle --strict",
+        "build:tsdx": "tsdx build --format cjs,esm,umd",
+        "fixDeclarationMap": "sed -i 's/src/..\\\\/src/g' dist/index.d.ts.map",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build",
+        "start": "tsdx watch",
+        "test": "tsdx test  --runInBand",
+        "test:ci": "tsdx test --runInBand --ci --coverage",
+        "test:cov": "tsdx test  --runInBand --coverage",
+        "test:watch": "tsdx test  --runInBand --watchAll --coverage",
+      },
+      "sideEffects": false,
+      "source": "src/index.ts",
+      "typings": "dist/index.d.ts",
+      "unpkg": "dist/index.umd.js",
+      "version": "1.1.1",
+    },
+    "2.0.0": Object {
+      "_hasShrinkwrap": false,
+      "_id": "short-time-ago@2.0.0",
+      "_npmOperationalInternal": Object {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/short-time-ago_2.0.0_1609365615301_0.03713104019779956",
+      },
+      "_npmUser": Object {
+        "email": "velut@jsref.org",
+        "name": "velut",
+      },
+      "amdName": "short-time-ago",
+      "author": Object {
+        "name": "velut",
+      },
+      "browser": "./dist/index.umd.js",
+      "bugs": Object {
+        "url": "https://github.com/velut/node-short-time-ago/issues",
+      },
+      "description": "A small, no dependencies, Typescript utility to describe time differences in a human readable format (for example, '1 minute ago')",
+      "devDependencies": Object {
+        "eslint-plugin-prettier": "3.3.0",
+        "husky": "4.3.6",
+        "microbundle": "0.13.0",
+        "np": "7.1.0",
+        "prettier": "2.2.1",
+        "semantic-release": "17.3.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.0.3",
+        "typescript": "4.1.3",
+      },
+      "directories": Object {},
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-klqvTBTPpU2xI/+qeTl3zMX6EVfcF7ddTfoaOg+aOpJY4IOhwwgxTQ2eu3sLDrSAQL0PwjFAoWqJUDUcJSEXXA==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.13
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJf7PhvCRA9TVsSAnZWagAAUaIP+wYrEzP9UnByN7HgvTNQ
+E+akBOTBkuxo8nXI8t9htsjVZ49rhAuuhdSp24KWpE/dXHekQDXirmAav3Yf
+GwUQM5HaghRaVQZXM4W0E3vw8I3MZqPnkr3C5HogDLCdDWDG8ahvEpw2N7ue
+yWA52C2nCEZnM/jsfDcF+6XAdGZmuczNK2mfiX+hXDEATUE5eUTgeHPG20la
+V4e/Iy+5F8r1mhxbgg+vn+V1lGTTqSO0fj0mEp480IBBaU0aX+s3yVFX7icq
+XsCTXHk12r1Z//FSWlL9m2wrzedj7cmpXDbtYE1XCXrP1e3jc9wbWYGEHzVY
+ogHj08LK5kdMjAY9bv29gIb4esLp7CTSyij4GTNPNH6uqFAVQ3+R1jTELchD
+t4rDEoebiLZqt6n1rYxUOHYctIksB0HY/1duTQtvg13/JBxasYPlPNzsdlb8
+LUaFMWeuTKmQ4iJHyg9FQ114T+sfQwnyssx8L4wZeAcKms5ie6yzfEfYzlZK
+8Z6CRw76fcXje7hBRAmL7S6+rQthosImN7jjQgqw4mNVc1G3dvvLfvwhNJ/l
+8h2umtdhVYVuh5OZGNqQgMBcT1ATYzEmoHdJhBsA6ePKIP52jkk3Wt0LJvZq
+GWQFNErosV8tvZBTLXohdbREtZl07v31PJKQZ50kSQSOiO6IjTheE/erR93d
+ZGJV
+=+NyU
+-----END PGP SIGNATURE-----
+",
+        "shasum": "3fde172e626999510c5ca6784aba568c964d50dc",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-2.0.0.tgz",
+        "unpackedSize": 29378,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "esmodule": "./dist/index.modern.js",
+      "exports": Object {
+        "browser": "./dist/index.umd.js",
+        "default": "./dist/index.js",
+        "import": "./dist/index.modern.js",
+        "require": "./dist/index.js",
+      },
+      "husky": Object {
+        "hooks": Object {
+          "pre-commit": "yarn lint",
+          "pre-push": "yarn pre-push",
+        },
+      },
+      "keywords": Array [
+        "time",
+        "ago",
+        "date",
+        "format",
+        "relative",
+        "human",
+        "readable",
+        "typescript",
+      ],
+      "license": "MIT",
+      "licenseText": "MIT License
+
+Copyright (c) 2020 Edoardo Scibona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.",
+      "main": "./dist/index.js",
+      "maintainers": Array [
+        Object {
+          "email": "velut@jsref.org",
+          "name": "velut",
+        },
+      ],
+      "module": "./dist/index.module.js",
+      "name": "short-time-ago",
+      "np": Object {
+        "branch": "main",
+      },
+      "peerDependencies": Object {},
+      "prettier": Object {
+        "arrowParens": "always",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+      },
+      "repository": Object {
+        "type": "git",
+        "url": "https://github.com/velut/node-short-time-ago",
+      },
+      "scripts": Object {
+        "build": "microbundle --strict",
+        "build:tsdx": "tsdx build --format cjs,esm,umd",
+        "lint": "tsdx lint src test",
+        "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
+        "prepare": "yarn build",
+        "release": "np",
+        "semantic-release": "semantic-release",
+        "start": "tsdx watch",
+        "test": "tsdx test  --runInBand",
+        "test:ci": "tsdx test --runInBand --ci --coverage",
+        "test:cov": "tsdx test  --runInBand --coverage",
+        "test:watch": "tsdx test  --runInBand --watchAll --coverage",
+      },
+      "sideEffects": false,
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "unpkg": "./dist/index.umd.js",
+      "version": "2.0.0",
+    },
+  },
+  "versionsToTimestamps": Object {
+    "0.1.0": "2020-06-24T20:56:30.762Z",
+    "0.1.1": "2020-06-24T21:24:02.188Z",
+    "0.2.0": "2020-06-25T17:52:13.129Z",
+    "1.0.0": "2020-06-25T18:31:41.554Z",
+    "1.0.1": "2020-06-27T22:35:44.286Z",
+    "1.1.0": "2020-06-29T17:20:18.834Z",
+    "1.1.1": "2020-07-12T17:03:27.911Z",
+    "2.0.0": "2020-12-30T22:00:15.470Z",
+  },
+}
+`;
+
+exports[`getAbbreviatedPackument does not conflict with getPackument on cached responses 2`] = `
+Object {
+  "dist-tags": Object {
+    "latest": "2.0.0",
+  },
+  "distTags": Object {
+    "latest": "2.0.0",
+  },
+  "id": "short-time-ago",
+  "modified": "2020-12-30T22:00:17.852Z",
+  "modifiedAt": "2020-12-30T22:00:17.852Z",
+  "name": "short-time-ago",
+  "versions": Object {
+    "0.1.0": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 16,
+        "integrity": "sha512-MIWljj3xMYo/x0RdoLBX/2NbX+p2mMT/cO0Mde1RrYRMDKeTOaygTRUZ7T1NVF1pllBh97rDX55I9HGX48UDvQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe873/CRA9TVsSAnZWagAA+YMP/ArNQE1IQST5AnEjMBk/
+8r/g0CRtuXuFK7ixZXtk9zle8LxiwIHbjWCkw+UsJdGiFeqWfgkuXmNcXOR5
+1gl06sbAeTZUJgRipkJNpoev+12yJFO6sktWLx+s5rkngzErtcZ+REVxDLUj
+mMKOpzYJXpKorOvz9eZ3oFhi2S6SR4NmTc2pb8MKppmHi1e9nJrEa81R0JK6
+udMWVHqZCFcgqOYrEwfpuD5jtRgcib5+zcfCkn0TUDJc8gbw6v14VqdBcIx/
+Eyd5n+Fiw/P1kqILI+DHbVwgVyxy+eyuYtRD1KfSBEnNi+G0iLKcFYh3UNnK
+dhPK3qpCNAYiMBbDX8jwSDlWM/yfH0+tCm7J0gdomkuneu1UCGm6xhxXO0rq
+hXibVr/RRrhjHJJZf1JDSP5ODdziGDGEeSJdQFhkiLgWx7sHDlr7/nO4c8cQ
+AcuYq97v6QfuTeqd/20iLCGsa9SgFVMddgR6zEz/cx16BorIW7AOIk8c4i7+
+jvGIVgNXVA4681piS3Wpqhjk6Nk09igYEE6KYc/OJvaJVNgMWjP5dLXMUado
+ewqxgB3yyfQwMk3HWk9e8g6OGDeXtm3ij39P6nFuaSUMgbBhupZ5oKQEoI7D
+3EA3ZgTyQFA3avdH1HbkDA0SLqoq5OaNFKI22Yut/EFWUgTp96NSGRF6mDUd
+4uqe
+=W/31
+-----END PGP SIGNATURE-----
+",
+        "shasum": "101f912c5f9de58e1076791e8f6ec37c05fde2f7",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.0.tgz",
+        "unpackedSize": 29625,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "0.1.0",
+    },
+    "0.1.1": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 16,
+        "integrity": "sha512-+0A0gW488pjJLO/PP6CuYPdwR0tIYumhIPIdzEjPjHz7prc7XIQTRj8PWQgO4XgZE6fJXiLOR0m4SjnkV7KwGQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe88RyCRA9TVsSAnZWagAAyJ8P/ApU/orrNlpW/UJFiPGM
+/G70gHJSdPJRB6Gl0UyP0/fHX02IFD+BtwGvn+91c3aA7V8LvxdHiK07yECM
+6/yKefXxPl1pQXtZ3+hVEj+lTe+qvprX0/yGDCGH0FWoTP61ueT7ovPExJQ0
+npaMYtIL/sElbvtsiY2JNofEMt7ELMp5Rq29Atb2SVEQ6ohcKbZ5vTYkFvAC
+kdiHvj/9t3vUi0iqnvZTQoPSLD3Thq1RNdN8KZ6YFZCRt5QNN63C04FlMW3L
+MdVPuxojAu9ZF4OmdSWysPGC6+DsKL+OjRdY7NToC3peY4aLOVMiAL/r5a4S
+B4P+2+DWo5HpNnEsqwwlf+68MPfhoaPUdHVC39V4vgw6rFg6XykVJzXp0Opl
+umjn9D49jWuCt89Vz55DGXADEIjSYOMqpWiD1oZDc8Yz+2GpbOIS709EA8ik
+wDr8/SpG/0J9xl1J5h5beMVJY/xA3ub9lPNMnqGA05m8iP7b8up+wUtU+poz
+TR7uBnpzAET8Tn2qKdo4oe/6A0xc4F33mAGlCTU0oqaR/F5be1fRddYsQc+8
+JLtzQ697jTN830bUHT60rOEEhkly1+4iH7cUDGj8bMIgVPmaP+y4k8ofKbha
+oyLwVooesd0arAxpIwExgAug7IbQFywzbwMymllDLQEUkRxglf2V30uZ95GO
+uXJZ
+=sbmB
+-----END PGP SIGNATURE-----
+",
+        "shasum": "a71de26c06b0078c9308a341c06d0649fadcbde5",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.1.tgz",
+        "unpackedSize": 29827,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "0.1.1",
+    },
+    "0.2.0": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 18,
+        "integrity": "sha512-ex7/YRbrvQJJkDDq41jLq2EsVmRjNTepih04UQh4KeYZ3t+gi7GfP57yH3ixbvLsjtdOeHK4kDzIh8Rg7jtKbg==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe9ORNCRA9TVsSAnZWagAA06sP/1Tf2GUy50JxL4KF09BZ
+kYSnMziYw9TuLPP+nZ+kF3+ySgjjnm3mWgA1PC8yqQNI+mMo6kfda2pmwJ49
+RwYCLJCn0VPDvKQXRDqszNczBrCmFg9F5AX6DHz9oxoenmH0E1W7KVDDcrHL
+xwOon33mnZzw3XqmIuh3Lyc8otMwM9A4sw1g07pyF0wOYqFuRhG60UWKduyA
+9QsD5XY6B5+CY5E9Ss9TalhIXQRORN4vRv7pf2hqzdXbNcT0j07ti640G0Kd
+dAJj0SpxaWXxHNLAVJPYLGnVYM5Y0vrYiEEw0RPHG1AtKgh8lTXDgtzxwQC7
+rwc2NpDOHPpF5ibJeM4KekbhWgr0s3tXkeCeZTC80aKRHBX6MKx0ZypsQpJh
+oZB7qk5uGoUDqULDvBXAC2gABs+L9mPGfGP3Nigav3rOD1aeh3TtLxH2YWp0
+c6J03XJB4ePOIuhq/8ujRWCCDkitGOL9SWroVxYAKZEGuLw2e6BM3sZM95g+
+raUHjeiYqJUgh7WzxwVNIgvyUQHPYUk1ii+UdEGXUluNUZbCiOzKXyMbZbtF
+75woVPzIZCzroQaL4/u9fqkYiV8QY4gs2LmKxJbO0zI3sbTpfMnzo0L4JqlF
+3sWSY5jViMZRYB9uZOO0jNroxy2tkM29Wn7iM58bnYLSqrxSej+5iHXg9MtN
+E9U0
+=QvWK
+-----END PGP SIGNATURE-----
+",
+        "shasum": "363b36e8b690c497db6f57222e7ab3275023c57f",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.2.0.tgz",
+        "unpackedSize": 35090,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "0.2.0",
+    },
+    "1.0.0": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 18,
+        "integrity": "sha512-CzPlGX0r0zY7nJGMwb0rmcV4e8fRsw4vMQDaKzE5NxtXbUxT6Ie4oE1RptWLftYJ9/uBrgpW76oSCySH8QPRkA==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe9O2NCRA9TVsSAnZWagAArfIP/3PFmOkWEoPTsPd4sP9x
+bno/QcKzusjXSFE8XEz+gEoQV5AWHKnVs8ho8ElTVJLIkbs3SESJYuFtuKnC
+6oneIO9ZePu5ZCA68BCWo8YxCmjogayszs81t/V25kdrjCGw7Ap4wjmbY73R
+ik3fu0W6h0izkMfF7/Bfwk2Pkpr4ibWO3YMhlY4j7Tg+okukPunaij/HUWxD
+Ez2xF2WOoDcm71KjEuWM1QhYLVJoplNIm73GpbhTWtlRjTZNmJlxveINVUEh
+g5P8rLl/C8+MYYJLZgX5XphnbQs0OyvKk4NHfvKfTTW3PtO2DWUJWY95LbKw
+4GYJhp//gceYKt5masMJVpONZ8yuFxfTxC96cvnivsoRQL6v4MfJOodghNzu
+Z1H0IMrnC0UnVjau7OGz+BlAESGg7CruUpxuWvLEVYct2a0cG4byjlOGvWFJ
+PjJNyj1KUyA8Vep2uj2oU7fiwOEN04lbQr6QtRLptwOxxLi3j8ec//rckHx8
+2E2w78UicScrrcuRDCy41KQac+ZU7+gHIbHCFykvj9vaYerpHFQPEsh2bANT
+Tbpz9RQ38WlYeZAtaRhrSPynqX3MG2vC3shTqw06Mo4WSbL+eEtbrAsyhmSZ
+wTb07ZwsL5DitFIhbYvp4FkF0or0WKbemFkhSVb6rXHX/tcC9C64CZVU7f89
+HxeZ
+=jKYu
+-----END PGP SIGNATURE-----
+",
+        "shasum": "8f019fc3acaa9c1bcc0278b315a37f5baff9bea6",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.0.tgz",
+        "unpackedSize": 35463,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "1.0.0",
+    },
+    "1.0.1": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 20,
+        "integrity": "sha512-0Ao0R46EIZ78w8I8BD/VHb2UK12Knp8Pn/zgg4Z42pI6/a618VoMv+nYWRUvJoANKb6n0jTUShkBeZK4/oflFQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe98nACRA9TVsSAnZWagAAf9IP/2k5K91weuysPam6hL5+
+kti56jaGaBisoYWwB+Mc/wMgE/RyTmudVzkz5cLjewmJmRr/IyLAPeJzMczW
+ZBAzUr9ZdriLm0LHjz8Mr3FaYVqZxgvRIELwWLlzOzk0fcfFgJC0ZsGQYsfv
+5qQTN3Hg5ER+XvKKcr7QkD2Z87wxv122RPFlKow6rZKeiuLYPD7uZiI9EIRI
+Zj1uNXI/l7rQlzUZ46gbzvK6iwy3PS9hekUDLJXQvAkqaDNavq2u4tYFYqHN
+68GiAeZhyxoDINnxt3uZ5gtoqCikuQ5dpnrujlM2lYXbKq7+GwlMSdBVEmxM
+6Pn2M2Iwanq0Masa4z5qy82tdUSS8YJVZsIAV5qXDqCCCwjDdkgyn/+wGReY
+dhdebvpxPHqXMmEtt1nwqtY2gHQJSyKgSAHThafLEm13jB3s+c+iptXYB6tF
+kUGmkHaeedwXcsO/TZwkY/8Db4iox02JA5QVrxX+a5uHJ6KZeTY8F1EPOXm+
++J6AHIDuZlXh6/Icxc7mVZb3rZZUK7zGdB7SKDlcMBTQaUbfeW8e3X2UirKh
+pejLENMOXg7O3cor2m3TT/ltUpNP5rE+OfxgqM+pBD3yrS+aAvKUzTMrYIoB
+gV3nyp7FpLTyHHIVoxuI01cBTD8K4/uSaxWZ5z6wgqihRtSjXo+vq9XqMjta
+sqb2
+=Ia0H
+-----END PGP SIGNATURE-----
+",
+        "shasum": "8c0d5f9b8b5cd8341b00cee1023658c24825698d",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.1.tgz",
+        "unpackedSize": 42911,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "1.0.1",
+    },
+    "1.1.0": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "microbundle": "^0.12.2",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-9kzJsEPgPlXKfekrNsOTAL+rsF6H//TE85wXOh5CR6DnhpGdUkd1wKXO4eZPq/PWlhZZPG+LOGxo1b/BPfFVig==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJe+iLTCRA9TVsSAnZWagAAvuAP/jDQ4egaWuZ78N3TOHVy
+8748TE94AY97cL4Vo5u+/f/fYd13RQqy38TgWARWDKVbS/bWmUObMp0v9NQ4
+APOlakmTz4WOJpdRyEXhHxASJF9qMIC3Sb6K4jSlw9kYYE3YeNilUyFoFk3u
+PZkhQsK8L7gC3nGIjSj3H8+l0otqNmAx2+U14cRE+kDmmAH4bdjucMmBU/Jp
+4jGGvWr941eQg7EuqeyDlDeUiJoI3KReXZZmb/wcor1lSfdczn6Apbi8FYM2
+tUznqwYw/lfoGwtRVKM9+3J3xyoGWhUtLaAzvIhWPAhA4dDtfWQgolC5Zkbt
+bF5Jsnt0pAsgy+cJekuwTOjxu1j0HRWkMbzEnG9eomUOnlhtLZ0I1ZYLr+nF
+bmMQTOtlYyQbPIJ4xqpqL26g2tR9OLBlUkjn1nnMKnhPG9x/5ui7CIjXDWld
+g+MIk4dRdnraHL5kqAO2SGhA7BWI/5wVCG6Fd2CoVmhChucznEYNsmMoOUhm
+d8v+HsdYnFBlpzoFn2oheB0tTu8F4hQzPaQ/7vFeUGoadVjt43kB6T5xtBLQ
+bDO38xWwbOJjZbya6xi5IqbtoU4YSiQxhrIagc67glfPcaetewnmIICAt3Ym
+N/OJMVdZR9rDXd0TdJuTScz5aDjh9h8RcQGHPgS5ToHS/NX8fXIEBzZknpAf
+ClLU
+=0eP/
+-----END PGP SIGNATURE-----
+",
+        "shasum": "328990c99d25a9883927b3c8ee55d466706f71fd",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.0.tgz",
+        "unpackedSize": 27886,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "1.1.0",
+    },
+    "1.1.1": Object {
+      "devDependencies": Object {
+        "husky": "^4.2.5",
+        "microbundle": "^0.12.2",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.5",
+      },
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-vM5LgYu2ywFwAQvjGpDIMcJeiXTQhXorO+zZ4ODV0YcI8I2yhhBuOznqq62NKaVuLhrm5jTXFstx0NeouEi0gQ==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.4
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJfC0JgCRA9TVsSAnZWagAAE6IP/AgIq7O1+31t9mYkVbO+
+zXdmf0q2OX3HBMzH5+zQwIKzYYh1l4VU0KGvyGeGYTLX+kCPVdSbHYx5zfXM
+4qKR7HydSvOkrKWDamqb+na9A5iZBkFVPWFyNYe8jU+0mBfEEGYGxZJHrvE3
+wXLSZaXnSqF+a5vbQINvr2Ae8qWrO3DxyyFS6oNQt3NWbyXWBrFd6wybldww
+d5g/oQweuVYr2wRe2rxr9WrklIYqlQXnKkrVpcERi9raPsOHFVJp4AQWZXxo
+TPSZgmW1MkDOV1TWs/mQJ7XSxA3CzrZ4S41TywVjdzHwU9sDcjH8AU2OkC35
+IzDOAYgnk3jAM/eY5/ygzg8ceUJE2Y84BTyu3YoPJAGfKHclk5WEZyL2bx9Z
+fW6hB8BZXrpGafga1ynB4NH6wqhsQzUBucvKJpKQ4u+LxZZ36lg0OZ13h849
+Wg2byUbwjLdIJ4ryeJdUYkUxZGYAr5vcFqCyVORKevDGDBlutJ0QrMOjUZh6
+3773PtZMLlEkCkG5xdVnHvQrlSfrVIn8kdUTp2VnBk06htyDqoMIN3NJpJe9
+ON6jjxXnlVtTGBi0v7V4NZVmlY7wAbRiaK0nL2uo1Yka6puO7nYmr50uOS7r
+lF3HL4U86p0s4CsaCcAZNxfsloNL6MQVavjOL8JuvbFQFt0mJaNLyivsA7Mr
+4jQP
+=JDss
+-----END PGP SIGNATURE-----
+",
+        "shasum": "23d4305c9721fd9078b58227f356828c311e0f27",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.1.tgz",
+        "unpackedSize": 28882,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "1.1.1",
+    },
+    "2.0.0": Object {
+      "devDependencies": Object {
+        "eslint-plugin-prettier": "3.3.0",
+        "husky": "4.3.6",
+        "microbundle": "0.13.0",
+        "np": "7.1.0",
+        "prettier": "2.2.1",
+        "semantic-release": "17.3.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.0.3",
+        "typescript": "4.1.3",
+      },
+      "dist": Object {
+        "fileCount": 17,
+        "integrity": "sha512-klqvTBTPpU2xI/+qeTl3zMX6EVfcF7ddTfoaOg+aOpJY4IOhwwgxTQ2eu3sLDrSAQL0PwjFAoWqJUDUcJSEXXA==",
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v3.0.13
+Comment: https://openpgpjs.org
+
+wsFcBAEBCAAQBQJf7PhvCRA9TVsSAnZWagAAUaIP+wYrEzP9UnByN7HgvTNQ
+E+akBOTBkuxo8nXI8t9htsjVZ49rhAuuhdSp24KWpE/dXHekQDXirmAav3Yf
+GwUQM5HaghRaVQZXM4W0E3vw8I3MZqPnkr3C5HogDLCdDWDG8ahvEpw2N7ue
+yWA52C2nCEZnM/jsfDcF+6XAdGZmuczNK2mfiX+hXDEATUE5eUTgeHPG20la
+V4e/Iy+5F8r1mhxbgg+vn+V1lGTTqSO0fj0mEp480IBBaU0aX+s3yVFX7icq
+XsCTXHk12r1Z//FSWlL9m2wrzedj7cmpXDbtYE1XCXrP1e3jc9wbWYGEHzVY
+ogHj08LK5kdMjAY9bv29gIb4esLp7CTSyij4GTNPNH6uqFAVQ3+R1jTELchD
+t4rDEoebiLZqt6n1rYxUOHYctIksB0HY/1duTQtvg13/JBxasYPlPNzsdlb8
+LUaFMWeuTKmQ4iJHyg9FQ114T+sfQwnyssx8L4wZeAcKms5ie6yzfEfYzlZK
+8Z6CRw76fcXje7hBRAmL7S6+rQthosImN7jjQgqw4mNVc1G3dvvLfvwhNJ/l
+8h2umtdhVYVuh5OZGNqQgMBcT1ATYzEmoHdJhBsA6ePKIP52jkk3Wt0LJvZq
+GWQFNErosV8tvZBTLXohdbREtZl07v31PJKQZ50kSQSOiO6IjTheE/erR93d
+ZGJV
+=+NyU
+-----END PGP SIGNATURE-----
+",
+        "shasum": "3fde172e626999510c5ca6784aba568c964d50dc",
+        "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-2.0.0.tgz",
+        "unpackedSize": 29378,
+      },
+      "engines": Object {
+        "node": ">=10",
+      },
+      "name": "short-time-ago",
+      "version": "2.0.0",
+    },
+  },
+}
+`;
