@@ -16,9 +16,14 @@ export async function fetch({
     headers?: Record<string, string>;
     cached?: boolean;
 }): Promise<any> {
-    const cachedJSON = cache.get(url);
+    const cacheKey = `headers=${JSON.stringify(headers)};url=${url}`;
+    const cachedJSON = cache.get(cacheKey);
     if (cached && cachedJSON) {
-        log('fetch: returning cached response: %O', { url, cachedJSON });
+        log('fetch: returning cached response: %O', {
+            cacheKey,
+            url,
+            cachedJSON,
+        });
         return cachedJSON;
     }
 
@@ -35,7 +40,7 @@ export async function fetch({
 
     const json = await response.json();
     if (cached) {
-        cache.set(url, json);
+        cache.set(cacheKey, json);
     }
 
     log('fetch: returning fresh response: %O', { url, json });
