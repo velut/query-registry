@@ -1302,22 +1302,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pollyjs/adapter-node-http@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.0.tgz#536730a6d1782fc0ae608ea026d9295c34a8f3a3"
-  integrity sha512-dAXP3lhn+DXnMMeboBMetZKWKrSDtSa/JG/s2YpzfrRaxbPJx+i6VBYWUmd7YmsyyqPSmStm+vq+MkjPx1LNQw==
+"@pollyjs/adapter-node-http@6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.4.tgz#5a92ab5adbab7c2c94a5ffca7c5eec4afd01467a"
+  integrity sha512-Rc0I0+LSVQI2rQsERIA7adoxDgXk5I7AqnJ9t9rD33UbXrje9kPwk7SBwBtpXgqMN8/qsVGmenD/XIVmhi3fxQ==
   dependencies:
-    "@pollyjs/adapter" "^6.0.0"
-    "@pollyjs/utils" "^6.0.0"
+    "@pollyjs/adapter" "^6.0.4"
+    "@pollyjs/utils" "^6.0.1"
     lodash-es "^4.17.21"
     nock "^13.2.1"
 
-"@pollyjs/adapter@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-6.0.0.tgz#d9552049f984ed1af704744601d47b64e0ab203c"
-  integrity sha512-Mtz52UrByy5QadREUfijB+U+mwwCDtEBYk3PtF7Dg3MdGvWMb7rYPX0+fIfRCddGiwbooJtKMpWmSZovvxz41Q==
+"@pollyjs/adapter@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-6.0.4.tgz#4c45403a215026770a6f0fd7adb6db62d4b49154"
+  integrity sha512-xiAdK+ZBABWpXvUVdcgvZpGI0drix8uy6KFWZr3pVvzKWfr6VyKObd6J6alxA8LG/kQ3BL350fIDia8UIcvwrw==
   dependencies:
-    "@pollyjs/utils" "^6.0.0"
+    "@pollyjs/utils" "^6.0.1"
 
 "@pollyjs/core@6.0.4":
   version "6.0.4"
