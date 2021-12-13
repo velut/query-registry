@@ -1334,12 +1334,12 @@
     route-recognizer "^0.3.4"
     slugify "^1.6.3"
 
-"@pollyjs/node-server@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/node-server/-/node-server-6.0.0.tgz#a6e521bec2edc162df7ef82ded171a87f5df14ab"
-  integrity sha512-ewCutQ8sYUxmL9BQoqFM+EDctvqLAdEtx1Zla4mK1EesE+YGt6ZcIgqruEKjNkd1fg7O+0RixKXqlol1BIxaBw==
+"@pollyjs/node-server@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@pollyjs/node-server/-/node-server-6.0.1.tgz#98569d83ea062399ce8464ec937bce1c932e2c23"
+  integrity sha512-R4WyrcOMRf9t4h2MSAooLlijKchDFXHil5XnVe51OBFe3Ib/8/jo+iMmIENTZE1EP6it9HW00Df93jjZ0XT+Og==
   dependencies:
-    "@pollyjs/utils" "^6.0.0"
+    "@pollyjs/utils" "^6.0.1"
     body-parser "^1.19.0"
     cors "^2.8.5"
     express "^4.17.1"
@@ -1348,20 +1348,21 @@
     morgan "^1.10.0"
     nocache "^3.0.1"
 
-"@pollyjs/persister-fs@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/persister-fs/-/persister-fs-6.0.0.tgz#82a7164f5b2e853cfdaee4f64c4b8501c2332ce9"
-  integrity sha512-Q5Uf0GKVr3c0yoRgtX/UJjXqZ1UH/AICwmH2/VSOOGCkFJzzi10FfSkGc6WGt2bElihXI8r/F4jP3GuXCeqrxA==
+"@pollyjs/persister-fs@6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@pollyjs/persister-fs/-/persister-fs-6.0.4.tgz#03ab98a2c9b6160266df73a60a01707295644d49"
+  integrity sha512-WK5r77nZQJpKMalTIGjP4qWlkXSV2j36cMZKzn8/RGrLw+ML9w+hDAyYjHC+8lH+Wy5mU5S2ateM5hlB9p0Ssg==
   dependencies:
-    "@pollyjs/node-server" "^6.0.0"
-    "@pollyjs/persister" "^6.0.0"
+    "@pollyjs/node-server" "^6.0.1"
+    "@pollyjs/persister" "^6.0.4"
 
-"@pollyjs/persister@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@pollyjs/persister/-/persister-6.0.0.tgz#762df57ef6e867e31f72c0424478243a0c1b0b7e"
-  integrity sha512-X2Iuj+KM3QkmmbAE/w6KetaB/XzcQtqpW2Ik8frTqBUHPGqg0j9Bo+vKkVoNv25PIKV0c9RkzDs8D1kcYt5Pgg==
+"@pollyjs/persister@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@pollyjs/persister/-/persister-6.0.4.tgz#c1524664c8d67d84c04d25c1c306206c7a8d23b9"
+  integrity sha512-Ytfqa19CERBPj7BtTYTn+eawdI8LSueiVIx/gWnT/mxaAMzkutb+WxcLq485JnzXExDb9RwSFZTOXlKhrxU2Ww==
   dependencies:
-    "@pollyjs/utils" "^6.0.0"
+    "@pollyjs/utils" "^6.0.1"
+    "@types/set-cookie-parser" "^2.4.1"
     bowser "^2.4.0"
     fast-json-stable-stringify "^2.1.0"
     lodash-es "^4.17.21"
@@ -1725,6 +1726,13 @@
   version "7.3.9"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.9.tgz#152c6c20a7688c30b967ec1841d31ace569863fc"
   integrity sha512-L/TMpyURfBkf+o/526Zb6kd/tchUP3iBDEPjqjb+U2MAJhVRxxrmr2fwpe08E7QsV7YLcpq0tUaQ9O9x97ZIxQ==
+
+"@types/set-cookie-parser@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@types/set-cookie-parser/-/set-cookie-parser-2.4.1.tgz#49403d3150f6f296da8e51b3e9e7e562eaf105b4"
+  integrity sha512-N0IWe4vT1w5IOYdN9c9PNpQniHS+qe25W4tj4vfhJDJ9OkvA/YA55YUhaC+HNmMMeLlOSnBW9UMno0qlt5xu3Q==
+  dependencies:
+    "@types/node" "*"
 
 "@types/setup-polly-jest@0.5.1":
   version "0.5.1"
