@@ -70,7 +70,7 @@
         "@commitlint/config-conventional": "15.0.0",
         "@pollyjs/adapter-node-http": "6.0.0",
         "@pollyjs/core": "6.0.4",
-        "@pollyjs/persister-fs": "6.0.0",
+        "@pollyjs/persister-fs": "6.0.4",
         "@types/debug": "4.1.7",
         "@types/git-url-parse": "9.0.1",
         "@types/pollyjs__adapter-node-http": "2.0.1",
