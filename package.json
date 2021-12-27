@@ -79,7 +79,7 @@
         "@types/setup-polly-jest": "0.5.1",
         "@types/validate-npm-package-name": "3.0.3",
         "debug": "4.3.3",
-        "dts-cli": "0.20.0",
+        "dts-cli": "1.1.3",
         "eslint-plugin-prettier": "4.0.0",
         "husky": "7.0.4",
         "nock": "13.2.1",
