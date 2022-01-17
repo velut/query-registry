@@ -82,7 +82,7 @@
         "dts-cli": "1.1.6",
         "eslint-plugin-prettier": "4.0.0",
         "husky": "7.0.4",
-        "nock": "13.2.1",
+        "nock": "13.2.2",
         "np": "7.6.0",
         "prettier": "2.5.1",
         "setup-polly-jest": "0.10.0",
