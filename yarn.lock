@@ -3295,10 +3295,10 @@ dot-prop@^6.0.1:
   dependencies:
     is-obj "^2.0.0"
 
-dts-cli@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/dts-cli/-/dts-cli-1.3.0.tgz#f6887ad9a58207abc73f1cfb6e1b79bc6cade9ff"
-  integrity sha512-hljxhvFG7EUIf8Vlcf/qlAaCNwVMCQCkt1SAoVmaLwLYyUyEjxRs0XQK43mkrOYH+mR0FKpj35j++A5j06hANw==
+dts-cli@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/dts-cli/-/dts-cli-1.4.0.tgz#99a9e9c7d7bdaec1c358bff7a96d50bf81fc49a8"
+  integrity sha512-bcjolZYKh51WPurWUayO85XaqccE26yWiAd5+JCZU8YFWAJgcp+UGFke3OwmJvo7WKX3e48FuvzFezUkd+eFSg==
   dependencies:
     "@babel/core" "^7.17.2"
     "@babel/helper-module-imports" "^7.16.7"
