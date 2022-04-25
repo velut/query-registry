@@ -46,6 +46,21 @@ describe('fetchFromRegistry', () => {
         }
     });
 
+    it('supports registries with an included pathname', async () => {
+        expect.assertions(2);
+
+        try {
+            await fetchFromRegistry({
+                endpoint: '/short-time-ago',
+                registry: 'https://example.com/some/path/name',
+                mirrors: [],
+            });
+        } catch (err) {
+            expect(err).toBeDefined();
+            expect(err instanceof FetchError).toBeTruthy();
+        }
+    });
+
     it('throws if registry URLs are invalid', async () => {
         expect.assertions(1);
 

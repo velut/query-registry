@@ -2,6 +2,7 @@ import { npmRegistry, npmRegistryMirrors } from '../data/registries';
 import { FetchError } from './errors';
 import { fetch } from './fetch';
 import { log } from './log';
+import urlJoin from 'url-join';
 
 export async function fetchFromRegistry<T>({
     endpoint,
@@ -18,11 +19,9 @@ export async function fetchFromRegistry<T>({
     mirrors?: string[];
     cached?: boolean;
 }): Promise<T> {
-    const urls = [registry, ...mirrors].map((host) => {
-        const url = new URL(endpoint, host);
-        url.search = query ?? '';
-        return url.href;
-    });
+    const urls = [registry, ...mirrors].map((base) =>
+        urlJoin(base, endpoint, query ? `?${query}` : '')
+    );
 
     let lastError: FetchError | undefined;
     for (const url of urls) {
