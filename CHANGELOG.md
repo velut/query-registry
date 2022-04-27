@@ -9,22 +9,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   None
 
+## [2.3.0] - 2022-04-27
+
+### Added
+
+-   N/A
+
+### Changed
+
+-   Preserve pathnames in registry URLs (`https://example.com/my/npm/registry`)
+-   Updated dependencies and dev dependencies
+
+### Removed
+
+-   N/A
+
 ## [2.2.0] - 2021-12-01
 
 ### Added
 
-- [Abbreviated packuments](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-metadata-format) (`application/vnd.npm.install-v1+json`) can now be retrieved using `getAbbreviatedPackument()` or `getRawAbbreviatedPackument()`
+-   [Abbreviated packuments](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-metadata-format) (`application/vnd.npm.install-v1+json`) can now be retrieved using `getAbbreviatedPackument()` or `getRawAbbreviatedPackument()`
 
 ### Changed
 
-- Responses are now cached based on headers and URL
-- Updated docs
-- Updated dependencies and dev dependencies
-- Moved `debug` package to dev dependencies
+-   Responses are now cached based on headers and URL
+-   Updated docs
+-   Updated dependencies and dev dependencies
+-   Moved `debug` package to dev dependencies
 
 ### Removed
 
-- N/A
+-   N/A
 
 ## [2.0.0] - 2021-03-09
 
@@ -54,6 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
-[unreleased]: https://github.com/velut/node-query-registry/compare/v2.2.0...HEAD
+[unreleased]: https://github.com/velut/node-query-registry/compare/v2.3.0...HEAD
 [2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v2.0.0
 [2.2.0]: https://github.com/velut/node-query-registry/compare/v2.0.0...v2.2.0
+[2.3.0]: https://github.com/velut/node-query-registry/compare/v2.2.0...v2.3.0

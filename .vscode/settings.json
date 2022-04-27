@@ -3,6 +3,7 @@
         "commitlint",
         "packument",
         "packuments",
+        "pathnames",
         "pollyjs",
         "unfetch"
     ]
