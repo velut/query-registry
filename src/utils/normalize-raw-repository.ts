@@ -42,10 +42,10 @@ function normalizeRepository({
         return undefined;
     }
 
-    const { source, full_name: repositoryID, filepath } = info;
+    const { resource, full_name: repositoryID, filepath } = info;
 
     // Add domain to sources derived from npm-style shortcuts
-    const host = source
+    const host = resource
         .replace(/^$/, 'github.com')
         .replace(/^github$/, 'github.com')
         .replace(/^gitlab$/, 'gitlab.com')

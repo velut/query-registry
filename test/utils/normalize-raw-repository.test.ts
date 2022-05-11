@@ -58,4 +58,17 @@ describe('normalizeRawRepository', () => {
             directory: undefined,
         });
     });
+
+    it('keeps the repository subdomain', () => {
+        const gitRepository = normalizeRawRepository({
+            rawRepository: {
+                type: 'git',
+                url: 'https://git.example.com/user/repo',
+            },
+        });
+        expect(gitRepository).toMatchObject({
+            type: 'git',
+            url: 'https://git.example.com/user/repo',
+        });
+    });
 });
