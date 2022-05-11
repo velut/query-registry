@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   None
 
+## [2.4.0] - 2022-05-11
+
+### Added
+
+-   N/A
+
+### Changed
+
+-   Preserve subdomains in git repository URLs (`https://git.example.com/user/repo`) (Thanks @tomdyqin)
+-   Updated dependencies and dev dependencies
+
+### Removed
+
+-   N/A
+
 ## [2.3.0] - 2022-04-27
 
 ### Added
@@ -17,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Preserve pathnames in registry URLs (`https://example.com/my/npm/registry`)
+-   Preserve pathnames in registry URLs (`https://example.com/my/npm/registry`) (Thanks @tomdyqin)
 -   Updated dependencies and dev dependencies
 
 ### Removed
@@ -69,7 +84,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
-[unreleased]: https://github.com/velut/node-query-registry/compare/v2.3.0...HEAD
+[unreleased]: https://github.com/velut/node-query-registry/compare/v2.4.0...HEAD
 [2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v2.0.0
 [2.2.0]: https://github.com/velut/node-query-registry/compare/v2.0.0...v2.2.0
 [2.3.0]: https://github.com/velut/node-query-registry/compare/v2.2.0...v2.3.0
+[2.4.0]: https://github.com/velut/node-query-registry/compare/v2.3.0...v2.4.0
