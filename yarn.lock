@@ -7809,7 +7809,7 @@ tiny-glob@^0.2.9:
     globalyzer "0.1.0"
     globrex "^0.1.2"
 
-tiny-lru@^8.0.1:
+tiny-lru@^8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/tiny-lru/-/tiny-lru-8.0.2.tgz#812fccbe6e622ded552e3ff8a4c3b5ff34a85e4c"
   integrity sha512-ApGvZ6vVvTNdsmt676grvCkUCGwzG9IqXma5Z07xJgiC5L7akUMof5U8G2JTI9Rz/ovtVhJBlY6mNhEvtjzOIg==
