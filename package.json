@@ -6,13 +6,13 @@
     "license": "MIT",
     "source": "./src/index.ts",
     "main": "./dist/index.js",
-    "module": "./dist/index.esm.js",
+    "module": "./dist/query-registry.esm.js",
     "types": "./dist/index.d.ts",
     "sideEffects": false,
     "exports": {
         ".": {
             "require": "./dist/index.js",
-            "import": "./dist/index.esm.js",
+            "import": "./dist/query-registry.esm.js",
             "default": "./dist/index.js"
         },
         "./package.json": "./package.json"
