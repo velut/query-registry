@@ -1,7 +1,7 @@
 {
     "name": "query-registry",
     "description": "Query the npm registry for packuments, manifests, packages and download counts",
-    "version": "2.5.0-0",
+    "version": "2.5.0",
     "author": "Edoardo Scibona (velut)",
     "license": "MIT",
     "source": "./src/index.ts",
