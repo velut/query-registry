@@ -87,7 +87,7 @@
         "nock": "13.2.4",
         "np": "7.6.1",
         "prettier": "2.6.2",
-        "setup-polly-jest": "0.10.0",
+        "setup-polly-jest": "0.11.0",
         "ts-jest": "28.0.3",
         "tslib": "2.4.0",
         "typescript": "4.7.2"
