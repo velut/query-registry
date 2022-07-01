@@ -82,7 +82,7 @@
         "@types/validate-npm-package-name": "3.0.3",
         "debug": "4.3.4",
         "dts-cli": "1.5.1",
-        "eslint-plugin-prettier": "4.0.0",
+        "eslint-plugin-prettier": "4.2.1",
         "husky": "8.0.1",
         "nock": "13.2.4",
         "np": "7.6.2",
