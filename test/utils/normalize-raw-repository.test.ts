@@ -4,6 +4,7 @@ import { normalizeRawRepository } from '../../src/utils/normalize-raw-repository
 describe('normalizeRawRepository', () => {
     it('returns undefined for invalid repositories', () => {
         expect(normalizeRawRepository({ rawRepository: '' })).toBeUndefined();
+        expect(normalizeRawRepository({ rawRepository: '!' })).toBeUndefined();
     });
 
     it('prefers the specified directory to the one in the URL', () => {
@@ -35,6 +36,16 @@ describe('normalizeRawRepository', () => {
         ).toStrictEqual({
             type: 'git',
             url: 'https://github.com/user/repo',
+            directory: undefined,
+        });
+
+        expect(
+            normalizeRawRepository({
+                rawRepository: 'gist:11081aaa281',
+            })
+        ).toStrictEqual({
+            type: 'git',
+            url: 'https://gist.github.com/11081aaa281',
             directory: undefined,
         });
 

@@ -1,4 +1,4 @@
-import gitUrlParse from 'git-url-parse';
+import urlJoin from 'url-join';
 import { GitRepository } from '../types/git-repository';
 import { Repository } from '../types/repository';
 
@@ -35,35 +35,46 @@ function normalizeRepository({
 }: {
     rawRepository: Repository;
 }): GitRepository | undefined {
-    const { url, directory: repositoryDir } = rawRepository;
+    const { url, directory } = rawRepository;
 
-    const info = parseGitURL({ url });
-    if (!info) {
+    const parsedUrl = parseGitURL({ url });
+    if (!parsedUrl) {
         return undefined;
     }
 
-    const { resource, full_name: repositoryID, filepath } = info;
-
-    // Add domain to sources derived from npm-style shortcuts
-    const host = resource
-        .replace(/^$/, 'github.com')
-        .replace(/^github$/, 'github.com')
-        .replace(/^gitlab$/, 'gitlab.com')
-        .replace(/^bitbucket$/, 'bitbucket.org');
-
-    const parsedDir = filepath !== '' ? filepath : undefined;
-
     return {
         type: 'git',
-        url: `https://${host}/${repositoryID}`,
-        directory: repositoryDir ?? parsedDir,
+        url: parsedUrl,
+        directory,
     };
 }
 
-function parseGitURL({ url }: { url: string }): gitUrlParse.GitUrl | undefined {
-    let info;
+function parseGitURL({ url }: { url: string }): string | undefined {
+    const urlWithProtocol = url.includes(':')
+        ? // A normal URL or a shortcut like `github:user/repository`
+          url
+        : // The short form github shortcut `user/repository`
+        url.includes('/')
+        ? `github:${url}`
+        : // Not a URL
+          '';
     try {
-        info = gitUrlParse(url);
-    } catch {}
-    return info;
+        const { protocol, hostname, pathname } = new URL(urlWithProtocol);
+        const cleanPathname = pathname.replace(/\.git$/, '');
+        if (protocol === 'github:' || hostname === 'github.com') {
+            return urlJoin('https://github.com', cleanPathname);
+        }
+        if (protocol === 'gist:' || hostname === 'gist.github.com') {
+            return urlJoin('https://gist.github.com', cleanPathname);
+        }
+        if (protocol === 'bitbucket:' || hostname === 'bitbucket.org') {
+            return urlJoin('https://bitbucket.org', cleanPathname);
+        }
+        if (protocol === 'gitlab:' || hostname === 'gitlab.com') {
+            return urlJoin('https://gitlab.com', cleanPathname);
+        }
+        return urlWithProtocol;
+    } catch {
+        return undefined;
+    }
 }

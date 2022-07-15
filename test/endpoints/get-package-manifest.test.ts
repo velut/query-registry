@@ -164,8 +164,8 @@ describe('getPackageManifest', () => {
             version: '3.0.0',
             gitRepository: {
                 type: 'git',
-                url: 'https://github.com/pugjs/pug',
-                directory: 'packages/pug',
+                url: 'https://github.com/pugjs/pug/tree/master/packages/pug',
+                directory: undefined,
             },
             definitelyTypedName: '@types/pug',
             untypedName: undefined,
@@ -301,8 +301,8 @@ describe('getPackageManifest', () => {
             version: '24.3.0',
             gitRepository: {
                 type: 'git',
-                url: 'https://github.com/facebook/jest',
-                directory: 'packages/jest-diff',
+                url: 'https://github.com/facebook/jest/tree/master/packages/jest-diff',
+                directory: undefined,
             },
             definitelyTypedName: undefined,
             untypedName: 'jest-diff',
