@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   None
 
+## [2.6.0] - 2022-08-13
+
+### Added
+
+-   Added custom normalization for git urls; the normalized values for the `gitRepository` property may change with respect to previous releases
+
+### Changed
+
+-   Updated dependencies and dev dependencies
+
+### Removed
+
+-   Removed dependency on `git-url-parse`
+
 ## [2.5.0] - 2022-05-28
 
 ### Added
@@ -99,9 +113,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
-[unreleased]: https://github.com/velut/node-query-registry/compare/v2.5.0...HEAD
+[unreleased]: https://github.com/velut/node-query-registry/compare/v2.6.0...HEAD
 [2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v2.0.0
 [2.2.0]: https://github.com/velut/node-query-registry/compare/v2.0.0...v2.2.0
 [2.3.0]: https://github.com/velut/node-query-registry/compare/v2.2.0...v2.3.0
 [2.4.0]: https://github.com/velut/node-query-registry/compare/v2.3.0...v2.4.0
 [2.5.0]: https://github.com/velut/node-query-registry/compare/v2.4.0...v2.5.0
+[2.6.0]: https://github.com/velut/node-query-registry/compare/v2.5.0...v2.6.0
