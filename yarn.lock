@@ -7429,10 +7429,10 @@ tiny-glob@^0.2.9:
     globalyzer "0.1.0"
     globrex "^0.1.2"
 
-tiny-lru@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/tiny-lru/-/tiny-lru-8.0.2.tgz#812fccbe6e622ded552e3ff8a4c3b5ff34a85e4c"
-  integrity sha512-ApGvZ6vVvTNdsmt676grvCkUCGwzG9IqXma5Z07xJgiC5L7akUMof5U8G2JTI9Rz/ovtVhJBlY6mNhEvtjzOIg==
+tiny-lru@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/tiny-lru/-/tiny-lru-10.0.0.tgz#cf6e5bb23d5ce4720a08fcbd7151fe94ab0b39e6"
+  integrity sha512-WAJgx3780wGkPlfXM8ezc9XnX+hodoL0n37f/c+X7/y75pqTkAOTZnxRLiTElkQyhlZ4Qn5FPSgKzachfPD2FA==
 
 tmp@^0.0.33:
   version "0.0.33"
