@@ -1413,7 +1413,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pollyjs/adapter-node-http@6.0.5":
+"@pollyjs/adapter-node-http@*", "@pollyjs/adapter-node-http@6.0.5":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.5.tgz#f92616cefdad9ae144fe07f6b88798a20bf1c8fd"
   integrity sha512-/8xa5OHwumQ06P1PzMcePYxalxyRR4jA3ZdsXpLSSVn8xaC0S95X7WGtFk/1F/HhHWq/3tZaOQo2rFLtprGiwg==
@@ -1807,12 +1807,12 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/pollyjs__adapter-node-http@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/pollyjs__adapter-node-http/-/pollyjs__adapter-node-http-2.0.1.tgz#8b05378c11390590bf6a44bfe970746b309ab055"
-  integrity sha512-bUEZZbzCwvUZfBUrVJXYbQfdGVKL7TM/xrPFJYLNPC94I0PWngYtbFdzCkJSKfiOHP9xptgGTQpViDlNoKXYoQ==
+"@types/pollyjs__adapter-node-http@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@types/pollyjs__adapter-node-http/-/pollyjs__adapter-node-http-6.0.5.tgz#2fb98eb86b45bdbb7eac562a7f48c0be4e914505"
+  integrity sha512-DJqGHUjNKgUtPYH9Fd5ZjsXc0zhE+NbevEizoV1GuWEmEYIpqIawzqkRxT4HBk6Uc2V/2kosNUktxbRHdMda/A==
   dependencies:
-    "@types/pollyjs__adapter" "*"
+    "@pollyjs/adapter-node-http" "*"
 
 "@types/pollyjs__adapter@*":
   version "4.3.1"
