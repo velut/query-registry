@@ -1,5 +1,5 @@
 import unfetch from 'isomorphic-unfetch';
-import lru from 'tiny-lru';
+import { lru } from 'tiny-lru';
 import { FetchError } from './errors';
 import { log } from './log';
 
