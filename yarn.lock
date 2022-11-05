@@ -1807,13 +1807,6 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/pollyjs__adapter-node-http@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/pollyjs__adapter-node-http/-/pollyjs__adapter-node-http-2.0.1.tgz#8b05378c11390590bf6a44bfe970746b309ab055"
-  integrity sha512-bUEZZbzCwvUZfBUrVJXYbQfdGVKL7TM/xrPFJYLNPC94I0PWngYtbFdzCkJSKfiOHP9xptgGTQpViDlNoKXYoQ==
-  dependencies:
-    "@types/pollyjs__adapter" "*"
-
 "@types/pollyjs__adapter@*":
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/@types/pollyjs__adapter/-/pollyjs__adapter-4.3.1.tgz#5be1c522f0351ae6f1001a38fb1f355737b0d371"
@@ -1821,19 +1814,12 @@
   dependencies:
     "@types/pollyjs__core" "*"
 
-"@types/pollyjs__core@*", "@types/pollyjs__core@4.3.3":
+"@types/pollyjs__core@*":
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/@types/pollyjs__core/-/pollyjs__core-4.3.3.tgz#a666d71ac9e977c91380db33c6621270b8b444a5"
   integrity sha512-qPLLq+be0L45z/EawTWXdsQZINCHgRxqQJUDQsvLTDGvnnV6y5rjK3c8mYtCxkVFmKxNIBsicI1+ldHPgPBAjA==
   dependencies:
     "@types/pollyjs__adapter" "*"
-    "@types/pollyjs__persister" "*"
-
-"@types/pollyjs__persister-fs@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/pollyjs__persister-fs/-/pollyjs__persister-fs-2.0.1.tgz#5b660cf725dd93dc10710377e923269e57b9094c"
-  integrity sha512-wYqBN0sqHg+XHGo0Hy5J7pCF0IW6+aWEz9+wKWN6VuLmq3Bh2D/pzLOADSbSH8g5IwYQWNRO4GTYONCffNSlwg==
-  dependencies:
     "@types/pollyjs__persister" "*"
 
 "@types/pollyjs__persister@*":
