@@ -77,7 +77,7 @@
         "@types/url-join": "4.0.1",
         "@types/validate-npm-package-name": "4.0.0",
         "debug": "4.3.4",
-        "dts-cli": "1.6.0",
+        "dts-cli": "1.6.3",
         "eslint-plugin-prettier": "4.2.1",
         "husky": "8.0.2",
         "nock": "13.2.9",
