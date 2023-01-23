@@ -1,6 +1,6 @@
 # query-registry
 
-[![Build status](https://img.shields.io/github/workflow/status/velut/node-query-registry/CI)](https://github.com/velut/node-query-registry/actions?query=workflow%3ACI)
+[![Build status](https://img.shields.io/github/actions/workflow/status/velut/node-query-registry/main.yml?branch=main)](https://github.com/velut/node-query-registry/actions?query=workflow%3ACI)
 [![Coverage](https://img.shields.io/codecov/c/gh/velut/node-query-registry)](https://codecov.io/gh/velut/node-query-registry)
 [![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/query-registry)
 ![Language](https://img.shields.io/github/languages/top/velut/node-query-registry)
