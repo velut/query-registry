@@ -81,7 +81,7 @@
         "eslint-plugin-prettier": "4.2.1",
         "husky": "8.0.2",
         "nock": "13.3.0",
-        "np": "7.6.2",
+        "np": "7.6.3",
         "prettier": "2.8.1",
         "setup-polly-jest": "0.11.0",
         "ts-jest": "29.0.5",
