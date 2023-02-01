@@ -79,7 +79,7 @@
         "debug": "4.3.4",
         "dts-cli": "1.6.3",
         "eslint-plugin-prettier": "4.2.1",
-        "husky": "8.0.2",
+        "husky": "8.0.3",
         "nock": "13.3.0",
         "np": "7.6.3",
         "prettier": "2.8.1",
