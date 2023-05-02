@@ -67,7 +67,7 @@
     },
     "devDependencies": {
         "@commitlint/cli": "17.6.1",
-        "@commitlint/config-conventional": "17.4.4",
+        "@commitlint/config-conventional": "17.6.1",
         "@pollyjs/adapter-node-http": "6.0.5",
         "@pollyjs/core": "6.0.5",
         "@pollyjs/persister-fs": "6.0.5",
@@ -77,15 +77,15 @@
         "@types/url-join": "4.0.1",
         "@types/validate-npm-package-name": "4.0.0",
         "debug": "4.3.4",
-        "dts-cli": "1.6.3",
+        "dts-cli": "2.0.2",
         "eslint-plugin-prettier": "4.2.1",
         "husky": "8.0.3",
-        "nock": "13.3.0",
+        "nock": "13.3.1",
         "np": "7.7.0",
         "prettier": "2.8.8",
         "setup-polly-jest": "0.11.0",
-        "ts-jest": "29.0.5",
+        "ts-jest": "29.1.0",
         "tslib": "2.5.0",
-        "typescript": "5.0.3"
+        "typescript": "5.0.4"
     }
 }
