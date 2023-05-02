@@ -3,7 +3,7 @@
 exports[`getAbbreviatedPackument does not conflict with getPackument on cached responses 1`] = `
 {
   "_id": "short-time-ago",
-  "_rev": "7-10cfa21adf18c7d94641fb0232e3db1c",
+  "_rev": "8-146add6d8ac21b435c570b9193de7828",
   "author": {
     "name": "velut",
   },
@@ -205,7 +205,7 @@ See LICENSE file.
     "1.1.1": "2020-07-12T17:03:27.911Z",
     "2.0.0": "2020-12-30T22:00:15.470Z",
     "created": "2020-06-24T20:56:30.552Z",
-    "modified": "2020-12-30T22:00:17.852Z",
+    "modified": "2022-05-17T18:18:09.563Z",
   },
   "versions": {
     "0.1.0": {
@@ -254,6 +254,12 @@ ewqxgB3yyfQwMk3HWk9e8g6OGDeXtm3ij39P6nFuaSUMgbBhupZ5oKQEoI7D
 -----END PGP SIGNATURE-----
 ",
         "shasum": "101f912c5f9de58e1076791e8f6ec37c05fde2f7",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCICk2ZBGKOa3ngtPMa1uMVfCvCYYmVPqkfI6jS5KE98bTAiBROrM/FtTXmqDqyw2jO45ayrIVibOvqxwaGlc2LTWGpg==",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.0.tgz",
         "unpackedSize": 29625,
       },
@@ -378,6 +384,12 @@ uXJZ
 -----END PGP SIGNATURE-----
 ",
         "shasum": "a71de26c06b0078c9308a341c06d0649fadcbde5",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDypJeFCIlsdbdOL6kUNQwKBgPHqLejSjFhwJnF4Q+H4gIgQShiZTiqJCyO5gGY9BRk9SLW7j+zExqDypPFJATemPA=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.1.tgz",
         "unpackedSize": 29827,
       },
@@ -507,6 +519,12 @@ E9U0
 -----END PGP SIGNATURE-----
 ",
         "shasum": "363b36e8b690c497db6f57222e7ab3275023c57f",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCyTi2jNWhIZ1z1gb5h6bDwwIvzDqiD7AsaUYzCoj2ynAIhAM4kS66n4RvEfVabo6Vskc/UQvF0+1Ose3I2QaCCfMY3",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.2.0.tgz",
         "unpackedSize": 35090,
       },
@@ -638,6 +656,12 @@ HxeZ
 -----END PGP SIGNATURE-----
 ",
         "shasum": "8f019fc3acaa9c1bcc0278b315a37f5baff9bea6",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIGJtV6q2MKHT0rQj4UsqHCOxPpHPK7sXZ6hLNPqDqJCCAiEAixMJD128N/2QXSWw5UsEWpGwFA+/Jp0PuSwWgskq8To=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.0.tgz",
         "unpackedSize": 35463,
       },
@@ -769,6 +793,12 @@ sqb2
 -----END PGP SIGNATURE-----
 ",
         "shasum": "8c0d5f9b8b5cd8341b00cee1023658c24825698d",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC7FUcpqgR8Lpk3isKB//Z9xSsT+haD4Rito3mjKz+UwwIgaWalxGe749Va9Vf6mnwR1edt3vBxmrgiD524aNhFUNY=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.1.tgz",
         "unpackedSize": 42911,
       },
@@ -903,6 +933,12 @@ ClLU
 -----END PGP SIGNATURE-----
 ",
         "shasum": "328990c99d25a9883927b3c8ee55d466706f71fd",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQD3Kki6COtAxOHBMi8ootEBs+Ut+9scL9dlsVnEpnuTAQIhANwhaPZq3AAHVBt3nIToLvIBVjuTxbU5d+vyBWXoImbi",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.0.tgz",
         "unpackedSize": 27886,
       },
@@ -1039,6 +1075,12 @@ lF3HL4U86p0s4CsaCcAZNxfsloNL6MQVavjOL8JuvbFQFt0mJaNLyivsA7Mr
 -----END PGP SIGNATURE-----
 ",
         "shasum": "23d4305c9721fd9078b58227f356828c311e0f27",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQDeF9FduUrWBi608c7IyA64h5lKp+v/r2BXd/n6Z4qrzwIhAI6qgWtPfRqGWqxNfivnqj7gNF8VEc11pwTrfVIKQczb",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.1.tgz",
         "unpackedSize": 28882,
       },
@@ -1181,6 +1223,12 @@ ZGJV
 -----END PGP SIGNATURE-----
 ",
         "shasum": "3fde172e626999510c5ca6784aba568c964d50dc",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIFy5+OLxSy0dQBrhaYfUDtqP0MTeNE6OsgrgL/5BhSkCAiEAwbDFSmL73uopAcb0OgxBblPBziWiqwn/wqejFBcCTYM=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-2.0.0.tgz",
         "unpackedSize": 29378,
       },
@@ -1300,8 +1348,8 @@ exports[`getAbbreviatedPackument does not conflict with getPackument on cached r
     "latest": "2.0.0",
   },
   "id": "short-time-ago",
-  "modified": "2020-12-30T22:00:17.852Z",
-  "modifiedAt": "2020-12-30T22:00:17.852Z",
+  "modified": "2022-05-17T18:18:09.563Z",
+  "modifiedAt": "2022-05-17T18:18:09.563Z",
   "name": "short-time-ago",
   "versions": {
     "0.1.0": {
@@ -1335,6 +1383,12 @@ ewqxgB3yyfQwMk3HWk9e8g6OGDeXtm3ij39P6nFuaSUMgbBhupZ5oKQEoI7D
 -----END PGP SIGNATURE-----
 ",
         "shasum": "101f912c5f9de58e1076791e8f6ec37c05fde2f7",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCICk2ZBGKOa3ngtPMa1uMVfCvCYYmVPqkfI6jS5KE98bTAiBROrM/FtTXmqDqyw2jO45ayrIVibOvqxwaGlc2LTWGpg==",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.0.tgz",
         "unpackedSize": 29625,
       },
@@ -1375,6 +1429,12 @@ uXJZ
 -----END PGP SIGNATURE-----
 ",
         "shasum": "a71de26c06b0078c9308a341c06d0649fadcbde5",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDypJeFCIlsdbdOL6kUNQwKBgPHqLejSjFhwJnF4Q+H4gIgQShiZTiqJCyO5gGY9BRk9SLW7j+zExqDypPFJATemPA=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.1.1.tgz",
         "unpackedSize": 29827,
       },
@@ -1415,6 +1475,12 @@ E9U0
 -----END PGP SIGNATURE-----
 ",
         "shasum": "363b36e8b690c497db6f57222e7ab3275023c57f",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCyTi2jNWhIZ1z1gb5h6bDwwIvzDqiD7AsaUYzCoj2ynAIhAM4kS66n4RvEfVabo6Vskc/UQvF0+1Ose3I2QaCCfMY3",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-0.2.0.tgz",
         "unpackedSize": 35090,
       },
@@ -1455,6 +1521,12 @@ HxeZ
 -----END PGP SIGNATURE-----
 ",
         "shasum": "8f019fc3acaa9c1bcc0278b315a37f5baff9bea6",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIGJtV6q2MKHT0rQj4UsqHCOxPpHPK7sXZ6hLNPqDqJCCAiEAixMJD128N/2QXSWw5UsEWpGwFA+/Jp0PuSwWgskq8To=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.0.tgz",
         "unpackedSize": 35463,
       },
@@ -1495,6 +1567,12 @@ sqb2
 -----END PGP SIGNATURE-----
 ",
         "shasum": "8c0d5f9b8b5cd8341b00cee1023658c24825698d",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC7FUcpqgR8Lpk3isKB//Z9xSsT+haD4Rito3mjKz+UwwIgaWalxGe749Va9Vf6mnwR1edt3vBxmrgiD524aNhFUNY=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.0.1.tgz",
         "unpackedSize": 42911,
       },
@@ -1536,6 +1614,12 @@ ClLU
 -----END PGP SIGNATURE-----
 ",
         "shasum": "328990c99d25a9883927b3c8ee55d466706f71fd",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQD3Kki6COtAxOHBMi8ootEBs+Ut+9scL9dlsVnEpnuTAQIhANwhaPZq3AAHVBt3nIToLvIBVjuTxbU5d+vyBWXoImbi",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.0.tgz",
         "unpackedSize": 27886,
       },
@@ -1577,6 +1661,12 @@ lF3HL4U86p0s4CsaCcAZNxfsloNL6MQVavjOL8JuvbFQFt0mJaNLyivsA7Mr
 -----END PGP SIGNATURE-----
 ",
         "shasum": "23d4305c9721fd9078b58227f356828c311e0f27",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQDeF9FduUrWBi608c7IyA64h5lKp+v/r2BXd/n6Z4qrzwIhAI6qgWtPfRqGWqxNfivnqj7gNF8VEc11pwTrfVIKQczb",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-1.1.1.tgz",
         "unpackedSize": 28882,
       },
@@ -1622,6 +1712,12 @@ ZGJV
 -----END PGP SIGNATURE-----
 ",
         "shasum": "3fde172e626999510c5ca6784aba568c964d50dc",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIFy5+OLxSy0dQBrhaYfUDtqP0MTeNE6OsgrgL/5BhSkCAiEAwbDFSmL73uopAcb0OgxBblPBziWiqwn/wqejFBcCTYM=",
+          },
+        ],
         "tarball": "https://registry.npmjs.org/short-time-ago/-/short-time-ago-2.0.0.tgz",
         "unpackedSize": 29378,
       },
