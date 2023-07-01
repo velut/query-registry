@@ -85,7 +85,7 @@
         "np": "8.0.4",
         "prettier": "2.8.8",
         "setup-polly-jest": "0.11.0",
-        "ts-jest": "29.1.0",
+        "ts-jest": "29.1.1",
         "tslib": "2.6.0",
         "typescript": "5.0.4"
     }
