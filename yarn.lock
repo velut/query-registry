@@ -1164,10 +1164,10 @@
     resolve-global "1.0.0"
     yargs "^17.0.0"
 
-"@commitlint/config-conventional@17.6.6":
-  version "17.6.6"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.6.6.tgz#5452aa601d34503b88530ba38432116bcffdd005"
-  integrity sha512-phqPz3BDhfj49FUYuuZIuDiw+7T6gNAEy7Yew1IBHqSohVUCWOK2FXMSAExzS2/9X+ET93g0Uz83KjiHDOOFag==
+"@commitlint/config-conventional@17.6.7":
+  version "17.6.7"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.6.7.tgz#8469d977def36148615e9516b1a521e38ca27ddd"
+  integrity sha512-4oTpEUC0HRM54QRHBPMOJW1pETp7usxXn9RuNYNWHcmu8wi1mpws95hvS20u2n6HtIkTn0jfn7vHioCm4AGUTw==
   dependencies:
     conventional-changelog-conventionalcommits "^5.0.0"
 
@@ -1765,14 +1765,6 @@
     utf8-byte-length "^1.0.4"
 
 "@pollyjs/utils@^6.0.1", "@pollyjs/utils@^6.0.6":
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-6.0.6.tgz#fa3c3fc2a7cc4ab181499d2d0b439e5a0136a3fe"
-  integrity sha512-nhVJoI3nRgRimE0V2DVSvsXXNROUH6iyJbroDu4IdsOIOFC1Ds0w+ANMB4NMwFaqE+AisWOmXFzwAGdAfyiQVg==
-  dependencies:
-    qs "^6.10.1"
-    url-parse "^1.5.3"
-
-"@pollyjs/utils@^6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-6.0.6.tgz#fa3c3fc2a7cc4ab181499d2d0b439e5a0136a3fe"
   integrity sha512-nhVJoI3nRgRimE0V2DVSvsXXNROUH6iyJbroDu4IdsOIOFC1Ds0w+ANMB4NMwFaqE+AisWOmXFzwAGdAfyiQVg==

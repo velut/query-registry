@@ -67,7 +67,7 @@
     },
     "devDependencies": {
         "@commitlint/cli": "17.6.7",
-        "@commitlint/config-conventional": "17.6.6",
+        "@commitlint/config-conventional": "17.6.7",
         "@pollyjs/adapter-node-http": "6.0.6",
         "@pollyjs/core": "6.0.5",
         "@pollyjs/persister-fs": "6.0.6",
