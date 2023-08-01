@@ -1678,22 +1678,22 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@pollyjs/adapter-node-http@6.0.5":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.5.tgz#f92616cefdad9ae144fe07f6b88798a20bf1c8fd"
-  integrity sha512-/8xa5OHwumQ06P1PzMcePYxalxyRR4jA3ZdsXpLSSVn8xaC0S95X7WGtFk/1F/HhHWq/3tZaOQo2rFLtprGiwg==
+"@pollyjs/adapter-node-http@6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.6.tgz#7122765604e3dfdd6d68bced8a89c7966d49d710"
+  integrity sha512-jdJG7oncmSHZAtVMmRgOxh5A56b7G8H9ULlk/ZaVJ+jNrlFXhLmPpx8OQoSF4Cuq2ugdiWmwmAjFXHStcpY3Mw==
   dependencies:
-    "@pollyjs/adapter" "^6.0.4"
-    "@pollyjs/utils" "^6.0.1"
+    "@pollyjs/adapter" "^6.0.6"
+    "@pollyjs/utils" "^6.0.6"
     lodash-es "^4.17.21"
     nock "^13.2.1"
 
-"@pollyjs/adapter@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-6.0.4.tgz#4c45403a215026770a6f0fd7adb6db62d4b49154"
-  integrity sha512-xiAdK+ZBABWpXvUVdcgvZpGI0drix8uy6KFWZr3pVvzKWfr6VyKObd6J6alxA8LG/kQ3BL350fIDia8UIcvwrw==
+"@pollyjs/adapter@^6.0.4", "@pollyjs/adapter@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-6.0.6.tgz#d97b3617cd0e6b662dbfe34bacfb8b99feac0192"
+  integrity sha512-szhys0NiFQqCJDMC0kpDyjhLqSI7aWc6m6iATCRKgcMcN/7QN85pb3GmRzvnNV8+/Bi2AUSCwxZljcsKhbYVWQ==
   dependencies:
-    "@pollyjs/utils" "^6.0.1"
+    "@pollyjs/utils" "^6.0.6"
 
 "@pollyjs/core@6.0.5", "@pollyjs/core@^6.0.5":
   version "6.0.5"
@@ -1745,10 +1745,10 @@
     set-cookie-parser "^2.4.8"
     utf8-byte-length "^1.0.4"
 
-"@pollyjs/utils@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-6.0.1.tgz#215f53d6af71c44911c9e760c0669922bbcf04a6"
-  integrity sha512-vTdtYhZs/HcBQM3Po85BDmuOpjMwvuQPkSdd9Cd4lUSc8HEO4d52dljtmwlwW83zVuQvlEu5xFIZJUYhX8HxLA==
+"@pollyjs/utils@^6.0.1", "@pollyjs/utils@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-6.0.6.tgz#fa3c3fc2a7cc4ab181499d2d0b439e5a0136a3fe"
+  integrity sha512-nhVJoI3nRgRimE0V2DVSvsXXNROUH6iyJbroDu4IdsOIOFC1Ds0w+ANMB4NMwFaqE+AisWOmXFzwAGdAfyiQVg==
   dependencies:
     qs "^6.10.1"
     url-parse "^1.5.3"
@@ -6657,20 +6657,10 @@ nocache@^3.0.1:
   resolved "https://registry.yarnpkg.com/nocache/-/nocache-3.0.4.tgz#5b37a56ec6e09fc7d401dceaed2eab40c8bfdf79"
   integrity sha512-WDD0bdg9mbq6F4mRxEYcPWwfA1vxd0mrvKOyxI7Xj/atfRHVeutzuWByG//jfm4uPzp0y4Kj051EORCBSQMycw==
 
-nock@13.3.1:
+nock@13.3.1, nock@^13.2.1:
   version "13.3.1"
   resolved "https://registry.yarnpkg.com/nock/-/nock-13.3.1.tgz#f22d4d661f7a05ebd9368edae1b5dc0a62d758fc"
   integrity sha512-vHnopocZuI93p2ccivFyGuUfzjq2fxNyNurp7816mlT5V5HF4SzXu8lvLrVzBbNqzs+ODooZ6OksuSUNM7Njkw==
-  dependencies:
-    debug "^4.1.0"
-    json-stringify-safe "^5.0.1"
-    lodash "^4.17.21"
-    propagate "^2.0.0"
-
-nock@^13.2.1:
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-13.3.0.tgz#b13069c1a03f1ad63120f994b04bfd2556925768"
-  integrity sha512-HHqYQ6mBeiMc+N038w8LkMpDCRquCHWeNmN3v6645P3NhN2+qXOBqvPqo7Rt1VyCMzKhJ733wZqw5B7cQVFNPg==
   dependencies:
     debug "^4.1.0"
     json-stringify-safe "^5.0.1"
