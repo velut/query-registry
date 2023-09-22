@@ -1,0 +1,548 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "prettier-plugin-tailwind-css",
+        "scope": "unscoped",
+        "version": "1.5.0",
+        "description": "<div align=\"center\"> <img alt=\"Prettier\"   src=\"https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-light.png\"> <img alt=\"Tailwind\" height=\"180\" hspace=\"25\" vspace=\"15\"   src=\"https://i.pinimg.com/originals/61/f5/e0/61f5e0",
+        "date": "2021-02-09T08:58:52.522Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailwind-css",
+          "homepage": "https://github.com/marcosvega91/prettier-tailwind#readme",
+          "repository": "https://github.com/marcosvega91/prettier-tailwind",
+          "bugs": "https://github.com/marcosvega91/prettier-tailwind/issues"
+        },
+        "publisher": {
+          "username": "marcosvega",
+          "email": "marcomoretti0103@gmail.com"
+        },
+        "maintainers": [
+          { "username": "marcosvega", "email": "marcomoretti0103@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.4234861649508277,
+        "detail": {
+          "quality": 0.9403509335781415,
+          "popularity": 0.10649445689216183,
+          "maintenance": 0.29745092847179605
+        }
+      },
+      "searchScore": 0.0009854463
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-tailwindcss",
+        "scope": "unscoped",
+        "version": "0.5.4",
+        "description": "A Prettier plugin for sorting Tailwind CSS classes.",
+        "date": "2023-08-31T14:02:08.847Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailwindcss",
+          "homepage": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss#readme",
+          "repository": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss",
+          "bugs": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues"
+        },
+        "publisher": {
+          "username": "thecrypticace",
+          "email": "thecrypticace@gmail.com"
+        },
+        "maintainers": [
+          { "username": "malfaitrobin", "email": "malfait.robin@gmail.com" },
+          { "username": "bradlc", "email": "bradlc41@gmail.com" },
+          { "username": "adamwathan", "email": "adam@adamwathan.me" },
+          { "username": "reinink", "email": "jonathan@reinink.ca" },
+          { "username": "thecrypticace", "email": "thecrypticace@gmail.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.3334554356821259,
+        "detail": {
+          "quality": 0.358921149554591,
+          "popularity": 0.3117497832830913,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.00013337385
+    },
+    {
+      "package": {
+        "name": "@glideapps/prettier-plugin-glide-tailwind",
+        "scope": "glideapps",
+        "version": "4.2.2",
+        "description": "Formatting and sorting for glide tailwind classes",
+        "keywords": [
+          "prettier",
+          "plugin",
+          "tailwindcss",
+          "sort",
+          "order",
+          "word wrap",
+          "tailwind"
+        ],
+        "date": "2021-08-04T18:47:43.427Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40glideapps%2Fprettier-plugin-glide-tailwind"
+        },
+        "author": {
+          "name": "Original author - Ari Seyhun | Modified by Bry Nguyen"
+        },
+        "publisher": {
+          "username": "bryhasanpm",
+          "email": "brynguyen1331@gmail.com"
+        },
+        "maintainers": [
+          { "username": "jassmith87", "email": "jason@heyglide.com" },
+          { "username": "clancey", "email": "James.clancey@gmail.com" },
+          { "username": "sr-glide", "email": "seth@glideapps.com" },
+          { "username": "bryhasanpm", "email": "brynguyen1331@gmail.com" },
+          { "username": "djsweet", "email": "danieljsweet@icloud.com" },
+          { "username": "mark.probst", "email": "mark@quicktype.io" },
+          { "username": "ekimekim", "email": "npm@ekime.kim" },
+          { "username": "dvdsgl", "email": "djsiegel@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.2779182917372232,
+        "detail": {
+          "quality": 0.8787521638310651,
+          "popularity": 0.01927595205167914,
+          "maintenance": 0.021560169628045665
+        }
+      },
+      "searchScore": 0.0000026632201
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-twin.macro",
+        "scope": "unscoped",
+        "version": "1.0.14",
+        "description": "A Prettier plugin for sorting Tailwind CSS classes on twin.macro",
+        "keywords": ["prettier", "tailwindcss", "twin.macro"],
+        "date": "2023-06-04T13:22:45.733Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-twin.macro",
+          "homepage": "https://github.com/mohammadsiyou/prettier-plugin-twin.macro#readme",
+          "repository": "https://github.com/mohammadsiyou/prettier-plugin-twin.macro",
+          "bugs": "https://github.com/mohammadsiyou/prettier-plugin-twin.macro/issues"
+        },
+        "author": {
+          "name": "Mohammad Ghorbani",
+          "email": "mohammadcj003@gmail.com",
+          "username": "mohammadsiyou"
+        },
+        "publisher": {
+          "username": "mohammadsiyou",
+          "email": "mohammadcj003@gmail.com"
+        },
+        "maintainers": [
+          { "username": "mohammadsiyou", "email": "mohammadcj003@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.2892271142273306,
+        "detail": {
+          "quality": 0.5394951910061103,
+          "popularity": 0.0307864820015566,
+          "maintenance": 0.33315225207129334
+        }
+      },
+      "searchScore": 0.0000024339297
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-tailwind",
+        "scope": "unscoped",
+        "version": "2.2.12",
+        "description": "Sort tailwind classes",
+        "keywords": ["prettier", "plugin", "tailwindcss", "sort", "order"],
+        "date": "2021-06-21T18:49:23.816Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailwind",
+          "homepage": "https://github.com/Acidic9/prettier-plugin-tailwind#readme",
+          "repository": "https://github.com/Acidic9/prettier-plugin-tailwind",
+          "bugs": "https://github.com/Acidic9/prettier-plugin-tailwind/issues"
+        },
+        "author": {
+          "name": "Ari Seyhun",
+          "email": "ariseyhun@live.com.au",
+          "username": "acidic9"
+        },
+        "publisher": {
+          "username": "acidic9",
+          "email": "ariseyhun@live.com.au"
+        },
+        "maintainers": [
+          { "username": "acidic9", "email": "ariseyhun@live.com.au" }
+        ]
+      },
+      "score": {
+        "final": 0.2655725330937102,
+        "detail": {
+          "quality": 0.8130689357292331,
+          "popularity": 0.04030226572892641,
+          "maintenance": 0.021560169628045665
+        }
+      },
+      "searchScore": 0.0000020144118
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-tailwind-styled-components",
+        "scope": "unscoped",
+        "version": "0.0.4",
+        "description": "A Prettier plugin for sorting and formatting Tailwind CSS classes when using Tailwind Styled-Components.",
+        "keywords": ["prettier", "tailwind-styled-components"],
+        "date": "2023-07-20T12:59:52.941Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailwind-styled-components",
+          "homepage": "https://github.com/dimitribarbot/prettier-plugin-tailwind-styled-components#readme",
+          "repository": "https://github.com/dimitribarbot/prettier-plugin-tailwind-styled-components",
+          "bugs": "https://github.com/dimitribarbot/prettier-plugin-tailwind-styled-components/issues"
+        },
+        "publisher": {
+          "username": "dimitribarbot",
+          "email": "dimitribarbot@gmail.com"
+        },
+        "maintainers": [
+          { "username": "dimitribarbot", "email": "dimitribarbot@gmail.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.26459512067659763,
+        "detail": {
+          "quality": 0.4624425304762442,
+          "popularity": 0.026715178953682125,
+          "maintenance": 0.3328915682855304
+        }
+      },
+      "searchScore": 0.0000011370483
+    },
+    {
+      "package": {
+        "name": "@wyze/prettier-tailwind-trivago-compat",
+        "scope": "wyze",
+        "version": "1.0.1",
+        "description": "> A [Prettier](https://prettier.io) configuration to handle compatability between [tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) and [@trivago/sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) plugins. See",
+        "date": "2022-10-07T14:23:17.497Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40wyze%2Fprettier-tailwind-trivago-compat"
+        },
+        "publisher": { "username": "wyze", "email": "neil.kistner@gmail.com" },
+        "maintainers": [
+          { "username": "wyze", "email": "neil.kistner@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.2642430305071857,
+        "detail": {
+          "quality": 0.5453648798703824,
+          "popularity": 0.0036520788069828503,
+          "maintenance": 0.28387239703893435
+        }
+      },
+      "searchScore": 4.9204834e-7
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-typewind",
+        "scope": "unscoped",
+        "version": "0.0.8",
+        "description": "Convert tailwind classes to typewind objects",
+        "keywords": ["prettier", "plugin", "tailwindcss", "typewind"],
+        "date": "2023-04-17T19:29:25.316Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-typewind",
+          "homepage": "https://github.com/epicbytes/prettier-plugin-typewind",
+          "repository": "https://github.com/epicbytes/prettier-plugin-typewind"
+        },
+        "author": {
+          "name": "Igor Kornelli",
+          "email": "aztecsrv@gmail.com",
+          "username": "aztecsrv"
+        },
+        "publisher": { "username": "aztecsrv", "email": "aztecsrv@gmail.com" },
+        "maintainers": [
+          { "username": "aztecsrv", "email": "aztecsrv@gmail.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.2529003243066278,
+        "detail": {
+          "quality": 0.44873806431275237,
+          "popularity": 0.004606395274672695,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 3.078422e-7
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-tailwind-classes-sorter",
+        "scope": "unscoped",
+        "version": "1.0.10",
+        "description": "Sort tailwind classes",
+        "keywords": ["prettier", "plugin", "tailwind", "sort"],
+        "date": "2020-03-03T12:11:30.102Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailwind-classes-sorter"
+        },
+        "author": { "name": "Acidic9" },
+        "publisher": {
+          "username": "acidic9",
+          "email": "ariseyhun@live.com.au"
+        },
+        "maintainers": [
+          { "username": "acidic9", "email": "ariseyhun@live.com.au" }
+        ]
+      },
+      "score": {
+        "final": 0.23378520868962974,
+        "detail": {
+          "quality": 0.7325271946779548,
+          "popularity": 0.018517116904078028,
+          "maintenance": 0.021560169628045665
+        }
+      },
+      "searchScore": 2.7242828e-7
+    },
+    {
+      "package": {
+        "name": "@wayofdev/eslint-config-bases",
+        "scope": "wayofdev",
+        "version": "3.0.3",
+        "description": "A shareable eslint base configuration for projects.",
+        "keywords": [
+          "eslint",
+          "eslint-config",
+          "eslint-config-bases",
+          "eslint-plugin",
+          "eslint-grapql",
+          "eslint-html",
+          "eslint-jest",
+          "eslint-mdx",
+          "eslint-typescript",
+          "eslint-prettier-plugin",
+          "eslint-prettier-config",
+          "eslint-react",
+          "eslint-react-query",
+          "eslint-regexp",
+          "eslint-react-testing-library",
+          "eslint-rtl",
+          "eslint-sonar",
+          "eslint-storybook",
+          "eslint-tailwind",
+          "eslint-tailwindcss"
+        ],
+        "date": "2023-07-31T17:52:36.946Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40wayofdev%2Feslint-config-bases",
+          "homepage": "https://github.com/wayofdev/npm-shareable-configs/tree/master/packages/eslint-config-bases#readme",
+          "repository": "https://github.com/wayofdev/npm-shareable-configs",
+          "bugs": "https://github.com/wayofdev/npm-shareable-configs/issues"
+        },
+        "author": {
+          "name": "Andrij Orlenko",
+          "email": "lotyp7@gmail.com",
+          "url": "https://github.com/lotyp",
+          "username": "lotyp"
+        },
+        "publisher": { "username": "lotyp", "email": "lotyp7@gmail.com" },
+        "maintainers": [{ "username": "lotyp", "email": "lotyp7@gmail.com" }]
+      },
+      "score": {
+        "final": 0.2739042894506019,
+        "detail": {
+          "quality": 0.5073472651246819,
+          "popularity": 0.014381266418659187,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 2.0896877e-7
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-tailsort",
+        "scope": "unscoped",
+        "version": "2.2.12",
+        "description": "Sort tailwind classes",
+        "keywords": ["prettier", "plugin", "tailwindcss", "sort", "order"],
+        "date": "2021-05-20T03:42:02.798Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-tailsort",
+          "homepage": "https://github.com/LonJonn/prettier-plugin-tailsort#readme",
+          "repository": "https://github.com/LonJonn/prettier-plugin-tailsort",
+          "bugs": "https://github.com/LonJonn/prettier-plugin-tailsort/issues"
+        },
+        "author": { "name": "Ari Seyhun", "email": "ariseyhun@live.com.au" },
+        "publisher": {
+          "username": "lonjonn",
+          "email": "leon.salsiccia@gmail.com"
+        },
+        "maintainers": [
+          { "username": "lonjonn", "email": "leon.salsiccia@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.2278485302280937,
+        "detail": {
+          "quality": 0.7133502369482011,
+          "popularity": 0.017992570782335463,
+          "maintenance": 0.021560169628045665
+        }
+      },
+      "searchScore": 1.1950682e-7
+    },
+    {
+      "package": {
+        "name": "@luewell/prettier-plugin-tailwindcss",
+        "scope": "luewell",
+        "version": "0.1.14",
+        "description": "A Prettier plugin for sorting Tailwind CSS classes.",
+        "date": "2022-10-14T22:59:47.919Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40luewell%2Fprettier-plugin-tailwindcss",
+          "homepage": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss#readme",
+          "repository": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss",
+          "bugs": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues"
+        },
+        "publisher": {
+          "username": "isluewell",
+          "email": "support@luewell.com"
+        },
+        "maintainers": [
+          { "username": "isluewell", "email": "support@luewell.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.22279383782080692,
+        "detail": {
+          "quality": 0.44873806431275237,
+          "popularity": 0.0011752306379359447,
+          "maintenance": 0.2507459651534389
+        }
+      },
+      "searchScore": 6.644095e-8
+    },
+    {
+      "package": {
+        "name": "@devguy221/prettier-plugin-tailwindcss",
+        "scope": "devguy221",
+        "version": "0.1.6",
+        "description": "A Prettier plugin for sorting Tailwind CSS classes.",
+        "date": "2022-08-13T04:07:26.729Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40devguy221%2Fprettier-plugin-tailwindcss",
+          "homepage": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss#readme",
+          "repository": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss",
+          "bugs": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues"
+        },
+        "publisher": { "username": "devguy221", "email": "crn221@gmail.com" },
+        "maintainers": [
+          { "username": "devguy221", "email": "crn221@gmail.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.17480378986418502,
+        "detail": {
+          "quality": 0.3725547326799794,
+          "popularity": 0.018546610007946367,
+          "maintenance": 0.16156016159259992
+        }
+      },
+      "searchScore": 3.3434226e-9
+    },
+    {
+      "package": {
+        "name": "tailwindnext",
+        "scope": "unscoped",
+        "version": "1.0.0",
+        "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). This project uses TailwindCSS with Tailwind Prettier Sort plugin.",
+        "keywords": [
+          "tailwind",
+          "tailwindcss",
+          "reactjs",
+          "nextjs",
+          "prettier"
+        ],
+        "date": "2022-01-28T22:19:21.035Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/tailwindnext",
+          "homepage": "https://github.com/NayamAmarshe/tailwindnext#readme",
+          "repository": "https://github.com/NayamAmarshe/tailwindnext",
+          "bugs": "https://github.com/NayamAmarshe/tailwindnext/issues"
+        },
+        "author": { "name": "Nayam Amarshe" },
+        "publisher": {
+          "username": "nayamamarshe",
+          "email": "nayamamarshe@protonmail.com"
+        },
+        "maintainers": [
+          { "username": "nayamamarshe", "email": "nayamamarshe@protonmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.15730364528112178,
+        "detail": {
+          "quality": 0.4482104227797868,
+          "popularity": 0.0009959850204406065,
+          "maintenance": 0.06426263911437587
+        }
+      },
+      "searchScore": 3.9886205e-10
+    },
+    {
+      "package": {
+        "name": "wordpress-plugin-packages",
+        "scope": "unscoped",
+        "version": "0.0.1",
+        "description": "Boilerplate WordPress Plugin structure, for all other frameworks: JavaScript (React, Vue, Vite), TypeScript, supporting NextJS, Nuxt, Gatsby, and JSX/TSX Components like MUI and CSS like Tailwind. Supports ESLint + Prettier code definitions and formatting",
+        "keywords": [
+          "wordpress",
+          "wordpress-plugin",
+          "react",
+          "javascript",
+          "mui",
+          "vue",
+          "vite",
+          "typescript",
+          "tsx",
+          "jsx"
+        ],
+        "date": "2022-09-10T23:19:59.104Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/wordpress-plugin-packages",
+          "homepage": "https://github.com/marty-mcgee/wordpress-plugin#readme",
+          "repository": "https://github.com/marty-mcgee/wordpress-plugin",
+          "bugs": "https://github.com/marty-mcgee/wordpress-plugin/issues"
+        },
+        "author": { "name": "Marty McGee" },
+        "publisher": {
+          "username": "martymcgee",
+          "email": "mcgee.marty@gmail.com"
+        },
+        "maintainers": [
+          { "username": "martymcgee", "email": "mcgee.marty@gmail.com" }
+        ]
+      },
+      "flags": { "unstable": true },
+      "score": {
+        "final": 0.11241385819006161,
+        "detail": {
+          "quality": 0.29867869655792456,
+          "popularity": 0.0009095015218648276,
+          "maintenance": 0.06426263911437587
+        }
+      },
+      "searchScore": 2.5517288e-12
+    }
+  ],
+  "total": 15,
+  "time": "Fri Sep 22 2023 21:28:53 GMT+0000 (Coordinated Universal Time)"
+}

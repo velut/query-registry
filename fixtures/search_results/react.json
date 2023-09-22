@@ -1,0 +1,820 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "react",
+        "scope": "unscoped",
+        "version": "18.2.0",
+        "description": "React is a JavaScript library for building user interfaces.",
+        "keywords": ["react"],
+        "date": "2022-06-14T19:46:38.369Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react",
+          "homepage": "https://reactjs.org/",
+          "repository": "https://github.com/facebook/react",
+          "bugs": "https://github.com/facebook/react/issues"
+        },
+        "publisher": { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+        "maintainers": [
+          { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+          { "username": "fb", "email": "opensource+npm@fb.com" },
+          { "username": "sophiebits", "email": "npm@sophiebits.com" },
+          { "username": "react-bot", "email": "react-core@meta.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5501617383130863,
+        "detail": {
+          "quality": 0.526570333580004,
+          "popularity": 0.787211347349767,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 100000.586
+    },
+    {
+      "package": {
+        "name": "styled-components",
+        "scope": "unscoped",
+        "version": "6.0.8",
+        "description": "CSS for the <Component> Age. Style components your way with speed, strong typing, and flexibility.",
+        "keywords": [
+          "react",
+          "css",
+          "css-in-js",
+          "styled-components",
+          "babel-macro",
+          "babel-macros",
+          "styling"
+        ],
+        "date": "2023-09-13T15:05:26.438Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/styled-components",
+          "homepage": "https://styled-components.com",
+          "repository": "https://github.com/styled-components/styled-components",
+          "bugs": "https://github.com/styled-components/styled-components/issues"
+        },
+        "author": { "name": "Glen Maddern" },
+        "publisher": {
+          "username": "probablyup",
+          "email": "probablyup@gmail.com"
+        },
+        "maintainers": [
+          { "username": "geelen", "email": "glen@glenmaddern.com" },
+          { "username": "mxstbr", "email": "contact@mxstbr.com" },
+          { "username": "probablyup", "email": "probablyup@gmail.com" },
+          { "username": "philpl", "email": "phil@kitten.sh" }
+        ]
+      },
+      "score": {
+        "final": 0.6526428843460268,
+        "detail": {
+          "quality": 0.9887907668690621,
+          "popularity": 0.6838256789104044,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.12817575
+    },
+    {
+      "package": {
+        "name": "react-dropzone",
+        "scope": "unscoped",
+        "version": "14.2.3",
+        "description": "Simple HTML5 drag-drop zone with React.js",
+        "keywords": ["react-component", "react", "drag", "drop", "upload"],
+        "date": "2022-10-12T13:32:33.896Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-dropzone",
+          "homepage": "https://github.com/react-dropzone/react-dropzone",
+          "repository": "https://github.com/react-dropzone/react-dropzone",
+          "bugs": "https://github.com/react-dropzone/react-dropzone/issues"
+        },
+        "author": { "name": "Param Aggarwal" },
+        "publisher": {
+          "username": "rolandjitsu",
+          "email": "rolandjitsu@gmail.com"
+        },
+        "maintainers": [
+          { "username": "rolandjitsu", "email": "rolandjitsu@gmail.com" },
+          { "username": "rxmarbles", "email": "rmarkins@gmail.com" },
+          { "username": "okonet", "email": "andrey@okonet.dev" }
+        ]
+      },
+      "score": {
+        "final": 0.5912582658915023,
+        "detail": {
+          "quality": 0.974256851317741,
+          "popularity": 0.5295083938836949,
+          "maintenance": 0.3247236361053911
+        }
+      },
+      "searchScore": 0.11565602
+    },
+    {
+      "package": {
+        "name": "rxjs",
+        "scope": "unscoped",
+        "version": "7.8.1",
+        "description": "Reactive Extensions for modern JavaScript",
+        "keywords": [
+          "Rx",
+          "RxJS",
+          "ReactiveX",
+          "ReactiveExtensions",
+          "Streams",
+          "Observables",
+          "Observable",
+          "Stream",
+          "ES6",
+          "ES2015"
+        ],
+        "date": "2023-04-26T22:56:33.678Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/rxjs",
+          "homepage": "https://rxjs.dev",
+          "repository": "https://github.com/reactivex/rxjs",
+          "bugs": "https://github.com/ReactiveX/RxJS/issues"
+        },
+        "author": {
+          "name": "Ben Lesh",
+          "email": "ben@benlesh.com",
+          "username": "blesh"
+        },
+        "publisher": { "username": "blesh", "email": "ben@benlesh.com" },
+        "maintainers": [
+          { "username": "cartant", "email": "nicholas@cartant.com" },
+          { "username": "blesh", "email": "ben@benlesh.com" },
+          { "username": "kwonoj", "email": "kwon.ohjoong@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.6535719262205757,
+        "detail": {
+          "quality": 0.9409892020564722,
+          "popularity": 0.7274528541056211,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.11242678
+    },
+    {
+      "package": {
+        "name": "prop-types",
+        "scope": "unscoped",
+        "version": "15.8.1",
+        "description": "Runtime type checking for React props and similar objects.",
+        "keywords": ["react"],
+        "date": "2022-01-05T00:08:33.458Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prop-types",
+          "homepage": "https://facebook.github.io/react/",
+          "repository": "https://github.com/facebook/prop-types",
+          "bugs": "https://github.com/facebook/prop-types/issues"
+        },
+        "publisher": { "username": "ljharb", "email": "ljharb@gmail.com" },
+        "maintainers": [
+          { "username": "ljharb", "email": "ljharb@gmail.com" },
+          { "username": "fb", "email": "opensource+npm@fb.com" },
+          { "username": "sophiebits", "email": "npm@sophiebits.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5782054616155659,
+        "detail": {
+          "quality": 0.6124599678114914,
+          "popularity": 0.7941332261796974,
+          "maintenance": 0.332916691740641
+        }
+      },
+      "searchScore": 0.096448764
+    },
+    {
+      "package": {
+        "name": "eslint-plugin-react",
+        "scope": "unscoped",
+        "version": "7.33.2",
+        "description": "React specific linting rules for ESLint",
+        "keywords": ["eslint", "eslint-plugin", "eslintplugin", "react"],
+        "date": "2023-08-16T04:22:35.076Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/eslint-plugin-react",
+          "homepage": "https://github.com/jsx-eslint/eslint-plugin-react",
+          "repository": "https://github.com/jsx-eslint/eslint-plugin-react",
+          "bugs": "https://github.com/jsx-eslint/eslint-plugin-react/issues"
+        },
+        "author": {
+          "name": "Yannick Croissant",
+          "email": "yannick.croissant+npm@gmail.com",
+          "username": "yannickcr"
+        },
+        "publisher": { "username": "ljharb", "email": "ljharb@gmail.com" },
+        "maintainers": [
+          {
+            "username": "yannickcr",
+            "email": "yannick.croissant+npm@gmail.com"
+          },
+          { "username": "ljharb", "email": "ljharb@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5472731634009248,
+        "detail": {
+          "quality": 0.5634590267345915,
+          "popularity": 0.7473393963253736,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.094338596
+    },
+    {
+      "package": {
+        "name": "react-dom",
+        "scope": "unscoped",
+        "version": "18.2.0",
+        "description": "React package for working with the DOM.",
+        "keywords": ["react"],
+        "date": "2022-06-14T19:46:48.370Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-dom",
+          "homepage": "https://reactjs.org/",
+          "repository": "https://github.com/facebook/react",
+          "bugs": "https://github.com/facebook/react/issues"
+        },
+        "publisher": { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+        "maintainers": [
+          { "username": "zpao", "email": "paul@oshannessy.com" },
+          { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+          { "username": "fb", "email": "opensource+npm@fb.com" },
+          { "username": "sophiebits", "email": "npm@sophiebits.com" },
+          { "username": "react-bot", "email": "react-core@meta.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5346377720480507,
+        "detail": {
+          "quality": 0.526570333580004,
+          "popularity": 0.742857158021094,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.08340356
+    },
+    {
+      "package": {
+        "name": "react-router",
+        "scope": "unscoped",
+        "version": "6.16.0",
+        "description": "Declarative routing for React",
+        "keywords": ["react", "router", "route", "routing", "history", "link"],
+        "date": "2023-09-13T16:37:49.747Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-router",
+          "homepage": "https://github.com/remix-run/react-router#readme",
+          "repository": "https://github.com/remix-run/react-router",
+          "bugs": "https://github.com/remix-run/react-router/issues"
+        },
+        "author": { "name": "Remix Software", "email": "hello@remix.run" },
+        "publisher": {
+          "username": "mjackson",
+          "email": "mjijackson+npm@gmail.com"
+        },
+        "maintainers": [
+          { "username": "timdorr", "email": "timdorr@timdorr.com" },
+          { "username": "mjackson", "email": "mjijackson+npm@gmail.com" },
+          { "username": "chancestrickland", "email": "hi@chance.dev" }
+        ]
+      },
+      "score": {
+        "final": 0.5320872944454926,
+        "detail": {
+          "quality": 0.532829823595534,
+          "popularity": 0.7302048020004737,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.071377434
+    },
+    {
+      "package": {
+        "name": "react-router-dom",
+        "scope": "unscoped",
+        "version": "6.16.0",
+        "description": "Declarative routing for React web applications",
+        "keywords": ["react", "router", "route", "routing", "history", "link"],
+        "date": "2023-09-13T16:37:49.610Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-router-dom",
+          "homepage": "https://github.com/remix-run/react-router#readme",
+          "repository": "https://github.com/remix-run/react-router",
+          "bugs": "https://github.com/remix-run/react-router/issues"
+        },
+        "author": { "name": "Remix Software", "email": "hello@remix.run" },
+        "publisher": {
+          "username": "mjackson",
+          "email": "mjijackson+npm@gmail.com"
+        },
+        "maintainers": [
+          { "username": "timdorr", "email": "timdorr@timdorr.com" },
+          { "username": "mjackson", "email": "mjijackson+npm@gmail.com" },
+          { "username": "chancestrickland", "email": "hi@chance.dev" }
+        ]
+      },
+      "score": {
+        "final": 0.5233773298727461,
+        "detail": {
+          "quality": 0.520536938782906,
+          "popularity": 0.7158559473463075,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.052308887
+    },
+    {
+      "package": {
+        "name": "react-hook-form",
+        "scope": "unscoped",
+        "version": "7.46.2",
+        "description": "Performant, flexible and extensible forms library for React Hooks",
+        "keywords": [
+          "react",
+          "hooks",
+          "form",
+          "forms",
+          "form-validation",
+          "validation",
+          "typescript",
+          "react-hooks"
+        ],
+        "date": "2023-09-21T10:52:59.903Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-hook-form",
+          "homepage": "https://www.react-hook-form.com",
+          "repository": "https://github.com/react-hook-form/react-hook-form",
+          "bugs": "https://github.com/react-hook-form/react-hook-form/issues"
+        },
+        "author": { "email": "bluebill1049@hotmail.com" },
+        "publisher": {
+          "username": "bluebill1049",
+          "email": "bluebill1049@gmail.com"
+        },
+        "maintainers": [
+          { "username": "bluebill1049", "email": "bluebill1049@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5694946272900794,
+        "detail": {
+          "quality": 0.9893293220910577,
+          "popularity": 0.4457976114174156,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.05162165
+    },
+    {
+      "package": {
+        "name": "react-transition-group",
+        "scope": "unscoped",
+        "version": "4.4.5",
+        "description": "A react component toolset for managing animations",
+        "keywords": [
+          "react",
+          "transition",
+          "addons",
+          "transition-group",
+          "animation",
+          "css",
+          "transitions"
+        ],
+        "date": "2022-08-01T08:36:58.958Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-transition-group",
+          "homepage": "https://github.com/reactjs/react-transition-group#readme",
+          "repository": "https://github.com/reactjs/react-transition-group",
+          "bugs": "https://github.com/reactjs/react-transition-group/issues"
+        },
+        "publisher": {
+          "username": "eps1lon",
+          "email": "silbermann.sebastian@gmail.com"
+        },
+        "maintainers": [
+          { "username": "koba04", "email": "koba0004@gmail.com" },
+          { "username": "monastic.panic", "email": "monastic.panic@gmail.com" },
+          { "username": "eps1lon", "email": "silbermann.sebastian@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5150253486831725,
+        "detail": {
+          "quality": 0.5959866360168619,
+          "popularity": 0.6541612939086786,
+          "maintenance": 0.3064940143145041
+        }
+      },
+      "searchScore": 0.0339729
+    },
+    {
+      "package": {
+        "name": "react-day-picker",
+        "scope": "unscoped",
+        "version": "8.8.2",
+        "description": "Customizable Date Picker for React",
+        "date": "2023-09-12T11:48:17.007Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-day-picker",
+          "homepage": "http://react-day-picker.js.org",
+          "repository": "https://github.com/gpbl/react-day-picker",
+          "bugs": "https://github.com/gpbl/react-day-picker/issues"
+        },
+        "author": { "name": "Giampaolo Bellavite", "email": "io@gpbl.dev" },
+        "publisher": { "username": "gpbl", "email": "gpbellavite@icloud.com" },
+        "maintainers": [
+          { "username": "gpbl", "email": "gpbellavite@icloud.com" },
+          { "username": "gpbl-bot", "email": "gpbellavite@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5595277125785555,
+        "detail": {
+          "quality": 0.9893293220910577,
+          "popularity": 0.41732071224163303,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.032873463
+    },
+    {
+      "package": {
+        "name": "react-select",
+        "scope": "unscoped",
+        "version": "5.7.5",
+        "description": "A Select control built with and for ReactJS",
+        "keywords": [
+          "combobox",
+          "form",
+          "input",
+          "multiselect",
+          "react",
+          "react-component",
+          "select",
+          "ui"
+        ],
+        "date": "2023-09-20T23:32:44.895Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-select",
+          "homepage": "https://github.com/JedWatson/react-select/tree/master#readme",
+          "repository": "https://github.com/JedWatson/react-select/tree/master",
+          "bugs": "https://github.com/JedWatson/react-select/issues"
+        },
+        "author": { "name": "Jed Watson" },
+        "publisher": {
+          "username": "react-select-release-bot",
+          "email": "automation+react-select@thinkmill.com.au"
+        },
+        "maintainers": [
+          { "username": "jedwatson", "email": "jed.watson@me.com" },
+          { "username": "brianvaughn", "email": "briandavidvaughn@gmail.com" },
+          { "username": "gwyneplaine", "email": "cc.lee@live.com.au" },
+          {
+            "username": "react-select-release-bot",
+            "email": "automation+react-select@thinkmill.com.au"
+          },
+          { "username": "emmatown", "email": "npm@emmas.town" }
+        ]
+      },
+      "score": {
+        "final": 0.5133409473628802,
+        "detail": {
+          "quality": 0.6201988273670276,
+          "popularity": 0.6017807760717071,
+          "maintenance": 0.33330865007906985
+        }
+      },
+      "searchScore": 0.028675715
+    },
+    {
+      "package": {
+        "name": "react-is",
+        "scope": "unscoped",
+        "version": "18.2.0",
+        "description": "Brand checking of React Elements.",
+        "keywords": ["react"],
+        "date": "2022-06-14T19:46:52.452Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-is",
+          "homepage": "https://reactjs.org/",
+          "repository": "https://github.com/facebook/react",
+          "bugs": "https://github.com/facebook/react/issues"
+        },
+        "publisher": { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+        "maintainers": [
+          { "username": "gnoff", "email": "jcs.gnoff@gmail.com" },
+          { "username": "fb", "email": "opensource+npm@fb.com" },
+          { "username": "sophiebits", "email": "npm@sophiebits.com" },
+          { "username": "react-bot", "email": "react-core@meta.com" }
+        ]
+      },
+      "score": {
+        "final": 0.49131126984150186,
+        "detail": {
+          "quality": 0.526570333580004,
+          "popularity": 0.6190671517166687,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.020721769
+    },
+    {
+      "package": {
+        "name": "react-bootstrap-typeahead",
+        "scope": "unscoped",
+        "version": "6.2.3",
+        "description": "React typeahead with Bootstrap styling",
+        "keywords": [
+          "auto complete",
+          "auto suggest",
+          "auto-complete",
+          "auto-suggest",
+          "autocomplete",
+          "autosuggest",
+          "bootstrap",
+          "bootstrap tokenizer",
+          "bootstrap typeahead",
+          "bootstrap-tokenizer",
+          "bootstrap-typeahead",
+          "react",
+          "react autocomplete",
+          "react autosuggest",
+          "react tokenizer",
+          "react typeahead",
+          "react-autocomplete",
+          "react-autosuggest",
+          "react-bootstrap",
+          "react-bootstrap-tokenizer",
+          "react-bootstrap-typeahead",
+          "react-tokenizer",
+          "react-typeahead",
+          "tokenizer",
+          "typeahead"
+        ],
+        "date": "2023-06-11T19:36:31.069Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-bootstrap-typeahead",
+          "homepage": "http://ericgio.github.io/react-bootstrap-typeahead/",
+          "repository": "https://github.com/ericgio/react-bootstrap-typeahead",
+          "bugs": "https://github.com/ericgio/react-bootstrap-typeahead/issues"
+        },
+        "author": { "name": "ericgio" },
+        "publisher": { "username": "ericgio", "email": "ericgio@gmail.com" },
+        "maintainers": [{ "username": "ericgio", "email": "ericgio@gmail.com" }]
+      },
+      "score": {
+        "final": 0.5395569478905794,
+        "detail": {
+          "quality": 0.9899165262991638,
+          "popularity": 0.35975806666903887,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.020247862
+    },
+    {
+      "package": {
+        "name": "rc-util",
+        "scope": "unscoped",
+        "version": "5.37.0",
+        "description": "Common Utils For React Component",
+        "keywords": ["react", "util"],
+        "date": "2023-08-23T09:37:22.239Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/rc-util",
+          "homepage": "http://github.com/react-component/util",
+          "repository": "https://github.com/react-component/util",
+          "bugs": "http://github.com/react-component/util/issues"
+        },
+        "publisher": { "username": "madccc", "email": "1075746765@qq.com" },
+        "maintainers": [
+          { "username": "benjycui", "email": "benjytrys@gmail.com" },
+          { "username": "yesmeck", "email": "yesmeck@gmail.com" },
+          { "username": "afc163", "email": "afc163@gmail.com" },
+          { "username": "yiminghe", "email": "yiminghe@gmail.com" },
+          { "username": "vagusx", "email": "onlylae@sina.com" },
+          { "username": "jljsj33", "email": "155259966@qq.com" },
+          { "username": "zombiej", "email": "smith3816@gmail.com" },
+          { "username": "dahong", "email": "darryshaw@gmail.com" },
+          { "username": "madccc", "email": "1075746765@qq.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5593770311716457,
+        "detail": {
+          "quality": 0.9642265472808362,
+          "popularity": 0.4384068580592233,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.018709345
+    },
+    {
+      "package": {
+        "name": "reactstrap",
+        "scope": "unscoped",
+        "version": "9.2.0",
+        "description": "React Bootstrap components",
+        "keywords": [
+          "reactstrap",
+          "bootstrap",
+          "react",
+          "component",
+          "components",
+          "react-component",
+          "ui"
+        ],
+        "date": "2023-06-09T23:25:08.263Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/reactstrap",
+          "homepage": "https://github.com/reactstrap/reactstrap#readme",
+          "repository": "https://github.com/reactstrap/reactstrap",
+          "bugs": "https://github.com/reactstrap/reactstrap/issues"
+        },
+        "publisher": { "username": "phwebi", "email": "phgao1994@gmail.com" },
+        "maintainers": [
+          {
+            "username": "eddywashere",
+            "email": "edward.d.hernandez@gmail.com"
+          },
+          { "username": "bestguy", "email": "7zark7@gmail.com" },
+          { "username": "sharpie", "email": "dumbdrum@gmail.com" },
+          { "username": "davidacevedo", "email": "david.acevedo07@gmail.com" },
+          {
+            "username": "reactstrapbot",
+            "email": "edward.d.hernandez+reactstrap@gmail.com"
+          },
+          { "username": "gopro16", "email": "kgray1497@gmail.com" },
+          { "username": "phwebi", "email": "phgao1994@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.5448826855399079,
+        "detail": {
+          "quality": 0.9984563901636845,
+          "popularity": 0.36765457664038825,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.017029053
+    },
+    {
+      "package": {
+        "name": "react-redux",
+        "scope": "unscoped",
+        "version": "8.1.2",
+        "description": "Official React bindings for Redux",
+        "keywords": ["react", "reactjs", "redux"],
+        "date": "2023-07-29T16:08:10.376Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-redux",
+          "homepage": "https://github.com/reduxjs/react-redux",
+          "repository": "https://github.com/reduxjs/react-redux",
+          "bugs": "https://github.com/reduxjs/react-redux/issues"
+        },
+        "author": {
+          "name": "Dan Abramov",
+          "email": "dan.abramov@me.com",
+          "url": "https://github.com/gaearon"
+        },
+        "publisher": { "username": "phryneas", "email": "mail@lenzw.de" },
+        "maintainers": [
+          { "username": "gaearon", "email": "dan.abramov@gmail.com" },
+          { "username": "timdorr", "email": "timdorr@timdorr.com" },
+          { "username": "phryneas", "email": "mail@lenzw.de" },
+          { "username": "acemarke", "email": "mark.erikson@gmail.com" },
+          { "username": "eskimojo", "email": "ben.j.durrant@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.4753489891233957,
+        "detail": {
+          "quality": 0.4494391030032592,
+          "popularity": 0.639573118730718,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.015025565
+    },
+    {
+      "package": {
+        "name": "@testing-library/react",
+        "scope": "testing-library",
+        "version": "14.0.0",
+        "description": "Simple and complete React DOM testing utilities that encourage good testing practices.",
+        "keywords": [
+          "testing",
+          "react",
+          "ui",
+          "dom",
+          "jsdom",
+          "unit",
+          "integration",
+          "functional",
+          "end-to-end",
+          "e2e"
+        ],
+        "date": "2023-02-16T22:59:37.036Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40testing-library%2Freact",
+          "homepage": "https://github.com/testing-library/react-testing-library#readme",
+          "repository": "https://github.com/testing-library/react-testing-library",
+          "bugs": "https://github.com/testing-library/react-testing-library/issues"
+        },
+        "author": {
+          "name": "Kent C. Dodds",
+          "email": "me@kentcdodds.com",
+          "url": "https://kentcdodds.com",
+          "username": "kentcdodds"
+        },
+        "publisher": {
+          "username": "testing-library-bot",
+          "email": "testinglibraryoss@gmail.com"
+        },
+        "maintainers": [
+          { "username": "eps1lon", "email": "silbermann.sebastian@gmail.com" },
+          { "username": "mdjastrzebski", "email": "mdjastrzebski@gmail.com" },
+          { "username": "jdecroock", "email": "decroockjovi@gmail.com" },
+          {
+            "username": "testing-library-bot",
+            "email": "testinglibraryoss@gmail.com"
+          },
+          { "username": "kentcdodds", "email": "me@kentcdodds.com" },
+          { "username": "timdeschryver", "email": "timdeschryver@outlook.com" },
+          { "username": "patrickhulce", "email": "patrick.hulce@gmail.com" },
+          { "username": "dfcook", "email": "dfcook@hotmail.com" },
+          { "username": "gpx", "email": "polvara@gmail.com" },
+          { "username": "mpeyper", "email": "mpeyper7@gmail.com" },
+          { "username": "mihar-22", "email": "rahim.alwer@gmail.com" },
+          { "username": "pago", "email": "patrick.gotthardt@trivago.com" },
+          { "username": "cmckinstry", "email": "carson.mckinstry@gmail.com" },
+          { "username": "thymikee", "email": "thymikee@gmail.com" },
+          { "username": "brrianalexis", "email": "brrianalexis.dev@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.48625091371821827,
+        "detail": {
+          "quality": 0.5499999999999999,
+          "popularity": 0.5856233077381027,
+          "maintenance": 0.3322364457425211
+        }
+      },
+      "searchScore": 0.013134502
+    },
+    {
+      "package": {
+        "name": "react-bootstrap",
+        "scope": "unscoped",
+        "version": "2.8.0",
+        "description": "Bootstrap 5 components built with React",
+        "keywords": [
+          "bootstrap",
+          "react",
+          "component",
+          "components",
+          "ecosystem-react",
+          "react-component"
+        ],
+        "date": "2023-06-23T00:38:30.541Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-bootstrap",
+          "homepage": "https://react-bootstrap.github.io/",
+          "repository": "https://github.com/react-bootstrap/react-bootstrap",
+          "bugs": "https://github.com/react-bootstrap/react-bootstrap/issues"
+        },
+        "author": {
+          "name": "Stephen J. Collings",
+          "email": "stevoland@gmail.com"
+        },
+        "publisher": {
+          "username": "kytsang",
+          "email": "ktsang.work@gmail.com"
+        },
+        "maintainers": [
+          { "username": "monastic.panic", "email": "monastic.panic@gmail.com" },
+          { "username": "taion", "email": "tesrin@gmail.com" },
+          { "username": "kytsang", "email": "ktsang.work@gmail.com" }
+        ]
+      },
+      "score": {
+        "final": 0.47785481134309954,
+        "detail": {
+          "quality": 0.5365978965008239,
+          "popularity": 0.5720250735033877,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.012278863
+    }
+  ],
+  "total": 250799,
+  "time": "Fri Sep 22 2023 22:05:29 GMT+0000 (Coordinated Universal Time)"
+}
