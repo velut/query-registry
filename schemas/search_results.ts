@@ -29,7 +29,7 @@ export const searchResultsSchema = z.object({
           /** Package bug tracker page. */
           bugs: z.string().optional(),
         })
-        .catchall(z.string()),
+        .catchall(z.string().optional()),
       /** User who published the package. */
       publisher: z.object({
         username: z.string(),
