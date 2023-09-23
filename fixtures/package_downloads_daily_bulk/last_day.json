@@ -1,0 +1,20 @@
+{
+  "jquery": {
+    "downloads": [{ "downloads": 1314396, "day": "2023-09-22" }],
+    "package": "jquery",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  },
+  "express": {
+    "downloads": [{ "downloads": 4830203, "day": "2023-09-22" }],
+    "package": "express",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  },
+  "react": {
+    "downloads": [{ "downloads": 3528659, "day": "2023-09-22" }],
+    "package": "react",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "jquery": {
+    "downloads": [
+      { "downloads": 500944, "day": "2023-09-16" },
+      { "downloads": 435567, "day": "2023-09-17" },
+      { "downloads": 1267315, "day": "2023-09-18" },
+      { "downloads": 1424197, "day": "2023-09-19" },
+      { "downloads": 1346419, "day": "2023-09-20" },
+      { "downloads": 1312125, "day": "2023-09-21" },
+      { "downloads": 1314396, "day": "2023-09-22" }
+    ],
+    "package": "jquery",
+    "start": "2023-09-16",
+    "end": "2023-09-22"
+  },
+  "express": {
+    "downloads": [
+      { "downloads": 1547460, "day": "2023-09-16" },
+      { "downloads": 1407720, "day": "2023-09-17" },
+      { "downloads": 5080788, "day": "2023-09-18" },
+      { "downloads": 5433230, "day": "2023-09-19" },
+      { "downloads": 5496990, "day": "2023-09-20" },
+      { "downloads": 5408914, "day": "2023-09-21" },
+      { "downloads": 4830203, "day": "2023-09-22" }
+    ],
+    "package": "express",
+    "start": "2023-09-16",
+    "end": "2023-09-22"
+  }
+}
