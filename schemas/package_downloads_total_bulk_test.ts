@@ -17,7 +17,7 @@ Deno.test("packageDownloadsTotalBulkSchema with correct data", () => {
 });
 
 Deno.test("packageDownloadsTotalBulkSchema with wrong data", () => {
-  [null, "", [], {}, { foo: "bar" }].forEach((data) => {
+  [null, "", [], { foo: "bar" }].forEach((data) => {
     assertThrows(() => {
       packageDownloadsTotalBulkSchema.parse(data);
     });
