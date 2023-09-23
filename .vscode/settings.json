@@ -6,5 +6,12 @@
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "cSpell.ignoreWords": ["deno", "edoardo", "keyv", "scibona", "skimdb"]
+  "cSpell.ignoreWords": [
+    "deno",
+    "edoardo",
+    "fastify",
+    "keyv",
+    "scibona",
+    "skimdb"
+  ]
 }
