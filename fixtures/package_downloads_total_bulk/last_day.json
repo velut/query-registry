@@ -1,0 +1,20 @@
+{
+  "jquery": {
+    "downloads": 1314396,
+    "package": "jquery",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  },
+  "express": {
+    "downloads": 4830203,
+    "package": "express",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  },
+  "react": {
+    "downloads": 3528659,
+    "package": "react",
+    "start": "2023-09-22",
+    "end": "2023-09-22"
+  }
+}
