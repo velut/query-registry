@@ -16,6 +16,4 @@ export const packageDownloadsTotalSchema = z.object({
  *
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
  */
-export type PackageDownloadsTotal = z.infer<
-  typeof packageDownloadsTotalSchema
->;
+export type PackageDownloadsTotal = z.infer<typeof packageDownloadsTotalSchema>;
