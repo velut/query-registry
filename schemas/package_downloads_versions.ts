@@ -1,7 +1,7 @@
 import { z } from "../deps.ts";
 
 export const packageDownloadsVersionsSchema = z.object({
-  /** Total number of downloads by package version. */
+  /** Package version to total number of downloads. */
   downloads: z.record(z.number()),
   /** Package name. */
   package: z.string(),
