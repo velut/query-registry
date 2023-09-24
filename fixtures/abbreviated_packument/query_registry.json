@@ -1,0 +1,1138 @@
+{
+  "name": "query-registry",
+  "dist-tags": {
+    "latest": "2.6.0",
+    "next": "2.5.0-0"
+  },
+  "versions": {
+    "0.2.0": {
+      "name": "query-registry",
+      "version": "0.2.0",
+      "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.2",
+        "got": "^11.4.0",
+        "hosted-git-info": "^3.0.4",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@pollyjs/adapter-node-http": "^5.0.0",
+        "@pollyjs/core": "^5.0.0",
+        "@pollyjs/persister-fs": "^5.0.0",
+        "@types/debug": "^4.1.5",
+        "@types/git-url-parse": "^9.0.0",
+        "@types/hosted-git-info": "^3.0.0",
+        "@types/pollyjs__adapter-node-http": "^2.0.0",
+        "@types/pollyjs__core": "^4.3.0",
+        "@types/pollyjs__persister-fs": "^2.0.0",
+        "@types/proper-url-join": "^2.0.0",
+        "@types/setup-polly-jest": "^0.5.0",
+        "@types/validate-npm-package-name": "^3.0.0",
+        "husky": "^4.2.5",
+        "nock": "^13.0.2",
+        "setup-polly-jest": "^0.9.0",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.6"
+      },
+      "dist": {
+        "shasum": "1435496564ce8a553cdcc01889fa825d88b2e422",
+        "integrity": "sha512-4G9n8yf5GNgk8YIOdQj9iXfOwIZ7LzyO8Fd2AKyX7JFajt9hmhT2RL4CV2H8Jut1rzwWzQ8i+8yCkC4cnoAZuA==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-0.2.0.tgz",
+        "fileCount": 85,
+        "unpackedSize": 321538,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfC6AXCRA9TVsSAnZWagAAdPoQAIwmCy8PjbGFdvq2FDk/\nXH9I8wQwoManDeECJTS9UWNMVcJG5DiyUc3JyWOom+WYsnLVNbWfKmRBRxDh\nV+/AbNqj1YAHUzClV8OWFN7pHdzUbukG5CESlunBUg0D9yAf/SY+ir36izPj\niRkidO87DYbceh7ZUI00J1tYU3Tw6TEY1Cs6WgyJ7JVFCXBYdpQQAvPALl+N\nqLLKzi3Vwk0QQl44ojP6eviCBKYZlCBqyCFW1fEhYMs33GqcB3iSiDx4KlbH\nAMWP9PzfpuiqaOu+FPTuPcHNfvMRHy3tIKZeQQUgjAbtFX/ljx7hHgRDCAPm\nWd9xO0ESL00n1mOEbs6UGvt8gucYcbpUYMyR3qSn9X2CkucLUbja0HkKKpaN\nIEeP5XLN8q8iTjW4rdPUC6WRJ0rgQY2c5SvpdNuYoNx2L7acjRMnIiFQueN9\ndgYEPIEEMQjlPKkixOXGudPFGYwJCXiuO75g48abAWaLfTPm8ixOzfODgSRf\niyx36TelCgeFT+NdLQKh+riTrYaIXPT63DnFNsOF2GyVX437YNMmVB+GhLa9\ntmQ/jdPzmUUfBynaYlSpgyEL8+qTGqLBSd2tYTBFWBe3VgdMrnH0f62lZbyP\nfdfMwHQEaFPld7R+JvfHPcZIdIenhND+TOI4z1X/0j3UJ6szXZ0seQ3iVm78\ngaz5\r\n=phR0\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDY7h7bqAZve5ldoWduIvFyoD/X1DS8i18wq9iJVA91EQIgNl93BDE2CGT1clrjf9XCn96v26FhWWfuXKw83T0DdJI="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "0.3.0": {
+      "name": "query-registry",
+      "version": "0.3.0",
+      "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.2",
+        "got": "^11.4.0",
+        "hosted-git-info": "^3.0.4",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "9.1.1",
+        "@commitlint/config-conventional": "9.1.1",
+        "@pollyjs/adapter-node-http": "5.0.0",
+        "@pollyjs/core": "5.0.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.0",
+        "@types/pollyjs__core": "4.3.0",
+        "@types/pollyjs__persister-fs": "2.0.0",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.0",
+        "@types/validate-npm-package-name": "3.0.0",
+        "husky": "4.2.5",
+        "nock": "13.0.2",
+        "setup-polly-jest": "0.9.0",
+        "tsdx": "0.13.2",
+        "tslib": "2.0.0",
+        "typescript": "3.9.6",
+        "semantic-release": "17.1.1"
+      },
+      "dist": {
+        "integrity": "sha512-hkrpbsr8KKwXeRCSveDyKXBZL8eDCbf+jSG/hSPXlrl/phDmWYW+J9eBB9gWMnh6Onb+URoe8LoF9aA3WdMbnQ==",
+        "shasum": "428c069a4faaacccd3c0840c44859503bec33821",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-0.3.0.tgz",
+        "fileCount": 80,
+        "unpackedSize": 327931,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfDgqrCRA9TVsSAnZWagAAvREQAJzJ+GXT6zhkGOzTi404\nCrC8x1fng5wI6cnLnxXDfTYB6qSziEXN2hyAxTrwtiaSSDdsHvjM9gXMJJma\n8kJEkk5icpITGXA74ffvgr4p75oJ2FisrH3ukxZIyxQBYog9utgBYQjgbH6S\nDAkyPcbDPs+IefrNVMoSqZUPD56ESUDZBo3ZGyKcMGlbANNNK7VpXxTwLiPT\n0bLzDnWhFOtxKrBJMEMiPkyQF+P9X47U0CVUe4VIqRU6TlUymyJnNcoCHkvm\ngAyuG3sAtEwyeGHMqWyBGG3Bs36/fGIpau8tQujAL3UBV0V1MgJFGD3ZwXXY\nSKfU9tNiEermYvSn51RbkXkzH8gElqLxYWwy5nlQebs1oECOn65VtV2spQed\nDEn+pK6189hTgrbmmjVGjeaN8UhRw2mwwcuhFcv74WmNAdTGQTH+2ZxqPYdG\n+2BJiARXl83t9AVb+NNDJ6Oa/Zu3cBtbAVdN7ccCwuqhrAIl4VZN8gRgOhTN\n+cTs04k6PtiMFU4ry8fL957TUT0Cyny/P0BJp5R5Ke/BQtWctiEkOW8A6w7E\nDTSQjxlb1r7oqPCtfLTNk330uh28eXwTQQDnIDbLFcONnA7eHI/0ZTy6LaUd\nZsq7HXMAQKvnxXD6wLzQApnXoasiVUSrtVLfbboq9TCQkABwPPZ7WSA9PWDB\n+URo\r\n=LPTS\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCNB+Zzit/4g9d7kLiXScT4Ztm2ae5cpA1P+JVJ03YgwwIgPECsm9UK6E12qvDt2FDgHPrHKorRkp/Ldp3DtMy/MFA="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "1.0.0": {
+      "name": "query-registry",
+      "version": "1.0.0",
+      "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.2",
+        "got": "^11.4.0",
+        "hosted-git-info": "^3.0.4",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "9.1.1",
+        "@commitlint/config-conventional": "9.1.1",
+        "@pollyjs/adapter-node-http": "5.0.0",
+        "@pollyjs/core": "5.0.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.0",
+        "@types/pollyjs__core": "4.3.0",
+        "@types/pollyjs__persister-fs": "2.0.0",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.0",
+        "@types/validate-npm-package-name": "3.0.0",
+        "husky": "4.2.5",
+        "nock": "13.0.2",
+        "semantic-release": "17.1.1",
+        "setup-polly-jest": "0.9.0",
+        "tsdx": "0.13.2",
+        "tslib": "2.0.0",
+        "typescript": "3.9.6"
+      },
+      "dist": {
+        "shasum": "36d92a760c3005cd99d2e1b7b898b9d0c24d8f31",
+        "integrity": "sha512-Cx3NdWHqvFaTuvvNDJGEZ6rT9lVjsMhJyMVkDmdcL0ztp8Xi1KUIsQAJQXQWsmTS2QfWTVg0waxj6wSBEdmkrQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-1.0.0.tgz",
+        "fileCount": 118,
+        "unpackedSize": 350794,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfDjR8CRA9TVsSAnZWagAAsfwP/26gUZoRgCUYf9kDpG7M\nc37k15xpJuDyTWRTysFNu97RchqqXQrc3+UsxnuGIq40JWKgO4PAuJVG6U4E\ncrbKQqnCdN36baV/Lr6woauOAKa7Bxuq6XiKWPOYF1jlFOahC7syuWtLyOks\n/Eu+1PK4nQb9hgwgnlhrtqUWVFZtSn/QRq4qSbrrexOtekwQz0TPBGWLi9+E\nFl2K/93sZl0WibjoSfHeLjzdn6Dp0AToz5MSVWWZ5Z46Btj0a7d98wcomv8B\njrifdHfzD3etTmBHuZfmplTZqjoWY5+0bpJpqOslt0/QfWzznZdQcpPXRwF/\nt/upk20+jfFvObJ1fM4nAJ7qcwDqJg/ItQE75WLDwmo45nOUBOExm6yBSEHW\nPROmCuL2G87D1/RigsW8a7pdD2SgfmZFsItMiA5v1ZNiIck/21VhdpfCguU7\nKyhNU92uwWDVQYZ911dcR2VSFv9K5IEY83Ne5QIP8yLI1vMLMhiTSdDb2qZa\nbO++ADIHIV+eh8x6B0Xey2ks9NRT++4T8vrl1mZkAuvlTBCkNnR1iJkPDwUK\nRokewgPFmUR72V8CqvMZAkzBWf2dYZ7cRq2zru3Xx3ql06ELyEOajssPvkKd\nhMz3yNXBSbgBM1BAmXKLQNQXybY09Afv0k0fSOzgJqQeO//PbQSgU++qfvUo\nH0T+\r\n=ZYyR\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIE6LWePwfDsJKIaocEmHmpIpe4gN2qcIVoaXv11xmMTlAiABNJxFsG6xaPWVe9xWIf9+2fkRsxtE5h3w4yj97WZiYA=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "1.1.0": {
+      "name": "query-registry",
+      "version": "1.1.0",
+      "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.2",
+        "got": "^11.4.0",
+        "hosted-git-info": "^3.0.4",
+        "make-error": "^1.3.6",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "9.1.2",
+        "@commitlint/config-conventional": "9.1.2",
+        "@pollyjs/adapter-node-http": "5.0.0",
+        "@pollyjs/core": "5.0.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.0",
+        "@types/pollyjs__core": "4.3.0",
+        "@types/pollyjs__persister-fs": "2.0.0",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.0",
+        "@types/validate-npm-package-name": "3.0.0",
+        "husky": "4.2.5",
+        "nock": "13.0.4",
+        "semantic-release": "17.1.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.13.3",
+        "tslib": "2.0.1",
+        "typescript": "3.9.7"
+      },
+      "dist": {
+        "integrity": "sha512-ZJ+6vKSNhoM2T/TrJbgfcJhvz9rTfdXcRM63uQThtTrxI34DR5AEhP5IlPY+DUzl1aw6Xd1UcW76QrJKuFyeoQ==",
+        "shasum": "c4ac6f0e928b0cef640997442cd60b9b6947dac6",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-1.1.0.tgz",
+        "fileCount": 118,
+        "unpackedSize": 360691,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfSpsYCRA9TVsSAnZWagAAc1UP/Re0tvIPGzGR00ocRVWo\nwfRw2AbaCDzko4ffq7loY+JBwpIGhLHc53n5is6hvqGqfXybmxUyVOaoz9mu\nXzAjB4EX40pBpv5UC9vb4h5uebPjdDveMvdKwdafQSxJhz2zaUfQPhuAiUYU\nffXcUaJvEn5YEVsYwnX870rzf/e5XqCPWiNbTrMcJJkhH2Jw/j/U2iCPKgV0\n6tT6kbB9htwzYGTFrBHVkO+5cL38MGNluU1ezjFHYHLP+2f4PnzHArHq2sft\nO5Afy2wM8p/0wdaJxHa2YFP9YWOc67rzhBvloiBuMkw40/PAX+BqOxvNOws+\njbuipG9rjhXQ27fET3DrRWpMP0XxUKJWAnhB7GmlWQ7TrNKstxN9R5vb5z6v\nYlU3FtXerJEF+RwPunxjz818kr6izFUC3yFC+1QYjd0y6NtgKW+OQQ4qTH9e\nya+0WpM4e3NUDer2kVjaIJwNVprpI76C6k60ZlPKII3czx4CAnmwYWlOwgXQ\nrct+FwW6JqG15OhQTUMMi02AuQhhM/Zw8Ei1/WdDgyuLPTeE3oJp3S7FIpQf\noqFjJnwvyu0WyWEIDoa9ywQJsOY1HRX65wngjRrF4JXWgAW9qN61jba/cMnr\nKY7M2BenItsx26kdn4ACHHjf86ebdMQyoLl/NPHlaxjWpNwTswUP2v0H/PcL\nYHpQ\r\n=tKwo\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC+npWUy6Cn65TP71GX0cHsLbdUxDH7krUW9gQgupH9iQIgMkzlWt+/LaJGCE0IYGB9QtllCWGl+urnD5elzdXCw1A="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "1.2.0": {
+      "name": "query-registry",
+      "version": "1.2.0",
+      "dependencies": {
+        "@types/cacheable-request": "^6.0.1",
+        "cacheable-request": "^7.0.1",
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.3",
+        "got": "^11.5.2",
+        "hosted-git-info": "^3.0.5",
+        "make-error": "^1.3.6",
+        "proper-url-join": "^2.1.1",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "9.1.2",
+        "@commitlint/config-conventional": "9.1.2",
+        "@pollyjs/adapter-node-http": "5.0.0",
+        "@pollyjs/core": "5.0.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.0",
+        "@types/pollyjs__core": "4.3.0",
+        "@types/pollyjs__persister-fs": "2.0.0",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.0",
+        "@types/validate-npm-package-name": "3.0.0",
+        "eslint-plugin-prettier": "3.1.4",
+        "husky": "4.2.5",
+        "nock": "13.0.4",
+        "prettier": "2.1.1",
+        "semantic-release": "17.1.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.13.3",
+        "tslib": "2.0.1",
+        "typescript": "4.0.2"
+      },
+      "dist": {
+        "integrity": "sha512-QH9ELwpDObmTpGy5kJntQ1r1nqF4kTgibBuHZe9YwjJyQJR5cMQyUtfsZOG/CnrpkLU9nErVQRx32g7Lk51KLw==",
+        "shasum": "84227b11ecd7def139a72013db56bd5f24bd11e9",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-1.2.0.tgz",
+        "fileCount": 118,
+        "unpackedSize": 360823,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfS+WTCRA9TVsSAnZWagAAYtoP/2GGYv0H//4bXpUaAlE6\nQq8JeOPuj4DFt8DAGfUAEMxR0OSeBMUYD7z5u8C3Q7ggMyHktnN1SP/rHius\nJq8pP2PzrwT1aVQt97sJVxhUQQMWwyDsTCuYqDpFJm/8bElb2XTrIYAFjRwJ\nYIsUQq6phCq4khT3ozGU4eYTg6Tm+RB4ppuLOF8cIDFO3u02xHYJs15rmvJX\nwTc0+hVdHd3sPWWVGavL/0adxrWcO7+XMbYzK57aOvYyAj1xzxz+GAaEL1E0\nRkVF4wbjByKsPCywjuLf4U1PkfclItnRnJ1BOgbcYyrfqyxuuZeWi3gowwfd\n8oKmmbITOwQe76fZOI9s7gTj7Hgvf5Qj7rPrwOukM6R8Nm2Q7M4hWCWtc3Qp\nheEINl52Af/BYvG2tuLLSb/pQyy62ThNHKnbBzK2r0qsMS5IIvBvyhZbmRGw\nDdZmhK8KUAr6owhprdlY5Ba722YxpJ3NW6hGLWI3dYw0EQDX2qRIYpeVL9+u\ncxhM04IYMPEWf5HhpDI6PBqw4pUfI302OBcxYQ1ZrwFKG5Dt1J+qNrxjCk8u\nqOu8qKXkFeA/4D9e77VWRmggU9dIwpH84bjtn9PPQF9CYnfslsxj1gd12sWW\nwgbeLC6m7j0uFKilSHLYlPrCmVoMc2OJAZOv7nvPmWdD14m1M1ZgC88z/Eke\nC4ZT\r\n=/jCV\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIDZz/bGihxxV3DR8Xry2tvjcYvn+y/Z/GtIEYRVcw2t+AiB//Xh8OmOiSXYwUtJXR81A0CHPQpmjyC+JagNXAJ+wEw=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "2.0.0-0": {
+      "name": "query-registry",
+      "version": "2.0.0-0",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.3",
+        "hosted-git-info": "^3.0.5",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "proper-url-join": "^2.1.1",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "11.0.0",
+        "@commitlint/config-conventional": "11.0.0",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.1",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.7",
+        "nock": "13.0.5",
+        "np": "7.2.0",
+        "prettier": "2.2.1",
+        "semantic-release": "17.3.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.1.3"
+      },
+      "dist": {
+        "shasum": "5438627424e9ec1a5886867da2d1cc40cfa5e266",
+        "integrity": "sha512-XOYlIpzk8BzghThoo5Wnnj93Mt8IaghD5Uu42s0hWptkqt5ikGao8eUslyDIObVrdcY4bkqcAYrS3UJ+lrpeaQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-0.tgz",
+        "fileCount": 217,
+        "unpackedSize": 359818,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf94THCRA9TVsSAnZWagAA6tkQAI/We20Fq7IUMN2BZ2Hu\nBy78OPFJOjbtQTGvgYNhNURkB0T03p6UI5hAiRx0E4lS4i3ehVakYNQa8NW0\nd5V55gTDMxHmo+C1fWMdtjlHVryFCwul0W8cPA7r2lX/fF/pCDZ6z5VcgQ2J\n0W1itVcPns650zsbB+oqZfx5XvCET+M+qk2bZF9C4L3FKtZV/vXYW6VFOPnO\nlVKXQDxuswy9o+EDmFerbq/NWU6wDNRAeC7coueruAoYaI2TuL/KqGHeqLLh\nsAeIb52fVsnwLG8SuAWTMPp4nuxWExlKddhXgZSobxuyimm7kgb/fHfzqPJ/\nkIWdh29KhkD5Zdc4geosByUP9S2xKRodZgrMysHM80Y32j23rF0gvfyE35FQ\n6g82qcmtIPst20X6FYc19iN5O2hBS/EgESjHOad00FzOEeIlsUavOdbngzP6\nyunTxfDW6EhnzpfUCRdujhkDmrEGmJMvrWDrChjqjXaSejkcb0rluFDbbbZ4\nQvWyibJSm3QBZXo/VyjMBHagfxhrsac9b3P+T/vrp946YT7LwUBUOjaR6LXy\nri4xrVMKHSmqzT+K77WALk5rC2LcYDSVqOoucuB6f52Fje4YLR+vGUq1Lhlo\nCLfDM1i+gpX96OqBpaGYbeZegReV830hk0QnrU1pUM/nTEw5DRKUmU0nWZ2h\ndbZZ\r\n=ODiV\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCAQSZQjoK2ebbzrAdCN+4G8X3wG7C3/0dr9e+7OPsQWQIgfZRHeOyJwdeqfGF1GbLute269h+uh57nWD4IuthNDPI="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "2.0.0-1": {
+      "name": "query-registry",
+      "version": "2.0.0-1",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.1.3",
+        "hosted-git-info": "^3.0.5",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "proper-url-join": "^2.1.1",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "11.0.0",
+        "@commitlint/config-conventional": "11.0.0",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.1",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.7",
+        "np": "7.2.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.1.3"
+      },
+      "dist": {
+        "shasum": "2f8b7ae1369b0664c172b8720663ef841e4ac5b8",
+        "integrity": "sha512-aKlQoSoQ4bh2om5gCJ3EztPfU1Qfj75QVVr12WtDn0J92Qd9F7ERydaRqSQDm7PvNdk9kdl6mJ+/bqPXskSfEw==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-1.tgz",
+        "fileCount": 217,
+        "unpackedSize": 360672,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgGZ9jCRA9TVsSAnZWagAANQ0P/1m2OfPuzKIa7swEargA\nmcHYRq3dHpFLMSfTQLpPg2/lt1afJSUr8p0UqfXqWL1cedG9ooaJvVV6lbvH\n+melVJ6VO1vlthnl0EZqPLbC4+v4LfLc90HghOEfq21kBnbM2sTlS4zFbWyk\nMj1Z/SvCof1TBs8sbQP3UMU3ryEVNszBn9Cp+/l2n11lUXpb8PrbjP+MJoqM\nzKsr0sZvQ4cvbbLuy4Bm8WPEuYQ9rfY/GY0DbjmmktVa9kvKE+fRFCxv0XE5\nxsMzulE/cm0EFrhSuPC1DB6uqehgVz7bSqy81s0MgvYYbr5wjK2+nDnYmwep\n3PlGlfDxV+6ovMhJhJSN1leEk0Le6pnf/NqypgDsSnqm5IQaRB3s9Fu9WS9t\nsougxFG8j4ygWM4PB8bzVxS94Vfc8kDYOWNcvqYUeRBv2ViroWpA4DT/k5rY\nznnHL43aDTwyhFuV79V3NOO2HkegFZhA56DHmhks7Onr8RD2BvJmd14gJpNu\nK2s7ZQaJr+hfZkhXTyaAHfEUSH+QMEMMsJTvE3qFikkGKgfwXha4VErYa9jP\n4eZSPbaXkRjkaHLaazZ3czedVXOWLlDZhD98Zje3HS0BVOgQ7n6jii3xRFET\n1gtQVOqleu5ZmlwBM2/j7nh5wIR6ULyP2c1NjOq4UJ9U/jIhA+rHRcuj6C9/\n61hN\r\n=XnxF\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDQ6BjxxSgTVLFD90+ssmBSWWuSZ5jjy/As4fTxMnyW3AIgUi6Gew/nLWbTyUNrITb1xqzUmaAgBnTG2y7C098uKpw="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.0.0-2": {
+      "name": "query-registry",
+      "version": "2.0.0-2",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "11.0.0",
+        "@commitlint/config-conventional": "11.0.0",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/hosted-git-info": "3.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/proper-url-join": "2.0.0",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.7",
+        "np": "7.2.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.1.3"
+      },
+      "dist": {
+        "shasum": "46effd98ea6062fe435b6e6abfe14a6386c98ad0",
+        "integrity": "sha512-YSKANVyxaERS6/1fFCNRKzpOzPfQzCVUicuZ7XeTt+/xs0zjwtMpWvioLqatLnJrCYioBCN4UQecHCM3xAgCXA==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-2.tgz",
+        "fileCount": 209,
+        "unpackedSize": 348950,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgGvLiCRA9TVsSAnZWagAAjToP/j/QVKiQbiTujIoaKIzs\n91dP1hICNQlN4q8C5NRTuAbAKiMBBqB43oZypr9dMSQ0ePRt9oyQAXk2puQm\naF5hlXnru6XnYeOtJBUhMt0cH/lX8HxC2l5hFS5nysfD9JrNb+o7wyB7Y5r3\nBe2PT5EtX3lIrR9kAW5xg269cG3vPfViqM2T9ag4PDYyjFadcBlGXBl63lHX\nuZ85vAJgFDW8vaTUWe1P2wMMu27OO+OWYOh81v+wYJQnV4i9ldkknd9pWlGk\nNF99REixSZ7FLRuvduQUDqmKNalsh2Wxp9y6YmLDGI6IAlG8GTFavboA3clk\nwQG3IE3mkxlTNxMoTfYpxgBrumOwZJL8TvHO9zJXhqerKN6DPpc1H6SFHnYI\n4s6wi+gIOnPS1BG1JM3nivaoAVKen/qbh1Sl7awl17iYy88PjIKdYyHiBj6t\nMEf1IQblKM47OKBn9RpFEgmeOwEHFzEsIXEuneNiZAplBqCdKOvMF/MuSEpQ\nwDl7b5F0hBF6MkFnTHX1kOvuj77UfYge3Sv6sk2YanO8+2Z6EGxJPMu2l6rD\nhiI0fmKlThzmZI7MzauexTBLBtQz5kTSgydGIdllL4jzmklHoDdQNw9+sW6Y\nQ4UJCeJPyJv1MWEDOlewfpUzLN8LrGambomYlqTADv+Cb1YeWQ0NLvuWpmZj\noh3Z\r\n=Japs\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCICkBqNTmXOwoqYfclezx2Lr0UpQwTLR5Adi05zmSHVzrAiBfpLYeSOADF9xBiK1S2FdSaFMEyVwWOfduLVdzXgtZXg=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.0.0-3": {
+      "name": "query-registry",
+      "version": "2.0.0-3",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "11.0.0",
+        "@commitlint/config-conventional": "11.0.0",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.7",
+        "np": "7.2.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.1.3"
+      },
+      "dist": {
+        "shasum": "c51f3c985b8f4076a443d2243e4b27d30b4b8d97",
+        "integrity": "sha512-e3+dLTNDn+xw69jX+IRX5q5PrGENiVlsWeP139zBK7ZpYPLu8o+C4khVRyEzddGBuFbAWHSW8UJVUrbCYQIB9A==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-3.tgz",
+        "fileCount": 209,
+        "unpackedSize": 348945,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgGvTWCRA9TVsSAnZWagAALaQP+QASrK15ouH2J1KmzQjE\nhj0T4BLG1O980DkqggcbN/XzPpuJGEyOrG0a1ZXNyon3ZsEwx1VFRKaCYbls\nRQbc5Fz7O/By7aW2/VBMbWEsjJRp350EKjg9cPBxrY0bbq8xe8V1TsUL0Py7\nH9vq8hhAJ+WLMYNfOROP63Hj0CaCTQhdVhcJJCfFdlOnpUnFQf+Coup2F2wR\nDe/RM8uODGfCQSGeNDWqld23BNqWYspRVvFoJWfGny0wxRmwT+QqiTaoRzDi\nnlX5XA3g9ul50nx4NuYIgtYnmj2c430IcOZzP0vFDZdOgU/876nwtO1zIWQj\n83t7Z6BFHQcID8izAojttgAGgviNVkXUZ97DrjSFhxkK1T4pllHybgFQ9OLN\no5Ix1iAQWeKvmQe6UPgmlYUnzmJakxY4jjfbXZr65D8IVP2fDrUVQQj34CZB\nPyBvqSYptYhHSFL0zVqXMGyh4onAKVE2zyI/0vIJwUkvhVUWWim2KHAV7i/3\nPIL3+9nzbgMXHcZ5twnOYAU3ReLBamcMghx5ZQtHT2pOt/tMpkEfBLcP5PSF\nBe16fJapqNJi8CWAL5Rslye4ytOUOZ7fVk7hf1h9jBGupdwlDtkcAWNtkdM2\nqBojW3KB+mUNypKLkIi6QYPzTXlrow+GKDz2ImkKHeTT7SVHaQCXpjHuNzfd\nIaXY\r\n=w7L5\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIDZNMGSinLpkeB0FES6O4bNnAGRPF2d9sEWcN0TmukimAiEA7NA1qok/X+bAEh5B2aaAdhWo0XA0gLiuqQ/N+ecOQvI="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.0.0-4": {
+      "name": "query-registry",
+      "version": "2.0.0-4",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "11.0.0",
+        "@commitlint/config-conventional": "11.0.0",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.7",
+        "np": "7.3.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.1.5"
+      },
+      "dist": {
+        "shasum": "8f8ad8f54c151531c9a3bc6b03276af653865a7b",
+        "integrity": "sha512-4t6S+YxV5lxUldzTU84FpifH4Acscvn4Z34XMldk+5ds4OvMtpdVbF7gNcf3vCmbrUP4PnTK0LlO7z+9vgNFig==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-4.tgz",
+        "fileCount": 209,
+        "unpackedSize": 348919,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgJG+9CRA9TVsSAnZWagAAoZMP/RYqRqDAqa9XOYMsxXvW\n2/xGQ1yGMIRaCIxqgRaqQitd7sUWSXMDV4naVSOCmYWE4GraArrGFStFSzVJ\nvEOYtaCUKE7NQ77MtjnMiFQUQbbYSdBZaYptJdKWEFtwpV3Xi3Yt8B0lN1Vl\nMFn/cpfTf0V7g7Pl8syAFq+vBTofD+tjPgu7KD37hqfCCUl0aOPjI7glg5gV\n+UY/4CIftmQnhQ2dOcR3plJV3tKF2WEbarGCPBsxTLqj5gNRnqwAUwxa/axQ\nbe2dB5HCkMTfoDEBQPiyKHBXacMsizt9Wklgb9M8lKLTDBSdG3n61gPvofcd\nbquywLYAajtfcHKik2m25YXI6yos0idi+7OUQcnaCPN4q0HHJ5UTqYfa9m5e\nGVdwnVJD6NGWXe2LElSf8aU38AWfUKR1NcORZuXYh5nDvjYb6ASU4T2QttZ4\nbK2kIeOyAFrj9e/mm6+iPKwPsXzKC1r6nf9E8Q/dCGrqIrUGu5vAqcaWbUWz\nUBf8BXr3vfzK/VZxPFlOnBI9i5845XQV4hiL0nzIIclsCKXKaaWNFUVsOCGs\nnVHZXkzdG/5jctyoWhNV6UoFNTg9KpgTLpQt2Dy4Z+7CQoWiW/lzcqBaEhyU\nOaH58YeLEuVu+vfE7stqZmDhRkB9YXn+zI8VA8FaOaWQQ+MHpl69C/bXBXfl\n/YsZ\r\n=i/+N\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCWZAXamWJnZhowbfhf4/sZSS3vewbxdFp4Djxhi7FLqwIhANj0z2QS3miueUzcj74wdumd5Id3xqafl2jrPEQMSZWz"
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.0.0-5": {
+      "name": "query-registry",
+      "version": "2.0.0-5",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "12.0.1",
+        "@commitlint/config-conventional": "12.0.1",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.10",
+        "np": "7.4.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.2.2"
+      },
+      "dist": {
+        "shasum": "e6fb7c517ed699201b02644460f512f580f5a7ff",
+        "integrity": "sha512-5kVACh3sDCpX9grlgjSKtUtWCkPqmiHpBYSoZp/u96gu4hSIcJheXfEwdvtL5CwzJYkgthGKGL1/bzhR+38xuA==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0-5.tgz",
+        "fileCount": 209,
+        "unpackedSize": 349715,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgPsIhCRA9TVsSAnZWagAA6iIP/A0f23L+aZufUlfOivv3\nQ1WnIe3O+q9tWPv0BZjLNK1Sniw6IPBF9tNZjf3LhUmlSclKphICDcBIfGXl\nXjPGVijMIK3xQGQ7Fc3I6PmHflYwEojJxNMX+tItBq6ckYL0eZhtqzF4vc0y\n28+kEurYOaMfIlhVyCiZbLRxF1Np1NW4tJ3erX2H9VtFYmPhyS7BSD0D1OhG\ncdt/B/dhAeZ7NLHKB8VKpPKz6m73FV0FywGIuKf4UnXag8yRMcMa9g4ICf/Q\nGpt/F6WHhCPZS8FNhxPE3zKEWhAi5wD1dXyH1U5dO/qWSGTkYalW/Hp3ohaG\nuyfAKm/avlgGegG+Ovuv7CfQdCSYaFOTzTDF3RWnUuitRcsVRkBRIlBcHWM7\nzsZTUCtMA/puL3fw0gAae9rQ8ne6H4fb5RayIJqGzxaXxXUemMHVODfuVkCM\nRjlJmqCHHNarm4xaTpB2RGvDwMgDRDVofZ33m8Qltg9DkvRhgBAy3ayuc2AI\n17xNG4tkiC1C/nklmbunjhxK9cs2ZxdBCfimfqMrC9tIHrXztcOokmOKbKyC\nnnf56xTDJ/ZE07e6LATOmf6dgaQjoXGwD5eHSkeeOkhzlfp0A34MghoJ7kFx\n8rjHXA5s/Cs2FylGhXpvJ7BlR6kD867PfaLTZBRksIhYiHx3cUH/HHYSqd90\nVBri\r\n=RwKJ\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCID2IjiN0yN/c0SJ298iT9Mg3RokRqktMqW2SFby3gvnxAiAq7YZDwQvSlW4EIUAYOwhUthccI/I0HoxRGbECnziWHA=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.0.0": {
+      "name": "query-registry",
+      "version": "2.0.0",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "12.0.1",
+        "@commitlint/config-conventional": "12.0.1",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/debug": "4.1.5",
+        "@types/git-url-parse": "9.0.0",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.2",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "nock": "13.0.11",
+        "np": "7.4.0",
+        "prettier": "2.2.1",
+        "setup-polly-jest": "0.9.1",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.2.3"
+      },
+      "dist": {
+        "shasum": "d61f3932f67db59487dc3114bd16a6ef081baa00",
+        "integrity": "sha512-C6kCa5SZh8qJOzTpA2T65XQpHMikXCqFdfiByCI39C928r4i375eQr+9eQ08EMkBARSHODj133l7E10Zn8rf9w==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.0.0.tgz",
+        "fileCount": 209,
+        "unpackedSize": 350094,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgR8egCRA9TVsSAnZWagAAtiEP/iBp1Sa/D1CoBPCu8mHs\nR//bzEWe977wEVQntAqi88v0gpFspB/aLSdwsoLkuz3sZtmAv7YkcsbNvoul\ngyBHcBRrBq5KtyDdN4I3atSPMSDCtQPymRWtuKrfLIrcE1RdgWEeR5OJfIRj\ncawSw9twpGiTzpMKQO8sZxhfSFuJBgmMVVVb7SPkxmub6ueixCgIoqYbunnB\n6blJo6scdYhsHEBRMh79lT8xOgS9jpL3rxR9cIER0/g5TJw/p3t1POBjDoz3\nx/NL4ZeEQAZXfROz/azJWpDsjt/nraA+r65rQ2V3U82dNqIrO/GASrLpcgnP\ne8NT9X7ezD30iDXBdXYnfvZ4milaJE20f6oWhIEA1Lh3evuBTwtGsNfjuCdg\nDFBVlQwjIJdOXUCm9EeKTyooJip9SqRujYKlt8MLTE61sISqFfnPivLBPx/i\nWLxPFvn6XmumNdByPjOq22XNB+knWk8IQYCa+RwFyTQSHCMTE5ul4WRraMl9\nJHhAVEo+Xa4EhiofR3BpFihnMmN5caFmPkHxFzCTyF6Yb2kfTPwXYcqMbHjF\nEXIDm3ysPrpUG79vWqgIg3OpHZRkRy51c1Vne4N+Wp1BM4pkUql6n3pyJe5S\nH01u69S6AY5nEf+Apco8+1+kN03McxDFlesWHUuGUD71FaziUyuHrlTJ0qbw\n6BtV\r\n=lRe3\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIC6B/X77U9Ge1kZi9rJQ+Q+2z2nqC5LLT9buyL35MH3fAiAMeHJ4MdQ/W3BMpEs0o5VwKZGXf7AQ1ge/J4QHLf58Ow=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.1.0-0": {
+      "name": "query-registry",
+      "version": "2.1.0-0",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "15.0.0",
+        "@commitlint/config-conventional": "15.0.0",
+        "@pollyjs/adapter-node-http": "5.1.1",
+        "@pollyjs/core": "5.1.1",
+        "@pollyjs/persister-fs": "5.1.1",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "dts-cli": "0.19.7",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.1",
+        "np": "7.6.0",
+        "prettier": "2.4.1",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.3.1",
+        "typescript": "4.5.2"
+      },
+      "dist": {
+        "shasum": "13f5883b289ac439d5fc628a0691e982ed0f6024",
+        "integrity": "sha512-I7Og+svISjYgdsvbqZNhjaSF0bocz4QoENkrXWYaBTfFPbvncM709qX4ERZohzUFQovu01wYgupLWc/sm8gnMQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.1.0-0.tgz",
+        "fileCount": 209,
+        "unpackedSize": 351843,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhnT0WCRA9TVsSAnZWagAAEjUP/2dSWQmSMJ95tS0/TSMw\nA0Jm2LU7Cvh/L/BJrysTWxFe7lqN0bdJLXsIYNbmWp+oecPlyKvOJ7qfH4IR\nPuD9BTUwnYfPhpZEpK/0nilxpXZ3vWSutXwbKCzMbRdXARj55kPNv7wz0uq9\nZxY2UeL0jll64mWZzdPXEiN5KJHBWucuKZBS58cT0fdrEBKoRUlRf+StFYuA\nEqnI9ubGO4HyzIklKM2UtotZHw4mVxYQfro2AvBAYzsPlzw7BqiUmxIsGh96\nQYQ0UN58rst0ewKpgVzEvLHkB8CaEl/XaUoIQJrADih7l5KT/gjeQRoMJ4uv\nwLp2sAcA02TBUFHqeTIAIuqzGuzP9rpHV2Lcxs5S71hwKnfCnA3Dkr+9ITE0\nlE5kjZk0kk7KNUSXxNtpB7VD7BXCIZrZtc579zy/fLySZcDC2w2j//MYPsgx\nXU5h3Qs5tNREv1YsGNSHZhg4mO//WULIBHY74h/2V7GkF7cLkKN44q6oHy8D\n1THf6IBafEX9q9hxxzetBdCR5UDITo0QYpUzWgrSaQ6fVafuCx5+w+B0gszb\n5xZ8i1kZS3PS8qqsSvrVw21q4U5eHf8qGpq/VVHZoWVzYyKbNBNu2RzPnd3f\nEe/QRaWHeZBJWKD8o+RlqQw/wIIvLAAcKQqjAIgIPQx0DTKwmQbsMNFGPnTw\nSlZE\r\n=ezqH\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIGvs7gY2KctYKjCrjxbsboNSfq92kpw1y9v/lh2Se7ZPAiEA5q4WGYZDIMPTyDiqw/SWtA7jyIiw/0Qwmebtcb//HZY="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.2.0-0": {
+      "name": "query-registry",
+      "version": "2.2.0-0",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "15.0.0",
+        "@commitlint/config-conventional": "15.0.0",
+        "@pollyjs/adapter-node-http": "5.1.1",
+        "@pollyjs/core": "5.1.1",
+        "@pollyjs/persister-fs": "5.1.1",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "dts-cli": "0.19.7",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.1",
+        "np": "7.6.0",
+        "prettier": "2.5.0",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.3.1",
+        "typescript": "4.5.2"
+      },
+      "dist": {
+        "shasum": "de5d7cdbe637c8a80d1bb502a3cd825dd50d049d",
+        "integrity": "sha512-GrsSSS0FcE+H23BxWIgIQQDCDPcgjBo5l9KG2okTC3u/qEEAGhdlmC3UJJQ3ETC2kv2/9cXzmUBuVvQk35dEbQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.2.0-0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 392672,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhpoMkCRA9TVsSAnZWagAAnWgQAIwLWztTlz4AC3BLklL/\n5Klm2qydq1Se6nQSkTvbonjRXGD9Wqa5BxCcqCGEsSPMJ8QPRhaDPqT1wk5q\nUBieGKgX80/ebjcM0NP9rigLnM0VbrFEUGnrjrL1cyTXRKJZQQ8Ck/Jg/boN\np1Cyxg5V13Vpq82dG0ZGMMSDDNIhNmeGwoI6rOjv+8dDBh+ZgbHZ5MvDo4Sb\njPQ9C0ZvxRVQTH5vmwLG1saBc+yihyOvmi3+PNIHMKpjQAsiw5KpTECyBpcH\nPk9vls9vXyIENqo0+KwPUXyE50VS52rItpYhw+olIEcNITrZD7QbAQcpRqRM\n8nkfGYSQduVzWhRi4PewdJccWadvnXP7a8kruc5vzLNQQOJFSrzvW/Temqgi\nvza6TCbDRcsbnb9Miar3GqB1Nfooxv3hIQB4R6w05Jlx47jIoWfjnxfvEQBf\nxWiX+V3zflJZZLPuFlXVUK5wEY8FU5btaI9YjKcwWCLmH2PVGsaObLCfQyUM\nJOiTM4sPpBDt41dxH43I0g/cvjLmbFNQgK4ANyV2sc9OuF6A5TBC8vqagC5u\n3vzxAaJIfsCP0zrxCdduf5egyvsh95uFH9SSxhqrx4+zAfizOWe9bBYEaWJf\nahB2t6/V6nmyTRjraI/mEmrXgwM5gX+tgagH0QbKwKx8ofirMhYvh9DdcmK5\nuxGq\r\n=TRvP\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIHhlkuK/e8f3y+VGBkSg9leleROcuhGhqPuk5qqHgrueAiAOuKjF8QVIUrw+eiUlsUkrqfY5MnNYqRqts+uloCPHMQ=="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.2.0": {
+      "name": "query-registry",
+      "version": "2.2.0",
+      "dependencies": {
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^7.0.6",
+        "validate-npm-package-name": "^3.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "15.0.0",
+        "@commitlint/config-conventional": "15.0.0",
+        "@pollyjs/adapter-node-http": "6.0.0",
+        "@pollyjs/core": "6.0.0",
+        "@pollyjs/persister-fs": "6.0.0",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.3",
+        "dts-cli": "0.20.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.1",
+        "np": "7.6.0",
+        "prettier": "2.5.0",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.3.1",
+        "typescript": "4.5.2"
+      },
+      "dist": {
+        "shasum": "d7757f71a86371dea86d0b68dc0082480237da20",
+        "integrity": "sha512-nUcFy21KxvlAAImssWTnGwHio3riYGBEDwJsFCNUwFN+0d/CPrnCkZQhN0VVifZeeOetiRXO2rA683LAIrqeKA==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.2.0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394323,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhp7UnCRA9TVsSAnZWagAAGeUQAJobPYWZGcNaZbii57+x\nXGdeXBBPSb4VAeachCInsShwmjgqWVvjwXrkS2bfYmKW7U9p+Ec9ZK4k0HnF\nnZGzfA1fyo4qPbdnBQZkTD4ErYzC5kvyY1yr3JTb4Ti78yDCMoWht5X5B/1v\nUfeP8IalIRLfynLOuvgdunRXWxok80L18wHPX23rM5FuQmf2sx4+BIyUuTfc\n8cCIF8qKId9AgfTZhVXBC92SXoMnXqRf2l/G5kcCFIMpwGl8ioHwfXBwQfdQ\nEwq5+sNJztyN4KM0P5B2Q0tKO3dr+iON84p+A2BPRV+cBRw+9c8ubqaOF7C7\nuPGxWrTJaIxU78wyAiVCA7bnc5rl+6NUqQKOwsyImOX7tUAEOjv4bKcNMa+W\nkdaTYiH9qlp4hPjoXtX1T71j38DQIcJBEVbee/nUZsnKb0BeNRbhEx9/jJ36\nRd7ckD8RmCLtDN/pK1uufcISx0pbKJFRJ2GUmE56yd4uMuVZbG8ARsGZdQhX\nGncNwWQfv5ZXINEwxskFLQr0SNym5n4Vxh8Z/Tfv94B9HqtFq01kqjCkgemB\nkN7zCI75IMDrz6LvspZDqnYglrmFIH0Ma7Th1qXYZVb1LL0yXBevrQYp1O+v\nutDtuKlb656XuVgPjidv+aW/rYuz2BzcKuLdqlZzfzB+/FBrUk53JOG7OZFd\nnCDN\r\n=yIP1\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCOVy1+YVT60y3b8RCWrCatxFT5smzT3PtQUDCCz/4m8wIgUQx+B/h1YNW9lalZl6Iws8ATHWvnGv0vn3sxshfydXw="
+          }
+        ]
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.3.0-0": {
+      "name": "query-registry",
+      "version": "2.3.0-0",
+      "dependencies": {
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.1",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "16.2.3",
+        "@commitlint/config-conventional": "16.2.1",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.1",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.4",
+        "np": "7.6.1",
+        "prettier": "2.6.2",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.4.0",
+        "typescript": "4.6.3"
+      },
+      "dist": {
+        "shasum": "d095495e353e1095e21871bd205a62fde29ba0cc",
+        "integrity": "sha512-72JccLZzbym/Wq6k6m4oXg7um7TwPn+uUG598eliK2xDW5X0FW9WZnQoQ5z4aivm85tDXn+hkN45kPnCo+dM/g==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.3.0-0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394105,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQDyhC6rEziZaaWEmMexlPBYjbjHA2n+fm7gq56+caw9pgIhAMC9KTnbo6/nTyMRuxe4CmRj5CxnAZ/GdsyezxjzAVKZ"
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiZvqvACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmojCw/+MHkmaeU2vschj3kmsJSSzjB9fHkuHbJfpQQ0suZDE2BuMHqZ\r\nN08En0gSZTgUVA2idJB4cN4nxeO49YNAzRFqWBA4W5owIHh5Iy4+1PVVnksZ\r\nJiKPO8KCIVDfzm/edFY5oSKzQSErA/NGphv+pLs3vU9SStRYMUrdTLMXUpkc\r\nw9FYToWNOANRwUg+Vz/ulxSN/pMKAx3PnCPAlNLJUYyyjnm12NSLkUE0jwId\r\nec4H4yDvTDoKH5oVBBQWDPGo5bbIWU4L3hZgwVcl4CwZpWaE43jlzyPmPwK5\r\n+kB4TZwFltHENowB02dj+Zv9rfQ5OuhXVViRDdOAAhDyexP+FffVLwgXhLVH\r\nhVuWoGonU7g9uUGv2hqhHVOZbuqEVtxbOvNn/C+LGJyIJ2kLSt58r/+qzoRi\r\nIRjzMmRtBZZ0gUJAQqNVqVGaK9Vc1uYah95CpmigBxKTF1UZf7OJYXCvgT45\r\ncJ5bwiNp79v+T+qYo4B8JkXWVRQc+AYXYckjVjSqa24ScgcrMJeOXM27Vnct\r\ncY1qgl0NBfXyxgaAVkorBAB6R+fBZzv42tXZudPxhLTgdZL2Of1EO2zbWUp+\r\nAt6VP0CMbDhxK69pgDmIdfZ6+mSeaRK3MtQZxmYFhR7lE0uKLCxD+RMnT+FF\r\nqYPI233MEX5fZ1bGcO4o4AkZT5lfjgBzlnY=\r\n=c9mr\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.3.0": {
+      "name": "query-registry",
+      "version": "2.3.0",
+      "dependencies": {
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.1",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "16.2.3",
+        "@commitlint/config-conventional": "16.2.1",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.1",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.4",
+        "np": "7.6.1",
+        "prettier": "2.6.2",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.4.0",
+        "typescript": "4.6.3"
+      },
+      "dist": {
+        "shasum": "022ddf65788a8c135f7d74e6a94fd3c97581d414",
+        "integrity": "sha512-FK38U+4H7VpDWROIioL/PB1R2TjLfrzAR6yyDwjxY2cfsDiWLUgWFuuFx53WXEk0gy468k0dAphzYOewHH4xig==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.3.0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394103,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIB5YDWTuygTcAHRVqbYcMNYVk51uDpUw0HnEM9SWKfMpAiBHIKwbD3jbEUwgq4JlOF68j3oTHBoiai2ni9BChZG6JQ=="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiaS3nACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmomgw/+JgnmPUUB0e33B4F7pIk9hSBF1sqLnzRcpUha3ioBdOscuGBV\r\nF+9wxBqIZkmjCrJjjgOg3gNF73QsIsHItsafIphh9WACiLzAKSPAzphDQMlk\r\nLHd6Vb+HVEK6H+GL7EN/VZCrdKe4ypWAIfJWJUvXYiQ8S7I4n4ljlfV9wdba\r\n0VoQTLmx4vuiUDu5cJXnU8byBDhyEzPTk9R8KwZnsAo6fC5hV/qCTcnfzqes\r\n/gxDI0XmA7BJbeNE/ZxD7NjIjnAdOA/ewvk0DxUoo7U4+/x9OpzFDzRjxJd4\r\ndX6H8p5Q6gGHII7u1RkEmnNk1R2D/HY57ZZcxBIwn+U4+Jk9dkrMOtbdaJnn\r\n8Ug8L3eJJ8s3feJOoDHr3aPrR102MqfLR8ZTCMgcEJwsc5AC4zAIdbGWgnRE\r\nj707FpU/upgTP+gYmYukN6x5WIoVYu1t+TrbGc/NGZJkUZW/929JeIeOOvqX\r\n6pCHl6FVgXIyckUtVcF4iDMQq3QnxOxeHa+shkWhSZctVGwIDoR+RXVkCXLy\r\nm/E5lNo7u38KUjdeegfFS7QG+6sPZxNc/IoNBtgCep/pXKvBBUoqKWA8e8+1\r\nFaaUPZfwcv886sy/Eq9Y4vgJ3xlM/qI2+nOYSWspCJTGIBRs5QtDdfiLkT4/\r\ntqTuTLamN/8J4i+o8B3DNOab93RWKkfiUD4=\r\n=Zuf/\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.4.0": {
+      "name": "query-registry",
+      "version": "2.4.0",
+      "dependencies": {
+        "git-url-parse": "^11.4.4",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.1",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "16.2.4",
+        "@commitlint/config-conventional": "16.2.4",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.1",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "nock": "13.2.4",
+        "np": "7.6.1",
+        "prettier": "2.6.2",
+        "setup-polly-jest": "0.10.0",
+        "tslib": "2.4.0",
+        "typescript": "4.6.4"
+      },
+      "dist": {
+        "shasum": "cc43a35a4af4e0f941582e20ad53e75377b5c225",
+        "integrity": "sha512-NkWBmqfo8CdsVdTIWkYoGNUaHxgK4F0CPWT0MWegz/wp/leNks0zgbNYV3D+IZs0Hqoo8ENPKHfnymB2k3L7QA==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.4.0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394434,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIEVfMbw40NJCY/QfHj0Ngx5esfT5Gx5zgAdRrfvDUOisAiBwPtH1MG/wfXqhXODUoZS5WAvoAz2ndZTtxIiZA61pcw=="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJie+zVACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoYxQ//UAVrqSYfRYlYTxa1iuSUGQhOnzPOHvk9RQYA0d6NJ5NETyLO\r\nerOnJneVGe1L8jnSt0CSW652HrAouR/hJP/S+3BRPhX5rmygOP1gvo0ZX3+J\r\n+Lgyxi/1fS/jeXhF6tIqe5hEpFW22bBoXyDV+yUHk06HWnhwTRrxmQIDEam9\r\n25fhvNssA5Pb69kdnweGnUw/H7elteRcvDZ1+smees7ajeDi1YSuzev8auFu\r\nq4lNgOSskMTILuX4uZOk6Qgwp6OjJDr0TBkUltSaO1kws/C9XkFuS+gllCCv\r\nzsotWQCYtYFGGy2hpZ/3VQmImZK5G6F8GuQlTTNJDLg5AqHD61WpGtuHuIRd\r\nDwePteW/H4KRT7vTcOAdZYpdPV8zvfjdXJaUN9HQ3bjKeo2AFSEs6ZuzqYoa\r\nJWz2XhByr4Ue+kn+KUDNoOwCZZVKKCADh31AeCTl38WfAxJG3kQm6GCng4oe\r\nJ3aIjSZWAHHQD3i3JeMOrucZqLvrMtO/I2XCCVLA+K2N6swZQtyb7DotJ/RP\r\nzQO4NhQ1qtq5sapHY94GGkU6WQ/PuCCtvGfiDF8+/7jhZSE5I1xpSlbgLVVV\r\nvSYNsfQPkQqRl+MB9w7gC8bOPWOv8uNGCeUpar3cVMf/l6t2dDfpttUEsgR2\r\nRKew+Ww6F1YQHsuiSPiV3cQ4cukwGtY9Qgw=\r\n=RCBJ\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.5.0-0": {
+      "name": "query-registry",
+      "version": "2.5.0-0",
+      "dependencies": {
+        "git-url-parse": "^11.6.0",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.2",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "17.0.1",
+        "@commitlint/config-conventional": "17.0.0",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.1",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "8.0.1",
+        "nock": "13.2.4",
+        "np": "7.6.1",
+        "prettier": "2.6.2",
+        "setup-polly-jest": "0.10.0",
+        "ts-jest": "28.0.3",
+        "tslib": "2.4.0",
+        "typescript": "4.7.2"
+      },
+      "dist": {
+        "shasum": "d3014b1ff1cb50a3aea1d44af480e52561138c9b",
+        "integrity": "sha512-62sylxW2I1KmkivzeJ7tEbBZgNGsLW3/APiDRQ9sY+5+SK6t4dxBSX7HFlrC5pNy3b3LA1ufZo7pXPfcl7QfcQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.5.0-0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394811,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIFUsyZSfOWhb5zvpfNiCC958hok2puYsjTKUfYrkQMceAiAWikdr+zujvPJEn1S0+QheGqHaSaeFVlGhh5jVvLX8zA=="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJij6ucACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrcVA/+Kk3G4c/MY5mSB+W+1/vDdTRRmQ0w/NEcT0DTFiJoxAjdIWMu\r\nRSp9oanHZDKItOquRCVcuJVto0T6kZXUGQ3EnPS4bmbrKaCaWX4Pah1aHzJ/\r\nBIBa4DwYcHFADdUswewy3mCoYFUwPAhvl0YqYQAweZg5lhURKLE+R6WmriQz\r\n7NG25x1C6tbhaEc6YjUyvg06JECtXvM4oxPRuksIvPRRyhb2CY2CBwxoPXeW\r\nCUBsZ0aalVHyiUqP51Pb6Uhpv1qFkHRqRPZYlgCE9CciXV3tPiL1RiYMEeSM\r\nYGsTirTgHiyApSTqaQcVwaj74rqM2DJHPg3GFyRnByV0Y4+e0jnswIppcNLl\r\nstYeQ9ih6UaTAADcGQihGBQjmIpzTKXyCv2wSYBo264rQcQjcwesqXJET+Vx\r\n/RFj0Y0xSM5KKd+pg3/dm3Pv9Y2ro9cUnbzJNYiC2fY/nA/kTwbb29tgSdkN\r\nsiskyCVKkuaMmEkHO1dHHtiWvgJ9jtmYnuQXXXQzZjtoNKiLYpDaNBrKwMeR\r\n+fhRfF+M73M/x9iQwrWAG64meOSHBwU0JsAe+EqLFo8TtBX3U5jMlrduTALl\r\nfKc3j6VOGICF2NxI4NPFCCTSNEcSnSkaDNYKKwRjzFOAnpUzG18X9SgSIcp3\r\nUWuCa9ik+/g8tv/ops4pQfau2N93S1z7PF4=\r\n=MZDR\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.5.0": {
+      "name": "query-registry",
+      "version": "2.5.0",
+      "dependencies": {
+        "git-url-parse": "^11.6.0",
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.2",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "17.0.1",
+        "@commitlint/config-conventional": "17.0.0",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "3.0.3",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.1",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "8.0.1",
+        "nock": "13.2.4",
+        "np": "7.6.1",
+        "prettier": "2.6.2",
+        "setup-polly-jest": "0.10.0",
+        "ts-jest": "28.0.3",
+        "tslib": "2.4.0",
+        "typescript": "4.7.2"
+      },
+      "dist": {
+        "shasum": "e108fdce5c207ee6bdb2e7d33de0a9116ba117b4",
+        "integrity": "sha512-5+JXOQr2iegPFO9G+kc0XkhzGsejDQH1j6ggfL1ZcW9MiCgP2EfBnV5aPYp4ibIS4t+aWFC1qU5/vFvYOqbsrw==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.5.0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 394809,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIGnPF+03NjOEE4cS1Jg2pcomuahTiyhhx9YCCl1yG1BLAiEAuOaIXmvSgYTepqa51i5/uuPggBWV+B0myq1lR7Jn7Dk="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJikjciACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrjrhAAjZ6lZdC9l/ibk5A2ScI7TSxiqRaQPU2OO2+EtSp8klOn7mL4\r\nGovSC2X2iMDSg8ipSmCXelnUYYASZPZ9l/686ussaquRkcx4SdPROdtol90P\r\nYxdg9lBeRzYmlUzUJgE0hDAhG4rp0hWBFwKC3IHrRBQi/Ge04LRD4CLbkzyh\r\ngAZyddcdLJFjt8yMYWsOssBtS09M/AZvGC/i4zCv30ilcc4Q4SRzDwItP4dB\r\ncyoBqPtmg53d59qYJ6fVTZS25g/yrKJpsGouLS23grvBkYFnHfA0Mn5UzjPz\r\nXq9CXkuG7fd+L+1hG9bqRePnoSJNGvya/IMwbihbu8zrFT4x8jDV3NwWfPDq\r\nn8dRNGzXOlhBQwLUI8nkeNEA/+7tASKmokZNAuimQUQe0toOSlZu/zH4uWZd\r\n/qGb2yTjHyzlAM/kxcDTLti2eTVnB3Ncrqjwo+t3ztng0UwL/V5HcmiRMciy\r\n4xRzbP76QLG9KJ7PsgeA2s4c5pl+19rxC4nKRGmdR2lrKrXfpa/jzWztqvKD\r\n1ktLhmKM5pEw/OaHft3ICtlX2jE2/B27ZmJtbuJFUjuWh9CC+UTQJ45AAuuM\r\nXYAmYl6hTFMfQE6X66yzViU3eWcdqLiOdW72+/f58HnNUXnhn409UI++OHvG\r\nw3QRvxQDXCbhRcp1it2bHU1I4PIpBzOqOWw=\r\n=7ql8\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "2.6.0": {
+      "name": "query-registry",
+      "version": "2.6.0",
+      "dependencies": {
+        "isomorphic-unfetch": "^3.1.0",
+        "make-error": "^1.3.6",
+        "tiny-lru": "^8.0.2",
+        "url-join": "4.0.1",
+        "validate-npm-package-name": "^4.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "17.0.3",
+        "@commitlint/config-conventional": "17.0.3",
+        "@pollyjs/adapter-node-http": "6.0.5",
+        "@pollyjs/core": "6.0.5",
+        "@pollyjs/persister-fs": "6.0.5",
+        "@types/debug": "4.1.7",
+        "@types/git-url-parse": "9.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.3",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/url-join": "4.0.1",
+        "@types/validate-npm-package-name": "4.0.0",
+        "debug": "4.3.4",
+        "dts-cli": "1.5.2",
+        "eslint-plugin-prettier": "4.2.1",
+        "husky": "8.0.1",
+        "nock": "13.2.9",
+        "np": "7.6.2",
+        "prettier": "2.7.1",
+        "setup-polly-jest": "0.11.0",
+        "ts-jest": "28.0.7",
+        "tslib": "2.4.0",
+        "typescript": "4.7.4"
+      },
+      "dist": {
+        "shasum": "fb678ac2d8d46468ff55a02fb88f136e5d63da21",
+        "integrity": "sha512-Z5oNq7qH0g96qBTx2jAvS0X71hKP4tETtSJKEl6BdihzYqh9QKiJQBMT7qIQuzxR9lxfiso+aXCFhZ+EcAoppQ==",
+        "tarball": "https://registry.npmjs.org/query-registry/-/query-registry-2.6.0.tgz",
+        "fileCount": 230,
+        "unpackedSize": 403605,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIBGAJj2d0mjX2ZWPsGbTicm9fJTuCDzDiqKeViz2ZHcPAiBbEPsefI2O9TIXMypulpZ4cnTFWDEJmr4iEH68tongWQ=="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi99jfACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqcHQ//cCvx811VBqXNUrhDI9rLrwziN2SH8WzJRh8mgSXPn/pFhZfT\r\nDlqHLPn65sPUzm008l7Bs1zeCpZlUE6aI3J65k5QWlk9sfqmLQPlWmN0QVh6\r\n7Vvruun5BtzXz3rBZBJyKuGO9UXUifr6k38R1j/DBVOrXLXMPvTU/aLB4By8\r\n25fnH05vYRLc9FJnVUplYJFx56OJyRZQXYZJhMKfstqmRiUCdJmHacWtCqXe\r\nZmfh/pgVf1eD06BMw4mleqX3T2E3bi4svaoKjMvRpw09D88rpjJ3hPonIdJF\r\ntF1d/klKvfoAMSqFfcny6rTuknqeOHT75erzhAK+nmQMzwvB4ev4nXFdafUs\r\ngig82LoH+KtS0ooMeT59zxxba5AuWmaOSloJiVYuCWjFNdB4lZ4wKQZrnn4p\r\nhhCoRzMzfRF5dpc74WlogRq/kfTecz81Dpo2wR19ZOKqfi86ov5xVHy7AXm7\r\n/p9RYwsBDF6NyNNGxd1O/doqzDbQ6WsoirRB0ZwKymE/AeV8OiZi5Wv1OI7e\r\nINGV8ycItbRuNdXkQSxlG/Khumxelc/08Zc0Otg+MQmOnSbDqk7W5wsCVXOc\r\nvDqFtfnh44nxzUv8X2JEdgaB6T0YXYFjPq29MSg6kXiqu76lB5ev3ovLm+Gx\r\nqT/oG2Hu7bigsrUGr7w6h6Ev2SKPkcA2vSo=\r\n=g6Zj\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    }
+  },
+  "modified": "2022-08-13T17:01:19.978Z"
+}

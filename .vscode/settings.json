@@ -10,8 +10,12 @@
     "deno",
     "edoardo",
     "fastify",
+    "keyid",
     "keyv",
+    "packument",
+    "runtimes",
     "scibona",
-    "skimdb"
+    "skimdb",
+    "subresource"
   ]
 }
