@@ -9,4 +9,5 @@ export * from "./packument.ts";
 export * from "./registry_downloads_daily.ts";
 export * from "./registry_downloads_total.ts";
 export * from "./registry_metadata.ts";
+export * from "./registry_signing_keys.ts";
 export * from "./search_results.ts";
