@@ -21,7 +21,7 @@ export const searchResultsSchema = z.object({
       links: z
         .object({
           /** Package page on https://www.npmjs.com. */
-          npm: z.string().catch(""),
+          npm: z.string().optional(),
           /** Package homepage. */
           homepage: z.string().optional(),
           /** Package repository page. */
