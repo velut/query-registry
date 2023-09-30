@@ -1,12 +1,13 @@
 import { z } from "../deps.ts";
 import { packageManifestSchema } from "./package_manifest.ts";
-import { packumentDistTagsSchema } from "./packument.ts";
 
 export const abbreviatedPackumentSchema = z.object({
   /** Full package name. */
   name: z.string(),
   /** Distribution tags to package versions. */
-  "dist-tags": packumentDistTagsSchema,
+  "dist-tags": z.object({
+    latest: z.string(),
+  }).catchall(z.string()),
   /** Package versions to installation manifest. */
   versions: z.record(
     packageManifestSchema.pick({
