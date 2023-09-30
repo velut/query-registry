@@ -24,9 +24,11 @@ export const abbreviatedPackumentSchema = z.object({
       directories: true,
       engines: true,
       _hasShrinkwrap: true,
-      hasInstallScript: true,
       cpu: true,
       os: true,
+    }).extend({
+      /** If `true`, the package has an install script. */
+      hasInstallScript: z.boolean().optional(),
     }).passthrough(),
   ),
   /** Timestamp of when the package was last modified. */

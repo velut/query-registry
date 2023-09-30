@@ -67,8 +67,6 @@ export const packageManifestSchema = z.object({
   engines: z.record(z.string()).optional(),
   /** If `true`, the package has a shrinkwrap file to be used when installing. */
   _hasShrinkwrap: z.boolean().optional(),
-  /** If `true`, the package has an install script. */
-  hasInstallScript: z.boolean().optional(),
   /** CPU architectures supported by the package. */
   cpu: z.array(z.string()).optional(),
   /** Operating systems supported by the package. */
