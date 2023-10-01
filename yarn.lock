@@ -2137,10 +2137,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/setup-polly-jest@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.2.tgz#c5797f35b6c25b127a5e8f829984a14b91f0260e"
-  integrity sha512-cvTA/xuf6WLjt7F8wSt6h5OU7c++ukXX6z959DPDnRwHq8rVcZPeqtq6lisKMaJP67Xkqn5vfCUftY2LphZntw==
+"@types/setup-polly-jest@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.3.tgz#7cc9f0e2f139c0f8e5115eae24c35b4dc5890a79"
+  integrity sha512-Y5zUly7aFfCU0gXpKWN4V8kFGGUBL0SkdfzjUAqjIagZo1SSeYLjjZUzNoomsv1TIP9wSFNXEe6Ix8IiSYqK1w==
   dependencies:
     "@pollyjs/adapter" "^6.0.4"
     "@pollyjs/core" "^6.0.5"
