@@ -8504,9 +8504,9 @@ tiny-glob@^0.2.9:
     globrex "^0.1.2"
 
 tiny-lru@^11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/tiny-lru/-/tiny-lru-11.0.1.tgz#629d6ddd88bd03c0929722680167f1feadf576f2"
-  integrity sha512-iNgFugVuQgBKrqeO/mpiTTgmBsTP0WL6yeuLfLs/Ctf0pI/ixGqIRm8sDCwMcXGe9WWvt2sGXI5mNqZbValmJg==
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/tiny-lru/-/tiny-lru-11.2.0.tgz#85c57edd7c1437c9ca703833eab9198f477bbc62"
+  integrity sha512-DTmmE5orth9hNGwBrblQ8D+RMFHr93LawLJCBidSOX3TEFAEYCskzhAOS4UgtnKFGylkGYGX/IgtzKTAOrxy8A==
 
 titleize@^3.0.0:
   version "3.0.0"
