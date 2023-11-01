@@ -72,7 +72,7 @@
         "@pollyjs/core": "6.0.6",
         "@pollyjs/persister-fs": "6.0.6",
         "@types/debug": "4.1.9",
-        "@types/git-url-parse": "9.0.1",
+        "@types/git-url-parse": "9.0.2",
         "@types/setup-polly-jest": "0.5.4",
         "@types/url-join": "4.0.1",
         "@types/validate-npm-package-name": "4.0.1",
