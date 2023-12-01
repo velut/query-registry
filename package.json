@@ -75,7 +75,7 @@
         "@types/git-url-parse": "9.0.2",
         "@types/setup-polly-jest": "0.5.5",
         "@types/url-join": "4.0.1",
-        "@types/validate-npm-package-name": "4.0.1",
+        "@types/validate-npm-package-name": "4.0.2",
         "babel-jest": "29.7.0",
         "debug": "4.3.4",
         "dts-cli": "2.0.3",
