@@ -78,7 +78,7 @@
         "@types/validate-npm-package-name": "4.0.2",
         "babel-jest": "29.7.0",
         "debug": "4.3.4",
-        "dts-cli": "2.0.3",
+        "dts-cli": "2.0.4",
         "eslint-plugin-prettier": "4.2.1",
         "husky": "8.0.3",
         "nock": "13.4.0",
