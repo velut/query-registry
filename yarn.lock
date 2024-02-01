@@ -489,12 +489,7 @@
     chalk "^2.4.2"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.10", "@babel/parser@^7.20.5", "@babel/parser@^7.20.7", "@babel/parser@^7.21.8":
-  version "7.21.8"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.21.8.tgz#642af7d0333eab9c0ad70b14ac5e76dbde7bfdf8"
-  integrity sha512-6zavDGdzG3gUqAdWvlLFfk+36RilI+Pwyuuh7HItyeScCWP3k6i8vKclAQ0bM/0y/Kz/xiwvxhMv9MgTJP5gmA==
-
-"@babel/parser@^7.22.15", "@babel/parser@^7.23.0":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.10", "@babel/parser@^7.20.5", "@babel/parser@^7.20.7", "@babel/parser@^7.21.8", "@babel/parser@^7.22.15", "@babel/parser@^7.23.0":
   version "7.23.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.0.tgz#da950e622420bf96ca0d0f2909cdddac3acd8719"
   integrity sha512-vvPKKdMemU85V9WE/l5wZEmImpCtLqbnTvqDS2U1fJ96KrxoW7KrXhNsNCblQlg8Ck4b85yxdTyelsMUgFUXiw==
@@ -3763,10 +3758,10 @@ dot-prop@^7.2.0:
   dependencies:
     type-fest "^2.11.2"
 
-dts-cli@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/dts-cli/-/dts-cli-2.0.3.tgz#6a1b4bfca53f1f25404233027fca41f4def68b5b"
-  integrity sha512-OEgH0AJLu/ey/bHwb+EBXnCm5pLxmq4WMdzHFzYqsJarPqCjMOK15MRUAIJskHoa7VemOqM9frf24LH3wiQ+/w==
+dts-cli@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/dts-cli/-/dts-cli-2.0.4.tgz#cdc686d64137eafd9c1801cdfaefa9dc675c275c"
+  integrity sha512-5UQANG6APcPN4O9QtTmzH69jCFOac8G3rScD6sC67D+g5irUox+5s6HTmj/CKg0wu8N5KlZMSou+NyDeL8Zveg==
   dependencies:
     "@babel/core" "^7.20.5"
     "@babel/helper-module-imports" "^7.18.6"
