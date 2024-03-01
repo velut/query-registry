@@ -32,8 +32,8 @@
         "test:cov": "dts test --runInBand --coverage",
         "test:watch": "dts test --runInBand --watchAll --coverage",
         "test:ci": "dts test --runInBand --ci --coverage",
-        "lint": "dts lint src test",
-        "lint:fix": "dts lint src test --fix",
+        "lint": "prettier --check .",
+        "format": "prettier --write .",
         "prepare": "husky install && dts build --target node",
         "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
         "release": "np"
