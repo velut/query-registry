@@ -54,10 +54,10 @@ function parseGitURL({ url }: { url: string }): string | undefined {
         ? // A normal URL or a shortcut like `github:user/repository`
           url
         : // The short form github shortcut `user/repository`
-        url.includes('/')
-        ? `github:${url}`
-        : // Not a URL
-          '';
+          url.includes('/')
+          ? `github:${url}`
+          : // Not a URL
+            '';
     try {
         const { protocol, hostname, pathname } = new URL(urlWithProtocol);
         const cleanPathname = pathname.replace(/\.git$/, '');
