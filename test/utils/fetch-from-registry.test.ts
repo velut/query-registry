@@ -5,6 +5,7 @@ import NodeHttpAdapter from '@pollyjs/adapter-node-http';
 import FSPersister from '@pollyjs/persister-fs';
 import * as path from 'path';
 import { setupPolly } from 'setup-polly-jest';
+import { yarnRegistry } from '../../src/data/registries';
 import { FetchError } from '../../src/utils/errors';
 import { fetchFromRegistry } from '../../src/utils/fetch-from-registry';
 
@@ -26,7 +27,7 @@ describe('fetchFromRegistry', () => {
         const json = await fetchFromRegistry({
             endpoint: '/short-time-ago',
             registry: 'https://example.com',
-            mirrors: ['https://registry.npmjs.cf'],
+            mirrors: [yarnRegistry],
         });
         expect(json).toHaveProperty('_id', 'short-time-ago');
     });
