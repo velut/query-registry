@@ -43,10 +43,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/velut/node-query-registry.git"
+        "url": "https://github.com/velut/query-registry.git"
     },
     "bugs": {
-        "url": "https://github.com/velut/node-query-registry/issues"
+        "url": "https://github.com/velut/query-registry/issues"
     },
     "keywords": [
         "query",
