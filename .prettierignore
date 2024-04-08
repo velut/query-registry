@@ -1,2 +1,5 @@
-dist/
-__recordings__/
+.DS_Store
+node_modules
+coverage
+dist
+__recordings__
