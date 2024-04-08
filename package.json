@@ -47,8 +47,8 @@
 		"check": "tsc --noEmit",
 		"build": "tsc --noEmit && tsup",
 		"attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
-		"test": "TODO: vitest run src test/declarations --coverage --bail 1",
-		"test:ci": "TODO: vitest run src test/declarations test/packages --coverage --bail 1",
+		"test": "vitest",
+		"test:ci": "vitest run --coverage --bail 1",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
 		"pre-push": "bun install && bun run lint && bun run build && bun run test:ci && bun run attw",
@@ -72,6 +72,7 @@
 		"@types/setup-polly-jest": "0.5.5",
 		"@types/url-join": "4.0.1",
 		"@types/validate-npm-package-name": "4.0.2",
+		"@vitest/coverage-v8": "^1.4.0",
 		"babel-jest": "29.7.0",
 		"debug": "4.3.4",
 		"dts-cli": "2.0.4",
@@ -84,6 +85,7 @@
 		"ts-jest": "29.1.2",
 		"tslib": "2.6.2",
 		"tsup": "^8.0.2",
-		"typescript": "5.4.4"
+		"typescript": "5.4.4",
+		"vitest": "^1.4.0"
 	}
 }

@@ -12,6 +12,7 @@
 		"scibona",
 		"tomdyqin",
 		"tsup",
-		"unfetch"
+		"unfetch",
+		"vitest"
 	]
 }
