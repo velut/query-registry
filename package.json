@@ -37,7 +37,6 @@
 		"test:ci": "dts test --runInBand --ci --coverage",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"prepare": "husky install && dts build --target node",
 		"pre-push": "bun install && bun run lint && bun run build && bun run test:cov",
 		"release": "np"
 	},
