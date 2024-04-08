@@ -28,16 +28,14 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"start": "dts watch --target node",
-		"build:check": "tsc --noEmit",
-		"build": "tsc --noEmit && dts build --target node",
-		"test": "dts test --runInBand",
-		"test:cov": "dts test --runInBand --coverage",
-		"test:watch": "dts test --runInBand --watchAll --coverage",
-		"test:ci": "dts test --runInBand --ci --coverage",
+		"check": "tsc --noEmit",
+		"build": "tsc --noEmit && tsup",
+		"attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
+		"test": "TODO: vitest run src test/declarations --coverage --bail 1",
+		"test:ci": "TODO: vitest run src test/declarations test/packages --coverage --bail 1",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"pre-push": "bun install && bun run lint && bun run build && bun run test:cov",
+		"pre-push": "bun install && bun run lint && bun run build && bun run test:ci && bun run attw",
 		"release": "np"
 	},
 	"repository": {
