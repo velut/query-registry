@@ -34,9 +34,8 @@ jobs:
       - name: Build
         run: bun run build
 
-      # TODO:
-      # - name: Are the types wrong
-      #   run: bun run attw
+      - name: Are the types wrong
+        run: bun run attw
 
       - name: CodeCov
         uses: codecov/codecov-action@v4.1.1
