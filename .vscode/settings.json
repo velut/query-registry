@@ -1,5 +1,6 @@
 {
 	"cSpell.ignoreWords": [
+		"arethetypeswrong",
 		"codecov",
 		"commitlint",
 		"edoardo",
@@ -9,6 +10,7 @@
 		"pollyjs",
 		"scibona",
 		"tomdyqin",
+		"tsup",
 		"unfetch"
 	]
 }

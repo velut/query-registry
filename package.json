@@ -68,9 +68,11 @@
 		"validate-npm-package-name": "^5.0.0"
 	},
 	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.15.3",
 		"@pollyjs/adapter-node-http": "6.0.6",
 		"@pollyjs/core": "6.0.6",
 		"@pollyjs/persister-fs": "6.0.6",
+		"@total-typescript/shoehorn": "^0.1.2",
 		"@types/debug": "4.1.12",
 		"@types/git-url-parse": "9.0.3",
 		"@types/setup-polly-jest": "0.5.5",
@@ -87,6 +89,7 @@
 		"setup-polly-jest": "0.11.0",
 		"ts-jest": "29.1.2",
 		"tslib": "2.6.2",
+		"tsup": "^8.0.2",
 		"typescript": "5.4.3"
 	}
 }
