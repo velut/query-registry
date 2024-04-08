@@ -2,7 +2,10 @@
     "name": "query-registry",
     "description": "Query the npm registry for packuments, manifests, packages and download counts",
     "version": "2.6.0",
-    "author": "Edoardo Scibona (velut)",
+    "author": {
+        "name": "Edoardo Scibona",
+        "url": "https://github.com/velut"
+    },
     "license": "MIT",
     "source": "./src/index.ts",
     "main": "./dist/index.js",
