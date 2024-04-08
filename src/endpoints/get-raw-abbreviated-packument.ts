@@ -1,6 +1,6 @@
-import { RawAbbreviatedPackument } from '../types/raw-abbreviated-packument';
-import { assertValidPackageName } from '../utils/assert-valid-package-name';
-import { fetchFromRegistry } from '../utils/fetch-from-registry';
+import { RawAbbreviatedPackument } from "../types/raw-abbreviated-packument";
+import { assertValidPackageName } from "../utils/assert-valid-package-name";
+import { fetchFromRegistry } from "../utils/fetch-from-registry";
 
 /**
  * `getRawAbbreviatedPackument` returns the abbreviated packument (package document)
@@ -32,19 +32,19 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  * @see {@link npmRegistryMirrors}
  */
 export async function getRawAbbreviatedPackument({
-    name,
-    registry,
-    mirrors,
-    cached,
+	name,
+	registry,
+	mirrors,
+	cached,
 }: {
-    name: string;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	name: string;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<RawAbbreviatedPackument> {
-    assertValidPackageName({ name });
+	assertValidPackageName({ name });
 
-    const endpoint = `/${name}`;
-    const headers = { Accept: 'application/vnd.npm.install-v1+json' };
-    return fetchFromRegistry({ endpoint, headers, registry, mirrors, cached });
+	const endpoint = `/${name}`;
+	const headers = { Accept: "application/vnd.npm.install-v1+json" };
+	return fetchFromRegistry({ endpoint, headers, registry, mirrors, cached });
 }

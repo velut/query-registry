@@ -1,6 +1,6 @@
-import { RawPackageManifest } from '../types/raw-package-manifest';
-import { extractRawPackageManifest } from '../utils/extract-package-manifest';
-import { getRawPackument } from './get-raw-packument';
+import { RawPackageManifest } from "../types/raw-package-manifest";
+import { extractRawPackageManifest } from "../utils/extract-package-manifest";
+import { getRawPackument } from "./get-raw-packument";
 
 /**
  * `getRawPackageManifest` returns the manifest describing
@@ -50,24 +50,24 @@ import { getRawPackument } from './get-raw-packument';
  * @see {@link npmRegistryMirrors}
  */
 export async function getRawPackageManifest({
-    name,
-    version,
-    registry,
-    mirrors,
-    cached,
+	name,
+	version,
+	registry,
+	mirrors,
+	cached,
 }: {
-    name: string;
-    version?: string;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	name: string;
+	version?: string;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<RawPackageManifest> {
-    const rawPackument = await getRawPackument({
-        name,
-        registry,
-        mirrors,
-        cached,
-    });
+	const rawPackument = await getRawPackument({
+		name,
+		registry,
+		mirrors,
+		cached,
+	});
 
-    return extractRawPackageManifest({ rawPackument, version });
+	return extractRawPackageManifest({ rawPackument, version });
 }

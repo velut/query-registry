@@ -1,7 +1,7 @@
-import { DownloadPeriod } from '../types/download-period';
-import { DailyRegistryDownloads } from '../types/downloads';
-import { fetchDownloadsFromRegistry } from '../utils/fetch-downloads-from-registry';
-import { normalizeRawDownloadPeriod } from '../utils/normalize-download-period';
+import { DownloadPeriod } from "../types/download-period";
+import { DailyRegistryDownloads } from "../types/downloads";
+import { fetchDownloadsFromRegistry } from "../utils/fetch-downloads-from-registry";
+import { normalizeRawDownloadPeriod } from "../utils/normalize-download-period";
 
 /**
  * `getDailyRegistryDownloads` returns the number of downloads for all registry packages
@@ -45,19 +45,19 @@ import { normalizeRawDownloadPeriod } from '../utils/normalize-download-period';
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
  */
 export async function getDailyRegistryDownloads({
-    period: rawDownloadPeriod,
-    registryDownloadsAPI,
-    cached,
+	period: rawDownloadPeriod,
+	registryDownloadsAPI,
+	cached,
 }: {
-    period?: DownloadPeriod;
-    registryDownloadsAPI?: string;
-    cached?: boolean;
+	period?: DownloadPeriod;
+	registryDownloadsAPI?: string;
+	cached?: boolean;
 } = {}): Promise<DailyRegistryDownloads> {
-    const period = normalizeRawDownloadPeriod({ rawDownloadPeriod });
-    const endpoint = `/downloads/range/${period}`;
-    return fetchDownloadsFromRegistry({
-        endpoint,
-        registryDownloadsAPI,
-        cached,
-    });
+	const period = normalizeRawDownloadPeriod({ rawDownloadPeriod });
+	const endpoint = `/downloads/range/${period}`;
+	return fetchDownloadsFromRegistry({
+		endpoint,
+		registryDownloadsAPI,
+		cached,
+	});
 }

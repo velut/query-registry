@@ -21,11 +21,7 @@ export type DownloadPeriod = DefaultDownloadPeriod | Date | DateRange;
  * `DefaultDownloadPeriod` represents the default time periods
  * supported by the npm registry.
  */
-export type DefaultDownloadPeriod =
-    | 'last-day'
-    | 'last-week'
-    | 'last-month'
-    | 'last-year';
+export type DefaultDownloadPeriod = "last-day" | "last-week" | "last-month" | "last-year";
 
 /**
  * `DateRange` represents a time period between two days
@@ -42,9 +38,9 @@ export type DefaultDownloadPeriod =
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date}
  */
 export interface DateRange {
-    /** Date of the first day (inclusive) */
-    readonly start: Date;
+	/** Date of the first day (inclusive) */
+	readonly start: Date;
 
-    /** Date of the last day (inclusive) */
-    readonly end: Date;
+	/** Date of the last day (inclusive) */
+	readonly end: Date;
 }

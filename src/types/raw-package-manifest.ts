@@ -1,7 +1,7 @@
-import { DistInfo } from './dist-info';
-import { NpmOperationalInternal } from './npm-operational-internal';
-import { PackageJSON } from './package-json';
-import { Person } from './person';
+import { DistInfo } from "./dist-info";
+import { NpmOperationalInternal } from "./npm-operational-internal";
+import { PackageJSON } from "./package-json";
+import { Person } from "./person";
 
 /**
  * `RawPackageManifest` represents the manifest, as returned by the registry,
@@ -18,45 +18,45 @@ import { Person } from './person';
  * @see {@link PackageJSON}
  */
 export interface RawPackageManifest extends PackageJSON {
-    /** Package version ID (for example, `foo@1.0.0` or `@bar/baz@1.0.0`) */
-    readonly _id: string;
+	/** Package version ID (for example, `foo@1.0.0` or `@bar/baz@1.0.0`) */
+	readonly _id: string;
 
-    /** Package name */
-    readonly name: string;
+	/** Package name */
+	readonly name: string;
 
-    /** Package version number */
-    readonly version: string;
+	/** Package version number */
+	readonly version: string;
 
-    /**
-     * Distribution data from the registry
-     *
-     * @see {@link DistInfo}
-     */
-    readonly dist: DistInfo;
+	/**
+	 * Distribution data from the registry
+	 *
+	 * @see {@link DistInfo}
+	 */
+	readonly dist: DistInfo;
 
-    /** Commit hash corresponding to the published version */
-    readonly gitHead?: string;
+	/** Commit hash corresponding to the published version */
+	readonly gitHead?: string;
 
-    /**
-     * User who published this package version
-     *
-     * @see {@link Person}
-     */
-    readonly _npmUser: Person;
+	/**
+	 * User who published this package version
+	 *
+	 * @see {@link Person}
+	 */
+	readonly _npmUser: Person;
 
-    /** Node version used when publishing */
-    readonly _nodeVersion?: string;
+	/** Node version used when publishing */
+	readonly _nodeVersion?: string;
 
-    /** npm version used when publishing */
-    readonly _npmVersion?: string;
+	/** npm version used when publishing */
+	readonly _npmVersion?: string;
 
-    /**
-     * Internal npm data
-     *
-     * @see {@link NpmOperationalInternal}
-     */
-    readonly _npmOperationalInternal?: NpmOperationalInternal;
+	/**
+	 * Internal npm data
+	 *
+	 * @see {@link NpmOperationalInternal}
+	 */
+	readonly _npmOperationalInternal?: NpmOperationalInternal;
 
-    /** True if the package has a shrinkwrap file */
-    readonly _hasShrinkwrap?: boolean;
+	/** True if the package has a shrinkwrap file */
+	readonly _hasShrinkwrap?: boolean;
 }

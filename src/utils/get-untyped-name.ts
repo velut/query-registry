@@ -3,12 +3,12 @@
  * corresponding to a DefinitelyTyped package.
  */
 export function getUntypedName({ name }: { name: string }): string | undefined {
-    if (!name.startsWith('@types/')) {
-        return undefined;
-    }
+	if (!name.startsWith("@types/")) {
+		return undefined;
+	}
 
-    // ['foo', undefined] or ['@bar', 'baz']
-    const [scopeOrName, scopedName] = name.replace('@types/', '').split('__');
+	// ['foo', undefined] or ['@bar', 'baz']
+	const [scopeOrName, scopedName] = name.replace("@types/", "").split("__");
 
-    return scopedName ? `@${scopeOrName}/${scopedName}` : scopeOrName;
+	return scopedName ? `@${scopeOrName}/${scopedName}` : scopeOrName;
 }

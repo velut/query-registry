@@ -1,5 +1,5 @@
-import { RegistryMetadata } from '../types/registry-metadata';
-import { fetchFromRegistry } from '../utils/fetch-from-registry';
+import { RegistryMetadata } from "../types/registry-metadata";
+import { fetchFromRegistry } from "../utils/fetch-from-registry";
 
 /**
  * `getRegistryMetadata` returns the metadata describing the registry itself.
@@ -36,12 +36,12 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  * @see {@link npmRegistry}
  */
 export async function getRegistryMetadata({
-    registry,
-    cached,
+	registry,
+	cached,
 }: {
-    registry?: string;
-    cached?: boolean;
+	registry?: string;
+	cached?: boolean;
 } = {}): Promise<RegistryMetadata> {
-    const endpoint = '/';
-    return fetchFromRegistry({ registry, mirrors: [], endpoint, cached });
+	const endpoint = "/";
+	return fetchFromRegistry({ registry, mirrors: [], endpoint, cached });
 }

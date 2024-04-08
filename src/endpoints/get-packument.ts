@@ -1,6 +1,6 @@
-import { Packument } from '../types/packument';
-import { normalizeRawPackument } from '../utils/normalize-raw-packument';
-import { getRawPackument } from './get-raw-packument';
+import { Packument } from "../types/packument";
+import { normalizeRawPackument } from "../utils/normalize-raw-packument";
+import { getRawPackument } from "./get-raw-packument";
 
 /**
  * `getPackument` returns the packument (package document) containing
@@ -31,21 +31,21 @@ import { getRawPackument } from './get-raw-packument';
  * @see {@link npmRegistryMirrors}
  */
 export async function getPackument({
-    name,
-    registry,
-    mirrors,
-    cached,
+	name,
+	registry,
+	mirrors,
+	cached,
 }: {
-    name: string;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	name: string;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<Packument> {
-    const rawPackument = await getRawPackument({
-        name,
-        registry,
-        mirrors,
-        cached,
-    });
-    return normalizeRawPackument({ rawPackument });
+	const rawPackument = await getRawPackument({
+		name,
+		registry,
+		mirrors,
+		cached,
+	});
+	return normalizeRawPackument({ rawPackument });
 }

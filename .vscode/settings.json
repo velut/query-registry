@@ -1,14 +1,14 @@
 {
-    "cSpell.ignoreWords": [
-        "codecov",
-        "commitlint",
-        "edoardo",
-        "packument",
-        "packuments",
-        "pathnames",
-        "pollyjs",
-        "scibona",
-        "tomdyqin",
-        "unfetch"
-    ]
+	"cSpell.ignoreWords": [
+		"codecov",
+		"commitlint",
+		"edoardo",
+		"packument",
+		"packuments",
+		"pathnames",
+		"pollyjs",
+		"scibona",
+		"tomdyqin",
+		"unfetch"
+	]
 }

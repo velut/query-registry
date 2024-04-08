@@ -12,24 +12,24 @@ This package exports several functions to query the [npm registry](https://www.n
 
 ## Features
 
--   Provides functions to:
-    -   Get registry metadata
-    -   Get packuments (package documents) and their abbreviated form
-    -   Get package manifests
-    -   Get download counts (packages and registry)
-    -   Search packages
--   Usable in the browser
--   Fully typed API and response data
--   Supports mirrors of the npm registry
--   Supports caching network requests
--   Well documented and tested
+- Provides functions to:
+  - Get registry metadata
+  - Get packuments (package documents) and their abbreviated form
+  - Get package manifests
+  - Get download counts (packages and registry)
+  - Search packages
+- Usable in the browser
+- Fully typed API and response data
+- Supports mirrors of the npm registry
+- Supports caching network requests
+- Well documented and tested
 
 ## API & Package Info
 
--   [**Explore the API on jsDocs.io**](https://www.jsdocs.io/package/query-registry)
--   View package contents on [**unpkg**](https://unpkg.com/query-registry/)
--   View repository on [**GitHub**](https://github.com/velut/node-query-registry)
--   Read the changelog on [**GitHub**](https://github.com/velut/node-query-registry/blob/main/CHANGELOG.md)
+- [**Explore the API on jsDocs.io**](https://www.jsdocs.io/package/query-registry)
+- View package contents on [**unpkg**](https://unpkg.com/query-registry/)
+- View repository on [**GitHub**](https://github.com/velut/node-query-registry)
+- Read the changelog on [**GitHub**](https://github.com/velut/node-query-registry/blob/main/CHANGELOG.md)
 
 ## Install
 
@@ -50,70 +50,70 @@ yarn add query-registry
 Get the metadata for the npm registry:
 
 ```typescript
-import { getRegistryMetadata } from 'query-registry';
+import { getRegistryMetadata } from "query-registry";
 
 (async () => {
-    const metadata = await getRegistryMetadata();
+	const metadata = await getRegistryMetadata();
 
-    // Output: 'registry'
-    console.log(metadata.db_name);
+	// Output: 'registry'
+	console.log(metadata.db_name);
 })();
 ```
 
 Get the latest manifest for package `query-registry` from the npm registry:
 
 ```typescript
-import { getPackageManifest } from 'query-registry';
+import { getPackageManifest } from "query-registry";
 
 (async () => {
-    const manifest = await getPackageManifest({ name: 'query-registry' });
+	const manifest = await getPackageManifest({ name: "query-registry" });
 
-    // Output: 'query-registry'
-    console.log(manifest.name);
+	// Output: 'query-registry'
+	console.log(manifest.name);
 })();
 ```
 
 Get the abbreviated packument for package `query-registry` from the npm registry:
 
 ```typescript
-import { getAbbreviatedPackument } from 'query-registry';
+import { getAbbreviatedPackument } from "query-registry";
 
 (async () => {
-    const packument = await getAbbreviatedPackument({ name: 'query-registry' });
+	const packument = await getAbbreviatedPackument({ name: "query-registry" });
 
-    // Output: 'query-registry'
-    console.log(packument.name);
+	// Output: 'query-registry'
+	console.log(packument.name);
 })();
 ```
 
 Get the weekly downloads for package `query-registry` from the npm registry:
 
 ```typescript
-import { getPackageDownloads } from 'query-registry';
+import { getPackageDownloads } from "query-registry";
 
 (async () => {
-    const downloads = await getPackageDownloads({ name: 'query-registry' });
+	const downloads = await getPackageDownloads({ name: "query-registry" });
 
-    // Output: 'query-registry'
-    console.log(downloads.package);
+	// Output: 'query-registry'
+	console.log(downloads.package);
 
-    // Output: 'number'
-    console.log(typeof downloads.downloads);
+	// Output: 'number'
+	console.log(typeof downloads.downloads);
 })();
 ```
 
 Get the search results for text query `query-registry` from the npm registry:
 
 ```typescript
-import { searchPackages } from 'query-registry';
+import { searchPackages } from "query-registry";
 
 (async () => {
-    const results = await searchPackages({
-        query: { text: 'query-registry' },
-    });
+	const results = await searchPackages({
+		query: { text: "query-registry" },
+	});
 
-    // Output: 'query-registry'
-    console.log(results.objects[0].package.name);
+	// Output: 'query-registry'
+	console.log(results.objects[0].package.name);
 })();
 ```
 

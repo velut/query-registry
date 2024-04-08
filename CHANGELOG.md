@@ -7,111 +7,111 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
--   None
+- None
 
 ## [2.6.0] - 2022-08-13
 
 ### Added
 
--   Added custom normalization for git urls; the normalized values for the `gitRepository` property may change with respect to previous releases
+- Added custom normalization for git urls; the normalized values for the `gitRepository` property may change with respect to previous releases
 
 ### Changed
 
--   Updated dependencies and dev dependencies
+- Updated dependencies and dev dependencies
 
 ### Removed
 
--   Removed dependency on `git-url-parse`
+- Removed dependency on `git-url-parse`
 
 ## [2.5.0] - 2022-05-28
 
 ### Added
 
--   N/A
+- N/A
 
 ### Changed
 
--   Fixed ESM export declarations in `package.json` (Thanks @mt-empty)
--   Updated dependencies and dev dependencies
+- Fixed ESM export declarations in `package.json` (Thanks @mt-empty)
+- Updated dependencies and dev dependencies
 
 ### Removed
 
--   N/A
+- N/A
 
 ## [2.4.0] - 2022-05-11
 
 ### Added
 
--   N/A
+- N/A
 
 ### Changed
 
--   Preserve subdomains in git repository URLs (`https://git.example.com/user/repo`) (Thanks @tomdyqin)
--   Updated dependencies and dev dependencies
+- Preserve subdomains in git repository URLs (`https://git.example.com/user/repo`) (Thanks @tomdyqin)
+- Updated dependencies and dev dependencies
 
 ### Removed
 
--   N/A
+- N/A
 
 ## [2.3.0] - 2022-04-27
 
 ### Added
 
--   N/A
+- N/A
 
 ### Changed
 
--   Preserve pathnames in registry URLs (`https://example.com/my/npm/registry`) (Thanks @tomdyqin)
--   Updated dependencies and dev dependencies
+- Preserve pathnames in registry URLs (`https://example.com/my/npm/registry`) (Thanks @tomdyqin)
+- Updated dependencies and dev dependencies
 
 ### Removed
 
--   N/A
+- N/A
 
 ## [2.2.0] - 2021-12-01
 
 ### Added
 
--   [Abbreviated packuments](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-metadata-format) (`application/vnd.npm.install-v1+json`) can now be retrieved using `getAbbreviatedPackument()` or `getRawAbbreviatedPackument()`
+- [Abbreviated packuments](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-metadata-format) (`application/vnd.npm.install-v1+json`) can now be retrieved using `getAbbreviatedPackument()` or `getRawAbbreviatedPackument()`
 
 ### Changed
 
--   Responses are now cached based on headers and URL
--   Updated docs
--   Updated dependencies and dev dependencies
--   Moved `debug` package to dev dependencies
+- Responses are now cached based on headers and URL
+- Updated docs
+- Updated dependencies and dev dependencies
+- Moved `debug` package to dev dependencies
 
 ### Removed
 
--   N/A
+- N/A
 
 ## [2.0.0] - 2021-03-09
 
 ### Added
 
--   Export named functions to query the npm registry
-    -   getDailyPackageDownloads()
-    -   getDailyRegistryDownloads()
-    -   getPackageDownloads()
-    -   getPackageManifest()
-    -   getPackument()
-    -   getRawPackageManifest()
-    -   getRawPackument()
-    -   getRegistryDownloads()
-    -   getRegistryMetadata()
-    -   searchPackages()
--   This package can now be used in a browser environment
--   BREAKING CHANGE: Added export map to `package.json`
+- Export named functions to query the npm registry
+  - getDailyPackageDownloads()
+  - getDailyRegistryDownloads()
+  - getPackageDownloads()
+  - getPackageManifest()
+  - getPackument()
+  - getRawPackageManifest()
+  - getRawPackument()
+  - getRegistryDownloads()
+  - getRegistryMetadata()
+  - searchPackages()
+- This package can now be used in a browser environment
+- BREAKING CHANGE: Added export map to `package.json`
 
 ### Changed
 
--   Updated typing of registry responses
--   Updated normalization of custom properties on `Packument` and `PackageManifest` interfaces
--   Updated and reduced number of dependencies
+- Updated typing of registry responses
+- Updated normalization of custom properties on `Packument` and `PackageManifest` interfaces
+- Updated and reduced number of dependencies
 
 ### Removed
 
--   BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
+- BREAKING CHANGE: Removed `Registry` class; use the exported functions instead
 
 [unreleased]: https://github.com/velut/node-query-registry/compare/v2.6.0...HEAD
 [2.0.0]: https://github.com/velut/node-query-registry/compare/v1.2.0...v2.0.0

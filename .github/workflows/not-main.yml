@@ -1,42 +1,42 @@
 name: CI for non-main branches
 
 on:
-    push:
-        branches-ignore:
-            - 'main'
+  push:
+    branches-ignore:
+      - "main"
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-            - name: Setup bun
-              uses: oven-sh/setup-bun@v1
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
 
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: lts/*
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
 
-            - name: Install dependencies
-              run: bun install --frozen-lockfile
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
 
-            - name: Lint
-              run: bun run lint
+      - name: Lint
+        run: bun run lint
 
-            - name: Test
-              run: bun run test:ci
+      - name: Test
+        run: bun run test:ci
 
-            - name: Build
-              run: bun run build
+      - name: Build
+        run: bun run build
 
-            # TODO:
-            # - name: Are the types wrong
-            #   run: bun run attw
+      # TODO:
+      # - name: Are the types wrong
+      #   run: bun run attw
 
-            - name: CodeCov
-              uses: codecov/codecov-action@v4.1.1
-              with:
-                  token: ${{ secrets.CODECOV_TOKEN }}
+      - name: CodeCov
+        uses: codecov/codecov-action@v4.1.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

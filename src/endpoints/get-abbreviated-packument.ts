@@ -1,6 +1,6 @@
-import { AbbreviatedPackument } from '../types/abbreviated-packument';
-import { normalizeRawAbbreviatedPackument } from '../utils/normalize-raw-abbreviated-packument';
-import { getRawAbbreviatedPackument } from './get-raw-abbreviated-packument';
+import { AbbreviatedPackument } from "../types/abbreviated-packument";
+import { normalizeRawAbbreviatedPackument } from "../utils/normalize-raw-abbreviated-packument";
+import { getRawAbbreviatedPackument } from "./get-raw-abbreviated-packument";
 
 /**
  * `getAbbreviatedPackument` returns the abbreviated packument (package document)
@@ -34,21 +34,21 @@ import { getRawAbbreviatedPackument } from './get-raw-abbreviated-packument';
  * @see {@link npmRegistryMirrors}
  */
 export async function getAbbreviatedPackument({
-    name,
-    registry,
-    mirrors,
-    cached,
+	name,
+	registry,
+	mirrors,
+	cached,
 }: {
-    name: string;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	name: string;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<AbbreviatedPackument> {
-    const rawAbbreviatedPackument = await getRawAbbreviatedPackument({
-        name,
-        registry,
-        mirrors,
-        cached,
-    });
-    return normalizeRawAbbreviatedPackument({ rawAbbreviatedPackument });
+	const rawAbbreviatedPackument = await getRawAbbreviatedPackument({
+		name,
+		registry,
+		mirrors,
+		cached,
+	});
+	return normalizeRawAbbreviatedPackument({ rawAbbreviatedPackument });
 }

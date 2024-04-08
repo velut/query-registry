@@ -1,7 +1,7 @@
-import { SearchCriteria } from '../types/search-criteria';
-import { SearchResults } from '../types/search-results';
-import { fetchFromRegistry } from '../utils/fetch-from-registry';
-import { normalizeRawSearchCriteria } from '../utils/normalize-raw-search-criteria';
+import { SearchCriteria } from "../types/search-criteria";
+import { SearchResults } from "../types/search-results";
+import { fetchFromRegistry } from "../utils/fetch-from-registry";
+import { normalizeRawSearchCriteria } from "../utils/normalize-raw-search-criteria";
 
 /**
  * `searchPackages` returns the packages corresponding to a given query.
@@ -31,17 +31,17 @@ import { normalizeRawSearchCriteria } from '../utils/normalize-raw-search-criter
  * @see {@link npmRegistryMirrors}
  */
 export async function searchPackages({
-    query: rawSearchCriteria,
-    registry,
-    mirrors,
-    cached,
+	query: rawSearchCriteria,
+	registry,
+	mirrors,
+	cached,
 }: {
-    query: SearchCriteria;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	query: SearchCriteria;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<SearchResults> {
-    const endpoint = '/-/v1/search';
-    const query = normalizeRawSearchCriteria({ rawSearchCriteria });
-    return fetchFromRegistry({ endpoint, query, registry, mirrors, cached });
+	const endpoint = "/-/v1/search";
+	const query = normalizeRawSearchCriteria({ rawSearchCriteria });
+	return fetchFromRegistry({ endpoint, query, registry, mirrors, cached });
 }

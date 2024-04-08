@@ -1,6 +1,6 @@
-import { RawPackument } from '../types/raw-packument';
-import { assertValidPackageName } from '../utils/assert-valid-package-name';
-import { fetchFromRegistry } from '../utils/fetch-from-registry';
+import { RawPackument } from "../types/raw-packument";
+import { assertValidPackageName } from "../utils/assert-valid-package-name";
+import { fetchFromRegistry } from "../utils/fetch-from-registry";
 
 /**
  * `getRawPackument` returns the packument (package document) containing
@@ -32,18 +32,18 @@ import { fetchFromRegistry } from '../utils/fetch-from-registry';
  * @see {@link npmRegistryMirrors}
  */
 export async function getRawPackument({
-    name,
-    registry,
-    mirrors,
-    cached,
+	name,
+	registry,
+	mirrors,
+	cached,
 }: {
-    name: string;
-    registry?: string;
-    mirrors?: string[];
-    cached?: boolean;
+	name: string;
+	registry?: string;
+	mirrors?: string[];
+	cached?: boolean;
 }): Promise<RawPackument> {
-    assertValidPackageName({ name });
+	assertValidPackageName({ name });
 
-    const endpoint = `/${name}`;
-    return fetchFromRegistry({ endpoint, registry, mirrors, cached });
+	const endpoint = `/${name}`;
+	return fetchFromRegistry({ endpoint, registry, mirrors, cached });
 }

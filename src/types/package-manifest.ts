@@ -1,6 +1,6 @@
-import { GitRepository } from './git-repository';
-import { Person } from './person';
-import { RawPackageManifest } from './raw-package-manifest';
+import { GitRepository } from "./git-repository";
+import { Person } from "./person";
+import { RawPackageManifest } from "./raw-package-manifest";
 
 /**
  * `PackageManifest` represents the manifest describing a specific version
@@ -13,28 +13,28 @@ import { RawPackageManifest } from './raw-package-manifest';
  * @see {@link RawPackageManifest}
  */
 export interface PackageManifest extends RawPackageManifest {
-    /** Package version ID (for example, `foo@1.0.0` or `@bar/baz@1.0.0`) */
-    readonly id: string;
+	/** Package version ID (for example, `foo@1.0.0` or `@bar/baz@1.0.0`) */
+	readonly id: string;
 
-    /** Publishing timestamp */
-    readonly createdAt: string;
+	/** Publishing timestamp */
+	readonly createdAt: string;
 
-    /**
-     * User who published this version of the package
-     *
-     * @see {@link Person}
-     */
-    readonly publisher: Person;
+	/**
+	 * User who published this version of the package
+	 *
+	 * @see {@link Person}
+	 */
+	readonly publisher: Person;
 
-    /** Normalized license */
-    readonly license?: string;
+	/** Normalized license */
+	readonly license?: string;
 
-    /** Normalized git repository */
-    readonly gitRepository?: GitRepository;
+	/** Normalized git repository */
+	readonly gitRepository?: GitRepository;
 
-    /** Name of the corresponding DefinitelyTyped package, if any */
-    readonly definitelyTypedName?: string;
+	/** Name of the corresponding DefinitelyTyped package, if any */
+	readonly definitelyTypedName?: string;
 
-    /** Name of the corresponding untyped package (w.r.t. DefinitelyTyped) */
-    readonly untypedName?: string;
+	/** Name of the corresponding untyped package (w.r.t. DefinitelyTyped) */
+	readonly untypedName?: string;
 }

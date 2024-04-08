@@ -1,8 +1,8 @@
-import { DownloadPeriod } from '../types/download-period';
-import { PackageDownloads } from '../types/downloads';
-import { assertValidPackageName } from '../utils/assert-valid-package-name';
-import { fetchDownloadsFromRegistry } from '../utils/fetch-downloads-from-registry';
-import { normalizeRawDownloadPeriod } from '../utils/normalize-download-period';
+import { DownloadPeriod } from "../types/download-period";
+import { PackageDownloads } from "../types/downloads";
+import { assertValidPackageName } from "../utils/assert-valid-package-name";
+import { fetchDownloadsFromRegistry } from "../utils/fetch-downloads-from-registry";
+import { normalizeRawDownloadPeriod } from "../utils/normalize-download-period";
 
 /**
  * `getPackageDownloads` returns the number of downloads for a package
@@ -53,23 +53,23 @@ import { normalizeRawDownloadPeriod } from '../utils/normalize-download-period';
  * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
  */
 export async function getPackageDownloads({
-    name,
-    period: rawDownloadPeriod,
-    registryDownloadsAPI,
-    cached,
+	name,
+	period: rawDownloadPeriod,
+	registryDownloadsAPI,
+	cached,
 }: {
-    name: string;
-    period?: DownloadPeriod;
-    registryDownloadsAPI?: string;
-    cached?: boolean;
+	name: string;
+	period?: DownloadPeriod;
+	registryDownloadsAPI?: string;
+	cached?: boolean;
 }): Promise<PackageDownloads> {
-    assertValidPackageName({ name });
+	assertValidPackageName({ name });
 
-    const period = normalizeRawDownloadPeriod({ rawDownloadPeriod });
-    const endpoint = `/downloads/point/${period}/${name}`;
-    return fetchDownloadsFromRegistry({
-        endpoint,
-        registryDownloadsAPI,
-        cached,
-    });
+	const period = normalizeRawDownloadPeriod({ rawDownloadPeriod });
+	const endpoint = `/downloads/point/${period}/${name}`;
+	return fetchDownloadsFromRegistry({
+		endpoint,
+		registryDownloadsAPI,
+		cached,
+	});
 }

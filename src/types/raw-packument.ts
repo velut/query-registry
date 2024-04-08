@@ -1,7 +1,7 @@
-import { DistTags } from './dist-tags';
-import { PackageJSON } from './package-json';
-import { RawPackageManifest } from './raw-package-manifest';
-import { VersionsToTimestamps } from './versions-to-timestamps';
+import { DistTags } from "./dist-tags";
+import { PackageJSON } from "./package-json";
+import { RawPackageManifest } from "./raw-package-manifest";
+import { VersionsToTimestamps } from "./versions-to-timestamps";
 
 /**
  * `RawPackument` represents a packument (package document), as returned
@@ -17,38 +17,38 @@ import { VersionsToTimestamps } from './versions-to-timestamps';
  * @see {@link HoistedPackageJSON}
  */
 export interface RawPackument extends HoistedPackageJSON {
-    /** Unique package name (for example, `foo` or `@bar/baz`) */
-    readonly _id: string;
+	/** Unique package name (for example, `foo` or `@bar/baz`) */
+	readonly _id: string;
 
-    /** Latest revision ID in CouchDB */
-    readonly _rev: string;
+	/** Latest revision ID in CouchDB */
+	readonly _rev: string;
 
-    /** Package name */
-    readonly name: string;
+	/** Package name */
+	readonly name: string;
 
-    /**
-     * Mapping of distribution tags to version numbers
-     *
-     * @see {@link DistTags}
-     */
-    readonly 'dist-tags': DistTags;
+	/**
+	 * Mapping of distribution tags to version numbers
+	 *
+	 * @see {@link DistTags}
+	 */
+	readonly "dist-tags": DistTags;
 
-    /**
-     * Mapping of version numbers to publishing timestamps
-     *
-     * @see {@link VersionsToTimestamps}
-     */
-    readonly time: VersionsToTimestamps;
+	/**
+	 * Mapping of version numbers to publishing timestamps
+	 *
+	 * @see {@link VersionsToTimestamps}
+	 */
+	readonly time: VersionsToTimestamps;
 
-    /**
-     * Mapping of version numbers to package manifests
-     *
-     * @see {@link RawPackageManifest}
-     */
-    readonly versions: Record<string, RawPackageManifest>;
+	/**
+	 * Mapping of version numbers to package manifests
+	 *
+	 * @see {@link RawPackageManifest}
+	 */
+	readonly versions: Record<string, RawPackageManifest>;
 
-    /** Names of the npm users who starred the package */
-    readonly users?: Record<string, boolean>;
+	/** Names of the npm users who starred the package */
+	readonly users?: Record<string, boolean>;
 }
 
 /**
@@ -64,16 +64,16 @@ export interface RawPackument extends HoistedPackageJSON {
  * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#full-metadata-format}
  */
 export type HoistedPackageJSON = Pick<
-    PackageJSON,
-    | 'author'
-    | 'bugs'
-    | 'contributors'
-    | 'description'
-    | 'homepage'
-    | 'keywords'
-    | 'license'
-    | 'maintainers'
-    | 'readme'
-    | 'readmeFilename'
-    | 'repository'
+	PackageJSON,
+	| "author"
+	| "bugs"
+	| "contributors"
+	| "description"
+	| "homepage"
+	| "keywords"
+	| "license"
+	| "maintainers"
+	| "readme"
+	| "readmeFilename"
+	| "repository"
 >;
