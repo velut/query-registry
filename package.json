@@ -68,8 +68,6 @@
 		"validate-npm-package-name": "^5.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.2.1",
-		"@commitlint/config-conventional": "19.1.0",
 		"@pollyjs/adapter-node-http": "6.0.6",
 		"@pollyjs/core": "6.0.6",
 		"@pollyjs/persister-fs": "6.0.6",
