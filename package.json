@@ -38,7 +38,7 @@
         "lint": "prettier --check .",
         "format": "prettier --write .",
         "prepare": "husky install && dts build --target node",
-        "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
+        "pre-push": "bun install && bun run lint && bun run build && bun run test:cov",
         "release": "np"
     },
     "repository": {
