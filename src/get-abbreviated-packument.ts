@@ -53,7 +53,6 @@ export const abbreviatedPackumentSchema = z
 			}),
 		),
 	})
-	.passthrough()
 	.transform((data) => ({
 		...data,
 

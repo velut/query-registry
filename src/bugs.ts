@@ -8,7 +8,6 @@ export const bugsSchema = z
 		url: z.string(),
 		email: z.string(),
 	})
-	.passthrough()
 	.partial();
 
 /**

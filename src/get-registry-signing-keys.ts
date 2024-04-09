@@ -6,32 +6,28 @@ import { npmRegistryUrl } from "./npm-registry";
 /**
 Zod schema for the registry signing keys.
 */
-export const registrySigningKeysSchema = z
-	.object({
-		keys: z.array(
-			z
-				.object({
-					/**
-          String in the simplified extended ISO 8601 format: `YYYY-MM-DDTHH:mm:ss.sssZ` or `null`.
-          */
-					expires: z.string().nullable(),
+export const registrySigningKeysSchema = z.object({
+	keys: z.array(
+		z.object({
+			/**
+      String in the simplified extended ISO 8601 format: `YYYY-MM-DDTHH:mm:ss.sssZ` or `null`.
+      */
+			expires: z.string().nullable(),
 
-					/** SHA256 fingerprint of the public key. */
-					keyid: z.string(),
+			/** SHA256 fingerprint of the public key. */
+			keyid: z.string(),
 
-					/** Key type; only `ecdsa-sha2-nistp256` is currently supported by the npm CLI. */
-					keytype: z.string(),
+			/** Key type; only `ecdsa-sha2-nistp256` is currently supported by the npm CLI. */
+			keytype: z.string(),
 
-					/** Key scheme; only `ecdsa-sha2-nistp256` is currently supported by the npm CLI. */
-					scheme: z.string(),
+			/** Key scheme; only `ecdsa-sha2-nistp256` is currently supported by the npm CLI. */
+			scheme: z.string(),
 
-					/** Public key encoded in base64. */
-					key: z.string(),
-				})
-				.passthrough(),
-		),
-	})
-	.passthrough();
+			/** Public key encoded in base64. */
+			key: z.string(),
+		}),
+	),
+});
 
 /**
 `RegistrySigningKeys` describes the signing keys used by the registry.

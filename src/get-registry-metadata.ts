@@ -25,7 +25,6 @@ export const registryMetadataSchema = z
 			.object({
 				data_size: z.number(),
 			})
-			.passthrough()
 			.partial(),
 		sizes: z
 			.object({
@@ -33,10 +32,8 @@ export const registryMetadataSchema = z
 				active: z.number(),
 				external: z.number(),
 			})
-			.passthrough()
 			.partial(),
 	})
-	.passthrough()
 	.partial();
 
 /**
