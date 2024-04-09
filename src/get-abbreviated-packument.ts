@@ -53,12 +53,17 @@ export const abbreviatedPackumentSchema = z
 			}),
 		),
 	})
-	.transform((data) => ({
-		...data,
+	.transform((data) => {
+		const { "dist-tags": distTags, ...rest } = data;
+		return {
+			...rest,
 
-		/** Alias for `dist-tags`. */
-		distTags: data["dist-tags"],
-	}));
+			/**
+	 		Mapping of distribution tags to semver version numbers (e.g., `{ "latest": "1.0.0" }`).
+	 		*/
+			distTags: data["dist-tags"],
+		};
+	});
 
 /**
 `AbbreviatedPackument` describes the minimal metadata needed for installing a package.
