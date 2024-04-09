@@ -10,5 +10,10 @@ export {
 	registryMetadataSchema,
 	type RegistryMetadata,
 } from "./get-registry-metadata";
+export {
+	getRegistrySigningKeys,
+	registrySigningKeysSchema,
+	type RegistrySigningKeys,
+} from "./get-registry-signing-keys";
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
 export { packageManifestSchema, type PackageManifest } from "./package-manifest";
