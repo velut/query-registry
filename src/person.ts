@@ -13,5 +13,7 @@ export const personSchema = z
 
 /**
 `Person` describes a person involved with a package (e.g., a package's author).
+
+@see {@link https://docs.npmjs.com/cli/v10/configuring-npm/package-json#people-fields-author-contributors}
 */
 export type Person = z.infer<typeof personSchema>;
