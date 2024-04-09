@@ -3,6 +3,7 @@ TODO:
 @packageDocumentation
 */
 
+export { bugsSchema, type Bugs } from "./bugs";
 export { distSchema, type Dist } from "./dist";
 export { distTagsSchema, type DistTags } from "./dist-tags";
 export {
