@@ -3,6 +3,8 @@ TODO:
 @packageDocumentation
 */
 
+export { distSchema, type Dist } from "./dist";
+export { distTagsSchema, type DistTags } from "./dist-tags";
 export {
 	getRegistryMetadata,
 	registryMetadataSchema,
