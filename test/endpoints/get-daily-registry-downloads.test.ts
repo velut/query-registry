@@ -5,7 +5,7 @@ import NodeHttpAdapter from "@pollyjs/adapter-node-http";
 import FSPersister from "@pollyjs/persister-fs";
 import * as path from "path";
 import { setupPolly } from "setup-polly-jest";
-import { getDailyRegistryDownloads } from "../../src";
+import { getDailyRegistryDownloads } from "../../src/index.old";
 
 describe("getDailyRegistryDownloads", () => {
 	setupPolly({

@@ -10,7 +10,7 @@ import {
 	getAbbreviatedPackument,
 	getPackument,
 	InvalidPackageNameError,
-} from "../../src";
+} from "../../src/index.old";
 
 describe("getAbbreviatedPackument", () => {
 	setupPolly({

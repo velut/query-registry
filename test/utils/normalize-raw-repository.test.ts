@@ -1,4 +1,4 @@
-import { GitRepository } from "../../src";
+import { GitRepository } from "../../src/index.old";
 import { normalizeRawRepository } from "../../src/utils/normalize-raw-repository";
 
 describe("normalizeRawRepository", () => {

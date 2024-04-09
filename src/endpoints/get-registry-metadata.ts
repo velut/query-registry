@@ -1,4 +1,4 @@
-import { RegistryMetadata } from "../types/registry-metadata";
+import type { RegistryMetadata } from "../types/registry-metadata";
 import { fetchFromRegistry } from "../utils/fetch-from-registry";
 
 /**

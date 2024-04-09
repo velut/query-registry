@@ -10,7 +10,7 @@ import {
 	getPackageManifest,
 	InvalidPackageNameError,
 	InvalidPackageVersionError,
-} from "../../src";
+} from "../../src/index.old";
 
 describe("getPackageManifest", () => {
 	setupPolly({

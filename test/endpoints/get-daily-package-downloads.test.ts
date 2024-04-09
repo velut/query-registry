@@ -5,7 +5,7 @@ import NodeHttpAdapter from "@pollyjs/adapter-node-http";
 import FSPersister from "@pollyjs/persister-fs";
 import * as path from "path";
 import { setupPolly } from "setup-polly-jest";
-import { FetchError, getDailyPackageDownloads, InvalidPackageNameError } from "../../src";
+import { FetchError, getDailyPackageDownloads, InvalidPackageNameError } from "../../src/index.old";
 
 describe("getDailyPackageDownloads", () => {
 	setupPolly({

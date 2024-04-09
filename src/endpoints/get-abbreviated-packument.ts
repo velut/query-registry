@@ -1,4 +1,4 @@
-import { AbbreviatedPackument } from "../types/abbreviated-packument";
+import type { AbbreviatedPackument } from "../types/abbreviated-packument";
 import { normalizeRawAbbreviatedPackument } from "../utils/normalize-raw-abbreviated-packument";
 import { getRawAbbreviatedPackument } from "./get-raw-abbreviated-packument";
 

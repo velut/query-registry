@@ -5,7 +5,7 @@ import NodeHttpAdapter from "@pollyjs/adapter-node-http";
 import FSPersister from "@pollyjs/persister-fs";
 import * as path from "path";
 import { setupPolly } from "setup-polly-jest";
-import { getRegistryMetadata, yarnRegistry } from "../../src";
+import { getRegistryMetadata, yarnRegistry } from "../../src/index.old";
 
 describe("getRegistryMetadata", () => {
 	setupPolly({

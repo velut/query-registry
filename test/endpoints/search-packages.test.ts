@@ -5,7 +5,7 @@ import NodeHttpAdapter from "@pollyjs/adapter-node-http";
 import FSPersister from "@pollyjs/persister-fs";
 import * as path from "path";
 import { setupPolly } from "setup-polly-jest";
-import { searchPackages } from "../../src";
+import { searchPackages } from "../../src/index.old";
 
 describe("searchPackages", () => {
 	setupPolly({
