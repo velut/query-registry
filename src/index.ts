@@ -11,3 +11,4 @@ export {
 	type RegistryMetadata,
 } from "./get-registry-metadata";
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
+export { packageManifestSchema, type PackageManifest } from "./package-manifest";
