@@ -10,6 +10,7 @@ export const distTagsSchema = z
 	.catchall(z.string());
 
 /**
-Mapping of distribution tags to semver version numbers (e.g., `{ "latest": "1.0.0" }`).
+`DistTags` describes the mapping of distribution tags to semver version numbers
+(e.g., `{ "latest": "1.0.0" }`).
 */
 export type DistTags = z.infer<typeof distTagsSchema>;
