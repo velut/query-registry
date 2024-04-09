@@ -20,3 +20,4 @@ export {
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
 export { packageManifestSchema, type PackageManifest } from "./package-manifest";
 export { personSchema, type Person } from "./person";
+export { repositorySchema, type Repository } from "./repository";
