@@ -4,7 +4,6 @@ TODO:
 */
 
 export { PackageJson } from "zod-package-json";
-export { distSchema, type Dist } from "./dist";
 export { distTagsSchema, type DistTags } from "./dist-tags";
 export {
 	getRegistryMetadata,
@@ -17,4 +16,4 @@ export {
 	type RegistrySigningKeys,
 } from "./get-registry-signing-keys";
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
-export { packageManifestSchema, type PackageManifest } from "./package-manifest";
+export { PackageManifest } from "./package-manifest";
