@@ -3,8 +3,8 @@ import { z } from "zod";
 import { assertValidPackageName } from "./assert-valid-package-name";
 import { DistTags } from "./dist-tags";
 import { fetchData } from "./fetch-data";
+import { PackageManifest } from "./get-package-manifest";
 import { npmRegistryUrl } from "./npm-registry";
-import { PackageManifest } from "./package-manifest";
 
 export const AbbreviatedPackument = z.object({
 	/** Package name. */
