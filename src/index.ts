@@ -4,7 +4,7 @@ TODO:
 */
 
 export { PackageJson } from "zod-package-json";
-export { distTagsSchema, type DistTags } from "./dist-tags";
+export { AbbreviatedPackument, getAbbreviatedPackument } from "./get-abbreviated-packument";
 export {
 	getRegistryMetadata,
 	registryMetadataSchema,
