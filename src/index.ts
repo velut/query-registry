@@ -5,11 +5,7 @@ TODO:
 
 export { PackageJson } from "zod-package-json";
 export { AbbreviatedPackument, getAbbreviatedPackument } from "./get-abbreviated-packument";
-export {
-	getRegistryMetadata,
-	registryMetadataSchema,
-	type RegistryMetadata,
-} from "./get-registry-metadata";
+export { RegistryMetadata, getRegistryMetadata } from "./get-registry-metadata";
 export {
 	getRegistrySigningKeys,
 	registrySigningKeysSchema,
