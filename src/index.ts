@@ -3,10 +3,9 @@ TODO:
 @packageDocumentation
 */
 
-export { bugsSchema, type Bugs } from "./bugs";
+export { PackageJson } from "zod-package-json";
 export { distSchema, type Dist } from "./dist";
 export { distTagsSchema, type DistTags } from "./dist-tags";
-export { fundingSchema, type Funding } from "./funding";
 export {
 	getRegistryMetadata,
 	registryMetadataSchema,
@@ -19,5 +18,3 @@ export {
 } from "./get-registry-signing-keys";
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
 export { packageManifestSchema, type PackageManifest } from "./package-manifest";
-export { personSchema, type Person } from "./person";
-export { repositorySchema, type Repository } from "./repository";
