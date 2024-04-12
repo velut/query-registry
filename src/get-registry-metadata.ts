@@ -38,6 +38,8 @@ export type RegistryMetadata = z.infer<typeof RegistryMetadata>;
 `getRegistryMetadata` returns the metadata describing the registry itself.
 
 @param registry - URL of the registry (default: npm registry)
+
+@see {@link RegistryMetadata}
 */
 export const getRegistryMetadata = async (registry = npmRegistryUrl): Promise<RegistryMetadata> =>
 	fetchData(RegistryMetadata, registry);

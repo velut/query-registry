@@ -38,6 +38,8 @@ export type RegistrySigningKeys = z.infer<typeof RegistrySigningKeys>;
 `getRegistrySigningKeys` returns the public signing keys used by the registry.
 
 @param registry - URL of the registry (default: npm registry)
+
+@see {@link RegistrySigningKeys}
 */
 export const getRegistrySigningKeys = async (
 	registry = npmRegistryUrl,

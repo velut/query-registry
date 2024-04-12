@@ -69,6 +69,8 @@ To get all the metadata (full packument) about a package see {@link getPackument
 
 @param name - package name
 @param registry - URL of the registry (default: npm registry)
+
+@see {@link AbbreviatedPackument}
 */
 export const getAbbreviatedPackument = async (
 	name: string,
