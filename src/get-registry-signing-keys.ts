@@ -3,14 +3,12 @@ import { z } from "zod";
 import { fetchData } from "./fetch-data";
 import { npmRegistryUrl } from "./npm-registry";
 
-/**
-Zod schema for the registry signing keys.
-*/
-export const registrySigningKeysSchema = z.object({
+export const RegistrySigningKeys = z.object({
 	keys: z.array(
 		z.object({
 			/**
-      String in the simplified extended ISO 8601 format: `YYYY-MM-DDTHH:mm:ss.sssZ` or `null`.
+      String in the simplified extended ISO 8601 format
+			(e.g., `YYYY-MM-DDTHH:mm:ss.sssZ`) or `null`.
       */
 			expires: z.string().nullable(),
 
@@ -34,7 +32,7 @@ export const registrySigningKeysSchema = z.object({
 
 @see {@link https://docs.npmjs.com/about-registry-signatures}
 */
-export type RegistrySigningKeys = z.infer<typeof registrySigningKeysSchema>;
+export type RegistrySigningKeys = z.infer<typeof RegistrySigningKeys>;
 
 /**
 `getRegistrySigningKeys` returns the public signing keys used by the registry.
@@ -44,4 +42,4 @@ export type RegistrySigningKeys = z.infer<typeof registrySigningKeysSchema>;
 export const getRegistrySigningKeys = async (
 	registry = npmRegistryUrl,
 ): Promise<RegistrySigningKeys> =>
-	fetchData(registrySigningKeysSchema, urlJoin(registry, "-/npm/v1/keys"));
+	fetchData(RegistrySigningKeys, urlJoin(registry, "-/npm/v1/keys"));
