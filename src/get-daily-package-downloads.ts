@@ -23,7 +23,7 @@ export type DailyPackageDownloads = z.infer<typeof DailyPackageDownloads>;
 for a package in the given time period.
 
 @param name - package name
-@param period - {@link DownloadPeriod | time period} in which downloads happened
+@param period - {@link DownloadPeriod | time period} in which downloads happened; the npm registry limits data to the last 18 months
 @param registry - URL of the registry downloads API (default: npm registry downloads API)
 
 @see {@link DailyPackageDownloads}

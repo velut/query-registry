@@ -34,7 +34,7 @@ export type DailyRegistryDownloads = z.infer<typeof DailyRegistryDownloads>;
 `getDailyRegistryDownloads` returns the total number of downloads for each day
 for all packages in the registry in the given time period.
 
-@param period - {@link DownloadPeriod | time period} in which downloads happened
+@param period - {@link DownloadPeriod | time period} in which downloads happened; the npm registry limits data to the last 18 months
 @param registry - URL of the registry downloads API (default: npm registry downloads API)
 
 @see {@link DailyRegistryDownloads}
