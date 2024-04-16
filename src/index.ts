@@ -19,6 +19,7 @@ export {
 	PackageVersionsDownloads,
 	getPackageVersionsDownloads,
 } from "./get-package-versions-downloads";
+export { Packument, getPackument } from "./get-packument";
 export { RegistryDownloads, getRegistryDownloads } from "./get-registry-downloads";
 export { RegistryMetadata, getRegistryMetadata } from "./get-registry-metadata";
 export { RegistrySigningKeys, getRegistrySigningKeys } from "./get-registry-signing-keys";
