@@ -11,6 +11,7 @@ export {
 	getBulkDailyPackageDownloads,
 } from "./get-bulk-daily-package-downloads";
 export { BulkPackageDownloads, getBulkPackageDownloads } from "./get-bulk-package-downloads";
+export { DailyPackageDownloads, getDailyPackageDownloads } from "./get-daily-package-downloads";
 export { DailyRegistryDownloads, getDailyRegistryDownloads } from "./get-daily-registry-downloads";
 export { PackageDownloads, getPackageDownloads } from "./get-package-downloads";
 export { PackageManifest, getPackageManifest } from "./get-package-manifest";
