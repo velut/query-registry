@@ -32,5 +32,5 @@ export type DownloadPeriod =
 	| "last-year"
 	/** Date in the format `YYYY-MM-DD`. */
 	| `${number}-${number}-${number}`
-	/** Date range in the format `YYYY-MM-DD:YYYY-MM-DD`. */
+	/** Inclusive date range in the format `YYYY-MM-DD:YYYY-MM-DD`. */
 	| `${number}-${number}-${number}:${number}-${number}-${number}`;

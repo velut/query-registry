@@ -13,15 +13,15 @@ export const PackageVersionsDownloads = z.object({
 });
 
 /**
-`PackageVersionsDownloads` describes the total number of downloads for each version
-of a package in the previous 7 days.
+`PackageVersionsDownloads` describes the total number of downloads
+for each version of a package in the previous 7 days.
 @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#per-version-download-counts}
 */
 export type PackageVersionsDownloads = z.infer<typeof PackageVersionsDownloads>;
 
 /**
-`getPackageVersionsDownloads` returns the total number of downloads for each version
-of a package in the previous 7 days.
+`getPackageVersionsDownloads` returns the total number of downloads
+for each version of a package in the previous 7 days.
 
 @param name - package name
 @param registry - URL of the registry downloads API (default: npm registry downloads API)

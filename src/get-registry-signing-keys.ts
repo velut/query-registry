@@ -29,7 +29,6 @@ export const RegistrySigningKeys = z.object({
 
 /**
 `RegistrySigningKeys` describes the signing keys used by the registry.
-
 @see {@link https://docs.npmjs.com/about-registry-signatures}
 */
 export type RegistrySigningKeys = z.infer<typeof RegistrySigningKeys>;
