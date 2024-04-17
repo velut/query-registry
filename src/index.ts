@@ -5,6 +5,7 @@ TODO:
 
 export { PackageJson } from "zod-package-json";
 export { DownloadPeriod } from "./download-period";
+export { cache } from "./fetch-data";
 export { AbbreviatedPackument, getAbbreviatedPackument } from "./get-abbreviated-packument";
 export {
 	BulkDailyPackageDownloads,

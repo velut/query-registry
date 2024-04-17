@@ -1,7 +1,13 @@
 import QuickLRU from "quick-lru";
 import { z } from "zod";
 
-const cache = new QuickLRU({
+/**
+Internal cache for all requests.
+
+@see {@link https://github.com/sindresorhus/quick-lru}
+@internal
+*/
+export const cache = new QuickLRU({
 	// 100 items.
 	maxSize: 100,
 
