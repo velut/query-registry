@@ -1,5 +1,5 @@
 import QuickLRU from "quick-lru";
-import { z } from "zod";
+import type { z } from "zod";
 
 /**
 Internal cache for all requests.
