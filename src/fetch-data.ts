@@ -7,7 +7,7 @@ Internal cache for all requests.
 @see {@link https://github.com/sindresorhus/quick-lru}
 @internal
 */
-export const cache = new QuickLRU({
+export const cache = new QuickLRU<string, unknown>({
 	// 100 items.
 	maxSize: 100,
 
