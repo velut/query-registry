@@ -24,3 +24,4 @@ export { RegistryDownloads, getRegistryDownloads } from "./get-registry-download
 export { RegistryMetadata, getRegistryMetadata } from "./get-registry-metadata";
 export { RegistrySigningKeys, getRegistrySigningKeys } from "./get-registry-signing-keys";
 export { npmRegistryDownloadsApiUrl, npmRegistryUrl } from "./npm-registry";
+export { SearchCriteria, SearchResults, searchPackages } from "./search-packages";
