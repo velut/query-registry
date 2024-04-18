@@ -80,6 +80,15 @@ export const PackageManifest = PackageJson.extend({
 			tmp: z.string().optional(),
 		})
 		.optional(),
+
+	/**
+	Runtime systems supported by the package.
+
+	@remarks
+	In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
+	instead of the object used in modern packages.
+	*/
+	engines: z.union([z.array(z.string()), z.record(z.string())]).optional(),
 });
 
 /**
