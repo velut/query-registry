@@ -39,7 +39,7 @@ const Dist = z.object({
 		.array(
 			z.object({
 				keyid: z.string(),
-				signature: z.string(),
+				sig: z.string(),
 			}),
 		)
 		.optional(),
