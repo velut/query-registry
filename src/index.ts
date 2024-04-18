@@ -4,8 +4,8 @@ TODO:
 */
 
 export { PackageJson } from "zod-package-json";
+export { cache } from "./cache";
 export { DownloadPeriod } from "./download-period";
-export { cache } from "./fetch-data";
 export { AbbreviatedPackument, getAbbreviatedPackument } from "./get-abbreviated-packument";
 export {
 	BulkDailyPackageDownloads,
