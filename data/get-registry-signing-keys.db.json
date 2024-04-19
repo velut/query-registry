@@ -1,0 +1,16 @@
+[
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/npm/v1/keys\"}",
+    {
+      "keys": [
+        {
+          "expires": null,
+          "keyid": "",
+          "keytype": "",
+          "scheme": "",
+          "key": ""
+        }
+      ]
+    }
+  ]
+]
