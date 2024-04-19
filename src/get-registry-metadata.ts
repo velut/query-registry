@@ -18,11 +18,13 @@ export const RegistryMetadata = z.object({
 	compacted_seq: z.number().optional(),
 	uuid: z.string().optional(),
 	other: z.object({ data_size: z.number().optional() }).optional(),
-	sizes: z.object({
-		file: z.number().optional(),
-		active: z.number().optional(),
-		external: z.number().optional(),
-	}),
+	sizes: z
+		.object({
+			file: z.number().optional(),
+			active: z.number().optional(),
+			external: z.number().optional(),
+		})
+		.optional(),
 });
 
 /**
