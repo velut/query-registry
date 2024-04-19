@@ -1,0 +1,3666 @@
+[
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?\"}",
+    {
+      "objects": [],
+      "total": 0,
+      "time": ""
+    }
+  ],
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?text=react\"}",
+    {
+      "objects": [
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "email": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        }
+      ],
+      "total": 0,
+      "time": ""
+    }
+  ],
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?size=0&text=react\"}",
+    {
+      "objects": [],
+      "total": 0,
+      "time": ""
+    }
+  ],
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?size=1&text=react\"}",
+    {
+      "objects": [
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        }
+      ],
+      "total": 0,
+      "time": ""
+    }
+  ],
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?text=npm\"}",
+    {
+      "objects": [
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        }
+      ],
+      "total": 0,
+      "time": ""
+    }
+  ],
+  [
+    "{\"url\":\"https://registry.npmjs.org/-/v1/search?text=lodash\"}",
+    {
+      "objects": [
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "url": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        },
+        {
+          "package": {
+            "name": "",
+            "scope": "",
+            "version": "",
+            "description": "",
+            "keywords": [
+              "",
+              ""
+            ],
+            "date": "",
+            "links": {
+              "npm": "",
+              "homepage": "",
+              "repository": "",
+              "bugs": ""
+            },
+            "author": {
+              "name": "",
+              "email": "",
+              "url": "",
+              "username": ""
+            },
+            "publisher": {
+              "username": "",
+              "email": ""
+            },
+            "maintainers": [
+              {
+                "username": "",
+                "email": ""
+              },
+              {
+                "username": "",
+                "email": ""
+              }
+            ]
+          },
+          "flags": {
+            "insecure": 0
+          },
+          "score": {
+            "final": 0,
+            "detail": {
+              "quality": 0,
+              "popularity": 0,
+              "maintenance": 0
+            }
+          },
+          "searchScore": 0
+        }
+      ],
+      "total": 0,
+      "time": ""
+    }
+  ]
+]
