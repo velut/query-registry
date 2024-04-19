@@ -22,6 +22,7 @@ test("getAbbreviatedPackument", async () => {
 		"express",
 		"inquirer",
 		"lodash",
+		"npm",
 		"prettier",
 		"react-dom",
 		"react",
