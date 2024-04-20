@@ -1,28 +1,31 @@
-import { Low } from "lowdb";
-import { JSONFile } from "lowdb/node";
+import { compressSync, decompressSync, strFromU8, strToU8 } from "fflate";
+import fs from "node:fs/promises";
 import { cache } from "../src/cache";
 import { JsonStrip } from "../utils/json-strip";
 
 export const testDb = (name: string) => {
-	const db = new Low<[string, unknown][]>(new JSONFile(`data/${name}.db.json`), []);
 	return {
 		loadIntoCache: async () => {
-			await db.read();
 			cache.clear();
-			if (process.env.UPDATE_TEST_DB !== "true" && db.data.length > 0) {
-				cache.resize(db.data.length);
-				for (const [key, value] of db.data) {
-					cache.set(key, value);
+			if (process.env.UPDATE_TEST_DB !== "true") {
+				const buf = await fs.readFile(`./data/${name}.db.gz`);
+				const data = JSON.parse(strFromU8(decompressSync(buf))) as [string, unknown][];
+				if (data.length > 0) {
+					cache.resize(data.length);
+					for (const [key, value] of data) {
+						cache.set(key, value);
+					}
 				}
 			}
 		},
 		updateFromCache: async () => {
 			if (process.env.UPDATE_TEST_DB === "true" && cache.size > 0) {
-				db.data = [...cache.entriesAscending()].map(([key, value]) => [
+				const entries = [...cache.entriesAscending()].map(([key, value]) => [
 					key,
 					JsonStrip.parse(value),
 				]);
-				await db.write();
+				const data = compressSync(strToU8(JSON.stringify(entries)));
+				await fs.writeFile(`./data/${name}.db.gz`, data);
 			}
 			cache.clear();
 		},
