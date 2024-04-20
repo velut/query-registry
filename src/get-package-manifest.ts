@@ -89,6 +89,15 @@ export const PackageManifest = PackageJson.extend({
 	instead of the object used in modern packages.
 	*/
 	engines: z.union([z.array(z.string()), z.record(z.string())]).optional(),
+
+	/**
+	SPDX license expression or a custom license.
+
+	@remarks
+	In some old packages (like `eslint@0.0.6`) the `license` property is an object
+	and with coercion `license` can become `"[object Object]"`.
+	*/
+	license: z.coerce.string().optional(),
 });
 
 /**
