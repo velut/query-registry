@@ -108,9 +108,6 @@ export const PackageManifest = PackageJson.extend({
 	*/
 	homepage: z.coerce.string().optional(),
 
-	/** Configuration values for scripts. */
-	config: z.record(z.unknown()).optional(),
-
 	/**
 	Deprecation message.
 
@@ -119,13 +116,6 @@ export const PackageManifest = PackageJson.extend({
 	and with coercion it becomes either `"true"` or `"false"`.
 	*/
 	deprecated: z.coerce.string().optional(),
-
-	/**
-	Main entry point for the package when used in a browser environment.
-	@see {@link https://docs.npmjs.com/cli/v10/configuring-npm/package-json#browser}
-	@see {@link https://gist.github.com/defunctzombie/4339901/49493836fb873ddaa4b8a7aa0ef2352119f69211}
-	*/
-	browser: z.union([z.string(), z.record(z.union([z.string(), z.boolean()]))]).optional(),
 });
 
 /**
