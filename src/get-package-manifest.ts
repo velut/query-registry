@@ -95,7 +95,7 @@ export const PackageManifest = PackageJson.extend({
 
 	@remarks
 	In some old packages (like `eslint@0.0.6`) the `license` property is an object
-	and with coercion `license` can become `"[object Object]"`.
+	and with coercion `license` becomes `"[object Object]"`.
 	*/
 	license: z.coerce.string().optional(),
 
@@ -107,6 +107,18 @@ export const PackageManifest = PackageJson.extend({
 	and with coercion it correctly becomes a string.
 	*/
 	homepage: z.coerce.string().optional(),
+
+	/** Configuration values for scripts. */
+	config: z.record(z.unknown()).optional(),
+
+	/**
+	Deprecation message.
+
+	@remarks
+	In some old packages (like `react@16.14.0`) the `deprecated` property is a boolean
+	and with coercion it becomes either `"true"` or `"false"`.
+	*/
+	deprecated: z.coerce.string().optional(),
 });
 
 /**
