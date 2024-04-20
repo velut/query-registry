@@ -95,9 +95,9 @@ export const PackageManifest = PackageJson.extend({
 
 	@remarks
 	In some old packages (like `eslint@0.0.6`) the `license` property is an object
-	and with coercion `license` becomes `"[object Object]"`.
+	and with catch `license` becomes an empty string.
 	*/
-	license: z.coerce.string().optional(),
+	license: z.string().catch("").optional(),
 
 	/**
 	URL of the package's homepage.
