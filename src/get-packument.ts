@@ -31,9 +31,6 @@ export const Packument = PackageJson.pick({
 	/** Package name used as the ID in CouchDB. */
 	_id: z.string(),
 
-	/** Revision ID of the document in CouchDB. */
-	_rev: z.number(),
-
 	/** Package name. */
 	name: z.string(),
 
@@ -52,6 +49,9 @@ export const Packument = PackageJson.pick({
 	@see {@link PackageManifest}
 	*/
 	versions: z.record(PackageManifest),
+
+	/** Revision ID of the document in CouchDB. */
+	_rev: z.coerce.string().optional(),
 
 	/** Mapping of npm usernames of users who starred the package to `true`. */
 	users: z.record(z.boolean()).optional(),
