@@ -25,7 +25,7 @@ the given packages in the given time period.
 @see {@link BulkPackageDownloads}
 */
 export const getBulkPackageDownloads = async (
-	names: string[],
+	names: [string, string, ...string[]],
 	period: DownloadPeriod,
 	registry = npmRegistryDownloadsApiUrl,
 ): Promise<BulkPackageDownloads> => {
