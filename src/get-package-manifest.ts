@@ -98,6 +98,15 @@ export const PackageManifest = PackageJson.extend({
 	and with coercion `license` can become `"[object Object]"`.
 	*/
 	license: z.coerce.string().optional(),
+
+	/**
+	URL of the package's homepage.
+
+	@remarks
+	In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array
+	and with coercion it correctly becomes a string.
+	*/
+	homepage: z.coerce.string().optional(),
 });
 
 /**
