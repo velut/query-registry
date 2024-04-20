@@ -86,9 +86,9 @@ export const PackageManifest = PackageJson.extend({
 
 	@remarks
 	In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
-	instead of the object used in modern packages.
+	instead of an object and with catch it becomes an empty object.
 	*/
-	engines: z.union([z.array(z.string()), z.record(z.string())]).optional(),
+	engines: z.record(z.string()).catch({}).optional(),
 
 	/**
 	SPDX license expression or a custom license.
