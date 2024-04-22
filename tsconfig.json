@@ -20,6 +20,5 @@
 		"noEmit": true,
 		// No DOM.
 		"lib": ["es2022"]
-	},
-	"exclude": ["old"]
+	}
 }
