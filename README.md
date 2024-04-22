@@ -22,7 +22,7 @@
   - Search packages by name and other specific criteria.
 - Works in the browser.
 - Validates registry responses with [zod](https://www.npmjs.com/package/zod).
--  Automatically caches registry responses for a short time.
+- Automatically caches registry responses for a short time.
 - Supports third-party npm-compatible registries.
 
 ## Useful resources
