@@ -86,36 +86,36 @@ export const PackageManifest = PackageJson.extend({
 
 	@remarks
 	In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
-	instead of an object and with catch it becomes an empty object.
+	instead of an object and with catch it becomes `undefined`.
 	*/
-	engines: z.record(z.string()).catch({}).optional(),
+	engines: z.record(z.string()).optional().catch(undefined),
 
 	/**
 	SPDX license expression or a custom license.
 
 	@remarks
 	In some old packages (like `eslint@0.0.6`) the `license` property is an object
-	and with catch `license` becomes an empty string.
+	and with catch `license` becomes `undefined`.
 	*/
-	license: z.string().catch("").optional(),
+	license: z.string().optional().catch(undefined),
 
 	/**
 	URL of the package's homepage.
 
 	@remarks
 	In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array
-	of strings and with coercion it correctly becomes a string.
+	of strings and with catch it becomes `undefined`.
 	*/
-	homepage: z.coerce.string().optional(),
+	homepage: z.string().optional().catch(undefined),
 
 	/**
-	Deprecation message.
+	Deprecation status/message.
 
 	@remarks
-	In some old packages (like `react@16.14.0`) the `deprecated` property is a boolean
-	and with coercion it becomes either `"true"` or `"false"`.
+	In some packages (like `react@16.14.0`) the `deprecated` property is a boolean
+	instead of a deprecation message.
 	*/
-	deprecated: z.coerce.string().optional(),
+	deprecated: z.union([z.string(), z.boolean()]).optional(),
 });
 
 /**
