@@ -63,7 +63,6 @@ These are the current package's exports:
 - **BREAKING CHANGE**: Require Node.js 20 (latest LTS).
 - **BREAKING CHANGE**: Use `fetch` for network requests.
 
-
 ## [2.6.0] - 2022-08-13
 
 ### Added
