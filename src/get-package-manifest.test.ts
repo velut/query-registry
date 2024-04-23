@@ -1,8 +1,8 @@
 import { afterAll, beforeAll, expect, test } from "vitest";
-import { testDb } from "../utils/test-db";
+import { testData } from "../utils/test-data";
 import { getPackageManifest } from "./get-package-manifest";
 
-const { loadIntoCache, updateFromCache } = testDb("get-package-manifest");
+const { loadIntoCache, updateFromCache } = testData("get-package-manifest");
 
 beforeAll(async () => {
 	await loadIntoCache();

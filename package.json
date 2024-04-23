@@ -48,7 +48,7 @@
 		"build": "tsc --noEmit && tsup",
 		"attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
 		"test": "vitest",
-		"test:update-db": "bun run scripts/update-test-db.ts",
+		"test:update-data": "bun run scripts/update-test-data.ts",
 		"test:ci": "vitest run --coverage --bail 1",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
