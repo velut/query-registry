@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - None
 
+## [3.0.1] - 2024-06-12
+
+### Changed
+
+- Type of `sideEffects` changed from `boolean | undefined` to `boolean | string[] | undefined` (See https://github.com/velut/zod-package-json/issues/5) (Thanks @Sec-ant)
+- Upgraded dependencies
+
 ## [3.0.0] - 2024-04-23
 
 Version 3 is a complete rewrite of query-registry.
@@ -139,7 +146,8 @@ These are the current package's exports:
 
 - **BREAKING CHANGE**: Removed `Registry` class; use the exported functions instead.
 
-[unreleased]: https://github.com/velut/query-registry/compare/v3.0.0...HEAD
+[unreleased]: https://github.com/velut/query-registry/compare/v3.0.1...HEAD
+[3.0.1]: https://github.com/velut/query-registry/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/velut/query-registry/compare/v2.6.0...v3.0.0
 [2.6.0]: https://github.com/velut/query-registry/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/velut/query-registry/compare/v2.4.0...v2.5.0
