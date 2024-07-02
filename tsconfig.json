@@ -13,6 +13,7 @@
 		// Strictness.
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
 		// Building a library.
 		"declaration": true,
 		// Transpiling with a bundler.
