@@ -1,7 +1,7 @@
 import urlJoin from "url-join";
 import { z } from "zod";
 import { assertValidPackageName } from "./assert-valid-package-name";
-import { DownloadPeriod } from "./download-period";
+import type { DownloadPeriod } from "./download-period";
 import { fetchData } from "./fetch-data";
 import { DailyRegistryDownloads } from "./get-daily-registry-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
