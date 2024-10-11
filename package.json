@@ -56,7 +56,7 @@
 		"release": "np --no-cleanup"
 	},
 	"dependencies": {
-		"query-string": "^9.0.0",
+		"query-string": "^9.1.1",
 		"quick-lru": "^7.0.0",
 		"url-join": "^5.0.0",
 		"validate-npm-package-name": "^6.0.0",
@@ -65,14 +65,15 @@
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.16.4",
-		"@types/bun": "^1.1.6",
+		"@types/bun": "^1.1.11",
+		"@types/node": "^22.7.5",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^2.0.3",
+		"@vitest/coverage-v8": "^2.1.2",
 		"fflate": "^0.8.2",
 		"np": "^10.0.7",
 		"prettier": "^3.3.3",
-		"tsup": "^8.2.0",
-		"typescript": "^5.5.3",
-		"vitest": "^2.0.3"
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.3",
+		"vitest": "^2.1.2"
 	}
 }
