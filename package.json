@@ -64,7 +64,7 @@
 		"zod-package-json": "^1.0.3"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.16.4",
+		"@arethetypeswrong/cli": "^0.17.0",
 		"@types/bun": "^1.1.11",
 		"@types/node": "^22.7.5",
 		"@types/validate-npm-package-name": "^4.0.2",
