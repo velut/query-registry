@@ -7,7 +7,7 @@ import { npmRegistryUrl } from "./npm-registry";
 
 export const SearchCriteria = z.object({
 	/**
-	Query text.
+	Query text (Required).
 
 	@remarks
 	The following special text attributes can be used to refine results:
@@ -22,7 +22,7 @@ export const SearchCriteria = z.object({
 	 - `is:insecure`: include only insecure packages
 	 - `boost-exact:<true/false>`: boost packages with exact name match (default: `true`)
 	*/
-	text: z.string().optional(),
+	text: z.string(),
 
 	/** Number of results to return (the npm registry accepts a maximum of `250` with a default of `20`). */
 	size: z.number().optional(),
@@ -55,32 +55,18 @@ const SearchResult = z.object({
 		keywords: true,
 	}).extend({
 		/**
-		Either `unscoped` for unscoped packages (e.g., `foo` -> `unscoped`) or
-		the package's scope for scoped packages (e.g., `@foo/bar` -> `foo`).
-		*/
-		scope: z.string(),
-
-		/**
 		Timestamp of when the `latest` version of the package was published
 		in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`).
 		*/
 		date: z.string(),
 
-		/** Author of the package. */
-		author: z
+		/** User who published the `latest` version of the package. */
+		publisher: z
 			.object({
-				username: z.string().optional(),
-				name: z.string().optional(),
-				email: z.string().optional(),
-				url: z.string().optional(),
+				username: z.string(),
+				email: z.string(),
 			})
 			.optional(),
-
-		/** User who published the `latest` version of the package. */
-		publisher: z.object({
-			username: z.string(),
-			email: z.string(),
-		}),
 
 		/** Maintainers of the `latest` version of the package. */
 		maintainers: z.array(
@@ -127,16 +113,29 @@ const SearchResult = z.object({
 	/** Search score value; may be different from `score.final`. */
 	searchScore: z.number(),
 
-	/** Flag attributes for the package. */
-	flags: z
-		.object({
-			/** True if the package semver version number is `<1.0.0`. */
-			unstable: z.coerce.boolean().optional(),
+	/** Download counts for the package. */
+	downloads: z.object({
+		monthly: z.number(),
+		weekly: z.number(),
+	}),
 
-			/** True if the package is insecure or has vulnerable dependencies. */
-			insecure: z.coerce.boolean().optional(),
-		})
-		.optional(),
+	/** Number of dependents for the package. */
+	dependents: z.number(),
+
+	/** Time at which the metadata was updated. */
+	updated: z.string(),
+
+	/** Flag attributes for the package. */
+	flags: z.object({
+		/** True if the package is insecure or has vulnerable dependencies. */
+		insecure: z.coerce.boolean(),
+
+		/** True if the package semver version number is `<1.0.0`. */
+		unstable: z.coerce.boolean().optional(),
+	}),
+
+	/** SPDX license expression. */
+	license: z.string().optional(),
 });
 
 export const SearchResults = z.object({
