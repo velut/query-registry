@@ -161,6 +161,6 @@ See the [quick-lru](https://www.npmjs.com/package/quick-lru) package for the cac
 MIT
 ```
 
-Copyright (c) 2024 Edoardo Scibona
+Copyright (c) 2025 Edoardo Scibona
 
 See [LICENSE](./LICENSE) file.
