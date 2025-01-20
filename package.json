@@ -60,20 +60,20 @@
 		"quick-lru": "^7.0.0",
 		"url-join": "^5.0.0",
 		"validate-npm-package-name": "^6.0.0",
-		"zod": "^3.23.8",
-		"zod-package-json": "^1.0.3"
+		"zod": "^3.24.1",
+		"zod-package-json": "^1.1.0"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.17.0",
-		"@types/bun": "^1.1.11",
-		"@types/node": "^22.7.5",
+		"@arethetypeswrong/cli": "^0.17.3",
+		"@types/bun": "^1.1.17",
+		"@types/node": "^22.10.7",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^2.1.2",
+		"@vitest/coverage-v8": "^3.0.2",
 		"fflate": "^0.8.2",
-		"np": "^10.0.7",
-		"prettier": "^3.3.3",
-		"tsup": "^8.3.0",
-		"typescript": "^5.6.3",
-		"vitest": "^2.1.2"
+		"np": "^10.1.0",
+		"prettier": "^3.4.2",
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.3",
+		"vitest": "^3.0.2"
 	}
 }
