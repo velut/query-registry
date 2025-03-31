@@ -8,10 +8,10 @@ export const testData = (name: string) => {
 	return {
 		loadIntoCache: async () => {
 			cache.clear();
-			if (process.env.UPDATE_TEST_DATA === "true") {
-				// Don't load old data into cache if we're updating test data with fresh data.
-				return;
-			}
+
+			// Skip loading cached data if we want to update data.
+			if (process.env.UPDATE_TEST_DATA === "true") return;
+
 			const buf = await fs.readFile(filename);
 			const data = JSON.parse(strFromU8(decompressSync(buf))) as [string, unknown][];
 			if (data.length > 0) {
