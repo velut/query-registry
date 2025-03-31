@@ -116,6 +116,18 @@ export const PackageManifest = PackageJson.extend({
 	instead of a deprecation message.
 	*/
 	deprecated: z.union([z.string(), z.boolean()]).optional(),
+
+	/**
+	Type for all the `.js` files in the package, usually `module`.
+
+	@remarks
+	In some old packages (like `mongoose@0.0.1`) the `type` property value is a string
+	different from `module` or `commonjs` and with catch it becomes `undefined`.
+	*/
+	type: z
+		.union([z.literal("module"), z.literal("commonjs")])
+		.optional()
+		.catch(undefined),
 });
 
 /**
