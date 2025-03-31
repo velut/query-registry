@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - None
 
+## [4.0.1] - 2025-03-31
+
+### Fixed
+
+- Catch unknown literal values in the `type` module format field (See https://github.com/velut/query-registry/issues/415) (Thanks @officialrajdeepsingh)
+
 ## [4.0.0] - 2025-01-20
 
 ### Changed
@@ -153,7 +159,8 @@ These are the current package's exports:
 
 - **BREAKING CHANGE**: Removed `Registry` class; use the exported functions instead.
 
-[unreleased]: https://github.com/velut/query-registry/compare/v4.0.0...HEAD
+[unreleased]: https://github.com/velut/query-registry/compare/v4.0.1...HEAD
+[4.0.1]: https://github.com/velut/query-registry/compare/v4.0.0...v4.0.1
 [4.0.0]: https://github.com/velut/query-registry/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/velut/query-registry/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/velut/query-registry/compare/v2.6.0...v3.0.0
