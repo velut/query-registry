@@ -1,3 +1,3 @@
 import { $ } from "bun";
 
-await $`UPDATE_TEST_DATA=true vitest run --bail 1 --test-timeout=60000`;
+await $`UPDATE_TEST_DATA=true vitest run --test-timeout=0 --hook-timeout=0`;
