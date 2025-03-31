@@ -64,16 +64,16 @@
 		"zod-package-json": "^1.1.0"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.17.3",
-		"@types/bun": "^1.2.2",
-		"@types/node": "^22.13.4",
+		"@arethetypeswrong/cli": "^0.17.4",
+		"@types/bun": "^1.2.8",
+		"@types/node": "^22.13.14",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^3.0.6",
+		"@vitest/coverage-v8": "^3.1.1",
 		"fflate": "^0.8.2",
 		"np": "^10.2.0",
-		"prettier": "^3.5.1",
-		"tsup": "^8.3.6",
-		"typescript": "^5.7.3",
-		"vitest": "^3.0.6"
+		"prettier": "^3.5.3",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.2",
+		"vitest": "^3.1.1"
 	}
 }
