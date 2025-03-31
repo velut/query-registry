@@ -25,6 +25,7 @@ test("getPackument", async () => {
 		"fs-extra",
 		"inquirer",
 		"lodash",
+		"mongoose",
 		"npm",
 		"picocolors",
 		"prettier",

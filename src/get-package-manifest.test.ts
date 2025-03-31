@@ -24,4 +24,7 @@ test("getPackageManifest", async () => {
 	await expect(getPackageManifest("@types/node", "20.12.7")).resolves.toBeDefined();
 	await expect(getPackageManifest("npm", "10.5.2")).resolves.toBeDefined();
 	await expect(getPackageManifest("react", "18.2.0")).resolves.toBeDefined();
+
+	// Bad values for the `type` field https://github.com/velut/query-registry/issues/415
+	await expect(getPackageManifest("mongoose", "0.0.1")).resolves.toBeDefined();
 });
