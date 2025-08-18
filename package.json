@@ -29,13 +29,21 @@
 	],
 	"sideEffects": false,
 	"type": "module",
+	"zshy": {
+		"exports": {
+			"./package.json": "./package.json",
+			".": "./src/index.ts"
+		},
+		"cjs": false
+	},
+	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
+		"./package.json": "./package.json",
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
-		},
-		"./package.json": "./package.json"
+		}
 	},
 	"files": [
 		"dist"
@@ -45,8 +53,8 @@
 	},
 	"scripts": {
 		"check": "tsc --noEmit",
-		"build": "tsc --noEmit && tsup",
-		"attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
+		"build": "tsc --noEmit && zshy",
+		"attw": "attw --pack . --profile esm-only",
 		"test": "vitest",
 		"test:update-data": "bun run scripts/update-test-data.ts",
 		"test:ci": "vitest run --coverage --bail 1",
@@ -72,8 +80,8 @@
 		"fflate": "^0.8.2",
 		"np": "^10.2.0",
 		"prettier": "^3.6.2",
-		"tsup": "^8.5.0",
 		"typescript": "^5.9.2",
-		"vitest": "^3.2.4"
+		"vitest": "^3.2.4",
+		"zshy": "^0.3.5"
 	}
 }
