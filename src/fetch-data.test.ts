@@ -1,5 +1,5 @@
 import { expect, test, vi } from "vitest";
-import { z } from "zod";
+import * as z from "zod";
 import { fetchData } from "./fetch-data";
 
 const fetch = vi.fn();

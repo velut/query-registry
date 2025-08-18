@@ -1,6 +1,6 @@
 import queryString from "query-string";
 import urlJoin from "url-join";
-import { z } from "zod";
+import * as z from "zod";
 import { PackageJson } from "zod-package-json";
 import { fetchData } from "./fetch-data";
 import { npmRegistryUrl } from "./npm-registry";

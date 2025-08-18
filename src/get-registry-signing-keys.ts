@@ -1,5 +1,5 @@
 import urlJoin from "url-join";
-import { z } from "zod";
+import * as z from "zod";
 import { fetchData } from "./fetch-data";
 import { npmRegistryUrl } from "./npm-registry";
 

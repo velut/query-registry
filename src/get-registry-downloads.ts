@@ -1,5 +1,5 @@
 import urlJoin from "url-join";
-import { z } from "zod";
+import * as z from "zod";
 import type { DownloadPeriod } from "./download-period";
 import { fetchData } from "./fetch-data";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";

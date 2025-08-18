@@ -1,5 +1,5 @@
 import urlJoin from "url-join";
-import { z } from "zod";
+import * as z from "zod";
 import { assertValidPackageName } from "./assert-valid-package-name";
 import type { DownloadPeriod } from "./download-period";
 import { fetchData } from "./fetch-data";

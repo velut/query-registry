@@ -1,5 +1,5 @@
 import urlJoin from "url-join";
-import { z } from "zod";
+import * as z from "zod";
 import { PackageJson } from "zod-package-json";
 import { assertValidPackageName } from "./assert-valid-package-name";
 import { fetchData } from "./fetch-data";

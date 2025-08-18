@@ -1,4 +1,4 @@
-import { z } from "zod";
+import * as z from "zod";
 
 const Literal = z.union([
 	// Truncate strings and numbers to save space in the cached test data.

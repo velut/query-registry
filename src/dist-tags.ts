@@ -1,4 +1,4 @@
-import { z } from "zod";
+import * as z from "zod";
 
 /**
 `DistTags` describes the mapping of distribution tags to semver version numbers
