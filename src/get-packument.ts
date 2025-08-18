@@ -48,13 +48,13 @@ export const Packument = PackageJson.pick({
 	Mapping of semver version numbers to package manifests.
 	@see {@link PackageManifest}
 	*/
-	versions: z.record(PackageManifest),
+	versions: z.record(z.string(), PackageManifest),
 
 	/** Revision ID of the document in CouchDB. */
 	_rev: z.coerce.string().optional(),
 
 	/** Mapping of npm usernames of users who starred the package to `true`. */
-	users: z.record(z.boolean()).optional(),
+	users: z.record(z.string(), z.boolean()).optional(),
 
 	/** Text extracted from the README file. */
 	readme: z.string().optional(),

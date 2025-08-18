@@ -88,7 +88,7 @@ export const PackageManifest = PackageJson.extend({
 	In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
 	instead of an object and with catch it becomes `undefined`.
 	*/
-	engines: z.record(z.string()).optional().catch(undefined),
+	engines: z.record(z.string(), z.string()).optional().catch(undefined),
 
 	/**
 	SPDX license expression or a custom license.

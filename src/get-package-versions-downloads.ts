@@ -9,7 +9,7 @@ export const PackageVersionsDownloads = z.object({
 	package: z.string(),
 
 	/** Mapping of semver version numbers to total number of downloads. */
-	downloads: z.record(z.number()),
+	downloads: z.record(z.string(), z.number()),
 });
 
 /**

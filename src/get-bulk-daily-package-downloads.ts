@@ -6,7 +6,10 @@ import { fetchData } from "./fetch-data";
 import { DailyPackageDownloads } from "./get-daily-package-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
-export const BulkDailyPackageDownloads = z.record(z.union([z.null(), DailyPackageDownloads]));
+export const BulkDailyPackageDownloads = z.record(
+	z.string(),
+	z.union([z.null(), DailyPackageDownloads]),
+);
 
 /**
 `BulkDailyPackageDownloads` describes the total number of downloads for each day

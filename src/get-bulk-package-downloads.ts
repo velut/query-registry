@@ -6,7 +6,7 @@ import { fetchData } from "./fetch-data";
 import { PackageDownloads } from "./get-package-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
-export const BulkPackageDownloads = z.record(z.union([z.null(), PackageDownloads]));
+export const BulkPackageDownloads = z.record(z.string(), z.union([z.null(), PackageDownloads]));
 
 /**
 `BulkPackageDownloads` describes the total number of downloads for some packages in a given time period.
