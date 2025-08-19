@@ -156,5 +156,5 @@ export const getPackageManifest = async (
 	registry = npmRegistryUrl,
 ): Promise<PackageManifest> => {
 	assertValidPackageName(name);
-	return fetchData(PackageManifest, urlJoin(registry, name, versionOrTag));
+	return await fetchData(PackageManifest, urlJoin(registry, name, versionOrTag));
 };

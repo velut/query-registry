@@ -66,7 +66,7 @@ export const getAbbreviatedPackument = async (
 	registry = npmRegistryUrl,
 ): Promise<AbbreviatedPackument> => {
 	assertValidPackageName(name);
-	return fetchData(AbbreviatedPackument, urlJoin(registry, name), {
+	return await fetchData(AbbreviatedPackument, urlJoin(registry, name), {
 		Accept: "application/vnd.npm.install-v1+json",
 	});
 };

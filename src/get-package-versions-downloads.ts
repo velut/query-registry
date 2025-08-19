@@ -33,7 +33,7 @@ export const getPackageVersionsDownloads = async (
 	registry = npmRegistryDownloadsApiUrl,
 ): Promise<PackageVersionsDownloads> => {
 	assertValidPackageName(name);
-	return fetchData(
+	return await fetchData(
 		PackageVersionsDownloads,
 		urlJoin(registry, `/versions/${encodeURIComponent(name)}/last-week`),
 	);

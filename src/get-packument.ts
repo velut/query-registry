@@ -86,5 +86,5 @@ see {@link getAbbreviatedPackument}.
 */
 export const getPackument = async (name: string, registry = npmRegistryUrl): Promise<Packument> => {
 	assertValidPackageName(name);
-	return fetchData(Packument, urlJoin(registry, name));
+	return await fetchData(Packument, urlJoin(registry, name));
 };

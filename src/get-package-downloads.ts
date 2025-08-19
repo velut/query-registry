@@ -32,5 +32,5 @@ export const getPackageDownloads = async (
 	registry = npmRegistryDownloadsApiUrl,
 ): Promise<PackageDownloads> => {
 	assertValidPackageName(name);
-	return fetchData(PackageDownloads, urlJoin(registry, `/downloads/point/${period}/${name}`));
+	return await fetchData(PackageDownloads, urlJoin(registry, `/downloads/point/${period}/${name}`));
 };

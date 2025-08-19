@@ -36,7 +36,7 @@ export const getBulkDailyPackageDownloads = async (
 	for (const name of names) {
 		assertValidPackageName(name);
 	}
-	return fetchData(
+	return await fetchData(
 		BulkDailyPackageDownloads,
 		urlJoin(registry, `/downloads/range/${period}/${names.join(",")}`),
 	);

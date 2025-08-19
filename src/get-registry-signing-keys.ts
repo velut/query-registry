@@ -42,5 +42,6 @@ export type RegistrySigningKeys = z.infer<typeof RegistrySigningKeys>;
 */
 export const getRegistrySigningKeys = async (
 	registry = npmRegistryUrl,
-): Promise<RegistrySigningKeys> =>
-	fetchData(RegistrySigningKeys, urlJoin(registry, "-/npm/v1/keys"));
+): Promise<RegistrySigningKeys> => {
+	return await fetchData(RegistrySigningKeys, urlJoin(registry, "-/npm/v1/keys"));
+};

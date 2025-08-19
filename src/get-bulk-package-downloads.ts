@@ -32,7 +32,7 @@ export const getBulkPackageDownloads = async (
 	for (const name of names) {
 		assertValidPackageName(name);
 	}
-	return fetchData(
+	return await fetchData(
 		BulkPackageDownloads,
 		urlJoin(registry, `/downloads/point/${period}/${names.join(",")}`),
 	);
