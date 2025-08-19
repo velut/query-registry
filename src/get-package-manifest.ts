@@ -124,10 +124,7 @@ export const PackageManifest = PackageJson.extend({
 	In some old packages (like `mongoose@0.0.1`) the `type` property value is a string
 	different from `module` or `commonjs` and with catch it becomes `undefined`.
 	*/
-	type: z
-		.union([z.literal("module"), z.literal("commonjs")])
-		.optional()
-		.catch(undefined),
+	type: z.literal(["module", "commonjs"]).optional().catch(undefined),
 });
 
 /**
