@@ -19,24 +19,26 @@ export const AbbreviatedPackument = z.object({
 	/** Mapping of semver version numbers to the required metadata for installing a package version. */
 	versions: z.record(
 		z.string(),
-		PackageManifest.pick({
-			name: true,
-			version: true,
-			dist: true,
-			deprecated: true,
-			dependencies: true,
-			optionalDependencies: true,
-			devDependencies: true,
-			bundleDependencies: true,
-			peerDependencies: true,
-			peerDependenciesMeta: true,
-			bin: true,
-			directories: true,
-			engines: true,
-			cpu: true,
-			os: true,
-			_hasShrinkwrap: true,
-		}).extend({
+		z.object({
+			...PackageManifest.pick({
+				name: true,
+				version: true,
+				dist: true,
+				deprecated: true,
+				dependencies: true,
+				optionalDependencies: true,
+				devDependencies: true,
+				bundleDependencies: true,
+				peerDependencies: true,
+				peerDependenciesMeta: true,
+				bin: true,
+				directories: true,
+				engines: true,
+				cpu: true,
+				os: true,
+				_hasShrinkwrap: true,
+			}).shape,
+
 			/** True if the package contains an `install` script. */
 			hasInstallScript: z.boolean().optional(),
 		}),

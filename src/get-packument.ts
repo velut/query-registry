@@ -17,17 +17,19 @@ const Time = z
 	})
 	.catchall(z.string());
 
-export const Packument = PackageJson.pick({
-	author: true,
-	bugs: true,
-	contributors: true,
-	description: true,
-	homepage: true,
-	keywords: true,
-	license: true,
-	maintainers: true,
-	repository: true,
-}).extend({
+export const Packument = z.object({
+	...PackageJson.pick({
+		author: true,
+		bugs: true,
+		contributors: true,
+		description: true,
+		homepage: true,
+		keywords: true,
+		license: true,
+		maintainers: true,
+		repository: true,
+	}).shape,
+
 	/** Package name used as the ID in CouchDB. */
 	_id: z.string(),
 

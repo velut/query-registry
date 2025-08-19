@@ -45,7 +45,9 @@ const Dist = z.object({
 		.optional(),
 });
 
-export const PackageManifest = PackageJson.extend({
+export const PackageManifest = z.object({
+	...PackageJson.shape,
+
 	/** Package version ID in the format `<name>@<version>` (e.g., `foo@1.0.0`). */
 	_id: z.string(),
 

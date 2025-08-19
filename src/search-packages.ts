@@ -48,12 +48,14 @@ export type SearchCriteria = z.infer<typeof SearchCriteria>;
 
 const SearchResult = z.object({
 	/** Package metadata. */
-	package: PackageJson.pick({
-		name: true,
-		version: true,
-		description: true,
-		keywords: true,
-	}).extend({
+	package: z.object({
+		...PackageJson.pick({
+			name: true,
+			version: true,
+			description: true,
+			keywords: true,
+		}).shape,
+
 		/**
 		Timestamp of when the `latest` version of the package was published
 		in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`).

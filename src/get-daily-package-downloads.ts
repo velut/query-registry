@@ -6,7 +6,9 @@ import { fetchData } from "./fetch-data";
 import { DailyRegistryDownloads } from "./get-daily-registry-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
-export const DailyPackageDownloads = DailyRegistryDownloads.extend({
+export const DailyPackageDownloads = z.object({
+	...DailyRegistryDownloads.shape,
+
 	/** Package name. */
 	package: z.string(),
 });
