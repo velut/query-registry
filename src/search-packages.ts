@@ -122,7 +122,7 @@ const SearchResult = z.object({
 	}),
 
 	/** Number of dependents for the package. */
-	dependents: z.number(),
+	dependents: z.coerce.number(),
 
 	/** Time at which the metadata was updated. */
 	updated: z.string(),
