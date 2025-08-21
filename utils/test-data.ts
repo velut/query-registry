@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import { cache } from "../src/cache";
 import { JsonStrip } from "./json-strip";
 
-export const testData = (name: string) => {
+export function testData(name: string) {
 	const filename = `./data/test/${name}.json.gz`;
 	return {
 		loadIntoCache: async () => {
@@ -33,4 +33,4 @@ export const testData = (name: string) => {
 			cache.clear();
 		},
 	};
-};
+}

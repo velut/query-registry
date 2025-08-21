@@ -30,14 +30,14 @@ for a package in the given time period.
 
 @see {@link DailyPackageDownloads}
 */
-export const getDailyPackageDownloads = async (
+export async function getDailyPackageDownloads(
 	name: string,
 	period: DownloadPeriod,
 	registry = npmRegistryDownloadsApiUrl,
-): Promise<DailyPackageDownloads> => {
+): Promise<DailyPackageDownloads> {
 	assertValidPackageName(name);
 	return await fetchData(
 		DailyPackageDownloads,
 		urlJoin(registry, `/downloads/range/${period}/${name}`),
 	);
-};
+}

@@ -168,12 +168,12 @@ export type SearchResults = z.infer<typeof SearchResults>;
 @see {@link SearchCriteria}
 @see {@link SearchResults}
 */
-export const searchPackages = async (
+export async function searchPackages(
 	criteria: SearchCriteria,
 	registry = npmRegistryUrl,
-): Promise<SearchResults> => {
+): Promise<SearchResults> {
 	return await fetchData(
 		SearchResults,
 		urlJoin(registry, "-/v1/search", `?${queryString.stringify(criteria)}`),
 	);
-};
+}

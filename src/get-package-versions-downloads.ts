@@ -28,13 +28,13 @@ for each version of a package in the previous 7 days.
 
 @see {@link PackageVersionsDownloads}
 */
-export const getPackageVersionsDownloads = async (
+export async function getPackageVersionsDownloads(
 	name: string,
 	registry = npmRegistryDownloadsApiUrl,
-): Promise<PackageVersionsDownloads> => {
+): Promise<PackageVersionsDownloads> {
 	assertValidPackageName(name);
 	return await fetchData(
 		PackageVersionsDownloads,
 		urlJoin(registry, `/versions/${encodeURIComponent(name)}/last-week`),
 	);
-};
+}

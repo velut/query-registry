@@ -86,7 +86,7 @@ see {@link getAbbreviatedPackument}.
 
 @see {@link Packument}
 */
-export const getPackument = async (name: string, registry = npmRegistryUrl): Promise<Packument> => {
+export async function getPackument(name: string, registry = npmRegistryUrl): Promise<Packument> {
 	assertValidPackageName(name);
 	return await fetchData(Packument, urlJoin(registry, name));
-};
+}

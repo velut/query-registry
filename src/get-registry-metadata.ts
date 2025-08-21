@@ -42,6 +42,6 @@ export type RegistryMetadata = z.infer<typeof RegistryMetadata>;
 
 @see {@link RegistryMetadata}
 */
-export const getRegistryMetadata = async (registry = npmRegistryUrl): Promise<RegistryMetadata> => {
+export async function getRegistryMetadata(registry = npmRegistryUrl): Promise<RegistryMetadata> {
 	return await fetchData(RegistryMetadata, registry);
-};
+}

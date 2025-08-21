@@ -152,11 +152,11 @@ export type PackageManifest = z.infer<typeof PackageManifest>;
 
 @see {@link PackageManifest}
 */
-export const getPackageManifest = async (
+export async function getPackageManifest(
 	name: string,
 	versionOrTag = "latest",
 	registry = npmRegistryUrl,
-): Promise<PackageManifest> => {
+): Promise<PackageManifest> {
 	assertValidPackageName(name);
 	return await fetchData(PackageManifest, urlJoin(registry, name, versionOrTag));
-};
+}

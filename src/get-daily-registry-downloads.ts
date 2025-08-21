@@ -39,9 +39,9 @@ for all packages in the registry in the given time period.
 
 @see {@link DailyRegistryDownloads}
 */
-export const getDailyRegistryDownloads = async (
+export async function getDailyRegistryDownloads(
 	period: DownloadPeriod,
 	registry = npmRegistryDownloadsApiUrl,
-): Promise<DailyRegistryDownloads> => {
+): Promise<DailyRegistryDownloads> {
 	return await fetchData(DailyRegistryDownloads, urlJoin(registry, `/downloads/range/${period}`));
-};
+}

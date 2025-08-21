@@ -63,12 +63,12 @@ To get all the metadata (full packument) about a package see {@link getPackument
 
 @see {@link AbbreviatedPackument}
 */
-export const getAbbreviatedPackument = async (
+export async function getAbbreviatedPackument(
 	name: string,
 	registry = npmRegistryUrl,
-): Promise<AbbreviatedPackument> => {
+): Promise<AbbreviatedPackument> {
 	assertValidPackageName(name);
 	return await fetchData(AbbreviatedPackument, urlJoin(registry, name), {
 		Accept: "application/vnd.npm.install-v1+json",
 	});
-};
+}

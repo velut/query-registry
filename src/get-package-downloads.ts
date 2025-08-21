@@ -28,11 +28,11 @@ export type PackageDownloads = z.infer<typeof PackageDownloads>;
 
 @see {@link PackageDownloads}
 */
-export const getPackageDownloads = async (
+export async function getPackageDownloads(
 	name: string,
 	period: DownloadPeriod,
 	registry = npmRegistryDownloadsApiUrl,
-): Promise<PackageDownloads> => {
+): Promise<PackageDownloads> {
 	assertValidPackageName(name);
 	return await fetchData(PackageDownloads, urlJoin(registry, `/downloads/point/${period}/${name}`));
-};
+}

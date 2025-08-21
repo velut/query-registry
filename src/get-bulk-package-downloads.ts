@@ -24,11 +24,11 @@ the given packages in the given time period.
 
 @see {@link BulkPackageDownloads}
 */
-export const getBulkPackageDownloads = async (
+export async function getBulkPackageDownloads(
 	names: [string, string, ...string[]],
 	period: DownloadPeriod,
 	registry = npmRegistryDownloadsApiUrl,
-): Promise<BulkPackageDownloads> => {
+): Promise<BulkPackageDownloads> {
 	for (const name of names) {
 		assertValidPackageName(name);
 	}
@@ -36,4 +36,4 @@ export const getBulkPackageDownloads = async (
 		BulkPackageDownloads,
 		urlJoin(registry, `/downloads/point/${period}/${names.join(",")}`),
 	);
-};
+}
