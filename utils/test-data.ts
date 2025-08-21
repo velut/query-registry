@@ -14,11 +14,10 @@ export function testData(name: string) {
 
 			const buf = await fs.readFile(filename);
 			const data = JSON.parse(strFromU8(decompressSync(buf))) as [string, unknown][];
-			if (data.length > 0) {
-				cache.resize(data.length);
-				for (const [key, value] of data) {
-					cache.set(key, value);
-				}
+			if (!data.length) return;
+			cache.resize(data.length);
+			for (const [key, value] of data) {
+				cache.set(key, value);
 			}
 		},
 		updateFromCache: async () => {
