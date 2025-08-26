@@ -68,14 +68,14 @@
 		"quick-lru": "^7.1.0",
 		"url-join": "^5.0.0",
 		"validate-npm-package-name": "^6.0.2",
-		"zod-package-json": "^2.0.0"
+		"zod-package-json": "^2.1.0"
 	},
 	"peerDependencies": {
 		"zod": "^4.0.0"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",
-		"@types/bun": "^1.2.20",
+		"@types/bun": "^1.2.21",
 		"@types/node": "^24.3.0",
 		"@types/validate-npm-package-name": "^4.0.2",
 		"@vitest/coverage-v8": "^3.2.4",
