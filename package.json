@@ -1,6 +1,6 @@
 {
 	"name": "query-registry",
-	"version": "4.1.0",
+	"version": "4.2.0",
 	"description": "Query the npm registry for packuments, manifests, packages and download counts",
 	"license": "MIT",
 	"author": {
