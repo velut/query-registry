@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - None
 
+## [4.2.0] - 2025-08-27
+
+### Changed
+
+- Upgraded to Zod v4
+- Moved `zod` from `dependencies` to `peerDependencies` so that dependent applications can bring their own version of Zod.
+- Upgraded dependencies
+
+### Fixed
+
+- Updated `SearchResult` to coerce `dependents` to number
+
 ## [4.1.0] - 2025-06-16
 
 ### Changed
@@ -165,7 +177,8 @@ These are the current package's exports:
 
 - **BREAKING CHANGE**: Removed `Registry` class; use the exported functions instead.
 
-[unreleased]: https://github.com/velut/query-registry/compare/v4.1.0...HEAD
+[unreleased]: https://github.com/velut/query-registry/compare/v4.2.0...HEAD
+[4.2.0]: https://github.com/velut/query-registry/compare/v4.1.0...v4.2.0
 [4.1.0]: https://github.com/velut/query-registry/compare/v4.0.1...v4.1.0
 [4.0.1]: https://github.com/velut/query-registry/compare/v4.0.0...v4.0.1
 [4.0.0]: https://github.com/velut/query-registry/compare/v3.0.1...v4.0.0
