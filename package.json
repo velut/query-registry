@@ -68,8 +68,10 @@
 		"quick-lru": "^7.1.0",
 		"url-join": "^5.0.0",
 		"validate-npm-package-name": "^6.0.2",
-		"zod": "^4.0.17",
 		"zod-package-json": "^2.0.0"
+	},
+	"peerDependencies": {
+		"zod": "^4.0.0"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",

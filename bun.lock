@@ -8,7 +8,6 @@
         "quick-lru": "^7.1.0",
         "url-join": "^5.0.0",
         "validate-npm-package-name": "^6.0.2",
-        "zod": "^4.0.17",
         "zod-package-json": "^2.0.0",
       },
       "devDependencies": {
@@ -23,6 +22,9 @@
         "typescript": "^5.9.2",
         "vitest": "^3.2.4",
         "zshy": "^0.3.5",
+      },
+      "peerDependencies": {
+        "zod": "^4.0.0",
       },
     },
   },
