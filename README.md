@@ -33,28 +33,31 @@
 
 ## Install
 
+> [!NOTE]
+> Make sure you have Zod v4 installed in your application to use this package.
+
 Using `npm`:
 
 ```
-npm add query-registry
+npm add zod query-registry
 ```
 
 Using `yarn`:
 
 ```
-yarn add query-registry
+yarn add zod query-registry
 ```
 
 Using `pnpm`:
 
 ```
-pnpm add query-registry
+pnpm add zod query-registry
 ```
 
 Using `bun`:
 
 ```
-bun add query-registry
+bun add zod query-registry
 ```
 
 ## Usage examples
