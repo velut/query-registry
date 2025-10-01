@@ -837,7 +837,7 @@
 
     "zod-package-json": ["zod-package-json@2.1.0", "", { "peerDependencies": { "zod": "^4.0.0" } }, "sha512-XLlyeEk+5q4m+GSNrTXAi9QwTbtOCHJOzr1eTCHsF6J5y8zypZRFCvfO1rOZ2CXht+9pY6DNpC7si1tcWESPCw=="],
 
-    "zshy": ["zshy@0.4.1", "", { "dependencies": { "arg": "^5.0.2", "globby": "^14.1.0", "table": "^6.9.0" }, "peerDependencies": { "typescript": ">5.5.0" }, "bin": { "zshy": "dist/index.cjs" } }, "sha512-9BP1xv9BK4xNf8N5K85q+n81uFRT4p92JrT2BShXwgn8iw63QeSbdd7Ytw5RzqFG3AeIGtqpOEJPk4iiM77dsw=="],
+    "zshy": ["zshy@0.4.2", "", { "dependencies": { "arg": "^5.0.2", "globby": "^14.1.0", "table": "^6.9.0" }, "peerDependencies": { "typescript": ">5.5.0" }, "bin": { "zshy": "dist/index.cjs" } }, "sha512-q3OkMn4dXqVhwihg/XT5Rd/9kK38hFCpq+fM2uorXy8GjBMFjOSwW9P8wFHIBZQsyUakBFn/s7j7no8L2FU91w=="],
 
     "@arethetypeswrong/core/typescript": ["typescript@5.6.1-rc", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-E3b2+1zEFu84jB0YQi9BORDjz9+jGbwwy1Zi3G0LUNw7a7cePUrHMRNy8aPh53nXpkFGVHSxIZo5vKTfYaFiBQ=="],
 
