@@ -67,7 +67,7 @@
 		"query-string": "^9.2.2",
 		"quick-lru": "^7.1.0",
 		"url-join": "^5.0.0",
-		"validate-npm-package-name": "^6.0.2",
+		"validate-npm-package-name": "^7.0.0",
 		"zod-package-json": "^2.1.0"
 	},
 	"peerDependencies": {
