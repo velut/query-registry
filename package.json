@@ -1,89 +1,92 @@
 {
-	"name": "query-registry",
-	"version": "4.2.0",
-	"description": "Query the npm registry for packuments, manifests, packages and download counts",
-	"license": "MIT",
-	"author": {
-		"name": "Edoardo Scibona",
-		"url": "https://github.com/velut"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/velut/query-registry.git"
-	},
-	"bugs": {
-		"url": "https://github.com/velut/query-registry/issues"
-	},
-	"keywords": [
-		"query",
-		"registry",
-		"npm",
-		"client",
-		"api",
-		"packument",
-		"package",
-		"downloads",
-		"search",
-		"manifest",
-		"typescript"
-	],
-	"sideEffects": false,
-	"type": "module",
-	"zshy": {
-		"exports": {
-			"./package.json": "./package.json",
-			".": "./src/index.ts"
-		},
-		"cjs": false
-	},
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		"./package.json": "./package.json",
-		".": {
-			"types": "./dist/index.d.ts",
-			"default": "./dist/index.js"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"engines": {
-		"node": ">=20"
-	},
-	"scripts": {
-		"check": "tsc --noEmit",
-		"build": "tsc --noEmit && zshy",
-		"attw": "attw --pack . --profile esm-only",
-		"test": "vitest",
-		"test:update-data": "bun run scripts/update-test-data.ts",
-		"test:ci": "vitest run --coverage --bail 1",
-		"lint": "prettier --check .",
-		"format": "prettier --write .",
-		"pre-push": "bun install && bun run lint && bun run build && bun run test:ci && bun run attw",
-		"release": "np --no-cleanup"
-	},
-	"dependencies": {
-		"query-string": "^9.2.2",
-		"quick-lru": "^7.1.0",
-		"url-join": "^5.0.0",
-		"validate-npm-package-name": "^7.0.2",
-		"zod-package-json": "^2.1.0"
-	},
-	"peerDependencies": {
-		"zod": "^4.0.0"
-	},
-	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.18.2",
-		"@types/bun": "^1.3.5",
-		"@types/node": "^25.0.3",
-		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^4.0.16",
-		"fflate": "^0.8.2",
-		"np": "^11.0.2",
-		"prettier": "^3.7.4",
-		"typescript": "^5.9.2",
-		"vitest": "^4.0.16",
-		"zshy": "^0.7.0"
-	}
+  "name": "query-registry",
+  "version": "4.2.0",
+  "description": "Query the npm registry for packuments, manifests, packages and download counts",
+  "keywords": [
+    "api",
+    "client",
+    "downloads",
+    "manifest",
+    "npm",
+    "package",
+    "packument",
+    "query",
+    "registry",
+    "search",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/velut/query-registry/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Edoardo Scibona",
+    "url": "https://github.com/velut"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velut/query-registry.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && zshy",
+    "attw": "attw --pack . --profile esm-only",
+    "test": "vitest",
+    "test:update-data": "bun run scripts/update-test-data.ts",
+    "test:ci": "vitest run --coverage --bail 1",
+    "lint": "oxfmt --check && oxlint --type-aware",
+    "format": "oxfmt",
+    "pre-push": "bun install && bun run lint && bun run build && bun run test:ci && bun run attw",
+    "release": "np --no-cleanup"
+  },
+  "dependencies": {
+    "query-string": "^9.2.2",
+    "quick-lru": "^7.1.0",
+    "url-join": "^5.0.0",
+    "validate-npm-package-name": "^7.0.2",
+    "zod-package-json": "^2.1.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@types/bun": "^1.3.5",
+    "@types/node": "^25.0.3",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "@vitest/coverage-v8": "^4.0.16",
+    "fflate": "^0.8.2",
+    "np": "^11.0.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
+    "oxlint-tsgolint": "^0.16.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.2",
+    "vitest": "^4.0.16",
+    "zshy": "^0.7.0"
+  },
+  "peerDependencies": {
+    "zod": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "zshy": {
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts"
+    },
+    "cjs": false
+  }
 }
