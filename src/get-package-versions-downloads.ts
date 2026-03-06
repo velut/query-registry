@@ -5,11 +5,11 @@ import { fetchData } from "./fetch-data";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
 export const PackageVersionsDownloads = z.object({
-	/** Package name. */
-	package: z.string(),
+  /** Package name. */
+  package: z.string(),
 
-	/** Mapping of semver version numbers to total number of downloads. */
-	downloads: z.record(z.string(), z.number()),
+  /** Mapping of semver version numbers to total number of downloads. */
+  downloads: z.record(z.string(), z.number()),
 });
 
 /**
@@ -29,12 +29,12 @@ for each version of a package in the previous 7 days.
 @see {@link PackageVersionsDownloads}
 */
 export async function getPackageVersionsDownloads(
-	name: string,
-	registry = npmRegistryDownloadsApiUrl,
+  name: string,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<PackageVersionsDownloads> {
-	assertValidPackageName(name);
-	return await fetchData(
-		PackageVersionsDownloads,
-		urlJoin(registry, `/versions/${encodeURIComponent(name)}/last-week`),
-	);
+  assertValidPackageName(name);
+  return await fetchData(
+    PackageVersionsDownloads,
+    urlJoin(registry, `/versions/${encodeURIComponent(name)}/last-week`),
+  );
 }

@@ -1,8 +1,8 @@
 import * as z from "zod";
 
 export const DownloadPeriod = z.union([
-	z.literal(["last-day", "last-week", "last-month", "last-year"]),
-	z.string().regex(/^\d{4}-\d{2}-\d{2}(:\d{4}-\d{2}-\d{2})?$/),
+  z.literal(["last-day", "last-week", "last-month", "last-year"]),
+  z.string().regex(/^\d{4}-\d{2}-\d{2}(:\d{4}-\d{2}-\d{2})?$/),
 ]);
 
 /**
@@ -19,15 +19,15 @@ The following time periods are supported by npm:
 @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md}
  */
 export type DownloadPeriod =
-	/** Last day available, not necessarily yesterday. */
-	| "last-day"
-	/** Last seven days available. */
-	| "last-week"
-	/** Last 30 days available. */
-	| "last-month"
-	/** Last 365 days available. */
-	| "last-year"
-	/** Date in the format `YYYY-MM-DD`. */
-	| `${number}-${number}-${number}`
-	/** Inclusive date range in the format `YYYY-MM-DD:YYYY-MM-DD`. */
-	| `${number}-${number}-${number}:${number}-${number}-${number}`;
+  /** Last day available, not necessarily yesterday. */
+  | "last-day"
+  /** Last seven days available. */
+  | "last-week"
+  /** Last 30 days available. */
+  | "last-month"
+  /** Last 365 days available. */
+  | "last-year"
+  /** Date in the format `YYYY-MM-DD`. */
+  | `${number}-${number}-${number}`
+  /** Inclusive date range in the format `YYYY-MM-DD:YYYY-MM-DD`. */
+  | `${number}-${number}-${number}:${number}-${number}-${number}`;

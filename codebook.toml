@@ -1,6 +1,1 @@
-words = [
-    "packument",
-    "packuments",
-    "pnpm",
-    "zod",
-]
+words = ["packument", "packuments", "pnpm", "zod"]

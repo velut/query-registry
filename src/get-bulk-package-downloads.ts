@@ -1,7 +1,7 @@
 import urlJoin from "url-join";
 import * as z from "zod";
-import { assertValidPackageName } from "./assert-valid-package-name";
 import type { DownloadPeriod } from "./download-period";
+import { assertValidPackageName } from "./assert-valid-package-name";
 import { fetchData } from "./fetch-data";
 import { PackageDownloads } from "./get-package-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
@@ -25,15 +25,15 @@ the given packages in the given time period.
 @see {@link BulkPackageDownloads}
 */
 export async function getBulkPackageDownloads(
-	names: [string, string, ...string[]],
-	period: DownloadPeriod,
-	registry = npmRegistryDownloadsApiUrl,
+  names: [string, string, ...string[]],
+  period: DownloadPeriod,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<BulkPackageDownloads> {
-	for (const name of names) {
-		assertValidPackageName(name);
-	}
-	return await fetchData(
-		BulkPackageDownloads,
-		urlJoin(registry, `/downloads/point/${period}/${names.join(",")}`),
-	);
+  for (const name of names) {
+    assertValidPackageName(name);
+  }
+  return await fetchData(
+    BulkPackageDownloads,
+    urlJoin(registry, `/downloads/point/${period}/${names.join(",")}`),
+  );
 }

@@ -8,61 +8,61 @@ import { PackageManifest } from "./get-package-manifest";
 import { npmRegistryUrl } from "./npm-registry";
 
 const Time = z
-	.object({
-		/** Timestamp of when the package was created in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
-		created: z.string(),
+  .object({
+    /** Timestamp of when the package was created in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
+    created: z.string(),
 
-		/** Timestamp of when the package was last modified in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
-		modified: z.string(),
-	})
-	.catchall(z.string());
+    /** Timestamp of when the package was last modified in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
+    modified: z.string(),
+  })
+  .catchall(z.string());
 
 export const Packument = z.object({
-	...PackageJson.pick({
-		author: true,
-		bugs: true,
-		contributors: true,
-		description: true,
-		homepage: true,
-		keywords: true,
-		license: true,
-		maintainers: true,
-		repository: true,
-	}).shape,
+  ...PackageJson.pick({
+    author: true,
+    bugs: true,
+    contributors: true,
+    description: true,
+    homepage: true,
+    keywords: true,
+    license: true,
+    maintainers: true,
+    repository: true,
+  }).shape,
 
-	/** Package name used as the ID in CouchDB. */
-	_id: z.string(),
+  /** Package name used as the ID in CouchDB. */
+  _id: z.string(),
 
-	/** Package name. */
-	name: z.string(),
+  /** Package name. */
+  name: z.string(),
 
-	/** Mapping of distribution tags to semver version numbers e.g., `{ "latest": "1.0.0" }`). */
-	"dist-tags": DistTags,
+  /** Mapping of distribution tags to semver version numbers e.g., `{ "latest": "1.0.0" }`). */
+  "dist-tags": DistTags,
 
-	/**
+  /**
 	Mapping of semver version numbers to timestamps in ISO 8601 format representing
 	the publishing time (e.g., `{ "1.0.0": "2021-11-23T19:12:24.006Z" }`).
 	Also includes the timestamps of when the package was `created` and last `modified`.
 	*/
-	time: Time,
+  time: Time,
 
-	/**
+  /**
 	Mapping of semver version numbers to package manifests.
 	@see {@link PackageManifest}
 	*/
-	versions: z.record(z.string(), PackageManifest),
+  versions: z.record(z.string(), PackageManifest),
 
-	/** Revision ID of the document in CouchDB. */
-	_rev: z.coerce.string().optional(),
+  /** Revision ID of the document in CouchDB. */
+  _rev: z.coerce.string().optional(),
 
-	/** Mapping of npm usernames of users who starred the package to `true`. */
-	users: z.record(z.string(), z.boolean()).optional(),
+  /** Mapping of npm usernames of users who starred the package to `true`. */
+  users: z.record(z.string(), z.boolean()).optional(),
 
-	/** Text extracted from the README file. */
-	readme: z.string().optional(),
+  /** Text extracted from the README file. */
+  readme: z.string().optional(),
 
-	/** Name of the README file. */
-	readmeFilename: z.string().optional(),
+  /** Name of the README file. */
+  readmeFilename: z.string().optional(),
 });
 
 /**
@@ -87,6 +87,6 @@ see {@link getAbbreviatedPackument}.
 @see {@link Packument}
 */
 export async function getPackument(name: string, registry = npmRegistryUrl): Promise<Packument> {
-	assertValidPackageName(name);
-	return await fetchData(Packument, urlJoin(registry, name));
+  assertValidPackageName(name);
+  return await fetchData(Packument, urlJoin(registry, name));
 }

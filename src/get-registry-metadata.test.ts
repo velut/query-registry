@@ -5,13 +5,13 @@ import { getRegistryMetadata } from "./get-registry-metadata";
 const { loadIntoCache, updateFromCache } = testData("get-registry-metadata");
 
 beforeAll(async () => {
-	await loadIntoCache();
+  await loadIntoCache();
 });
 
 afterAll(async () => {
-	await updateFromCache();
+  await updateFromCache();
 });
 
 test("getRegistryMetadata", async () => {
-	await expect(getRegistryMetadata()).resolves.toBeDefined();
+  await expect(getRegistryMetadata()).resolves.toBeDefined();
 });

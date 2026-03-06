@@ -1,16 +1,16 @@
 import urlJoin from "url-join";
 import * as z from "zod";
-import { assertValidPackageName } from "./assert-valid-package-name";
 import type { DownloadPeriod } from "./download-period";
+import { assertValidPackageName } from "./assert-valid-package-name";
 import { fetchData } from "./fetch-data";
 import { RegistryDownloads } from "./get-registry-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
 export const PackageDownloads = z.object({
-	...RegistryDownloads.shape,
+  ...RegistryDownloads.shape,
 
-	/** Package name. */
-	package: z.string(),
+  /** Package name. */
+  package: z.string(),
 });
 
 /**
@@ -29,10 +29,10 @@ export type PackageDownloads = z.infer<typeof PackageDownloads>;
 @see {@link PackageDownloads}
 */
 export async function getPackageDownloads(
-	name: string,
-	period: DownloadPeriod,
-	registry = npmRegistryDownloadsApiUrl,
+  name: string,
+  period: DownloadPeriod,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<PackageDownloads> {
-	assertValidPackageName(name);
-	return await fetchData(PackageDownloads, urlJoin(registry, `/downloads/point/${period}/${name}`));
+  assertValidPackageName(name);
+  return await fetchData(PackageDownloads, urlJoin(registry, `/downloads/point/${period}/${name}`));
 }

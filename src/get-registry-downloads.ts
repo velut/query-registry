@@ -5,14 +5,14 @@ import { fetchData } from "./fetch-data";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
 export const RegistryDownloads = z.object({
-	/** Total number of downloads. */
-	downloads: z.number(),
+  /** Total number of downloads. */
+  downloads: z.number(),
 
-	/** Date of the first day (inclusive) in the format `YYYY-MM-DD`. */
-	start: z.string(),
+  /** Date of the first day (inclusive) in the format `YYYY-MM-DD`. */
+  start: z.string(),
 
-	/** Date of the last day (inclusive) in the format `YYYY-MM-DD`. */
-	end: z.string(),
+  /** Date of the last day (inclusive) in the format `YYYY-MM-DD`. */
+  end: z.string(),
 });
 
 /**
@@ -32,8 +32,8 @@ for all packages in the registry in the given time period.
 @see {@link RegistryDownloads}
 */
 export async function getRegistryDownloads(
-	period: DownloadPeriod,
-	registry = npmRegistryDownloadsApiUrl,
+  period: DownloadPeriod,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<RegistryDownloads> {
-	return await fetchData(RegistryDownloads, urlJoin(registry, `/downloads/point/${period}`));
+  return await fetchData(RegistryDownloads, urlJoin(registry, `/downloads/point/${period}`));
 }

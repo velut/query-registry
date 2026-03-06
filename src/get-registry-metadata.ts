@@ -3,28 +3,28 @@ import { fetchData } from "./fetch-data";
 import { npmRegistryUrl } from "./npm-registry";
 
 export const RegistryMetadata = z.object({
-	/** Database name, usually `registry` */
-	db_name: z.string().optional(),
-	doc_count: z.number().optional(),
-	doc_del_count: z.number().optional(),
-	update_seq: z.number().optional(),
-	purge_seq: z.number().optional(),
-	compact_running: z.boolean().optional(),
-	disk_size: z.number().optional(),
-	data_size: z.number().optional(),
-	instance_start_time: z.string().optional(),
-	disk_format_version: z.number().optional(),
-	committed_update_seq: z.number().optional(),
-	compacted_seq: z.number().optional(),
-	uuid: z.string().optional(),
-	other: z.object({ data_size: z.number().optional() }).optional(),
-	sizes: z
-		.object({
-			file: z.number().optional(),
-			active: z.number().optional(),
-			external: z.number().optional(),
-		})
-		.optional(),
+  /** Database name, usually `registry` */
+  db_name: z.string().optional(),
+  doc_count: z.number().optional(),
+  doc_del_count: z.number().optional(),
+  update_seq: z.number().optional(),
+  purge_seq: z.number().optional(),
+  compact_running: z.boolean().optional(),
+  disk_size: z.number().optional(),
+  data_size: z.number().optional(),
+  instance_start_time: z.string().optional(),
+  disk_format_version: z.number().optional(),
+  committed_update_seq: z.number().optional(),
+  compacted_seq: z.number().optional(),
+  uuid: z.string().optional(),
+  other: z.object({ data_size: z.number().optional() }).optional(),
+  sizes: z
+    .object({
+      file: z.number().optional(),
+      active: z.number().optional(),
+      external: z.number().optional(),
+    })
+    .optional(),
 });
 
 /**
@@ -43,5 +43,5 @@ export type RegistryMetadata = z.infer<typeof RegistryMetadata>;
 @see {@link RegistryMetadata}
 */
 export async function getRegistryMetadata(registry = npmRegistryUrl): Promise<RegistryMetadata> {
-	return await fetchData(RegistryMetadata, registry);
+  return await fetchData(RegistryMetadata, registry);
 }

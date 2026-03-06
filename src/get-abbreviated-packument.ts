@@ -7,42 +7,42 @@ import { PackageManifest } from "./get-package-manifest";
 import { npmRegistryUrl } from "./npm-registry";
 
 export const AbbreviatedPackument = z.object({
-	/** Package name. */
-	name: z.string(),
+  /** Package name. */
+  name: z.string(),
 
-	/** Timestamp of when the package was last modified in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
-	modified: z.string(),
+  /** Timestamp of when the package was last modified in ISO 8601 format (e.g., `2021-11-23T19:12:24.006Z`). */
+  modified: z.string(),
 
-	/** Mapping of distribution tags to semver version numbers e.g., `{ "latest": "1.0.0" }`). */
-	"dist-tags": DistTags,
+  /** Mapping of distribution tags to semver version numbers e.g., `{ "latest": "1.0.0" }`). */
+  "dist-tags": DistTags,
 
-	/** Mapping of semver version numbers to the required metadata for installing a package version. */
-	versions: z.record(
-		z.string(),
-		z.object({
-			...PackageManifest.pick({
-				name: true,
-				version: true,
-				dist: true,
-				deprecated: true,
-				dependencies: true,
-				optionalDependencies: true,
-				devDependencies: true,
-				bundleDependencies: true,
-				peerDependencies: true,
-				peerDependenciesMeta: true,
-				bin: true,
-				directories: true,
-				engines: true,
-				cpu: true,
-				os: true,
-				_hasShrinkwrap: true,
-			}).shape,
+  /** Mapping of semver version numbers to the required metadata for installing a package version. */
+  versions: z.record(
+    z.string(),
+    z.object({
+      ...PackageManifest.pick({
+        name: true,
+        version: true,
+        dist: true,
+        deprecated: true,
+        dependencies: true,
+        optionalDependencies: true,
+        devDependencies: true,
+        bundleDependencies: true,
+        peerDependencies: true,
+        peerDependenciesMeta: true,
+        bin: true,
+        directories: true,
+        engines: true,
+        cpu: true,
+        os: true,
+        _hasShrinkwrap: true,
+      }).shape,
 
-			/** True if the package contains an `install` script. */
-			hasInstallScript: z.boolean().optional(),
-		}),
-	),
+      /** True if the package contains an `install` script. */
+      hasInstallScript: z.boolean().optional(),
+    }),
+  ),
 });
 
 /**
@@ -64,11 +64,11 @@ To get all the metadata (full packument) about a package see {@link getPackument
 @see {@link AbbreviatedPackument}
 */
 export async function getAbbreviatedPackument(
-	name: string,
-	registry = npmRegistryUrl,
+  name: string,
+  registry = npmRegistryUrl,
 ): Promise<AbbreviatedPackument> {
-	assertValidPackageName(name);
-	return await fetchData(AbbreviatedPackument, urlJoin(registry, name), {
-		Accept: "application/vnd.npm.install-v1+json",
-	});
+  assertValidPackageName(name);
+  return await fetchData(AbbreviatedPackument, urlJoin(registry, name), {
+    Accept: "application/vnd.npm.install-v1+json",
+  });
 }

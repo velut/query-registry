@@ -1,25 +1,25 @@
 // See https://www.totaltypescript.com/tsconfig-cheat-sheet.
 {
-	"compilerOptions": {
-		// Base options.
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"target": "es2022",
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"moduleDetection": "force",
-		"isolatedModules": true,
-		"verbatimModuleSyntax": true,
-		// Strictness.
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
-		"noImplicitOverride": true,
-		// Building a library.
-		"declaration": true,
-		// Transpiling with a bundler.
-		"module": "preserve",
-		"noEmit": true,
-		// No DOM.
-		"lib": ["es2022"]
-	}
+  "compilerOptions": {
+    // Base options.
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    // Strictness.
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    // Building a library.
+    "declaration": true,
+    // Transpiling with a bundler.
+    "module": "preserve",
+    "noEmit": true,
+    // No DOM.
+    "lib": ["es2022"]
+  }
 }

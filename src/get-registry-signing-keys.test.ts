@@ -5,13 +5,13 @@ import { getRegistrySigningKeys } from "./get-registry-signing-keys";
 const { loadIntoCache, updateFromCache } = testData("get-registry-signing-keys");
 
 beforeAll(async () => {
-	await loadIntoCache();
+  await loadIntoCache();
 });
 
 afterAll(async () => {
-	await updateFromCache();
+  await updateFromCache();
 });
 
 test("getRegistrySigningKeys", async () => {
-	await expect(getRegistrySigningKeys()).resolves.toBeDefined();
+  await expect(getRegistrySigningKeys()).resolves.toBeDefined();
 });

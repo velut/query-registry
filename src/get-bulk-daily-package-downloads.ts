@@ -1,14 +1,14 @@
 import urlJoin from "url-join";
 import * as z from "zod";
-import { assertValidPackageName } from "./assert-valid-package-name";
 import type { DownloadPeriod } from "./download-period";
+import { assertValidPackageName } from "./assert-valid-package-name";
 import { fetchData } from "./fetch-data";
 import { DailyPackageDownloads } from "./get-daily-package-downloads";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
 export const BulkDailyPackageDownloads = z.record(
-	z.string(),
-	z.union([z.null(), DailyPackageDownloads]),
+  z.string(),
+  z.union([z.null(), DailyPackageDownloads]),
 );
 
 /**
@@ -29,15 +29,15 @@ for some packages in the given time period.
 @see {@link BulkDailyPackageDownloads}
 */
 export async function getBulkDailyPackageDownloads(
-	names: [string, string, ...string[]],
-	period: DownloadPeriod,
-	registry = npmRegistryDownloadsApiUrl,
+  names: [string, string, ...string[]],
+  period: DownloadPeriod,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<BulkDailyPackageDownloads> {
-	for (const name of names) {
-		assertValidPackageName(name);
-	}
-	return await fetchData(
-		BulkDailyPackageDownloads,
-		urlJoin(registry, `/downloads/range/${period}/${names.join(",")}`),
-	);
+  for (const name of names) {
+    assertValidPackageName(name);
+  }
+  return await fetchData(
+    BulkDailyPackageDownloads,
+    urlJoin(registry, `/downloads/range/${period}/${names.join(",")}`),
+  );
 }

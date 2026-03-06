@@ -5,14 +5,14 @@ import { getPackageVersionsDownloads } from "./get-package-versions-downloads";
 const { loadIntoCache, updateFromCache } = testData("get-package-versions-downloads");
 
 beforeAll(async () => {
-	await loadIntoCache();
+  await loadIntoCache();
 });
 
 afterAll(async () => {
-	await updateFromCache();
+  await updateFromCache();
 });
 
 test("getPackageVersionsDownloads", async () => {
-	await expect(getPackageVersionsDownloads("react")).resolves.toBeDefined();
-	await expect(getPackageVersionsDownloads("@types/node")).resolves.toBeDefined();
+  await expect(getPackageVersionsDownloads("react")).resolves.toBeDefined();
+  await expect(getPackageVersionsDownloads("@types/node")).resolves.toBeDefined();
 });

@@ -6,9 +6,9 @@ Internal cache for all requests.
 @internal
 */
 export const cache = new QuickLRU<string, unknown>({
-	// 100 items.
-	maxSize: 100,
+  // 100 items.
+  maxSize: 100,
 
-	// 5 minutes.
-	maxAge: 5 * 60 * 1000,
+  // 5 minutes.
+  maxAge: 5 * 60 * 1000,
 });

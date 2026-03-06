@@ -5,22 +5,22 @@ import { fetchData } from "./fetch-data";
 import { npmRegistryDownloadsApiUrl } from "./npm-registry";
 
 export const DailyRegistryDownloads = z.object({
-	/** Date of the first day (inclusive) in the format `YYYY-MM-DD`. */
-	start: z.string(),
+  /** Date of the first day (inclusive) in the format `YYYY-MM-DD`. */
+  start: z.string(),
 
-	/** Date of the last day (inclusive) in the format `YYYY-MM-DD`. */
-	end: z.string(),
+  /** Date of the last day (inclusive) in the format `YYYY-MM-DD`. */
+  end: z.string(),
 
-	/** Download counts for each day. */
-	downloads: z.array(
-		z.object({
-			/** Total number of downloads for the day. */
-			downloads: z.number(),
+  /** Download counts for each day. */
+  downloads: z.array(
+    z.object({
+      /** Total number of downloads for the day. */
+      downloads: z.number(),
 
-			/** Date of the day in the format `YYYY-MM-DD`. */
-			day: z.string(),
-		}),
-	),
+      /** Date of the day in the format `YYYY-MM-DD`. */
+      day: z.string(),
+    }),
+  ),
 });
 
 /**
@@ -40,8 +40,8 @@ for all packages in the registry in the given time period.
 @see {@link DailyRegistryDownloads}
 */
 export async function getDailyRegistryDownloads(
-	period: DownloadPeriod,
-	registry = npmRegistryDownloadsApiUrl,
+  period: DownloadPeriod,
+  registry = npmRegistryDownloadsApiUrl,
 ): Promise<DailyRegistryDownloads> {
-	return await fetchData(DailyRegistryDownloads, urlJoin(registry, `/downloads/range/${period}`));
+  return await fetchData(DailyRegistryDownloads, urlJoin(registry, `/downloads/range/${period}`));
 }

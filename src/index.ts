@@ -103,8 +103,8 @@ export { cache } from "./cache";
 export { DownloadPeriod } from "./download-period";
 export { AbbreviatedPackument, getAbbreviatedPackument } from "./get-abbreviated-packument";
 export {
-	BulkDailyPackageDownloads,
-	getBulkDailyPackageDownloads,
+  BulkDailyPackageDownloads,
+  getBulkDailyPackageDownloads,
 } from "./get-bulk-daily-package-downloads";
 export { BulkPackageDownloads, getBulkPackageDownloads } from "./get-bulk-package-downloads";
 export { DailyPackageDownloads, getDailyPackageDownloads } from "./get-daily-package-downloads";
@@ -112,8 +112,8 @@ export { DailyRegistryDownloads, getDailyRegistryDownloads } from "./get-daily-r
 export { PackageDownloads, getPackageDownloads } from "./get-package-downloads";
 export { PackageManifest, getPackageManifest } from "./get-package-manifest";
 export {
-	PackageVersionsDownloads,
-	getPackageVersionsDownloads,
+  PackageVersionsDownloads,
+  getPackageVersionsDownloads,
 } from "./get-package-versions-downloads";
 export { Packument, getPackument } from "./get-packument";
 export { RegistryDownloads, getRegistryDownloads } from "./get-registry-downloads";
