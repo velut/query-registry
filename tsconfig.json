@@ -20,6 +20,9 @@
     "module": "preserve",
     "noEmit": true,
     // No DOM.
-    "lib": ["es2022"]
+    "lib": ["es2022"],
+    // TypeScript 6 explicit types.
+    // See https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html#types-now-defaults-to-
+    "types": ["node"]
   }
 }
