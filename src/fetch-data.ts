@@ -10,6 +10,9 @@ export async function fetchData<T extends z.ZodType>(
   const cachedJson = cache.get(cacheKey);
   if (cachedJson) return schema.parse(cachedJson);
   const response = await fetch(url, { headers });
+  if (!response.ok) {
+    throw new Error(`fetchData: ${response.status} ${response.statusText} for ${url}`);
+  }
   const json = (await response.json()) as unknown;
   cache.set(cacheKey, json);
   return schema.parse(json);
