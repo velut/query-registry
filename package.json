@@ -54,7 +54,7 @@
     "release": "np --no-cleanup"
   },
   "dependencies": {
-    "query-string": "^9.2.2",
+    "query-string": "^10.0.0",
     "quick-lru": "^7.1.0",
     "url-join": "^5.1.1",
     "validate-npm-package-name": "^8.0.0",
