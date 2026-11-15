@@ -28,13 +28,13 @@ const Dist = z.object({
 
   /**
   PGP signature in the format `<package>@<version>:<integrity>`.
-	@deprecated {@link https://docs.npmjs.com/about-registry-signatures#migrating-from-pgp-to-ecdsa-signatures}
-	*/
+  @deprecated {@link https://docs.npmjs.com/about-registry-signatures#migrating-from-pgp-to-ecdsa-signatures}
+  */
   "npm-signature": z.string().optional(),
 
   /**
-	ECDSA registry signatures.
-	@see {@link https://docs.npmjs.com/about-registry-signatures}
+  ECDSA registry signatures.
+  @see {@link https://docs.npmjs.com/about-registry-signatures}
   */
   signatures: z
     .array(
@@ -85,48 +85,48 @@ export const PackageManifest = z.object({
     .optional(),
 
   /**
-	Runtime systems supported by the package.
+  Runtime systems supported by the package.
 
-	@remarks
-	In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
-	instead of an object and with catch it becomes `undefined`.
-	*/
+  @remarks
+  In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
+  instead of an object and with catch it becomes `undefined`.
+  */
   engines: z.record(z.string(), z.string()).optional().catch(undefined),
 
   /**
-	SPDX license expression or a custom license.
+  SPDX license expression or a custom license.
 
-	@remarks
-	In some old packages (like `eslint@0.0.6`) the `license` property is an object
-	and with catch `license` becomes `undefined`.
-	*/
+  @remarks
+  In some old packages (like `eslint@0.0.6`) the `license` property is an object
+  and with catch `license` becomes `undefined`.
+  */
   license: z.string().optional().catch(undefined),
 
   /**
-	URL of the package's homepage.
+  URL of the package's homepage.
 
-	@remarks
-	In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array
-	of strings and with catch it becomes `undefined`.
-	*/
+  @remarks
+  In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array
+  of strings and with catch it becomes `undefined`.
+  */
   homepage: z.string().optional().catch(undefined),
 
   /**
-	Deprecation status/message.
+  Deprecation status/message.
 
-	@remarks
-	In some packages (like `react@16.14.0`) the `deprecated` property is a boolean
-	instead of a deprecation message.
-	*/
+  @remarks
+  In some packages (like `react@16.14.0`) the `deprecated` property is a boolean
+  instead of a deprecation message.
+  */
   deprecated: z.union([z.string(), z.boolean()]).optional(),
 
   /**
-	Type for all the `.js` files in the package, usually `module`.
+  Type for all the `.js` files in the package, usually `module`.
 
-	@remarks
-	In some old packages (like `mongoose@0.0.1`) the `type` property value is a string
-	different from `module` or `commonjs` and with catch it becomes `undefined`.
-	*/
+  @remarks
+  In some old packages (like `mongoose@0.0.1`) the `type` property value is a string
+  different from `module` or `commonjs` and with catch it becomes `undefined`.
+  */
   type: z.literal(["module", "commonjs"]).optional().catch(undefined),
 
   /**
