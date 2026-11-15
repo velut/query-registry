@@ -33,6 +33,7 @@ test("getPackument", async () => {
     "react",
     "semver",
     "temp",
+    "tinacms",
     "tslib",
     "typescript",
     "vite",

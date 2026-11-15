@@ -28,4 +28,8 @@ test("getPackageManifest", async () => {
   // Bad values for the `type` field.
   // See https://github.com/velut/query-registry/issues/415.
   await expect(getPackageManifest("mongoose", "0.0.1")).resolves.toBeDefined();
+
+  // Missing `type` in `repository` field.
+  // See https://github.com/velut/query-registry/issues/546.
+  await expect(getPackageManifest("tinacms", "3.15.2")).resolves.toBeDefined();
 });

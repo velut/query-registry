@@ -6,6 +6,7 @@ import { DistTags } from "./dist-tags";
 import { fetchData } from "./fetch-data";
 import { PackageManifest } from "./get-package-manifest";
 import { npmRegistryUrl } from "./npm-registry";
+import { Repository } from "./repository";
 
 const Time = z
   .object({
@@ -27,7 +28,6 @@ export const Packument = z.object({
     keywords: true,
     license: true,
     maintainers: true,
-    repository: true,
   }).shape,
 
   /** Package name used as the ID in CouchDB. */
@@ -63,6 +63,15 @@ export const Packument = z.object({
 
   /** Name of the README file. */
   readmeFilename: z.string().optional(),
+
+  /**
+  Repository for the package's source code.
+
+  @remarks
+  In some packages (like `tinacms@3.15.2`) the `type` property of the repository
+  object is missing.
+  */
+  repository: Repository,
 });
 
 /**
