@@ -44,16 +44,16 @@ export const Packument = z.object({
   "dist-tags": DistTags,
 
   /**
-	Mapping of semver version numbers to timestamps in ISO 8601 format representing
-	the publishing time (e.g., `{ "1.0.0": "2021-11-23T19:12:24.006Z" }`).
-	Also includes the timestamps of when the package was `created` and last `modified`.
-	*/
+  Mapping of semver version numbers to timestamps in ISO 8601 format representing
+  the publishing time (e.g., `{ "1.0.0": "2021-11-23T19:12:24.006Z" }`).
+  Also includes the timestamps of when the package was `created` and last `modified`.
+  */
   time: Time,
 
   /**
-	Mapping of semver version numbers to package manifests.
-	@see {@link PackageManifest}
-	*/
+  Mapping of semver version numbers to package manifests.
+  @see {@link PackageManifest}
+  */
   versions: z.record(z.string(), PackageManifest),
 
   /** Revision ID of the document in CouchDB. */
