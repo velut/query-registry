@@ -158,6 +158,24 @@ export const PackageManifest = z.object({
   In this case the object is discarded and `workspaces` becomes `undefined`.
   */
   workspaces: PackageJson.shape.workspaces.catch(undefined),
+
+  /**
+  Configuration read by package managers when publishing a package.
+  @see {@link https://docs.npmjs.com/cli/v12/using-npm/config#config-settings}
+  @see {@link https://pnpm.io/package_json#publishconfig}
+  @see {@link https://bun.com/docs/pm/cli/publish}
+  @see {@link https://yarnpkg.com/configuration/manifest#publishConfig}
+  */
+  publishConfig: z.optional(
+    z.looseObject({
+      ...PackageJson.shape.publishConfig.unwrap().shape,
+
+      // Since the `JsonStrip` test utility removes strings,
+      // the literal check always fails (see package "inquire" in get-packument.test.ts).
+      // Catch unknown literals like `""` and return `undefined`.
+      access: PackageJson.shape.publishConfig.unwrap().shape.access.catch(undefined),
+    }),
+  ),
 });
 
 /**
