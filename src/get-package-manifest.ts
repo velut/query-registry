@@ -84,6 +84,10 @@ export const PackageManifest = z.object({
     })
     .optional(),
 
+  //
+  // Quirks.
+  //
+
   /**
   Runtime systems supported by the package.
 
@@ -92,7 +96,7 @@ export const PackageManifest = z.object({
   instead of an object.
   In this case the array is discarded and `engines` becomes `undefined`.
   */
-  engines: z.record(z.string(), z.string()).optional().catch(undefined),
+  engines: PackageJson.shape.engines.catch(undefined),
 
   /**
   SPDX license expression or a custom license.
@@ -101,7 +105,7 @@ export const PackageManifest = z.object({
   In some old packages (like `eslint@0.0.6`) the `license` property is an object.
   In this case the object is discarded and `license` becomes `undefined`.
   */
-  license: z.string().optional().catch(undefined),
+  license: PackageJson.shape.license.catch(undefined),
 
   /**
   URL of the package's homepage.
@@ -110,7 +114,7 @@ export const PackageManifest = z.object({
   In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array of strings.
   In this case the array is discarded and `homepage` becomes `undefined`.
   */
-  homepage: z.string().optional().catch(undefined),
+  homepage: PackageJson.shape.homepage.catch(undefined),
 
   /**
   Deprecation status/message.
@@ -118,8 +122,9 @@ export const PackageManifest = z.object({
   @remarks
   In some packages (like `react@16.14.0`) the `deprecated` property is a boolean
   instead of a deprecation message.
+  In this case the boolean is discarded and `deprecated` becomes `undefined`.
   */
-  deprecated: z.union([z.string(), z.boolean()]).optional(),
+  deprecated: PackageJson.shape.deprecated.catch(undefined),
 
   /**
   Type for all the `.js` files in the package, usually `module`.
@@ -129,7 +134,7 @@ export const PackageManifest = z.object({
   different from `module` or `commonjs`.
   In this case the string is discarded and `type` becomes `undefined`.
   */
-  type: z.literal(["module", "commonjs"]).optional().catch(undefined),
+  type: PackageJson.shape.type.catch(undefined),
 
   /**
   Repository for the package's source code.
@@ -148,7 +153,7 @@ export const PackageManifest = z.object({
   as an object which was supported by old Yarn versions.
   In this case the object is discarded and `workspaces` becomes `undefined`.
   */
-  workspaces: z.catch(z.optional(z.array(z.string())), undefined),
+  workspaces: PackageJson.shape.workspaces.catch(undefined),
 });
 
 /**
