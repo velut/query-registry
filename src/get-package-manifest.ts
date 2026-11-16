@@ -89,7 +89,8 @@ export const PackageManifest = z.object({
 
   @remarks
   In some old packages (like `lodash@0.1.0`) the `engines` property is an array of strings
-  instead of an object and with catch it becomes `undefined`.
+  instead of an object.
+  In this case the array is discarded and `engines` becomes `undefined`.
   */
   engines: z.record(z.string(), z.string()).optional().catch(undefined),
 
@@ -97,8 +98,8 @@ export const PackageManifest = z.object({
   SPDX license expression or a custom license.
 
   @remarks
-  In some old packages (like `eslint@0.0.6`) the `license` property is an object
-  and with catch `license` becomes `undefined`.
+  In some old packages (like `eslint@0.0.6`) the `license` property is an object.
+  In this case the object is discarded and `license` becomes `undefined`.
   */
   license: z.string().optional().catch(undefined),
 
@@ -106,8 +107,8 @@ export const PackageManifest = z.object({
   URL of the package's homepage.
 
   @remarks
-  In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array
-  of strings and with catch it becomes `undefined`.
+  In some old packages (like `fs-extra@0.0.1`) the `homepage` property is an array of strings.
+  In this case the array is discarded and `homepage` becomes `undefined`.
   */
   homepage: z.string().optional().catch(undefined),
 
@@ -125,7 +126,8 @@ export const PackageManifest = z.object({
 
   @remarks
   In some old packages (like `mongoose@0.0.1`) the `type` property value is a string
-  different from `module` or `commonjs` and with catch it becomes `undefined`.
+  different from `module` or `commonjs`.
+  In this case the string is discarded and `type` becomes `undefined`.
   */
   type: z.literal(["module", "commonjs"]).optional().catch(undefined),
 
