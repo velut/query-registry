@@ -30,6 +30,10 @@ export const Packument = z.object({
     maintainers: true,
   }).shape,
 
+  //
+  // Known properties.
+  //
+
   /** Package name used as the ID in CouchDB. */
   _id: z.string(),
 
@@ -63,6 +67,10 @@ export const Packument = z.object({
 
   /** Name of the README file. */
   readmeFilename: z.string().optional(),
+
+  //
+  // Quirks.
+  //
 
   /**
   Repository for the package's source code.
