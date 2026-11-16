@@ -29,6 +29,10 @@ test("getPackageManifest", async () => {
   // See https://github.com/velut/query-registry/issues/415.
   await expect(getPackageManifest("mongoose", "0.0.1")).resolves.toBeDefined();
 
+  // String array values for the `libc` field.
+  // See https://github.com/velut/query-registry/issues/546.
+  await expect(getPackageManifest("@rollup/rollup-linux-x64-gnu", "4.68.3")).resolves.toBeDefined();
+
   // Missing `type` in `repository` field.
   // See https://github.com/velut/query-registry/issues/546.
   await expect(getPackageManifest("tinacms", "3.15.2")).resolves.toBeDefined();

@@ -58,7 +58,7 @@
     "quick-lru": "^8.0.0",
     "url-join": "^6.0.0",
     "validate-npm-package-name": "^8.0.0",
-    "zod-package-json": "^2.1.0"
+    "zod-package-json": "^3.0.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
