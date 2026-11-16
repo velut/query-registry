@@ -51,7 +51,7 @@
     "lint": "oxfmt --check && oxlint --type-aware",
     "format": "oxfmt",
     "pre-push": "bun install && bun run lint && bun run build && bun run test:ci && bun run attw",
-    "release": "np --no-cleanup"
+    "release": "npx np --no-cleanup --stage"
   },
   "dependencies": {
     "query-string": "^10.0.0",
@@ -67,7 +67,6 @@
     "@types/validate-npm-package-name": "^4.0.2",
     "@vitest/coverage-v8": "^5.1.0",
     "fflate": "^0.8.3",
-    "np": "^12.1.1",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.94.0",
     "oxlint-tsgolint": "^7.0.2007",
