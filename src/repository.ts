@@ -1,4 +1,5 @@
 import * as z from "zod";
+import { PackageJson } from "zod-package-json";
 
 /**
 Repository for the package's source code.
@@ -11,20 +12,17 @@ export const Repository = z.optional(
   z.union([
     z.string(),
     z.object({
+      ...PackageJson.shape.repository.unwrap().options[1].shape,
+
       // Make `type` optional for query-registry for compatibility
       // with packages like `tinacms`.
       // See https://github.com/velut/query-registry/issues/546.
       //
       // Keep it required in zod-package-json because the npm docs
       // always show both `type` and `url` in the examples.
+
       /** Repository type (e.g., `git`). */
-      type: z.optional(z.string()),
-
-      /** Machine-readable repository URL (e.g., `https://github.com/user/repo.git`). */
-      url: z.string(),
-
-      /** Directory in a monorepo where the package's source code is located. */
-      directory: z.optional(z.string()),
+      type: PackageJson.shape.repository.unwrap().options[1].shape.type.optional(),
     }),
   ]),
 );
