@@ -137,6 +137,16 @@ export const PackageManifest = z.object({
   object is missing.
   */
   repository: Repository,
+
+  /**
+  File patterns for locating local workspaces.
+
+  @remarks
+  In some old packages (like `bower@1.8.9`) the `workspaces` property is defined
+  as an object which was supported by old Yarn versions.
+  In this case the object is discarded and `workspaces` becomes `undefined`.
+  */
+  workspaces: z.catch(z.optional(z.array(z.string())), undefined),
 });
 
 /**

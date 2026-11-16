@@ -32,4 +32,8 @@ test("getPackageManifest", async () => {
   // Missing `type` in `repository` field.
   // See https://github.com/velut/query-registry/issues/546.
   await expect(getPackageManifest("tinacms", "3.15.2")).resolves.toBeDefined();
+
+  // Deprecated object format by Yarn for `workspaces`.
+  // See https://github.com/velut/query-registry/issues/546.
+  await expect(getPackageManifest("bower", "1.8.9")).resolves.toBeDefined();
 });

@@ -16,6 +16,7 @@ test("getPackument", async () => {
   for (const pkg of [
     "@types/node",
     "axios",
+    "bower",
     "canvas",
     "chalk",
     "commander",
